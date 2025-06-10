@@ -1,0 +1,134 @@
+/*© Big Red Communications Group Pty Ltd 2025. All Rights Reserved.
+You may not copy, reproduce or communicate any of the contents of this file without the permission of the copyright owner.*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-transform: translate3D(0,0,0);
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+#the_canvas {
+	width: 1280px;
+	height: 100px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000000;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	border-bottom-right-radius: 18px;
+}
+
+#the_keyline {
+	position:absolute;
+	top:0px;
+	left:0px;
+	border:1px solid #000000;
+	padding:0px;
+	height:100px;
+	width:1280px;
+	box-sizing:border-box;
+}
+
+#the_blind {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: 1280px;
+	height: 100px;
+	background: #000000;
+    z-index: 3;	
+}
+
+#copy1 {
+	position: absolute;
+    top: 24px;
+    left: 16px;
+    width: 480px;
+    height: 32px;
+}
+
+#copy2 {
+	position: absolute;
+	top: 24px;
+    left: 16px;
+    width: 783px;
+    height: 33px;
+}
+
+#copy3 {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    width: 888px;
+    height: 32px;	
+}
+
+#copy4 {
+    position: absolute;
+    bottom: 26px;
+    left: 16px;
+    width: 695px;
+    height: 10px;	
+}
+
+#copyDisclaimer {
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+    width: 156px;
+    height: 8px;
+    z-index: 2;	
+}
+
+#logo_youi {
+	position: absolute;
+	top: -74px;
+    right: 25px;
+	width: 110px;
+	height: 85px;
+	margin-top: -0.5em;
+}
+
+#btn_cta {
+    position: absolute;
+	top: 32px;
+    left: 949px;
+    width: 133px;
+    height: auto;
+}
+
+#logo_youi_lions {
+	position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 157px;
+    height: 56px;
+}
+
+#terms_panel {
+	background: #000000;
+	position: absolute;
+	top: 101px;
+	left: 0;
+	width: 1280px;
+	height: 100px;
+	z-index: 3;
+}
+
+#copyTerms {
+	position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 409px;	
+}
+
+.img_svg {
+	background-color: rgba(0,0,0,0);
+}
