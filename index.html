@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ad Previews</title>
+  <style>
+    body {
+      background: #EEEEEE;
+      color: #f4f4f4;
+      font-family: "Arial", sans;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #ff4b4b;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      justify-content: center;
+    }
+    .card {
+      background: #FFF;
+      border: 2px solid #E2e2e2;
+      padding: 2rem;
+      border-radius: 20px 20px 20px 0px;
+      width: fit-content;
+      text-align: center;
+    }
+    .card h2 {
+      font-size: 1rem;
+      margin: 0 0 0.5rem;
+      color: #000;
+    }
+    iframe {
+      border: none;
+      background: #FFF;
+      display: block;
+      margin: 0 auto;
+    }
+    .refresh {
+      margin-top: 0.5rem;
+      background: #ff4b4b;
+      border: none;
+      color: #fff;
+      padding: 0.3rem 0.6rem;
+      font-size: 0.8rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Previews</h1>
+  <div class="grid">
+    <!-- START OF CARDS -->
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_728x90_baba2554</h2>
+      <iframe id="f1" src="YOU0062_AFL_NFL_NRL_728x90_baba2554/index.html" width="728" height="90"></iframe>
+      <button class="refresh" onclick="refreshIframe('f1')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_300x250_7dedfb3b</h2>
+      <iframe id="f2" src="YOU0062_AFL_NFL_NRL_300x250_7dedfb3b/index.html" width="300" height="250"></iframe>
+      <button class="refresh" onclick="refreshIframe('f2')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_728x90_ecf9857c</h2>
+      <iframe id="f3" src="YOU0062_AFL_NFL_NRL_728x90_ecf9857c/index.html" width="728" height="90"></iframe>
+      <button class="refresh" onclick="refreshIframe('f3')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_300x250_863691d9</h2>
+      <iframe id="f4" src="YOU0062_AFL_NFL_NRL_300x250_863691d9/index.html" width="300" height="250"></iframe>
+      <button class="refresh" onclick="refreshIframe('f4')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_970x250_17c0c5b3</h2>
+      <iframe id="f5" src="YOU0062_AFL_NFL_NRL_970x250_17c0c5b3/index.html" width="970" height="250"></iframe>
+      <button class="refresh" onclick="refreshIframe('f5')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_300x250_c4553fde</h2>
+      <iframe id="f6" src="YOU0062_AFL_NFL_NRL_300x250_c4553fde/index.html" width="300" height="250"></iframe>
+      <button class="refresh" onclick="refreshIframe('f6')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_970x250_27d40f16</h2>
+      <iframe id="f7" src="YOU0062_AFL_NFL_NRL_970x250_27d40f16/index.html" width="970" height="250"></iframe>
+      <button class="refresh" onclick="refreshIframe('f7')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_300x250_c5c02c9a</h2>
+      <iframe id="f8" src="YOU0062_AFL_NFL_NRL_300x250_c5c02c9a/index.html" width="300" height="250"></iframe>
+      <button class="refresh" onclick="refreshIframe('f8')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_970x250_3bd220f9</h2>
+      <iframe id="f9" src="YOU0062_AFL_NFL_NRL_970x250_3bd220f9/index.html" width="970" height="250"></iframe>
+      <button class="refresh" onclick="refreshIframe('f9')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_320x50_07c207b0</h2>
+      <iframe id="f10" src="YOU0062_AFL_NFL_NRL_320x50_07c207b0/index.html" width="320" height="50"></iframe>
+      <button class="refresh" onclick="refreshIframe('f10')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_970x250_41245742</h2>
+      <iframe id="f11" src="YOU0062_AFL_NFL_NRL_970x250_41245742/index.html" width="970" height="250"></iframe>
+      <button class="refresh" onclick="refreshIframe('f11')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_320x50_64d5bec6</h2>
+      <iframe id="f12" src="YOU0062_AFL_NFL_NRL_320x50_64d5bec6/index.html" width="320" height="50"></iframe>
+      <button class="refresh" onclick="refreshIframe('f12')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_970x250_44f18a63</h2>
+      <iframe id="f13" src="YOU0062_AFL_NFL_NRL_970x250_44f18a63/index.html" width="970" height="250"></iframe>
+      <button class="refresh" onclick="refreshIframe('f13')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_728x90_4a2f4899</h2>
+      <iframe id="f14" src="YOU0062_AFL_NFL_NRL_728x90_4a2f4899/index.html" width="728" height="90"></iframe>
+      <button class="refresh" onclick="refreshIframe('f14')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_970x250_cba566fa</h2>
+      <iframe id="f15" src="YOU0062_AFL_NFL_NRL_970x250_cba566fa/index.html" width="970" height="250"></iframe>
+      <button class="refresh" onclick="refreshIframe('f15')">Refresh</button>
+    </div>
+    <div class="card">
+      <h2>YOU0062_AFL_NFL_NRL_728x90_9b2ea0a0</h2>
+      <iframe id="f16" src="YOU0062_AFL_NFL_NRL_728x90_9b2ea0a0/index.html" width="728" height="90"></iframe>
+      <button class="refresh" onclick="refreshIframe('f16')">Refresh</button>
+    </div>
+    <!-- END OF CARDS -->
+  </div>
+
+  <script>
+    function refreshIframe(id) {
+      const iframe = document.getElementById(id);
+      iframe.src = iframe.src;
+    }
+  </script>
+</body>
+</html>
