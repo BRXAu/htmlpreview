@@ -26,7 +26,7 @@ function allDocIsReady() {
 	TweenLite.set('#the_blind', {opacity:0, display:'none'});
 
 	// Frame 1
-	theTimeline.add(new TweenLite.from('#copy1', 0.5, {y:-5, opacity:0, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy1', 0.5, {y:10, opacity:0, ease:Power1.easeOut}));
 
 	function pause() {
 		theTimeline.stop();

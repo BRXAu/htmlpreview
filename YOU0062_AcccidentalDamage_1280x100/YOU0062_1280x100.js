@@ -45,15 +45,15 @@ function allDocIsReady() {
 	TweenLite.set('#the_blind', {opacity:0, display:'none'});
 
 	// Frame 1
-	theTimeline.add(new TweenLite.from('#copy1', 0.5, {y:-5, opacity:0, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy1', 0.5, {y:10, opacity:0, ease:Power1.easeOut}));
 	theTimeline.add(new TweenLite.to('#copy1', 0.5, {opacity: 0, delay:3.5}));
 
 	// Frame 2
-	theTimeline.add(new TweenLite.from('#copy2', 0.5, {y:-5, opacity:0, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy2', 0.5, {y:10, opacity:0, ease:Power1.easeOut}));
 	theTimeline.add(new TweenLite.to('#copy2', 0.5, {opacity: 0, delay:2.5}));
 
 	// Frame 3
-	theTimeline.add(new TweenLite.from('#copy3', 0.5, {y:-5, opacity:0, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy3', 0.5, {y:10, opacity:0, ease:Power1.easeOut}));
 
 	function pause() {
 		theTimeline.stop();
