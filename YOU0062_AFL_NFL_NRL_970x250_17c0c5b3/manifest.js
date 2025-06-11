@@ -22,7 +22,7 @@ window.MANIFEST = {
   "TermsLabelPosition": "",
   "Layouts": ",,,,",
   "F1_Transitions": "",
-  "F1_Animations": "slideInByBlock:0.5,fadeOut:0.5",
+  "F1_Animations": "slideUpByBlock:0.5,fadeOut:0.5",
   "F1_LayoutClass": ",",
   "F1_Video": "{\"url\":null,\"size\":null,\"position\":null,\"animationIn\":null,\"animationOut\":null,\"frameOut\":null}",
   "F1_Image1": "{\"url\":null,\"size\":null,\"position\":null,\"border\":null,\"order\":null,\"animationIn\":null,\"animationOut\":null,\"frameOut\":null}",
