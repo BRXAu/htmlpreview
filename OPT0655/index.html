@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EDM Preview Container</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #006280;
+      font-weight: bold;
+    }
+
+    .iframe-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+    }
+
+    iframe {
+      width: 600px;
+      height: 2000px;
+      border: 1px solid #ccc;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>EDM Preview</h1>
+
+  <nav>
+    <a href="#invite">You're Invited</a>
+    <a href="#experience">Your AO Experience</a>
+    <a href="#thankyou">Thank You</a>
+  </nav>
+
+  <div class="iframe-container">
+    <iframe src="02_EDM/OPT0655_EDM_Youre_Invited.html" title="You're Invited" id="invite"></iframe>
+    <iframe src="02_EDM/OPT0655_EDM_Your_Australian_Open_Experience.html" title="Your AO Experience" id="experience"></iframe>
+    <iframe src="02_EDM/OPT0655_EDM_Thankyou.html" title="Thank You" id="thankyou"></iframe>
+  </div>
+
+</body>
+</html>
