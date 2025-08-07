@@ -49,13 +49,13 @@ function allDocIsReady() {
 
 	//Frame 2
 	theTimeline.add(new TweenLite.from('#copy3_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-49, ease:Power2.easeOut, onComplete:clockAlarm}));
+	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-82, ease:Power2.easeOut, onComplete:clockAlarm}));
 
 	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4_mask, #clock', 0.5, {opacity:0}), "+=2.5");
 
 	//Frame 3
 	theTimeline.add(new TweenLite.from('#copy5_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy6', 0.5, {y:-76, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy6', 0.5, {y:-82, ease:Power2.easeOut}));
 
 	theTimeline.add(new TweenLite.from("#wateringCan, #water_mask, #plant", 0.5, {opacity:0}), "-=1.2");
 	theTimeline.add(new TweenLite.fromTo('#wateringCan', 0.3, {rotation:-30}, {rotation:0, ease:Power2.easeOut}));
@@ -64,7 +64,7 @@ function allDocIsReady() {
 
 	//Frame 4
 	theTimeline.add(new TweenLite.from('#copy7_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-32, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-35, ease:Power2.easeOut}));
 	theTimeline.add(new TweenLite.from('#copy9', 0.5, {opacity:0}));
 
 	theTimeline.add(new TweenLite.from("#checkbox", 0.5, {opacity:0}), "-=1.1");	
