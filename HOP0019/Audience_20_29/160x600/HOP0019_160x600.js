@@ -10,7 +10,7 @@ if(document.addEventListener) {
 function showTerms() {
 	let showPanel = false;
 	const termsPanel = document.getElementById("terms_panel");
-	TweenLite.to(termsPanel,0.4,{y:-250,ease: Power2.easeOut});
+	TweenLite.to(termsPanel,0.4,{y:-600,ease: Power2.easeOut});
 	showPanel = true;
 }
 
@@ -48,17 +48,17 @@ function allDocIsReady() {
 
 	//Frame 2
 	theTimeline.add(new TweenLite.from('#copy3_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-49, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-35, ease:Power2.easeOut}));
 	theTimeline.add(new TweenLite.from("#f1_lefthand, #f1_righthand", 0.5, {opacity:0}), "-=0.45")
 	theTimeline.add(new TweenLite.from("#f1_lefthand", 0.5, {x:-10, ease:Back.easeOut.config(8)}));
 	theTimeline.add(new TweenLite.from("#f1_righthand", 0.5, {x:10, ease:Back.easeOut.config(8)}), "-=0.5");
 	theTimeline.add(new TweenLite.from('#f1_clap', 0.5, {y:10, opacity:0, ease:Back.easeOut}), "-=0.45")
 
-	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4_mask, #f1_lefthand, #f1_righthand, #clap', 0.5, {opacity:0}), "+=2");
+	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4_mask, #clap', 0.5, {opacity:0}), "+=2");
 
 	//Frame 3
 	theTimeline.add(new TweenLite.from('#copy5_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy6', 0.5, {y:-76, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy6', 0.5, {y:-55, ease:Power2.easeOut}));
 
 	theTimeline.add(new TweenLite.from("#f3_headElem", 0.5, {opacity:0}), "-=1.1");
 
@@ -75,7 +75,7 @@ function allDocIsReady() {
 
 	//Frame 4
 	theTimeline.add(new TweenLite.from('#copy7_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-32, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-38, ease:Power2.easeOut}));
 	theTimeline.add(new TweenLite.from('#copy9', 0.5, {opacity:0}));
 
 	theTimeline.add(new TweenLite.from("#checkbox", 0.5, {opacity:0}), "-=1.1");	

@@ -75,7 +75,7 @@ function allDocIsReady() {
 
 	//Frame 4
 	theTimeline.add(new TweenLite.from('#copy7_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-32, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-36, ease:Power2.easeOut}));
 	theTimeline.add(new TweenLite.from('#copy9', 0.5, {opacity:0}));
 
 	theTimeline.add(new TweenLite.from("#checkbox", 0.5, {opacity:0}), "-=1.1");	

@@ -10,7 +10,7 @@ if(document.addEventListener) {
 function showTerms() {
 	let showPanel = false;
 	const termsPanel = document.getElementById("terms_panel");
-	TweenLite.to(termsPanel,0.4,{y:-250,ease: Power2.easeOut});
+	TweenLite.to(termsPanel,0.4,{y:-90,ease: Power2.easeOut});
 	showPanel = true;
 }
 
@@ -54,7 +54,7 @@ function allDocIsReady() {
 	theTimeline.add(new TweenLite.from("#f1_righthand", 0.5, {x:10, ease:Back.easeOut.config(8)}), "-=0.5");
 	theTimeline.add(new TweenLite.from('#f1_clap', 0.5, {y:10, opacity:0, ease:Back.easeOut}), "-=0.45")
 
-	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4_mask, #f1_lefthand, #f1_righthand, #clap', 0.5, {opacity:0}), "+=2");
+	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4_mask, #clap', 0.5, {opacity:0}), "+=2");
 
 	//Frame 3
 	theTimeline.add(new TweenLite.from('#copy5_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
