@@ -22,15 +22,11 @@ function hideTerms() {
 }
 
 function swapCta() {
-	  TweenLite.to("#cta_arrow, #cta_arrow_hover", 0.25, { x:5, ease: Power2.easeOut });
-	  TweenLite.to("#cta_label_hover, #cta_arrow_hover", 0.25, { opacity:1, ease: Power2.easeOut });
-	  TweenLite.to("#cta_label", 0.25, { opacity:0, ease: Power2.easeOut });	
+	TweenLite.to("#btn_cta", 0.25, {backgroundColor: "#FFDE4D", scaleX:0.95, ease:Power2.easeOut});
 }
 
 function swapCtaBack() {
-	  TweenLite.to("#cta_arrow, #cta_arrow_hover", 0.25, { x: 0, ease: Power2.easeOut });
-	  TweenLite.to("#cta_label_hover, #cta_arrow_hover", 0.25, { opacity:0, ease: Power2.easeOut });
-	  TweenLite.to("#cta_label", 0.25, { opacity:1, ease: Power2.easeOut });	
+	TweenLite.to("#btn_cta", 0.25, {backgroundColor: "#FFD000", scaleX:1, ease:Power2.easeIn});
 }
 
 function allDocIsReady() {
