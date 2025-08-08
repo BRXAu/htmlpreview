@@ -12,8 +12,8 @@ a {
 }
 
 #theCanvas {
-	width: 300px;
-	height: 250px;
+	width: 728px;
+	height: 90px;
 	overflow: hidden;
 	position: absolute;
 	top: 0;
@@ -27,8 +27,8 @@ a {
 	left:0px;
 	border:1px solid #000000;
 	padding:0px;
-	height:250px;
-	width:300px;
+	height:90px;
+	width:728px;
 	box-sizing:border-box;
 }
 
@@ -44,25 +44,27 @@ a {
 
 #logo_hostplus {
 	position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 121px;
-    height: 60px;
+	top: 17px;
+    right: 15px;
+    width: 139px;
+    height: 57px;
 }
 
 #copy_terms {
     position: absolute;
-    bottom: 9px;
-    left: 15px;
+	bottom: 9px;
+    right: 191px;
+    width: 69px;
+    height: 10px;
     z-index: 2;
 }
 
 #terms_panel {
 	position: absolute;
-    top: 251px;
+    top: 91px;
     left: 1px;
-    width: 298px;
-    height: 248px;
+    width: 726px;
+    height: 88px;
 	background: #002855;
 	z-index: 3;
 }
@@ -71,10 +73,10 @@ a {
 
 #copy1_mask {
 	position: absolute;
-	top: 112px;
-	left: 16px;
-	width: 174px;
-	height: 20px;
+	top: 25px;
+	left: 71px;
+	width: 149px;
+	height: 17px;
 	overflow: hidden;
 }
 
@@ -82,16 +84,16 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 174px;
-	height: 20px;
+	width: 149px;
+	height: 17px;
 }
 
 #copy2_mask {
 	position: absolute;
-	top: 136px;
-	left: 15px;
-	width: 223px;
-	height: 20px;
+	top: 47px;
+	left: 71px;
+	width: 191px;
+	height: 18px;
 	overflow: hidden;
 }
 
@@ -99,24 +101,24 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 223px;
-	height: 20px;
+	width: 191px;
+	height: 18px;
 }
 
 #f1_neck, #f2_neck {
 	position: absolute;
-	top: 25px;
-	left: 18px;
-	width: 60px;
-	height: 73px;
+    top: 17px;
+    left: 13px;
+    width: 44px;
+    height: 55px;
 }
 
 #f1_head, #f1_questionMark_1, #headElem_f2 {
 	position: absolute;
-    top: 25px;
-    left: 18px;
-    width: 60px;
-    height: 57px;
+    top: 13px;
+    left: 13px;
+    width: 44px;
+    height: 50px;
     -moz-transform-origin: center center;
     -ms-transform-origin: center center;
     -o-transform-origin: center center;
@@ -125,36 +127,36 @@ a {
 
 #f2_head {
 	position: absolute;
-	top: 25px;
-	left: 18px;
-    width: 60px;
-    height: 57px;	
+    top: 17px;
+    left: 13px;
+    width: 44px;
+    height: 43px;
 }
 
 /*FRAME 2*/
 
 #f2_cog_1 {
 	position: absolute;
-    top: 44px;
-    left: 27px;
-    width: 17px;
-    height: 17px;
+	top: 32px;
+    left: 20px;
+    width: 13px;
+    height: 13px;
 }
 
 #f2_cog_2 {
 	position: absolute;
-    top: 33px;
-    left: 41px;
-    width: 15px;
-    height: 15px;
+	top: 24px;
+    left: 30px;
+    width: 11px;
+    height: 11px;
 }
 
 #copy3_mask {
 	position: absolute;
-	top: 112px;
-	left: 16px;
-	width: 140px;
-	height: 20px;
+	top: 26px;
+	left: 70px;
+	width: 120px;
+	height: 17px;
 	overflow: hidden;
 }
 
@@ -162,16 +164,16 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 140px;
-	height: 20px;
+	width: 120px;
+	height: 17px;
 }
 
 #copy4_mask {
 	position: absolute;
-	top: 136px;
-	left: 16px;
-	width: 197px;
-	height: 20px;
+	top: 47px;
+	left: 71px;
+    width: 168px;
+    height: 17px;
 	overflow: hidden;
 }
 
@@ -179,34 +181,34 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 197px;
-    height: 20px;
+    width: 168px;
+    height: 17px;
 }
 
 /*FRAME 3*/
 
 #f3_head_1, #f3_head_2 {
 	position: absolute;
-    top: 28px;
-    left: 15px;
-	width: 62px;
-	height: 67px;
+    top: 20px;
+    left: 18px;
+    width: 47px;
+    height: 50px;
 }
 
 #f3_mic {
 	position: absolute;
-    top: 51px;
-    left: 37px;
-    width: 21px;
-    height: 13px;
+    top: 37px;
+    left: 35px;
+    width: 16px;
+    height: 10px;
 }
 
 #copy5_mask {
 	position: absolute;
-	top: 110px;
-	left: 16px;
-	width: 169px;
-	height: 22px;
+	top: 26px;
+	left: 71px;
+	width: 144px;
+	height: 17px;
 	overflow: hidden;
 }
 
@@ -214,16 +216,16 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 169px;
-	height: 22px;
+	width: 144px;
+	height: 17px;
 }
 
 #copy6_mask {
 	position: absolute;
-	top: 137px;
-	left: 16px;
-	width: 204px;
-	height: 46px;
+	top: 48px;
+	left: 72px;
+	width: 334px;
+	height: 20px;
 	overflow: hidden;
 }
 
@@ -231,26 +233,26 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 204px;
-    height: 46px;
+	width: 334px;
+	height: 20px;
 }
 
 #copy_disclaimer {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 300px;
-	height: 250px;
+	width: 728px;
+	height: 90px;
 }
 
 /*FRAME 4*/
 
 #copy7_mask {
 	position: absolute;
-	top: 111px;
-	left: 16px;
-	width: 243px;
-	height: 20px;
+	top: 25px;
+	left: 71px;
+	width: 208px;
+	height: 18px;
 	overflow: hidden;
 }
 
@@ -258,16 +260,16 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 243px;
-	height: 20px;
+	width: 208px;
+    height: 18px;
 }
 
 #copy8_mask {
 	position: absolute;
-	top: 137px;
-	left: 15px;
-	width: 247px;
-	height: 20px;
+	top: 47px;
+	left: 70px;
+	width: 212px;
+	height: 17px;
 	overflow: hidden;
 }
 
@@ -275,28 +277,30 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 247px;
-    height: 20px;
+    width: 212px;
+    height: 17px;
 }
 
 #copy9 {
     position: absolute;
-	bottom: 24px;
-    left: 15px;
-    width: 125px;
-    height: 14px;
+    bottom: 25px;
+    left: 305px;
+    width: 129px;
+    height: 15px;
 }
 
 #checkbox {
 	position: absolute;
-    top: 22px;
-    left: 16px;	
+    top: 13px;
+    left: 15px;
+    width: 53px;
+    height: 51px;
 }
 
 #btn_cta {
     position: absolute;
-    bottom: 10px;
-    right: 14px;
+    bottom: 26px;
+    right: 177px;
     width: 96px;
     height: 26px;
     background: #FFD000;
@@ -304,8 +308,8 @@ a {
 
 #cta_label {
     position: absolute;
-    bottom: 10px;
-    right: 14px;
+    bottom: 26px;
+    right: 177px;
     width: 96px;
     height: 26px;
     pointer-events: none;

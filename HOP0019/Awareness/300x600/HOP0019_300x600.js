@@ -10,7 +10,7 @@ if(document.addEventListener) {
 function showTerms() {
 	let showPanel = false;
 	const termsPanel = document.getElementById("terms_panel");
-	TweenLite.to(termsPanel,0.4,{y:-250,ease: Power2.easeOut});
+	TweenLite.to(termsPanel,0.4,{y:-600,ease: Power2.easeOut});
 	showPanel = true;
 }
 
@@ -47,7 +47,7 @@ function allDocIsReady() {
 
 	//Frame 1
 	theTimeline.add(new TweenLite.from('#copy1_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy2', 0.5, {y:-50, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy2', 0.5, {y:-60, ease:Power2.easeOut}));
 
 	theTimeline.add(new TweenLite.from("#f1_questionMark_1", 0.5, {scale:0, ease:Back.easeOut.config(3)}), "-=0.25");
 
@@ -55,14 +55,14 @@ function allDocIsReady() {
 
 	//Frame 2
 	theTimeline.add(new TweenLite.from('#copy3_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-49, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-61, ease:Power2.easeOut}));
 	theTimeline.add(new TweenLite.from("#f2_head_group", 0.5, {opacity:0, onStart:playCogs}), "-=1.1");
 
 	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4_mask, #f2_head_group', 0.5, {opacity:0}), "+=2.5");
 
 	//Frame 3
 	theTimeline.add(new TweenLite.from('#copy5_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy6', 0.5, {y:-76, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy6', 0.5, {y:-94, ease:Power2.easeOut}));
 
 	theTimeline.add(new TweenLite.from("#f3_head_group", 0.5, {opacity:0}), "-=1.1");
 
@@ -78,7 +78,7 @@ function allDocIsReady() {
 
 	//Frame 4
 	theTimeline.add(new TweenLite.from('#copy7_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-32, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-53, ease:Power2.easeOut}));
 	theTimeline.add(new TweenLite.from('#copy9', 0.5, {opacity:0}));
 
 	theTimeline.add(new TweenLite.from("#checkbox", 0.5, {opacity:0}), "-=1.1");	

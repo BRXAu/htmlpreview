@@ -10,7 +10,7 @@ if(document.addEventListener) {
 function showTerms() {
 	let showPanel = false;
 	const termsPanel = document.getElementById("terms_panel");
-	TweenLite.to(termsPanel,0.4,{y:-250,ease: Power2.easeOut});
+	TweenLite.to(termsPanel,0.4,{y:-90,ease: Power2.easeOut});
 	showPanel = true;
 }
 

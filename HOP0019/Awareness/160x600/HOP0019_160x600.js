@@ -10,7 +10,7 @@ if(document.addEventListener) {
 function showTerms() {
 	let showPanel = false;
 	const termsPanel = document.getElementById("terms_panel");
-	TweenLite.to(termsPanel,0.4,{y:-250,ease: Power2.easeOut});
+	TweenLite.to(termsPanel,0.4,{y:-600,ease: Power2.easeOut});
 	showPanel = true;
 }
 
@@ -78,7 +78,7 @@ function allDocIsReady() {
 
 	//Frame 4
 	theTimeline.add(new TweenLite.from('#copy7_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-32, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-36, ease:Power2.easeOut}));
 	theTimeline.add(new TweenLite.from('#copy9', 0.5, {opacity:0}));
 
 	theTimeline.add(new TweenLite.from("#checkbox", 0.5, {opacity:0}), "-=1.1");	
