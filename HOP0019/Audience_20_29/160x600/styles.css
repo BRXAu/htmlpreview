@@ -241,8 +241,8 @@ a {
 
 #btn_cta {
     position: absolute;
-    bottom: 28px;
-    left: 12px;
+    bottom: 29px;
+    left: 10px;
     width: 91px;
     height: 26px;
     background: #FFD000;
@@ -250,8 +250,8 @@ a {
 
 #cta_label {
     position: absolute;
-    bottom: 28px;
-    left: 12px;
+    bottom: 29px;
+    left: 10px;
     width: 91px;
     height: 26px;
     pointer-events: none;

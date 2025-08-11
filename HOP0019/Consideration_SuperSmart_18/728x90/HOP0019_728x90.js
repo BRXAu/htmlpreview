@@ -10,7 +10,7 @@ if(document.addEventListener) {
 function showTerms() {
 	let showPanel = false;
 	const termsPanel = document.getElementById("terms_panel");
-	TweenLite.to(termsPanel,0.4,{y:-250,ease: Power2.easeOut});
+	TweenLite.to(termsPanel,0.4,{y:-90,ease: Power2.easeOut});
 	showPanel = true;
 }
 
@@ -63,14 +63,15 @@ function allDocIsReady() {
 	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-49, ease:Power2.easeOut}));
 
 	theTimeline.add(new TweenLite.from("#laptop", 0.5, {opacity:0}), "-=1");
-	theTimeline.add(new TweenLite.to("#laptopHead", 0.45, {width:"70px", height:"46px", clipPath:"polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", ease:Linear.easeNone}))
+	theTimeline.add(new TweenLite.to("#laptopHead", 0.45, {width:"51px", height:"36px", clipPath:"polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", ease:Linear.easeNone}))
 	theTimeline.add(new TweenLite.fromTo("#laptopScreen", 0.45, {
-		width:"63px", height:"41px", y:2, clipPath:"polygon(0px 93.338%, 100% 93.338%, 98.0141% 100%, 3.9718% 100%)"
+		width:"48px", height:"18px", x:-1, y:14, clipPath:"polygon(0px 93.338%, 100% 93.338%, 98.0141% 100%, 3.9718% 100%)"
 	}, 
-	{width:"61px", height:"38px", y:0, clipPath:"polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", ease:Linear.easeNone}), "-=0.45")	
+	{width:"45px", height:"29px", x:0, y:0, clipPath:"polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", ease:Linear.easeNone}), "-=0.45")
 
 	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4_mask', 0.5, {opacity:0}), "+=2");
 	theTimeline.add(new TweenLite.from("#icon", 0.5, {scale:0, ease:Back.easeOut.config(5)}), "-=0.95");
+
 	//Frame 3
 	theTimeline.add(new TweenLite.from('#copy5_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
 	theTimeline.add(new TweenLite.from('#copy6', 0.5, {y:-76, ease:Power2.easeOut}));

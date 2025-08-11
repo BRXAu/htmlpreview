@@ -49,7 +49,7 @@ function allDocIsReady() {
 
 	//Frame 1
 	theTimeline.add(new TweenLite.from('#copy1_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy2', 0.5, {y:-50, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy2', 0.5, {y:-79, ease:Power2.easeOut}));
 
 	arrowTimeline.add(new TweenLite.fromTo('#timeArrow', 1.5, {rotation:-191}, {rotation:0, ease:Power2.easeOut}));
 	arrowTimeline.add(new TweenLite.fromTo('#time2, #time1', 1.5, {rotation:-151}, {rotation:0, ease:Power2.easeOut}), "-=1.5");
@@ -63,11 +63,11 @@ function allDocIsReady() {
 	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-49, ease:Power2.easeOut}));
 
 	theTimeline.add(new TweenLite.from("#laptop", 0.5, {opacity:0}), "-=1");
-	theTimeline.add(new TweenLite.to("#laptopHead", 0.45, {width:"70px", height:"46px", clipPath:"polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", ease:Linear.easeNone}))
+	theTimeline.add(new TweenLite.to("#laptopHead", 0.45, {width:"105px", height:"70px", clipPath:"polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", ease:Linear.easeNone}))
 	theTimeline.add(new TweenLite.fromTo("#laptopScreen", 0.45, {
-		width:"63px", height:"41px", y:2, clipPath:"polygon(0px 93.338%, 100% 93.338%, 98.0141% 100%, 3.9718% 100%)"
+		width:"94px", height:"41px", y:23, clipPath:"polygon(0px 93.338%, 100% 93.338%, 98.0141% 100%, 3.9718% 100%)"
 	}, 
-	{width:"61px", height:"38px", y:0, clipPath:"polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", ease:Linear.easeNone}), "-=0.45")	
+	{width:"93px", height:"58px", y:0, clipPath:"polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", ease:Linear.easeNone}), "-=0.45")	
 
 	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4_mask', 0.5, {opacity:0}), "+=2");
 	theTimeline.add(new TweenLite.from("#icon", 0.5, {scale:0, ease:Back.easeOut.config(5)}), "-=0.95");
@@ -79,7 +79,7 @@ function allDocIsReady() {
 
 	//Frame 4
 	theTimeline.add(new TweenLite.from('#copy7_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-32, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy8', 0.5, {y:-35, ease:Power2.easeOut}));
 	theTimeline.add(new TweenLite.from('#copy9', 0.5, {opacity:0}));
 
 	theTimeline.add(new TweenLite.from("#checkbox", 0.5, {opacity:0}), "-=1.1");	
