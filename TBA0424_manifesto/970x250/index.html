@@ -47,7 +47,7 @@
 
 		#feature_background {
 			height: 210px;
-			width: 440px;
+			width: 410px;
 			position: absolute;
 			top:0px;
 			left: 0px;
@@ -58,7 +58,7 @@
 
 		.feature_background_container {
 			height: 210px;
-			width: 440px;
+			width: 410px;
 			overflow: hidden;
 			position: absolute;
 			top: 20px;
@@ -67,40 +67,40 @@
 
 		#copy1 {
 			position: absolute;
-	    top: 44px;
-	    left: 593px;
+	    top: 74px;
+	    left: 562px;
 	    width: 233px;
-	    height: 19px;
+	    height: 20px;
 		}
 
 		#copy2 {
 			position: absolute;
-	    top: 70px;
-	    left: 593px;
-	    width: 340px;
+	    top: 100px;
+	    left: 562px;
+	    width: 341px;
 	    height: 24px;
 		}
 
 		#copy3 {
 			position: absolute;
-	    top: 104px;
-	    left: 593px;
-	    width: 167px;
+	    top: 74px;
+	    left: 562px;
+	    width: 166px;
 	    height: 24px;
 		}
 
 		#copy4 {
 			position: absolute;
-	    top: 130px;
-	    left: 593px;
+	    top: 100px;
+	    left: 562px;
 	    width: 233px;
 	    height: 20px;
 		}
 
 	 	#btn_cta {
 	  	position: absolute;
-		  top: 172px;
-		  left: 593px;
+		  top: 142px;
+		  left: 562px;
 		  height: 34px;
 		  width: 151px;
 	  }
@@ -177,12 +177,13 @@
 
 			theTimeline.add(new TweenLite.from('#copy1' , 0.7, {opacity:0, x:-5, ease:Power2.easeInOut, delay:0.3}));
 			theTimeline.add(new TweenLite.from('#copy2', 0.7, {opacity:0, x:-5, ease:Power2.easeInOut, delay:-0.35}));
+
+			theTimeline.add(new TweenLite.to('#copy1,#copy2', 0.7, {opacity:0, x:0, ease:Power2.easeInOut, delay:2.2}));
+
 			theTimeline.add(new TweenLite.from('#copy3', 0.7, {opacity:0, x:-5, ease:Power2.easeInOut, delay:-0.35}));
-			// theTimeline.add(new TweenLite.from('#copy4', 0.7, {opacity:0, x:-5, ease:Power2.easeInOut, delay:-0.35}));
 			theTimeline.add(new TweenLite.from('#copy4', 0.7, {opacity:0, x:-5, ease:Power2.easeInOut, delay:-0.35, onComplete:checkLoop}));
 
-			theTimeline.add(new TweenLite.to('#copy1, #copy2, #copy3, #copy4, #copy5 ', 0.3, {opacity:0, delay:2.2, onComplete:restartLoop}));
-			     	
+			theTimeline.add(new TweenLite.to('#copy3, #copy4 ', 0.3, {opacity:0, delay:2.2, onComplete:restartLoop}));			     	
 
 			console.log('t ' + theTimeline.duration())
 
