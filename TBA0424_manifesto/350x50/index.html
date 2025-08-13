@@ -35,24 +35,25 @@
 		#tsd_container {
   			cursor: pointer;
 			background: #ffffff;
-			height: 100px;
+			height: 50px;
 			margin: 0 auto;
 			overflow: hidden;
 			position: relative;
-			width: 320px;
+			width: 350px;
 			display: block;
       		border: 1px solid #B7B9BB;
       		box-sizing: border-box;
 		}
 
 		#feature_background_container {
-			height: 100px;
-			width: 234px;
+			height: 50px;
+			width: 272px;
 			overflow: hidden;
 			position: absolute;
 			top: 0;
 			right: 0;
 		}
+
 		#feature_background {
 			position: absolute;
 			top: 0;
@@ -64,36 +65,36 @@
 		    transform: rotate(0.1deg);
 
 		}
-		#copy1, #copy2, #copy3 {
+		#copy1, #copy2 {
 			position: absolute;
-	    top: 15px;
-	    left: 102px;
-		  height: 68px;
-		  width: 161px;
+	    top: 10px;
+	    left: 77px;
+	    height: 29px;
+	    width: 200px;
 		}
 
 		#copy4, #copy5 {
 			position: absolute;
-			top: 32px;
-    	left: 102px;
-   	 	height: 35px;
-    	width: 175px;
+	    top: 11px;
+	    left: 77px;
+	    height: 27px;
+	    width: 137px;
 		}
 
 		#logo_client {
 			position: absolute;
-	    top: 31px;
+	    top: 16px;
 	    left: 15px;
-	    height: 39px;
-			width: 56px;
+	    height: 18px;
+			width: 48px;
 		}
 
 	 	#btn_cta {
 	    position: absolute;
-	    top: 32px;
+			top: 12px;
 	    right: 13px;
-	    height: 36px;
-			width: 209px;
+  	  height: 26px;
+    	width: 258px;
 	  }
 
 		#logo_client, #copy1, #copy2, #copy3, #copy4, #copy5, #copy6, #copy7 {
@@ -115,7 +116,6 @@
 		<!-- frame 2 elements -->
 	    <img src="./copy1.svg" id="copy1" class="img_svg" />
 	    <img src="./copy2.svg" id="copy2" class="img_svg" />
-	   	<img src="./copy3.svg" id="copy3" class="img_svg" />
 		
 			<!-- frame 3 elements -->
 	    <img src="./copy4.svg" id="copy4" class="img_svg" />
@@ -162,9 +162,8 @@
 
 		//frame 2
 		theTimeline.add(new TweenLite.from('#copy1' , 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}));
-		theTimeline.add(new TweenLite.from('#copy2', 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");
-		theTimeline.add(new TweenLite.from('#copy3', 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");		
-     theTimeline.add(new TweenLite.to('#copy1, #copy2, #copy3', 0.3, {opacity:0}), "+=3.3");
+		theTimeline.add(new TweenLite.from('#copy2', 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");	
+     theTimeline.add(new TweenLite.to('#copy1, #copy2', 0.3, {opacity:0}), "+=3.3");
    		
    	//frame 2
 		theTimeline.add(new TweenLite.from('#copy4' , 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}));
