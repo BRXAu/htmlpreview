@@ -69,15 +69,15 @@
 			position: absolute;
 	    top: 28px;
 	    left: 307px;
-	    width: 152px;
-	    height: 14px;
+	    width: 156px;
+	    height: 18px;
 		}
 
 		#copy2 {
 			position: absolute;
 	    top: 47px;
 	    left: 307px;
-	    width: 215px;
+	    width: 193px;
 	    height: 17px;
 		}
 
@@ -173,7 +173,7 @@
 
 			//frame 1
 			bgTimeline.add(new TweenLite.fromTo('#feature_background' , 0.3, {opacity:0}, {opacity: 1}));
-			bgTimeline.add(new TweenLite.to('#feature_background', 10, {scale: 1.1, y:-2, x:0, rotation:0.1, force3D:true, ease:Linear.easeOut, delay:-0.95}));
+			bgTimeline.add(new TweenLite.to('#feature_background', 10, {scale: 1.1, y:4, x:0, rotation:0.1, force3D:true, ease:Linear.easeOut, delay:-0.95}));
 
 			theTimeline.add(new TweenLite.from('#copy1' , 0.7, {opacity:0, x:-5, ease:Power2.easeInOut, delay:0.3}));
 			theTimeline.add(new TweenLite.from('#copy2', 0.7, {opacity:0, x:-5, ease:Power2.easeInOut, delay:-0.35}));
