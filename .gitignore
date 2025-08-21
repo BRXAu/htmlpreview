@@ -1,0 +1,8 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore folder and contents _archive
+_archive/
+
+# Ignore folder and contents _archive
+_work/
