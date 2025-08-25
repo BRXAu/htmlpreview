@@ -93,7 +93,7 @@ function allDocIsReady() {
 
 			const baseDelay = 0.5;
 			const delayOffset = isFirstRow ? 0 : 0.05;
-			const staggerDelay = rowIndex * 0.02;
+			const staggerDelay = rowIndex * 0.01;
 
 			TweenLite.fromTo(logos, 2, {
 				x:-805, rotation: angle

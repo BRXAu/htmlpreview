@@ -88,12 +88,12 @@ a {
 
 .logo_canstar {
 	position: relative;
-    top: 31px;
-    left: 321px;
+    top: 17px;
+    left: 287px;
     width: 83px;
     height: 89px;
-    padding: 0.05em 0em 0.03em 0em;
-    transform-origin: center 55px;
+    padding: 0.5em 0.45em 0.5em 0.45em;
+    transform-origin: center 65px;
 }
 
 /*FRAME 2*/
