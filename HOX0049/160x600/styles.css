@@ -1,0 +1,188 @@
+/*© Big Red Communications Group Pty Ltd 2025. All Rights Reserved.
+You may not copy, reproduce or communicate any of the contents of this file without the permission of the copyright owner.*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-transform: translate3D(0,0,0);
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+#theCanvas {
+	width: 160px;
+	height: 600px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #002855;
+}
+
+#the_keyline {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	border: 1px solid #000000;
+	padding: 0px;
+	height: 600px;
+	width: 160px;
+	box-sizing: border-box;
+}
+
+#the_blind {
+	position:absolute;
+	top: 1px;
+	left: 1px;
+	width: 298px;
+	height: 598px;
+	background: #002855;
+	z-index: 3;
+}
+
+#logo_hostplus {
+	position: absolute;
+    top: 10px;
+    left: 19px;
+    width: 122px;
+    height: 50px;
+}
+
+/*FRAME 1*/
+
+#graphSVG {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 160px;
+	height: 600px;
+}
+
+#graph_mask {
+	position: absolute;
+	top: 138px;
+	left:-5px;
+	width: 322px;
+	height: 336px;
+	overflow: hidden;
+}
+
+#imgGraphFill {
+	position: absolute;
+    top: 29px;
+    left: 0;
+    width: 176px;
+    height: 276px;
+}
+
+#copy1_mask {
+	position: absolute;
+	top: 93px;
+	left: 14px;
+	width: 122px;
+	height: 65px;
+	overflow: hidden;
+}
+
+#copy1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 122px;
+	height: 65px;
+}
+
+#copy2_mask {
+	position: absolute;
+	top: 162px;
+	left: 15px;
+	width: 104px;
+	height: 41px;
+	overflow: hidden;
+}
+
+#copy2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 104px;
+    height: 41px;
+}
+
+/*FRAME 2*/
+
+#imgPhone {
+	position: absolute;
+	top: 238px;
+    left: 10px;
+    width: 113px;
+    height: 223px;
+}
+
+#copy3_mask {
+	position: absolute;
+	top: 93px;
+	left: 14px;
+	width: 111px;
+	height: 87px;
+	overflow: hidden;
+}
+
+#copy3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 111px;
+	height: 87px;
+}
+
+#copy4_mask {
+	position: absolute;
+	top: 185px;
+	left: 15px;
+	width: 89px;
+	height: 41px;
+	overflow: hidden;
+}
+
+#copy4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 89px;
+    height: 41px;
+}
+
+/*FRAME 3*/
+
+#copy_disclaimer {
+	position: absolute;
+    bottom: 7px;
+    left: 10px;
+    width: 138px;
+    height: 84px;
+}
+
+#btn_cta {
+    position: absolute;
+    top: 471px;
+    left: 11px;
+    width: 139px;
+    height: 27px;
+    background: #FFD000;
+}
+
+#cta_label {
+    position: absolute;
+    top: 471px;
+    left: 11px;
+    width: 139px;
+    height: 27px;
+    pointer-events: none;
+}
+
+.img_svg {
+	background-color: rgba(0,0,0,0);
+}
