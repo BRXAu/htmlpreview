@@ -3,9 +3,9 @@
 <head>
 	<!-- © Big Red Communications Group Pty Ltd 2025. All Rights Reserved.
 	You may not copy, reproduce or communicate any of the contents of this file without the permission of the copyright owner. -->
-	<title>300x600</title>
+	<title>970x250</title>
 	<meta charset="utf-8">
-	<meta name="ad.size" content="width=300,height=600">
+	<meta name="ad.size" content="width=970,height=250">
 	<!-- <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script> -->
 	<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.5_23b0de6da0ee295131e32a500470610c_min.js"></script>
 
@@ -33,25 +33,25 @@
 			background: #ffffff;
 		}
 		#tsd_container {
-  		cursor: pointer;
+  			cursor: pointer;
 			background: #ffffff;
-			height: 600px;
+			height: 250px;
 			margin: 0 auto;
 			overflow: hidden;
 			position: relative;
-			width: 300px;
+			width: 970px;
 			display: block;
      	border: 1px solid #B7B9BB;
       box-sizing: border-box;
 		}
 
 		#feature_background_container {
-	    height: 310px;
-	    width: 260px;
+	    height: 210px;
+	    width: 410px;
 	    overflow: hidden;
 	    position: absolute;
     	top: 20px;
-    	right: 18px;
+    	left: 20px;
 		}
 
 		#feature_background {
@@ -67,53 +67,53 @@
 		}
 		#copy1, #copy2 {
 			position: absolute;
-			top: 354px;
-    	left: 20px;
-    	height: 41px;
-    	width: 183px;
+	    top: 64px;
+	    left: 460px;
+	    height: 62px;
+	    width: 279px;
 		}
 
-		#copy3, #copy4, #copy4_1, #copy4_2 {
+		#copy3, #copy4 {
 			position: absolute;
-	    top: 354px;
-	    left: 20px;
-	    height: 86px;
-	    width: 165px;
+	    top: 64px;
+	    left: 460px;
+	    height: 69px;
+	    width: 461px;
 		}
 
 		#copy5, #copy6 {
 			position: absolute;
-	    top: 354px;
-	    left: 20px;
-	    height: 40px;
-	    width: 191px;
+	    top: 64px;
+	    left: 460px;
+	    height: 67px;
+	    width: 318px;
 		}
 
 		#copy7, #copy8 {
 			position: absolute;
-	    top: 354px;
-	    left: 20px;
-	    height: 43px;
-	    width: 258px;
+	    top: 64px;
+	    left: 460px;
+	    height: 67px;
+	    width: 393px;
 		}				
 
 		#logo_client {
 			position: absolute;
 	    bottom: 18px;
-	    left: 20px;
+	    left: 460px;
 	    height: 30px;
-	    width: 261px;
+	    width: 215px;
 		}
 
 	 	#btn_cta {
 	    position: absolute;
-			top: 493px;
-    	left: 20px;
-    	height: 32px;
-    	width: 155px;
+	    bottom: 17px;
+	    right: 18px;
+	    height: 32px;
+	    width: 152px;
 	  }
 
-		#logo_client, #copy1, #copy2, #copy3, #copy4, #copy4_1, #copy4_2, #copy5, #copy6, #copy7, #copy8 {
+		#logo_client, #copy1, #copy2, #copy3, #copy4, #copy5, #copy6, #copy7, #copy8 {
 		  	background: rgba(0,0,0,0);
 		}
 
@@ -135,8 +135,6 @@
 			<!-- frame 2 elements -->
 			<img src="./copy3.svg" id="copy3" class="img_svg" />			
 	    <img src="./copy4.svg" id="copy4" class="img_svg" />
-	    <img src="./copy4_1.svg" id="copy4_1" class="img_svg" />
-	    <img src="./copy4_2.svg" id="copy4_2" class="img_svg" />
 
 	    <!-- frame 3 elements -->
 	    <img src="./copy5.svg" id="copy5" class="img_svg" />
@@ -150,8 +148,8 @@
    	  <img src="./btn_cta.svg" id="btn_cta" class="img_svg" />
 	    <!-- Blind -->
 	    <div id="the_blind"></div>
-		</div>
-	</a>
+	</div>
+</a>
 
 	<script>
 
@@ -183,7 +181,7 @@
 
 		//frame 1
 		bgTimeline.add( new TweenLite.fromTo('#feature_background' , 0.3, {opacity:0}, {opacity: 1}));
-		bgTimeline.add( new TweenLite.fromTo('#feature_background', 12.9, {opacity:0, scale:1, y:0}, {scale: 1.08, y:-8, rotation:0.1, force3D:true, ease: Linear.easeOut}), "-=0.95");
+		bgTimeline.add( new TweenLite.fromTo('#feature_background', 12.4, {opacity:0, scale:1, y:0}, {scale: 1.08, y:-8, rotation:0.1, force3D:true, ease: Linear.easeOut}), "-=0.95");
 
 		theTimeline.add(new TweenLite.from('#copy1' , 0.7, {opacity:0, x:-5, ease:Power2.easeInOut}), "+=0.3");
 		theTimeline.add(new TweenLite.from('#copy2', 0.7, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");
@@ -193,10 +191,8 @@
    	//frame 2
 		theTimeline.add(new TweenLite.from('#copy3' , 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}));
 		theTimeline.add(new TweenLite.from('#copy4', 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");
-		theTimeline.add(new TweenLite.from('#copy4_1', 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");
-		theTimeline.add(new TweenLite.from('#copy4_2', 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");
 
-    theTimeline.add(new TweenLite.to('#copy3, #copy4, #copy4_1, #copy4_2', 0.3, {opacity:0}), "+=3.2");
+    theTimeline.add(new TweenLite.to('#copy3, #copy4', 0.3, {opacity:0}), "+=3.2");
 
    	//frame 3
 		theTimeline.add(new TweenLite.from('#copy5' , 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}));
