@@ -3,7 +3,7 @@
 <head>
 	<!-- © Big Red Communications Group Pty Ltd 2025. All Rights Reserved.
 	You may not copy, reproduce or communicate any of the contents of this file without the permission of the copyright owner. -->
-	<title>300x250</title>
+	<title>300x600</title>
 	<meta charset="utf-8">
 	<meta name="ad.size" content="width=180,height=150">
 	<!-- <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script> -->
@@ -35,7 +35,7 @@
 		#tsd_container {
   			cursor: pointer;
 			background: #ffffff;
-			height: 250px;
+			height: 600px;
 			margin: 0 auto;
 			overflow: hidden;
 			position: relative;
@@ -181,7 +181,7 @@
 
 		//frame 1
 		bgTimeline.add( new TweenLite.fromTo('#feature_background' , 0.3, {opacity:0}, {opacity: 1}));
-		bgTimeline.add( new TweenLite.fromTo('#feature_background', 12.4, {opacity:0, scale:1, y:0}, {scale: 1.08, y:-8, rotation:0.1, force3D:true, ease: Linear.easeOut}), "-=0.95");
+		bgTimeline.add( new TweenLite.fromTo('#feature_background', 10, {opacity:0, scale:1, y:0}, {scale: 1.08, y:-8, rotation:0.1, force3D:true, ease: Linear.easeOut}), "-=0.95");
 
 		theTimeline.add(new TweenLite.from('#copy1' , 0.7, {opacity:0, x:-5, ease:Power2.easeInOut}), "+=0.3");
 		theTimeline.add(new TweenLite.from('#copy2', 0.7, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");
@@ -192,7 +192,7 @@
 		theTimeline.add(new TweenLite.from('#copy3' , 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}));
 		theTimeline.add(new TweenLite.from('#copy4', 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");
 
-    theTimeline.add(new TweenLite.to('#copy3, #copy4', 0.3, {opacity:0}), "+=3.2");
+    theTimeline.add(new TweenLite.to('#copy3, #copy4', 0.3, {opacity:0}), "+=2.2");
 
    	//frame 3
 		theTimeline.add(new TweenLite.from('#copy5' , 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}));
