@@ -1,0 +1,228 @@
+
+<html>
+<head>
+	<!-- © Big Red Communications Group Pty Ltd 2025. All Rights Reserved.
+	You may not copy, reproduce or communicate any of the contents of this file without the permission of the copyright owner. -->
+	<title>300x250</title>
+	<meta charset="utf-8">
+	<meta name="ad.size" content="width=180,height=150">
+	<!-- <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script> -->
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.5_23b0de6da0ee295131e32a500470610c_min.js"></script>
+
+	<script type="text/javascript">
+		var clickTag = "http://www.google.com";
+	</script>
+
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			color: #fff;
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+		#the_blind {
+			position:absolute;
+			top:0px;
+			left: 0px;
+			width:100%;
+			height:100%;
+			background: #ffffff;
+		}
+		#tsd_container {
+  			cursor: pointer;
+			background: #ffffff;
+			height: 250px;
+			margin: 0 auto;
+			overflow: hidden;
+			position: relative;
+			width: 300px;
+			display: block;
+     	border: 1px solid #B7B9BB;
+      box-sizing: border-box;
+		}
+
+		#feature_background_container {
+	    height: 110px;
+	    width: 270px;
+	    overflow: hidden;
+	    position: absolute;
+    	top: 15px;
+    	right: 15px;
+		}
+
+		#feature_background {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width:100%;
+			height:100%;
+			-ms-transform: rotate(0.1deg); /* IE 9 */
+		    -webkit-transform: rotate(0.1deg); /* Chrome, Safari, Opera */
+		    transform: rotate(0.1deg);
+
+		}
+		#copy1, #copy2 {
+			position: absolute;
+			top: 139px;
+    	left: 12px;
+    	height: 37px;
+    	width: 165px;
+		}
+
+		#copy3, #copy4 {
+			position: absolute;
+	    top: 139px;
+	    left: 12px;
+	    height: 40px;
+	    width: 267px;
+		}
+
+		#copy5, #copy6 {
+			position: absolute;
+	    top: 139px;
+	    left: 12px;
+	    height: 40px;
+	    width: 191px;
+		}
+
+		#copy7, #copy8 {
+			position: absolute;
+	    top: 139px;
+	    left: 12px;
+	    height: 40px;
+	    width: 236px;
+		}				
+
+		#logo_client {
+			position: absolute;
+			bottom: 12px;
+    	left: 12px;
+    	height: 18px;
+    	width: 128px;
+		}
+
+	 	#btn_cta {
+	    position: absolute;
+	    bottom: 10px;
+	    right: 10px;
+	    height: 22px;
+	    width: 106px;
+	  }
+
+		#logo_client, #copy1, #copy2, #copy3, #copy4, #copy5, #copy6, #copy7, #copy8 {
+		  	background: rgba(0,0,0,0);
+		}
+
+	</style>
+</head>
+
+<body>
+	<a href="javascript:window.open(window.clickTag)">
+  <div id="tsd_container">
+
+	    <div id='feature_background_container'>
+		    <img src="./feature_background.jpg" id="feature_background" />
+			</div>
+
+			<!-- frame 1 elements -->
+	    <img src="./copy1.svg" id="copy1" class="img_svg" />
+	    <img src="./copy2.svg" id="copy2" class="img_svg" /> 
+		
+			<!-- frame 2 elements -->
+			<img src="./copy3.svg" id="copy3" class="img_svg" />			
+	    <img src="./copy4.svg" id="copy4" class="img_svg" />
+
+	    <!-- frame 3 elements -->
+	    <img src="./copy5.svg" id="copy5" class="img_svg" />
+	    <img src="./copy6.svg" id="copy6" class="img_svg" />
+
+	    <!-- frame 3 elements -->
+	    <img src="./copy7.svg" id="copy7" class="img_svg" />
+	    <img src="./copy8.svg" id="copy8" class="img_svg" />	    
+
+	    <img src="./logo_client.svg" id="logo_client" class="img_svg" />
+   	  <img src="./btn_cta.svg" id="btn_cta" class="img_svg" />
+	    <!-- Blind -->
+	    <div id="the_blind"></div>
+	</div>
+</a>
+
+	<script>
+
+  if(document.addEventListener) {
+    window.addEventListener( "load", allDocIsReady, false )
+  } else {
+    window.attachEvent('onload', allDocIsReady);
+  }
+	
+  function swapCta(evt){
+    document.getElementById(evt.target.id).src = "btn_cta_hover.svg";
+  }
+  function swapCtaBack(evt){
+    document.getElementById(evt.target.id).src = "btn_cta.svg";
+  }
+
+  function allDocIsReady() {
+    //listeners
+    document.getElementById('btn_cta').addEventListener('mouseover', swapCta, false);
+    document.getElementById('btn_cta').addEventListener('mouseout', swapCtaBack, false);
+
+	  //vars
+	  var looper = 0;
+	   	
+	  var theTimeline = new TimelineMax();
+	  var bgTimeline = new TimelineLite();
+	  TweenLite.set('#feature_background', {rotation:0.1});
+		TweenLite.set('#the_blind', {opacity:0, scale:0.01});
+
+		//frame 1
+		bgTimeline.add( new TweenLite.fromTo('#feature_background' , 0.3, {opacity:0}, {opacity: 1}));
+		bgTimeline.add( new TweenLite.fromTo('#feature_background', 10, {opacity:0, scale:1, y:0}, {scale: 1.08, y:-8, rotation:0.1, force3D:true, ease: Linear.easeOut}), "-=0.95");
+
+		theTimeline.add(new TweenLite.from('#copy1' , 0.7, {opacity:0, x:-5, ease:Power2.easeInOut}), "+=0.3");
+		theTimeline.add(new TweenLite.from('#copy2', 0.7, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");
+
+    theTimeline.add(new TweenLite.to('#copy1, #copy2', 0.3, {opacity:0}), "+=2.2");
+   		
+   	//frame 2
+		theTimeline.add(new TweenLite.from('#copy3' , 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}));
+		theTimeline.add(new TweenLite.from('#copy4', 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");
+
+    theTimeline.add(new TweenLite.to('#copy3, #copy4', 0.3, {opacity:0}), "+=2.2");
+
+   	//frame 3
+		theTimeline.add(new TweenLite.from('#copy5' , 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}));
+		theTimeline.add(new TweenLite.from('#copy6', 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");
+
+    theTimeline.add(new TweenLite.to('#copy5, #copy6', 0.3, {opacity:0}), "+=2.2");
+
+   	//frame 3
+		theTimeline.add(new TweenLite.from('#copy7' , 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}));
+		theTimeline.add(new TweenLite.from('#copy8', 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");  
+
+		console.log('t ' + theTimeline.duration())
+		
+		function pause() {
+			theTimeline.stop()
+		}
+
+      	//looping
+      	function checkLoop(){
+           if (looper > 0){
+             theTimeline.stop();
+	       } else {
+	       	looper++;
+	       }
+	    }
+      function restartLoop(){
+         theTimeline.restart();
+      }
+  }
+
+	</script>
+</body>
+</html>

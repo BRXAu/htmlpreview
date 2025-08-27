@@ -71,7 +71,7 @@ function allDocIsReady() {
 	theTimeline.add(new TweenLite.from("#laptop", 0.5, {opacity:0}), "-=1");
 	theTimeline.add(new TweenLite.to("#laptopHead", 0.45, {width:"70px", height:"46px", clipPath:"polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", ease:Linear.easeNone}))
 	theTimeline.add(new TweenLite.fromTo("#laptopScreen", 0.45, {
-		width:"63px", height:"41px", x:1, y:0, clipPath:"polygon(0px 96.338%, 100% 96.338%, 98.0141% 100%, 3.9718% 100%)"
+		width:"63px", height:"41px", x:0.5, y:0, clipPath:"polygon(0px 96.338%, 100% 96.338%, 98.0141% 100%, 3.9718% 100%)"
 	}, 
 	{width:"63px", height:"38px", x:0, y:0, clipPath:"polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)", ease:Linear.easeNone}), "-=0.45")	
 
