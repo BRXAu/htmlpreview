@@ -105,6 +105,14 @@
 			width: 82px;
 		}
 
+		#logo_overlay {
+	    position: absolute;
+	    top: 2px;
+	    left: 10px;
+	    width: 40px;
+	    height: 42px;	
+		}
+
 	 	#btn_cta {
 	    position: absolute;
 			top: 12px;
@@ -113,7 +121,7 @@
     	width: 258px;
 	  }
 
-		#logo_client, #copy1, #copy2, #copy3, #copy4, #copy5, #copy6, #copy7, #copy8 {
+		#logo_client, #copy1, #copy2, #copy3, #copy4, #copy5, #copy6, #copy7, #copy8, #logo_overlay {
 		  	background: rgba(0,0,0,0);
 		}
 
@@ -128,6 +136,8 @@
 	    <div id='feature_background_container'>
 		    <img src="./feature_background.jpg" id="feature_background" />
 			</div>
+
+			<img src="./logo_overlay.svg" id="logo_overlay" class="img_svg" />
 
 			<!-- frame 2 elements -->
 	    <img src="./copy1.svg" id="copy1" class="img_svg" />
@@ -180,9 +190,9 @@
 			TweenLite.set('#the_blind', {opacity:0, scale:0.01});
 
 			//frame 1
-			theTimeline.add( new TweenLite.fromTo('#feature_background' , 0.3, {opacity:0}, {opacity: 1}));
-			theTimeline.add( new TweenLite.fromTo('#feature_background', 1.8, {opacity:0, scale:1}, {scale: 1.03, rotation:0.1, force3D:true, ease: Linear.easeOut, delay:-0.3}));
-			theTimeline.add(new TweenLite.to('#feature_background', 0.3, {opacity:0}));
+			theTimeline.add( new TweenLite.fromTo('#feature_background, #logo_overlay' , 0.3, {opacity:0}, {opacity: 1}));
+			theTimeline.add( new TweenLite.fromTo('#feature_background', 1.8, {opacity:0, scale:1}, {scale: 1.03, rotation:0.1, force3D:true, ease: Linear.easeOut}), "-=0.3");
+			theTimeline.add(new TweenLite.to('#feature_background, #logo_overlay', 0.3, {opacity:0}));
 
 			//frame 2
 			theTimeline.add(new TweenLite.from('#copy1' , 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}));
