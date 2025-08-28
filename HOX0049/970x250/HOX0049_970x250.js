@@ -40,7 +40,7 @@ function allDocIsReady() {
 
 	//Frame 2
   	theTimeline.add(new TweenLite.to('#graphSVG, #graph_mask', 0.5, {filter:"blur(2px)"}), "+=0.5")
-	theTimeline.add(new TweenLite.from("#imgPhone", 0.5, {y:-5, opacity:0, ease:Back.easeOut}))
+	theTimeline.add(new TweenLite.fromTo("#imgPhone", 0.5, {y:535}, {y:0, ease:Back.easeOut.config(0.50)}))
 
 	//Frame 3
 	theTimeline.add(new TweenLite.to('#copy1_mask, #copy2_mask', 0.5, {opacity:0}), "+=0.5");	
@@ -48,7 +48,7 @@ function allDocIsReady() {
 	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-61, ease:Power2.easeOut, onComplete:checkLoop}));
 
 	//loop
-	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4, #imgPhone, #graphSVG, #graph_mask', 0.5, {opacity:0, onComplete:restartTimeline}), "+=1")	
+	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4, #imgPhone, #graphSVG, #graph_mask', 0.5, {opacity:0, onComplete:restartTimeline}), "+=1");	
 	
 	console.log('t ' + theTimeline.duration())
 

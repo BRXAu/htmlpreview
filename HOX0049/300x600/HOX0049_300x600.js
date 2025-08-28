@@ -38,7 +38,7 @@ function allDocIsReady() {
 
 	//Frame 2
   	theTimeline.add(new TweenLite.to('#graphSVG, #graph_mask', 0.5, {filter:"blur(2px)"}), "+=0.5")
-	theTimeline.add(new TweenLite.from("#imgPhone", 0.5, {y:-5, opacity:0, ease:Back.easeOut}))
+	theTimeline.add(new TweenLite.from("#imgPhone", 0.5, {x:300, opacity:0, ease:Back.easeOut}))
 
 	//Frame 3
 	theTimeline.add(new TweenLite.to('#copy1_mask, #copy2_mask', 0.5, {opacity:0}), "+=0.5");	
