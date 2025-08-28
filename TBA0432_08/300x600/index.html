@@ -105,6 +105,14 @@
 	    width: 261px;
 		}
 
+		#logo_overlay {
+			position: absolute;
+	    top: 22px;
+	    left: 22px;
+	    width: 64px;
+	    height: 67px;
+		}		
+
 	 	#btn_cta {
 	    position: absolute;
 			top: 493px;
@@ -127,6 +135,8 @@
 	    <div id='feature_background_container'>
 		    <img src="./feature_background.jpg" id="feature_background" />
 			</div>
+
+			<img src="./logo_overlay.svg" id="logo_overlay" class="img_svg" />
 
 			<!-- frame 1 elements -->
 	    <img src="./copy1.svg" id="copy1" class="img_svg" />
@@ -183,7 +193,7 @@
 
 		//frame 1
 		bgTimeline.add( new TweenLite.fromTo('#feature_background' , 0.3, {opacity:0}, {opacity: 1}));
-		bgTimeline.add( new TweenLite.fromTo('#feature_background', 12.9, {opacity:0, scale:1, y:0}, {scale: 1.08, y:-8, rotation:0.1, force3D:true, ease: Linear.easeOut}), "-=0.95");
+		bgTimeline.add( new TweenLite.fromTo('#feature_background', 12.9, {opacity:0, scale:1, y:0}, {scale: 1.2, y:1, rotation:0.1, force3D:true, ease: Linear.easeOut}), "-=0.95");
 
 		theTimeline.add(new TweenLite.from('#copy1' , 0.7, {opacity:0, x:-5, ease:Power2.easeInOut}), "+=0.3");
 		theTimeline.add(new TweenLite.from('#copy2', 0.7, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");
@@ -204,7 +214,7 @@
 
     theTimeline.add(new TweenLite.to('#copy5, #copy6', 0.3, {opacity:0}), "+=2.2");
 
-   	//frame 3
+   	//frame 4
 		theTimeline.add(new TweenLite.from('#copy7' , 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}));
 		theTimeline.add(new TweenLite.from('#copy8', 0.6, {opacity:0, x:-5, ease:Power2.easeInOut}), "-=0.35");  
 
