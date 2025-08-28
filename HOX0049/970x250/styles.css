@@ -63,19 +63,19 @@ a {
 
 #graph_mask {
 	position: absolute;
-    top: -27px;
-    left: 397px;
-    width: 387px;
-    height: 361px;
+	top: -18px;
+	left: 481px;
+	width: 303px;
+	height: 279px;
 	overflow: hidden;
 }
 
 #imgGraphFill {
 	position: absolute;
-    top: 0;
-    left: 0;
-    width: 387px;
-    height: 361px;
+	top: 0;
+	left: 0;
+	width: 303px;
+	height: 275px;
 }
 
 #copy1_mask {
