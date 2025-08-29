@@ -46,8 +46,7 @@ function allDocIsReady() {
 	theTimeline.add(new TweenLite.fromTo('#copy4', 0.5, {y:-61}, {y:0, ease:Power2.easeOut}));
 
 	//Frame 4
-	theTimeline.add(new TweenLite.fromTo('#copy5', 0.5, {opacity:0}, {opacity:1}), "+=1");
-	theTimeline.add(new TweenLite.fromTo('#btn_cta, #cta_label', 0.5, {opacity:0}, {opacity:1})); //, onComplete:checkLoop
+	theTimeline.add(new TweenLite.fromTo('#copy5, #btn_cta, #cta_label', 0.5, {opacity:0}, {opacity:1}), "+=1"); //, onComplete:checkLoop
 
 	//loop
 	//theTimeline.add(new TweenLite.to('#copy3_mask, #copy4, #copy5, #btn_cta, #imgPhone, #graphSVG, #graph_mask', 0.5, {opacity:0, onComplete:restartTimeline}), "+=1")
