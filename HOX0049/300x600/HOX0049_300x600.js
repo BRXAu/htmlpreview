@@ -37,8 +37,8 @@ function allDocIsReady() {
 	theTimeline.add(new TweenLite.to('#graph_mask', 0.9, {width:"105%", ease:Linear.easeNone}), "<+0.6");  	
 
 	//Frame 2
-  	theTimeline.add(new TweenLite.to('#graphSVG, #graph_mask', 0.5, {filter:"blur(2px)"}), "+=0.5")
-	theTimeline.add(new TweenLite.fromTo("#imgPhone", 0.5, {x:300}, {x:0, ease:Back.easeOut}))
+  	theTimeline.add(new TweenLite.to('#graphSVG, #graph_mask', 0.5, {filter:"blur(2px)"}))
+	theTimeline.add(new TweenLite.fromTo("#imgPhone", 0.5, {x:300}, {x:0, ease:Back.easeOut}), "-=0.25")
 
 	//Frame 3
 	theTimeline.add(new TweenLite.to('#copy1_mask, #copy2_mask', 0.5, {opacity:0}), "+=0.5");	
