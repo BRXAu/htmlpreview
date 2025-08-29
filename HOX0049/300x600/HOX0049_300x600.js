@@ -28,8 +28,8 @@ function allDocIsReady() {
 
 	
 	//Frame 1
-	theTimeline.add(new TweenLite.from('#copy1_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy2', 0.5, {y:-62, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.fromTo('#copy1_mask', 0.5, {width:'0px'}, {width:'235px', ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.fromTo('#copy2', 0.5, {y:-62}, {y:0, ease:Power2.easeOut}));
 
 	theTimeline.add(new TweenLite.fromTo("#graph", 2, {drawSVG: "100% 100%"}, {drawSVG: "100% 0%", ease:Linear.easeNone}), "-=1"); 
 	theTimeline.add(new TweenLite.fromTo('#graph_mask', 0.6, {width:"0px"}, {width:"30%", ease:Linear.easeNone}), "<-0.1");
@@ -38,16 +38,18 @@ function allDocIsReady() {
 
 	//Frame 2
   	theTimeline.add(new TweenLite.to('#graphSVG, #graph_mask', 0.5, {filter:"blur(2px)"}), "+=0.5")
-	theTimeline.add(new TweenLite.from("#imgPhone", 0.5, {x:300, opacity:0, ease:Back.easeOut}))
+	theTimeline.add(new TweenLite.fromTo("#imgPhone", 0.5, {x:300}, {x:0, ease:Back.easeOut}))
 
 	//Frame 3
 	theTimeline.add(new TweenLite.to('#copy1_mask, #copy2_mask', 0.5, {opacity:0}), "+=0.5");	
 	theTimeline.add(new TweenLite.from('#copy3_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
 	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-61, ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#btn_cta, #cta_label', 0.5, {opacity:0, onComplete:checkLoop}));
+
+	theTimeline.add(new TweenLite.fromTo("#copy5, #btn_cta, #cta_label", 0.5, {opacity:0}, {opacity:1}), "+=1");
+	//theTimeline.add(new TweenLite.from('#btn_cta, #cta_label', 0.5, {opacity:0})); //, onComplete:checkLoop
 
 	//loop
-	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4, #btn_cta, #imgPhone, #graphSVG, #graph_mask', 0.5, {opacity:0, onComplete:restartTimeline}), "+=1");
+	//theTimeline.add(new TweenLite.to('#copy3_mask, #copy4, #btn_cta, #imgPhone, #graphSVG, #graph_mask', 0.5, {opacity:0, onComplete:restartTimeline}), "+=1");
 	
 	console.log('t ' + theTimeline.duration())
 

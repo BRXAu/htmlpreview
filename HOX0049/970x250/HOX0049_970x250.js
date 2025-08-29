@@ -45,10 +45,11 @@ function allDocIsReady() {
 	//Frame 3
 	theTimeline.add(new TweenLite.to('#copy1_mask, #copy2_mask', 0.5, {opacity:0}), "+=0.5");	
 	theTimeline.add(new TweenLite.from('#copy3_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-61, ease:Power2.easeOut, onComplete:checkLoop}));
+	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-61, ease:Power2.easeOut})); //, onComplete:checkLoop
+	theTimeline.add(new TweenLite.from('#copy5, #btn_cta', 0.5, {opacity:0}), "+=1")
 
 	//loop
-	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4, #imgPhone, #graphSVG, #graph_mask', 0.5, {opacity:0, onComplete:restartTimeline}), "+=1");	
+	//theTimeline.add(new TweenLite.to('#copy3_mask, #copy4, #imgPhone, #graphSVG, #graph_mask', 0.5, {opacity:0, onComplete:restartTimeline}), "+=1");	
 	
 	console.log('t ' + theTimeline.duration())
 

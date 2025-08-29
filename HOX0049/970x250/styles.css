@@ -80,10 +80,10 @@ a {
 
 #copy1_mask {
 	position: absolute;
-	top: 47px;
+	top: 34px;
 	left: 15px;
-	width: 367px;
-	height: 80px;
+	width: 302px;
+	height: 66px;
 	overflow: hidden;
 }
 
@@ -91,16 +91,16 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 367px;
-	height: 80px;
+	width: 302px;
+	height: 66px;
 }
 
 #copy2_mask {
 	position: absolute;
-	top: 134px;
-	left: 14px;
-	width: 315px;
-	height: 36px;
+	top: 105px;
+	left: 17px;
+	width: 255px;
+	height: 30px;
 	overflow: hidden;
 }
 
@@ -108,8 +108,8 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-    width: 315px;
-    height: 36px;
+	width: 255px;
+	height: 30px;
 }
 
 /*FRAME 2*/
@@ -124,10 +124,10 @@ a {
 
 #copy3_mask {
 	position: absolute;
-	top: 47px;
+	top: 33px;
 	left: 15px;
-	width: 405px;
-	height: 80px;
+	width: 335px;
+	height: 66px;
 	overflow: hidden;
 }
 
@@ -135,16 +135,16 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 405px;
-	height: 80px;
+	width: 335px;
+	height: 66px;
 }
 
 #copy4_mask {
 	position: absolute;
-	top: 134px;
+	top: 103px;
 	left: 16px;
-	width: 269px;
-	height: 36px;
+	width: 221px;
+	height: 30px;
 	overflow: hidden;
 }
 
@@ -152,8 +152,16 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 269px;
-    height: 36px;
+    width: 221px;
+    height: 30px;
+}
+
+#copy5 {
+	position: absolute;
+    top: 170px;
+    left: 15px;
+    width: 251px;
+    height: 27px;
 }
 
 /*FRAME 3*/

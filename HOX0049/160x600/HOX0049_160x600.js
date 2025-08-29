@@ -42,12 +42,15 @@ function allDocIsReady() {
 
 	//Frame 3
 	theTimeline.add(new TweenLite.to('#copy1_mask, #copy2_mask', 0.5, {opacity:0}), "+=0.5");	
-	theTimeline.add(new TweenLite.fromTo('#copy3_mask', 0.5, {width:'0px'}, {width: '111px', ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.fromTo('#copy3_mask', 0.5, {width:'0px'}, {width: '128px', ease:Power2.easeOut}));
 	theTimeline.add(new TweenLite.fromTo('#copy4', 0.5, {y:-61}, {y:0, ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.fromTo('#btn_cta, #cta_label', 0.5, {opacity:0}, {opacity:1, onComplete:checkLoop}));
+
+	//Frame 4
+	theTimeline.add(new TweenLite.fromTo('#copy5', 0.5, {opacity:0}, {opacity:1}), "+=1");
+	theTimeline.add(new TweenLite.fromTo('#btn_cta, #cta_label', 0.5, {opacity:0}, {opacity:1})); //, onComplete:checkLoop
 
 	//loop
-	theTimeline.add(new TweenLite.to('#copy3_mask, #copy4, #btn_cta, #imgPhone, #graphSVG, #graph_mask', 0.5, {opacity:0, onComplete:restartTimeline}), "+=1")
+	//theTimeline.add(new TweenLite.to('#copy3_mask, #copy4, #copy5, #btn_cta, #imgPhone, #graphSVG, #graph_mask', 0.5, {opacity:0, onComplete:restartTimeline}), "+=1")
 	
 	console.log('t ' + theTimeline.duration())
 

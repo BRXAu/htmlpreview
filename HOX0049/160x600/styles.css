@@ -54,7 +54,7 @@ a {
 
 #graphSVG {
 	position: absolute;
-	top: 0;
+	top: 28px;
 	left: 0;
 	width: 160px;
 	height: 600px;
@@ -62,7 +62,7 @@ a {
 
 #graph_mask {
 	position: absolute;
-	top: 138px;
+	top: 165px;
 	left:-5px;
 	width: 322px;
 	height: 336px;
@@ -79,10 +79,10 @@ a {
 
 #copy1_mask {
 	position: absolute;
-	top: 93px;
-	left: 14px;
-	width: 122px;
-	height: 65px;
+	top: 92px;
+	left: 13px;
+	width: 102px;
+	height: 54px;
 	overflow: hidden;
 }
 
@@ -90,16 +90,16 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 122px;
-	height: 65px;
+	width: 102px;
+	height: 54px;
 }
 
 #copy2_mask {
 	position: absolute;
-	top: 162px;
+	top: 151px;
 	left: 15px;
-	width: 104px;
-	height: 41px;
+	width: 86px;
+	height: 34px;
 	overflow: hidden;
 }
 
@@ -107,8 +107,8 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-    width: 104px;
-    height: 41px;
+	width: 86px;
+	height: 34px;
 }
 
 /*FRAME 2*/
@@ -125,8 +125,8 @@ a {
 	position: absolute;
 	top: 93px;
 	left: 14px;
-	width: 111px;
-	height: 87px;
+	width: 128px;
+	height: 54px;
 	overflow: hidden;
 }
 
@@ -134,16 +134,16 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 111px;
-	height: 87px;
+	width: 128px;
+	height: 54px;
 }
 
 #copy4_mask {
 	position: absolute;
-	top: 185px;
-	left: 15px;
-	width: 89px;
-	height: 41px;
+	top: 151px;
+	left: 13px;
+	width: 117px;
+	height: 16px;
 	overflow: hidden;
 }
 
@@ -151,8 +151,16 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 89px;
-    height: 41px;
+    width: 117px;
+    height: 16px;
+}
+
+#copy5 {
+	position: absolute;
+    top: 193px;
+    left: 13px;
+    width: 135px;
+    height: 16px;
 }
 
 /*FRAME 3*/
