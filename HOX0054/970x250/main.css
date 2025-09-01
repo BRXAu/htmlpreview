@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+}
+
+#banner {
+  width: 970px;
+  height: 250px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  cursor: pointer;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #5f5f5f;
+  background-color: #002855;
+}
+
+.asset {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+.retina {
+  top: -1px;
+  left: -1px;
+  width: 970px;
+  height: 250px;
+}
+
+.block {
+  display: block;
+}
+
+#logo {
+  left: 36px;
+  top: 67px;
+  width: 226px;
+  height: auto;
+}
+
+#copy1-cont {
+  width: 0px;
+  height: 61px;
+  left: 301px;
+  top: 47px;
+  transform-origin: 0% 0%;
+  transform: scale(0.8);
+  overflow: hidden;
+}
+
+#copy1 {
+  left: 0px;
+  top: 5px;
+  
+}
+
+#copy2-cont {
+  width: 700px;
+  height: 50px;
+  left: 34px;
+  top: 197px;
+  overflow: hidden;
+}
+
+#copy2 {
+  left: 0px;
+  top: 2px;
+}
+
+#copy3-cont {
+  width: 700px;
+  height: 50px;
+  left: 301px;
+  top: 94px;
+  transform-origin: 0% 0%;
+  transform: scale(0.8);
+  overflow: hidden;
+}
+
+#copy3 {
+  left: 0px;
+  top: 0px;
+}
+
+#copy4-cont {
+  width: 720px;
+  height: 105px;
+  left: 302px;
+  top: 135px;
+  overflow: hidden;
+}
+
+#copy4-1 {
+  left: 0px;
+  top: 0px;
+  height: 37px;
+}
+
+#copy4-2 {
+  left: -4px;
+  top: -2px;
+  opacity: 0;
+  width: 177px;
+}
+
+
+#cta,
+#cta-white {
+  left: 690px;
+  top: 140px;
+  width: 151px;
+  height: 26px;
+  border: 2px solid white;
+/*   z-index: 999; */
+}
+#cta-white {
+  background-color: white;
+  display: block;
+}
+
+#cta1,
+#cta2 {
+  left: 18px;
+  top: 8px;
+  width: 101px;
+  height: auto;
+}
+#cta2 {
+  display: block;
+}
+
+#cta1-arrow,
+#cta2-arrow{
+  left: 132px;
+  top: 7px;
+  height: 12px;
+  width:auto;
+}
+#cta2-arrow {
+  display: block;
+}
+
+#blue-mask {
+  background-color: #002855;
+  opacity:0;
+  width: 176px;
+  height: 50px;
+}
+
+#banner-hover {
+  width: 970px;
+  height: 250px;
+  background-color: red;
+  opacity: 0;
+}
+#terms{
+  left: 0px;
+  top: 0px;
+}
+
+#sample{
+  opacity: 0;
+}
