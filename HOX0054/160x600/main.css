@@ -122,17 +122,17 @@
 
 
 #cta,
-#cta-white {
-  width: 126px;
-  height: 23px;
+#cta-bg {
+  width: 128px;
+  height: 25px;
   left: 15.5px;
   top: 412px;
-  border: 1px solid white;
+/*  border: 1px solid white;*/
   /* z-index: 999; */
 }
 
-#cta-white {
-  background-color: white;
+#cta-bg {
+  background-color: #FFD000;
   display: block;
 }
 

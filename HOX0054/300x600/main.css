@@ -126,17 +126,17 @@
 }
 
 
-#cta, #cta-white {
-  width: 152.5px;
-  height: 28px;
+#cta, #cta-bg {
+  width: 154.5px;
+  height: 30px;
   left: 72px;
   top: 445px;
-  border: 1px solid white;
+/*  border: 1px solid white;*/
   /* z-index: 999; */
 }
 
-#cta-white {
-  background-color: white;
+#cta-bg {
+  background-color: #FFD000;
   display: block;
 }
 

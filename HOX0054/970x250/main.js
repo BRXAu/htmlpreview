@@ -41,8 +41,8 @@ function startAnimation() {
 
   var time = .9;
 
-  // e("banner-hover").addEventListener('mouseover', onMouseOver);
-  // e("banner-hover").addEventListener('mouseout', onMouseOut);
+  e("banner-hover").addEventListener('mouseover', onMouseOver);
+  e("banner-hover").addEventListener('mouseout', onMouseOut);
   //----Frame1------//
   // In
   disappear("copy1-cont", time, { width: "+=700", ease: Sine.easeOut }, "f1", false);
@@ -51,8 +51,6 @@ function startAnimation() {
   appear("copy3", time, { opacity: 0, y: "-=90", ease: Quint.easeOut }, "f1+=1");
   appear("copy4-cont", time, { opacity: 0, y: "-=10", ease: Quint.easeOut }, "f1+=1.5");
   appear("copy4-1", time, { opacity: 0, ease: Quint.easeOut }, "f1+=1.5");
-  //appear("cta2", time, { opacity: 0, ease: Quint.easeOut }, "f1+=1.75");
-  //appear("cta2-arrow", time, { opacity: 0, ease: Quint.easeOut }, "f1+=1.75");
 
   appear("cta-cont", time/2, { opacity: 0, y:"-=5", ease: Sine.easeOut, onComplete: loopCheck }, "f1+=1.75");
 
@@ -62,8 +60,6 @@ function startAnimation() {
   disappear("copy4-cont",time,{opacity:0,ease:Quint.easeOut},"f1Out+=1.5");
   disappear("terms",time,{opacity:0,ease:Quint.easeOut},"f1Out+=1.5");
   disappear("cta-cont",time,{opacity:0,ease:Quint.easeOut},"f1Out+=1.5", false);
-  
-
 }
 
 
@@ -77,30 +73,12 @@ function appear(name, time, specs, label) {
   tl.from("#" + name, time, specs, label);
 }
 
-// function onMouseOver() {
-//   TweenLite.to("#cta-white", 0.25, { opacity: 1, ease: Power2.easeOut });
-
-//   TweenLite.to("#cta1", 0.25, { opacity:0, ease: Power2.easeOut });
-//   TweenLite.to("#cta2", 0.25, { opacity:1, ease: Power2.easeOut });
-
-//   TweenLite.to("#cta1-arrow", 0.25, { opacity:0,x: +5, ease: Power2.easeOut });
-//   TweenLite.to("#cta2-arrow", 0.25, { opacity:1,x: +5, ease: Power2.easeOut });
-
-//   TweenLite.to("#blue-mask", 0.25, { opacity: 1, ease: Power2.easeOut });
-//   TweenLite.to("#copy4-2", 0.25, { opacity: 1, ease: Power2.easeOut });
-// }
-// function onMouseOut() {
-//   TweenLite.to("#cta-white", 0.25, { opacity: 0, ease: Power2.easeOut });
- 
-//   TweenLite.to("#cta1", 0.25, { opacity:1, ease: Power2.easeOut });
-//   TweenLite.to("#cta2", 0.25, { opacity:0, ease: Power2.easeOut });
-
-//   TweenLite.to("#cta1-arrow", 0.25, { opacity:1, x: 0, ease: Power2.easeOut });
-//   TweenLite.to("#cta2-arrow", 0.25, { opacity:0, x: 0, ease: Power2.easeOut });
-
-//   TweenLite.to("#blue-mask", 0.25, { opacity: 0, ease: Power2.easeOut });
-//   TweenLite.to("#copy4-2", 0.25, { opacity: 0, ease: Power2.easeOut });
-// }
+function onMouseOver() {
+  TweenLite.to("#cta-bg", 0.25, { backgroundColor: "#FFDE4D", scaleX:0.95, ease: Power2.easeOut });
+}
+function onMouseOut() {
+  TweenLite.to("#cta-bg", 0.25, { backgroundColor: "#FFD000", scaleX:1, ease: Power2.easeOut });
+}
 
 /**
  * For animating assets at the end of each frame.

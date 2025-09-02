@@ -117,23 +117,23 @@
 
 
 #cta,
-#cta-white {
+#cta-bg {
   left: 690px;
   top: 140px;
-  width: 151px;
-  height: 26px;
-  border: 2px solid white;
+  width: 155px;
+  height: 30px;
+/*  border: 2px solid white;*/
 /*   z-index: 999; */
 }
-#cta-white {
-  background-color: white;
+#cta-bg {
+  background-color: #FFD000;
   display: block;
 }
 
 #cta1,
 #cta2 {
   left: 18px;
-  top: 8px;
+  top: 9px;
   width: 101px;
   height: auto;
 }
@@ -144,7 +144,7 @@
 #cta1-arrow,
 #cta2-arrow{
   left: 132px;
-  top: 7px;
+  top: 8px;
   height: 12px;
   width:auto;
 }
