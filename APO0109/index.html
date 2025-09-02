@@ -1,61 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Creative preview frames</title>
+  <meta charset="utf-8" />
+  <title>Ad preview hub — sizes in HTML/CSS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;padding:12px;background:#f6f7f9;color:#111}
-    .header{display:flex;gap:8px;align-items:center;margin-bottom:12px}
-    .btn{padding:6px 8px;border-radius:8px;border:1px solid #ddd;background:#111;color:#fff;cursor:pointer}
-    .container{display:flex;flex-wrap:wrap;gap:12px}
-    .card{background:#fff;border:1px solid #e6e7eb;border-radius:8px;padding:8px;display:flex;flex-direction:column;align-items:flex-start}
-    iframe{display:block;border:0}
-    .small{font-size:12px;color:#666}
-    input{padding:6px;border:1px solid #ddd;border-radius:6px}
+    :root{
+      --gap: 1rem;
+      --bg: #f6f7f9;
+      --card: #fff;
+      --muted: #666;
+      --accent: #0b6ea8;
+    }
+
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+    body{background:var(--bg);color:#111;display:flex;flex-direction:column;min-height:100vh}
+    header{background:#222;color:#fff;padding:0.75rem 1rem;text-align:center}
+    header h1{margin:0;font-size:1.05rem;font-weight:600}
+    .controls{display:flex;gap:0.5rem;justify-content:center;padding:0.75rem;flex-wrap:wrap}
+    .controls button{border:0;background:var(--accent);color:#fff;padding:0.4rem 0.7rem;border-radius:6px;cursor:pointer}
+    .grid{display:flex;flex-wrap:wrap;gap:var(--gap);padding:var(--gap);justify-content:center;align-items:flex-start}
+
+    /* preview card */
+    .card{
+      background:var(--card);
+      border:1px solid #e0e3e6;
+      border-radius:8px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.04);
+      padding:0.6rem;
+      display:flex;
+      flex-direction:column;
+      gap:0.5rem;
+      align-items:center;
+      width:100%;
+      max-width:740px; /* cap so large units don't overflow layout */
+    }
+
+    .meta{font-size:0.85rem;color:var(--muted);width:100%;display:flex;justify-content:space-between;gap:0.5rem}
+    .meta .name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .meta .size{font-weight:600}
+
+    /* iframe base */
+    .frame{border:1px solid #ddd;display:block;width:100%;height:250px;background:#fff;box-sizing:content-box}
+
+    /* sizes defined in CSS classes. Add or change classes here to adjust sizes. */
+    .size-300x250 .frame{width:300px;height:250px}
+    .size-728x90  .frame{width:728px;height:90px}
+    /* optional fallback card sizing so small frames don't look lost on narrow viewports */
+    .size-300x250{align-items:center}
+    .size-728x90 {align-items:center}
+
+    /* responsive: allow container to wrap on small screens */
+    @media (max-width:360px){
+      .grid{gap:0.6rem;padding:0.6rem}
+      .card{max-width:100%}
+      .frame{transform:scale(0.95);transform-origin:top center}
+    }
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1 style="margin:0;font-size:16px">Creative preview frames</h1>
-    <button class="btn" id="reloadAll">Reload all</button>
+  <header>
+    <h1>Antimonitor preview hub — sizes controlled by HTML / CSS</h1>
+  </header>
+
+  <div class="controls" aria-hidden="false">
+    <button id="reloadAll">Reload all</button>
+    <button id="toggleBorders">Toggle borders</button>
   </div>
 
-  <div class="container" id="container">
+  <main class="grid" id="previewGrid">
+    <!-- Each card sets a CSS class that defines the iframe size. -->
+    <!-- Edit class names here (or add new ones to CSS) to change sizes without JS. -->
 
-    <div class="card">
-      <div class="small">APO01019_01_300x250_ClickTag.html</div>
-      <iframe src="APO01019_01_300x250_ClickTag.html" width="300" height="250" id="f1"></iframe>
-      <div style="margin-top:6px"><button class="btn" onclick="reload('f1')">Reload</button></div>
-    </div>
+    <figure class="card size-300x250">
+      <div class="meta"><div class="name">APO01019_01_300x250_ClickTag.html</div><div class="size">300×250</div></div>
+      <iframe class="frame" src="APO01019_01_300x250_ClickTag.html" title="APO01019 01 300x250 preview"></iframe>
+      <div style="display:flex;gap:0.5rem">
+        <button class="reload">Reload</button>
+      </div>
+    </figure>
 
-    <div class="card">
-      <div class="small">APO01019_01_728x90_ClickTag.html</div>
-      <iframe src="APO01019_01_728x90_ClickTag.html" width="728" height="90" id="f2"></iframe>
-      <div style="margin-top:6px"><button class="btn" onclick="reload('f2')">Reload</button></div>
-    </div>
+    <figure class="card size-728x90">
+      <div class="meta"><div class="name">APO01019_01_728x90_ClickTag.html</div><div class="size">728×90</div></div>
+      <iframe class="frame" src="APO01019_01_728x90_ClickTag.html" title="APO01019 01 728x90 preview"></iframe>
+      <div style="display:flex;gap:0.5rem">
+        <button class="reload">Reload</button>
+      </div>
+    </figure>
 
-  </div>
+    <figure class="card size-300x250">
+      <div class="meta"><div class="name">APO01019_02_300x250_ClickTag.html</div><div class="size">300×250</div></div>
+      <iframe class="frame" src="APO01019_02_300x250_ClickTag.html" title="APO01019 02 300x250 preview"></iframe>
+      <div style="display:flex;gap:0.5rem">
+        <button class="reload">Reload</button>
+      </div>
+    </figure>
+
+    <figure class="card size-728x90">
+      <div class="meta"><div class="name">APO01019_02_728x90_ClickTag.html</div><div class="size">728×90</div></div>
+      <iframe class="frame" src="APO01019_02_728x90_ClickTag.html" title="APO01019 02 728x90 preview"></iframe>
+      <div style="display:flex;gap:0.5rem">
+        <button class="reload">Reload</button>
+      </div>
+    </figure>
+
+    <figure class="card size-300x250">
+      <div class="meta"><div class="name">APO01019_03_300x250_ClickTag.html</div><div class="size">300×250</div></div>
+      <iframe class="frame" src="APO01019_03_300x250_ClickTag.html" title="APO01019 03 300x250 preview"></iframe>
+      <div style="display:flex;gap:0.5rem">
+        <button class="reload">Reload</button>
+      </div>
+    </figure>
+
+    <figure class="card size-728x90">
+      <div class="meta"><div class="name">APO01019_03_728x90_ClickTag.html</div><div class="size">728×90</div></div>
+      <iframe class="frame" src="APO01019_03_728x90_ClickTag.html" title="APO01019 03 728x90 preview"></iframe>
+      <div style="display:flex;gap:0.5rem">
+        <button class="reload">Reload</button>
+      </div>
+    </figure>
+
+    <figure class="card size-300x250">
+      <div class="meta"><div class="name">APO01019_04_300x250_ClickTag.html</div><div class="size">300×250</div></div>
+      <iframe class="frame" src="APO01019_04_300x250_ClickTag.html" title="APO01019 04 300x250 preview"></iframe>
+      <div style="display:flex;gap:0.5rem">
+        <button class="reload">Reload</button>
+      </div>
+    </figure>
+
+    <figure class="card size-728x90">
+      <div class="meta"><div class="name">APO01019_04_728x90_ClickTag.html</div><div class="size">728×90</div></div>
+      <iframe class="frame" src="APO01019_04_728x90_ClickTag.html" title="APO01019 04 728x90 preview"></iframe>
+      <div style="display:flex;gap:0.5rem">
+        <button class="reload">Reload</button>
+      </div>
+    </figure>
+
+  </main>
 
   <script>
-    let count = 2;
-    function reload(id){ const f = document.getElementById(id); if(f) f.src = f.src }
+    // minimal JS: reload single frame and reload all. No size logic in JS.
+    document.querySelectorAll('.reload').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.card');
+        const frame = card.querySelector('iframe');
+        frame.src = frame.src;
+      });
+    });
 
     document.getElementById('reloadAll').addEventListener('click', () => {
       document.querySelectorAll('iframe').forEach(f => f.src = f.src);
     });
 
-    document.getElementById('add').addEventListener('click', () => {
-      const file = document.getElementById('file').value.trim();
-      const w = document.getElementById('w').value || 300;
-      const h = document.getElementById('h').value || 250;
-      if(!file) return;
-      count++;
-      const id = 'f' + count;
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `<div class="small">${file}</div><iframe src="${file}" id="${id}" width="${w}" height="${h}"></iframe><div style="margin-top:6px"><button class="btn" onclick="reload('${id}')">Reload</button></div>`;
-      document.getElementById('container').appendChild(card);
+    // small UX toggle: show/hide thin border around frames (not size logic)
+    let bordered = true;
+    document.getElementById('toggleBorders').addEventListener('click', () => {
+      bordered = !bordered;
+      document.querySelectorAll('.frame').forEach(f => f.style.border = bordered ? '1px solid #ddd' : '0');
     });
   </script>
 </body>
