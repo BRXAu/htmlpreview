@@ -112,7 +112,7 @@ DCS Content End -->
 
 <script type='text/javascript'>
   /* ClickTag Content Start */
-  var clickTag = "https://auspost.com.au/business/ecommerce/managing-peak-demand";
+   var clickTag = "https://auspost.com.au/business/ecommerce/managing-peak-demand";
   /* ClickTag Content End */
 </script>
 </head>
@@ -319,7 +319,7 @@ function events(){
 function startAd(){
   events();
   // start gsap code //
-    //events();
+   //events();
   
   // start gsap code //
   // GSAP code goes here
@@ -359,6 +359,11 @@ timeline.set("#F"+count+"_text_06",{opacity:0,x: xMove,y: yMove},0)
 
 timeline.set("#F1_Lines,#F3_Lines",{opacity:0},0)
 
+
+timeline.set("#F1_arrow_clipPath,#F2_arrow_clipPath,#F3_arrow_clipPath",{scaleX:0},0)
+
+
+
 let frame01Start = 0.1
 
 lineDuration = 0.5;
@@ -371,9 +376,11 @@ let delay = frame01Start+start;
 
 timeline.to("#F1_text_01",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 delay+=lineDelay;
-timeline.to("#F1_text_02",lineDuration,{autoAlpha:1,x:0,y:0},delay)
-delay+=lineDelay;
 
+
+
+timeline.to("#F1_arrow_clipPath", lineDuration,{scaleX:1},delay)
+delay+=lineDelay;
 
 
 delay+=1.8;
@@ -389,6 +396,8 @@ timeline.to("#F2_text_02",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 delay+=lineDelay;
 
 
+timeline.to("#F2_arrow_clipPath", lineDuration,{scaleX:1},delay)
+delay+=lineDelay;
 
 delay+=2.2;
 
@@ -402,8 +411,13 @@ timeline.to("#F3_text_01",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 delay+=lineDelay;
 timeline.to("#F3_text_02",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 delay+=lineDelay;
-timeline.to("#CTA",0.4,{autoAlpha:1,x:0,y:0},delay)
-  // end gsap code //
+
+
+timeline.to("#F3_arrow_clipPath", lineDuration,{scaleX:1},delay)
+delay+=lineDelay;
+
+timeline.to("#CTA",0.4,{autoAlpha:1,x:0,y:0},delay) //
+// end gsap code //
 }
 
 function elementExist(str){
