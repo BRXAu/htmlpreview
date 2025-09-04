@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TBA0424_BHP_FIC_Brazil_FY26_Additional_Sizes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+      background: #0d0d0d;
+      color: #eee;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #dd5900;
+      text-align: center;
+      padding: 20px 20px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .frame-box {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+    }
+
+    #frame1, #frame4, #frame7 {
+      width: 336px;
+      height: 280px;
+      border: none;
+    }
+    #frame2, #frame5, #frame8 {
+      width: 300px;
+      height: 300px;
+      border: none;
+    }
+    #frame3, #frame6, #frame9 {
+      width: 750px;
+      height: 200px;
+      border: none;
+    }      
+    button {
+      background: #c00;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #ff3333;
+    }
+    .label {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Copper</h1>
+  <div class="container">
+    <div class="frame-box">
+      <div class="label">336x280</div>
+      <iframe id="frame1" src="./Copper/336x280/index.html"></iframe>
+      <button onclick="reloadFrame('frame1')">Refresh</button>
+    </div>
+        <div class="frame-box">
+      <div class="label">300x300</div>
+      <iframe id="frame2" src="./Copper/300x300/index.html"></iframe>
+      <button onclick="reloadFrame('frame2')">Refresh</button>
+    </div>
+    <div class="frame-box">
+      <div class="label">750x200</div>
+      <iframe id="frame3" src="./Copper/750x200/index.html"></iframe>
+      <button onclick="reloadFrame('frame3')">Refresh</button>
+    </div>  
+  </div>
+  <h1>Manifesto</h1>
+  <div class="container">
+    <div class="frame-box">
+      <div class="label">336x280</div>
+      <iframe id="frame4" src="./Manifesto/336x280/index.html"></iframe>
+      <button onclick="reloadFrame('frame4')">Refresh</button>
+    </div>
+    <div class="frame-box">
+      <div class="label">300x300</div>
+      <iframe id="frame5" src="./Manifesto/300x300/index.html"></iframe>
+      <button onclick="reloadFrame('frame5')">Refresh</button>
+    </div>
+    <div class="frame-box">
+      <div class="label">750x200</div>
+      <iframe id="frame6" src="./Manifesto/750x200/index.html"></iframe>
+      <button onclick="reloadFrame('frame6')">Refresh</button>
+    </div>
+  </div>
+  <h1>Potash</h1>
+  <div class="container">
+      <div class="frame-box">
+        <div class="label">336x280</div>
+        <iframe id="frame7" src="./Potash/336x280/index.html"></iframe>
+        <button onclick="reloadFrame('frame7')">Refresh</button>
+      </div>
+      <div class="frame-box">
+        <div class="label">300x300</div>
+        <iframe id="frame8" src="./Potash/300x300/index.html"></iframe>
+        <button onclick="reloadFrame('frame8')">Refresh</button>
+      </div>
+      <div class="frame-box">
+        <div class="label">750x200</div>
+        <iframe id="frame9" src="./Potash/750x200/index.html"></iframe>
+        <button onclick="reloadFrame('frame9')">Refresh</button>
+      </div>
+  </div>
+  </div>
+
+  <script>
+    function reloadFrame(id) {
+      const iframe = document.getElementById(id);
+      iframe.src = iframe.src;
+    }
+  </script>
+</body>
+</html>
