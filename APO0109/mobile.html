@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Banner Preview</title>
+  <style>
+    body { font-family: sans-serif; background:#111; color:#eee; margin:0; padding:20px; }
+    h1 { margin-bottom:20px; }
+    .controls { margin-bottom:20px; }
+    .controls button {
+      margin-right:10px; padding:6px 12px; cursor:pointer;
+      border:none; background:#ffcc00; border-radius:4px; font-weight:bold;
+    }
+    .container { display:flex; flex-wrap:wrap; gap:20px; }
+    .banner { display:flex; flex-direction:column; align-items:center; background:#222; padding:10px; border-radius:6px; }
+    iframe { border:1px solid #444; display:block; }
+    .banner button { margin-top:6px; padding:4px 10px; cursor:pointer; border:none; background:#ffcc00; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <h1>Banner preview</h1>
+
+  <div class="container" id="container"></div>
+
+  <script>
+    const sets = {
+      all: [
+        "APO01019_01a_320x50_ClickTag.html",
+        "APO01019_01b_320x50_ClickTag.html",
+        "APO01019_02a_320x50_ClickTag.html",
+        "APO01019_02b_320x50_ClickTag.html",
+        "APO01019_03a_320x50_ClickTag.html",
+        "APO01019_03b_320x50_ClickTag.html",
+        "APO01019_04a_320x50_ClickTag.html",
+        "APO01019_04b_320x50_ClickTag.html"
+      ]
+    };
+
+    function loadSet(key) {
+      const container = document.getElementById("container");
+      container.innerHTML = "";
+      sets[key].forEach(file => {
+        const size = file.match(/(\d+)x(\d+)/);
+        const [w,h] = size ? [size[1], size[2]] : [300,250];
+        const wrap = document.createElement("div");
+        wrap.className = "banner";
+        wrap.innerHTML = `
+          <iframe src="${file}" width="${w}" height="${h}"></iframe>
+          <button onclick="this.previousElementSibling.src='${file}'">Reload</button>
+        `;
+        container.appendChild(wrap);
+      });
+    }
+
+    // default: load all
+    loadSet('all');
+  </script>
+</body>
+</html>
