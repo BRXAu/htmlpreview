@@ -51,13 +51,11 @@ function allDocIsReady() {
 	theTimeline.add(new TweenLite.from('#imgSparkle', 0.5, {opacity:0}), "-=0.25")
 
 	theTimeline.add(new TweenLite.to('.f1', 0.15, {scaleX:0.05, transformOrigin: 'center center'}), "+=2")
-	theTimeline.add(new TweenLite.to('.f1', 0.10, {scaleX:-1, transformOrigin: 'center center'}))
-	theTimeline.add(new TweenLite.to('.f1', 0.10, {scaleX:1, transformOrigin: 'center center'}))
-	theTimeline.add(new TweenLite.to('.f1', 0.10, {scaleX:-1, transformOrigin: 'center center'}))
-	theTimeline.add(new TweenLite.to('.f1', 0.10, {scaleX:1, transformOrigin: 'center center'}))
-	theTimeline.add(new TweenLite.to('.f1', 0.10, {scaleX:-1, transformOrigin: 'center center'}))
-	theTimeline.add(new TweenLite.to('.f1', 0.10, {scaleX:1, transformOrigin: 'center center'}))
-	theTimeline.add(new TweenLite.to('.f1', 0.10, {opacity:0}))			
+	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:-1, transformOrigin: 'center center'}))
+	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:1, transformOrigin: 'center center'}))
+	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:-1, transformOrigin: 'center center'}))
+	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:1, transformOrigin: 'center center'}))
+	theTimeline.add(new TweenLite.to('.f1', 0.13, {opacity:0}),"+=0.5")			
 	theTimeline.add(new TweenLite.to('#dropShadow', 0.15, {opacity:0}), "-=0.15")
 
 	//Frame 2
