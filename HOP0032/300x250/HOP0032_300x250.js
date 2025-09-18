@@ -47,8 +47,8 @@ function allDocIsReady() {
 
 
 	theTimeline.add(new TweenLite.from('#logo_finder, #dropShadow', 0.5, {scale:0, ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.fromTo('#imgShine', 0.7, {x:26, y:0}, {x:-285, y:-94}));
-	theTimeline.add(new TweenLite.from('#imgSparkle', 0.5, {opacity:0}), "-=0.25")
+	theTimeline.add(new TweenLite.fromTo('#imgShine', 1, {x:115, y:0}, {x:-106, y:0}));
+	theTimeline.add(new TweenLite.from('#imgSparkle', 0.5, {opacity:0}), "-=0.35")
 
 	theTimeline.add(new TweenLite.to('.f1', 0.15, {scaleX:0.05, transformOrigin: 'center center'}), "+=0.5")
 	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:-1, transformOrigin: 'center center'}))
@@ -63,8 +63,8 @@ function allDocIsReady() {
 	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-61, ease:Power2.easeOut}));
 
 	theTimeline.add(new TweenLite.from('#logo_finder_f2, #dropShadow_f2', 0.5, {scale:0, ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.fromTo('#imgShine_f2', 0.7, {x:29, y:0}, {x:-346, y:-94}));
-	theTimeline.add(new TweenLite.from('#imgSparkle_f2', 0.5, {opacity:0}), "-=0.25")	
+	theTimeline.add(new TweenLite.fromTo('#imgShine_f2', 1, {x:73, y:0}, {x:-109, y:0}));
+	theTimeline.add(new TweenLite.from('#imgSparkle_f2', 0.5, {opacity:0}), "-=0.35")	
 
 	//Frame 4
 	theTimeline.add(new TweenLite.from('#copy9', 0.5, {opacity:0}));
