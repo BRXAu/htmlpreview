@@ -10,7 +10,7 @@ if(document.addEventListener) {
 function showTerms() {
 	let showPanel = false;
 	const termsPanel = document.getElementById("terms_panel");
-	TweenLite.to(termsPanel,0.4,{y:-250,ease: Power2.easeOut});
+	TweenLite.to(termsPanel,0.4,{y:-600,ease: Power2.easeOut});
 	showPanel = true;
 }
 
@@ -47,19 +47,24 @@ function allDocIsReady() {
 
 
 	theTimeline.add(new TweenLite.from('#logo_finder, #dropShadow', 0.5, {scale:0, ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.fromTo('#imgShine', 0.7, {x:153, y:0}, {x:-148, y:0}));
-	theTimeline.add(new TweenLite.from('#imgSparkle', 0.5, {opacity:0}), "-=0.25")
+	theTimeline.add(new TweenLite.fromTo('#imgShine', 1, {x:202, y:0}, {x:-192, y:0}));
+	theTimeline.add(new TweenLite.from('#imgSparkle', 0.5, {opacity:0}), "-=0.35")
 
-	theTimeline.add(new TweenLite.to('.f1', 0.15, {scaleX:0.05, transformOrigin: '122px 30px'}), "+=2")
-	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:-1, transformOrigin: '122px 30px'}))
-	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:1, transformOrigin: '122px 30px'}))
-	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:-1, transformOrigin: '122px 30px'}))
-	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:1, transformOrigin: '122px 30px'}))
+	theTimeline.add(new TweenLite.to('.f1', 0.15, {scaleX:0.05, transformOrigin: 'center center'}), "+=0.5")
+	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:-1, transformOrigin: 'center center'}))
+	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:1, transformOrigin: 'center center'}))
+	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:-1, transformOrigin: 'center center'}))
+	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:1, transformOrigin: 'center center'}))
+	theTimeline.add(new TweenLite.to('.f1', 0.13, {opacity:0}),"+=0.5")			
+	theTimeline.add(new TweenLite.to('#dropShadow', 0.15, {opacity:0}), "-=0.15")
 
 	//Frame 2
 	theTimeline.add(new TweenLite.from('#copy3_mask', 0.5, {width:'0px', ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-71, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-96, ease:Power2.easeOut}));
 
+	theTimeline.add(new TweenLite.from('#logo_finder_f2, #dropShadow_f2', 0.5, {scale:0, ease:Power2.easeOut}));
+	theTimeline.add(new TweenLite.fromTo('#imgShine_f2', 1, {x:156, y:0}, {x:-189, y:0}));
+	theTimeline.add(new TweenLite.from('#imgSparkle_f2', 0.5, {opacity:0}), "-=0.35")	
 
 	//Frame 4
 	theTimeline.add(new TweenLite.from('#copy9', 0.5, {opacity:0}));
