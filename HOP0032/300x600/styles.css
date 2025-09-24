@@ -45,7 +45,7 @@ a {
 #logo_hostplus {
 	position: absolute;
     top: 15px;
-    right: 10px;
+    right: 15px;
     width: 121px;
     height: 50px;
 }
@@ -89,7 +89,7 @@ a {
 #copy_terms {
     position: absolute;
     bottom: 12px;
-    left: 18px;
+    left: 15px;
     z-index: 2;
     width: 76px;
     height: 11px;
@@ -110,7 +110,7 @@ a {
 #copy3_mask {
     position: absolute;
     top: 295px;
-    left: 21px;
+    left: 17px;
     width: 191px;
     height: 27px;
     overflow: hidden;
@@ -127,7 +127,7 @@ a {
 #copy4_mask {
     position: absolute;
     top: 329px;
-    left: 20px;
+    left: 15px;
     width: 235px;
     height: 96px;
     overflow: hidden;
@@ -154,7 +154,7 @@ a {
 #copy9 {
     position: absolute;
     bottom: 89px;
-    left: 20px;
+    left: 15px;
     width: 255px;
     height: 29px;
 }
@@ -162,7 +162,7 @@ a {
 #logo_finder_f2 {
 	position: absolute;
     top: 110px;
-    left: 18px;
+    left: 15px;
     width: 156px;
     height: 156px;
 }
@@ -170,7 +170,7 @@ a {
 #maskOverlay_f2 {
     position: absolute;
     top: 110px;
-    left: 18px;
+    left: 15px;
     width: 156px;
     height: 156px;
     overflow: hidden;
@@ -182,7 +182,7 @@ a {
 #imgSparkle_f2 {
 	position: absolute;
     top: 78px;
-    left: -15px;
+    left: -17px;
     width: 70px;
     height: 70px;
 }
@@ -192,22 +192,22 @@ a {
     top: 222px;
     width: 174px;
     height: 63px;
-    left: 8px;
+    left: 6px;
 }
 
 #btn_cta {
     position: absolute;
-    bottom: 14px;
-    right: 10px;
+    bottom: 15px;
+    right: 15px;
     width: 134px;
-    height: 26px;
+    height: 24px;
     background: #FFD000;
 }
 
 #cta_label {
     position: absolute;
     bottom: 14px;
-    right: 10px;
+    right: 15px;
     width: 134px;
     height: 26px;
     pointer-events: none;

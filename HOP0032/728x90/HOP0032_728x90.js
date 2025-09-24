@@ -50,7 +50,7 @@ function allDocIsReady() {
 	theTimeline.add(new TweenLite.fromTo('#imgShine', 1.8, {x:129, y:0}, {x:-149, y:0}));
 	theTimeline.add(new TweenLite.from('#imgSparkle', 0.5, {opacity:0}), "-=0.25")
 
-	theTimeline.add(new TweenLite.to('.f1', 0.15, {scaleX:0.05, transformOrigin: '50px 0px'}), "+=2")
+	theTimeline.add(new TweenLite.to('.f1', 0.15, {scaleX:0.05, transformOrigin: '50px 0px'}), "+=0.5")
 	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:-1, transformOrigin: '50px 0px'}))
 	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:1, transformOrigin: '50px 0px'}))
 	theTimeline.add(new TweenLite.to('.f1', 0.13, {scaleX:-1, transformOrigin: '50px 0px'}))
