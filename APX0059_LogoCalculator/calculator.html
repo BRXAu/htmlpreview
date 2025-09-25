@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculation</title>
+<style>
+  body { font-family: sans-serif; background: #111; color: #eee; display:flex; flex-direction:column; align-items:center; padding:2rem;}
+  h1 { color:#f5a623; margin-bottom:2rem;}
+  form {background:#222;padding:2rem;border-radius:12px; display:grid; gap:1rem; width:320px;}
+  label {display:flex; justify-content:space-between; align-items:center; font-weight:500;}
+  input[type="text"], input[type="number"] {padding:0.5rem;border-radius:6px;border:1px solid #444;background:#333;color:#fff;width:140px;text-align:right;}
+  input[type="checkbox"] {transform: scale(1.3);}
+  button {background:#f5a623;color:#111;font-weight:bold;padding:0.75rem;border:none;border-radius:8px;cursor:pointer; transition:all 0.2s;}
+  button:hover {background:#ffb84d;}
+  .output {margin-top:1rem; padding:1rem; background:#333; border-radius:8px;}
+</style>
+</head>
+<body>
+
+<h1>Logo and Margin Size calculator</h1>
+
+<form id="calcForm">
+  <label>Full Logo? <input type="checkbox" id="fullLogo"></label>
+  <label>Width: <input type="number" id="width" placeholder="logoWidth"></label>
+  <label>Height: <input type="number" id="height" placeholder="logoHeight"></label>
+  <label>The size is: <input type="text" id="size" readonly></label>
+  <label>Margin: <input type="text" id="margin" readonly></label>
+  <label>Logo Size: <input type="text" id="logoSize" readonly></label>
+  <button type="button" onclick="calculate()">Submit</button>
+</form>
+
+
+<script>
+function calculate() {
+  const isFullLogo = document.getElementById('fullLogo').checked;
+  const logoWidth = parseFloat(document.getElementById('width').value) || 0;
+  const logoHeight = parseFloat(document.getElementById('height').value) || 0;
+  
+  // Size logic
+  let size = "";
+  if (logoHeight <= logoWidth*2) size = "Standard";
+  else if (logoHeight <= logoWidth*3.5) size = "Non-Standard";
+  else if (logoHeight <= logoWidth*6) size = "Extreme";
+  else if (logoHeight > logoWidth*6) size = "Edge Case";
+
+  document.getElementById('size').value = size;
+  
+  // Margin logic
+  let margin;
+  if (size === "Standard") margin = logoWidth/16;
+  else if (size === "Non-Standard") margin = logoWidth/11;
+  else if (size === "Extreme") margin =logoWidth/10;
+  else margin = "NA";
+  
+  document.getElementById('margin').value = margin;
+  
+  // Logo size logic (same as margin)
+  let logoSize = margin;
+  if (size === "Standard" && isFullLogo) logoSize = margin*1.3;
+  
+  
+  document.getElementById('logoSize').value = logoSize;
+  
+}
+</script>
+
+</body>
+</html>
