@@ -63,7 +63,7 @@ function allDocIsReady() {
 	theTimeline.add(new TweenLite.from('#copy4', 0.5, {y:-61, ease:Power2.easeOut}));
 
 	theTimeline.add(new TweenLite.from('#logo_finder_f2, #dropShadow_f2', 0.5, {scale:0, ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.fromTo('#imgShine_f2', 1, {x:73, y:0}, {x:-109, y:0}));
+	theTimeline.add(new TweenLite.fromTo('#imgShine_f2', 1, {x:75, y:0}, {x:-109, y:0}));
 	theTimeline.add(new TweenLite.from('#imgSparkle_f2', 0.5, {opacity:0}), "-=0.35")	
 
 	//Frame 4

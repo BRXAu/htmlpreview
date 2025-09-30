@@ -47,7 +47,7 @@ function allDocIsReady() {
 
 
 	theTimeline.add(new TweenLite.from('#logo_finder, #dropShadow', 0.5, {scale:0, ease:Power2.easeOut}));
-	theTimeline.add(new TweenLite.fromTo('#imgShine', 0.7, {x:153, y:0}, {x:-148, y:0}));
+	theTimeline.add(new TweenLite.fromTo('#imgShine', 0.7, {x:159, y:0}, {x:-148, y:0}));
 	theTimeline.add(new TweenLite.from('#imgSparkle', 0.5, {opacity:0}), "-=0.25")
 
 	theTimeline.add(new TweenLite.to('.f1', 0.15, {scaleX:0.05, transformOrigin: '122px 30px'}), "+=0.5")
