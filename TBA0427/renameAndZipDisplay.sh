@@ -2,6 +2,23 @@
 
 #!/bin/bash
 
+
+# Loop through all .html files containing "FY26"
+for file in *FY26*.html; do
+  # Skip if no matching files
+  [ -e "$file" ] || continue
+  
+  # Create new filename by replacing FY26 with 2026
+  newfile="${file//FY26/2026}"
+  
+  # Rename the file
+  mv "$file" "$newfile"
+done
+
+echo "All filenames with 'FY26' have been renamed to '2026'."
+
+
+
 # Loop through all .html files
 for file in *.html; do
   # Skip if no HTML files found
