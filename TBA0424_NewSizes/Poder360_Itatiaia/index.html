@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TBA0424_BHP_FIC_Brazil_FY26_Additional_Sizes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+      background: #0d0d0d;
+      color: #eee;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #dd5900;
+      text-align: center;
+      padding: 20px 20px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .frame-box {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+    }
+
+    #frame1 {
+      width: 300px;
+      height: 1050px;
+      border: none;
+    }
+    #frame2 {
+      width: 1248px;
+      height: 250px;
+      border: none;
+    }
+
+    button {
+      background: #c00;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    button:hover {
+      background: #ff3333;
+    }
+    .label {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Poder360 and Itatiaia</h1>
+  <div class="container">
+    <div class="frame-box">
+      <div class="label">300x1050</div>
+      <iframe id="frame1" src="./300x1050/index.html"></iframe>
+      <button onclick="reloadFrame('frame1')">Refresh</button>
+    </div>
+        <div class="frame-box">
+      <div class="label">1248x250</div>
+      <iframe id="frame2" src="./1248x250/index.html"></iframe>
+      <button onclick="reloadFrame('frame2')">Refresh</button>
+    </div>
+  </div>
+
+  <script>
+    function reloadFrame(id) {
+      const iframe = document.getElementById(id);
+      iframe.src = iframe.src;
+    }
+  </script>
+</body>
+</html>
