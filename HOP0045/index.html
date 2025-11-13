@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Preview dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+      background: #0d0d0d;
+      color: #eee;
+      padding: 20px;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .controls button {
+      background: #222;
+      color: #eee;
+      border: 1px solid #444;
+      padding: 8px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .controls button:hover {
+      background: #c00;
+      border-color: #c00;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .frame-box {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    iframe {
+      border: none;
+    }
+    .refresh {
+      background: #c00;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    .label {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="controls" id="filterButtons"></div>
+
+<div class="container" id="frames"></div>
+
+<script>
+  const folders = [
+    "HOP0045_Hostplus_ISF_Q3_160x600",
+    "HOP0045_Hostplus_ISF_Q3_300x250",
+    "HOP0045_Hostplus_ISF_Q3_300x600",
+    "HOP0045_Hostplus_ISF_Q3_728x90",
+    "HOP0045_Hostplus_ISF_Q3_970x250",
+    "HOP0045_Hostplus_NB_Q3_160x600",
+    "HOP0045_Hostplus_NB_Q3_300x250",
+    "HOP0045_Hostplus_NB_Q3_300x600",
+    "HOP0045_Hostplus_NB_Q3_728x90",
+    "HOP0045_Hostplus_NB_Q3_970x250",
+    "HOP0045_Hostplus_SP_Q3_160x600",
+    "HOP0045_Hostplus_SP_Q3_300x250",
+    "HOP0045_Hostplus_SP_Q3_300x600",
+    "HOP0045_Hostplus_SP_Q3_728x90",
+    "HOP0045_Hostplus_SP_Q3_970x250"
+  ];
+
+  const filterButtons = document.getElementById("filterButtons");
+  const framesContainer = document.getElementById("frames");
+
+  const brandFilters = ["All", "ISF", "NB", "SP"];
+  const sizeFilters = ["160x600", "300x600", "300x250", "728x90", "970x250"];
+
+  let currentBrand = "All";
+  let currentSize = "All";
+
+  function createButtons() {
+    brandFilters.forEach(b => {
+      const btn = document.createElement("button");
+      btn.textContent = b;
+      btn.onclick = () => {
+        currentBrand = b;
+        currentSize = "All";
+        buildFrames();
+      };
+      filterButtons.appendChild(btn);
+    });
+
+    sizeFilters.forEach(size => {
+      const btn = document.createElement("button");
+      btn.textContent = size;
+      btn.onclick = () => {
+        currentSize = size;
+        currentBrand = "All";
+        buildFrames();
+      };
+      filterButtons.appendChild(btn);
+    });
+  }
+
+  function buildFrames() {
+    framesContainer.innerHTML = "";
+
+    const filtered = folders.filter(folder => {
+      const size = folder.match(/(\d+x\d+)$/)[1];
+      const brand = folder.includes("_ISF_")
+        ? "ISF"
+        : folder.includes("_NB_")
+        ? "NB"
+        : "SP";
+
+      const brandMatch = currentBrand === "All" || brand === currentBrand;
+      const sizeMatch = currentSize === "All" || size === currentSize;
+
+      return brandMatch && sizeMatch;
+    });
+
+    filtered.forEach(folder => {
+      const [_, w, h] = folder.match(/(\d+)x(\d+)$/);
+
+      const box = document.createElement("div");
+      box.className = "frame-box";
+
+      const label = document.createElement("div");
+      label.className = "label";
+      label.textContent = `${folder}`;
+
+      const iframe = document.createElement("iframe");
+      iframe.width = w;
+      iframe.height = h;
+      iframe.src = `./${folder}/index.html`;
+
+      const refresh = document.createElement("button");
+      refresh.className = "refresh";
+      refresh.textContent = "Refresh";
+      refresh.onclick = () => iframe.src = iframe.src;
+
+      box.appendChild(label);
+      box.appendChild(iframe);
+      box.appendChild(refresh);
+      framesContainer.appendChild(box);
+    });
+  }
+
+  createButtons();
+  buildFrames();
+</script>
+
+</body>
+</html>
