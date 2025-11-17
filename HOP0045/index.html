@@ -67,6 +67,16 @@
       color: #888;
       margin-bottom: 10px;
     }
+
+    .downloadURL {
+      padding: 10px;
+      font-size: 12px;
+
+      a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -154,6 +164,10 @@
       label.className = "label";
       label.textContent = `${folder}`;
 
+      const download = document.createElement("div");
+      download.className = "downloadURL";
+      download.innerHTML = `<a href="./${folder}.zip">Download</>`;
+
       const iframe = document.createElement("iframe");
       iframe.width = w;
       iframe.height = h;
@@ -167,6 +181,7 @@
       box.appendChild(label);
       box.appendChild(iframe);
       box.appendChild(refresh);
+      box.appendChild(download);
       framesContainer.appendChild(box);
     });
   }
