@@ -23,11 +23,11 @@ All character animate in at once -->
   /*  Animation css variables*/
   --text-01-duration: 0.6s;
   --text-01-start: 1s;
-  --text-01-step: 0.0s;
+  --text-01-step: 0.016s;
 
   --text-02-duration: 0.8s;
   --text-02-start: 1.4s;
-  --text-02-step: 0.0s;
+  --text-02-step: 0.016s;
 
   --text-easing: cubic-bezier(0.4, 0, 0.2, 1);
 
