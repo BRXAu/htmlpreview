@@ -1,16 +1,5 @@
 <svg width="762" height="62" viewBox="0 0 761 61" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
-
-<!-- Things to do:
-
-Divider mask in from center up and down
-
-Update easing.
-
-All character animate in at once -->
-
-
-
 :root {
   /* colour css variables*/
   --color-yellow: #F7941D;
@@ -18,18 +7,16 @@ All character animate in at once -->
   --color-white: #FFFFFF;
   --color-gray: #CCCCCC;
 
-  --text-color: var(--color-yellow);
-
   /*  Animation css variables*/
   --text-01-duration: 0.6s;
-  --text-01-start: 1s;
+  --text-01-start: 0.7s;
   --text-01-step: 0.0s;
 
   --text-02-duration: 0.8s;
-  --text-02-start: 1.4s;
+  --text-02-start: 1.2s;
   --text-02-step: 0.0s;
 
-  --text-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --text-easing: cubic-bezier(0, 0.65, 0.5, 1);
 
   --divider-start: 0.2s;
   --divider-duration: 0.7s;
@@ -37,9 +24,31 @@ All character animate in at once -->
 
   --divider-transform-start: skewX(26deg) translateX(30px) scale(0);
   --divider-transform-end:   skewX(0deg)  translateX(0px) scale(1);
+
+  --mask-start: 0.2;
+  --mask-duration: 0.4s;
+  --mask-easing: linear;
 }
 
+/* Define color themes */
+
+.yellow {
+  --text-color: var(--color-yellow);
+}
+.black {
+  --text-color: var(--color-black);
+}
+.gray {
+  --text-color: var(--color-gray);
+}
+.white {
+  --text-color: var(--color-white);
+}
+
+
 /* Zieger text */
+
+
 
 .text_01_characters {
   fill: var(--text-color);
@@ -83,19 +92,23 @@ All character animate in at once -->
 /* Divider */
 #divider {
   transform-origin: center;
-  transform: var(--divider-transform-start);
-  animation: scaleDivider var(--divider-duration) forwards var(--divider-ease);
-  animation-delay: var(--divider-start);
 }
 
 .dividerPath {
   fill: var(--text-color);
 }
 
+#clipPath_divider_01_A {
+  transform-origin: center;
+  transform: scaleY(0);
+  animation: maskIn var(--mask-duration) forwards var(--mask-easing);
+  animation-delay: var(--mask-start);
+}
+
 /* Keyframe */
 @keyframes moveText01 { to { transform: translateX(0); } }
 @keyframes moveText02 { to { transform: translateX(0); } }
-@keyframes scaleDivider { to { transform: var(--divider-transform-end); } }
+@keyframes maskIn { to { transform: scaleY(1); } }
 
 </style>
 
@@ -109,11 +122,14 @@ All character animate in at once -->
   <clipPath id="clipPath_text_02_A">
     <rect width="318" height="60" fill="white" x="444" y="1"/>
   </clipPath>
+  <clipPath id="clipPath_divider_01_A">
+    <rect width="36" height="62" fill="white" x="386"/>
+  </clipPath>
   <!-- Clip path for Bailey text end -->
 </defs>
 
 <!-- Logo container start -->
-<g id="logo_container">
+<g class="yellow" id="logo_container">
 
   <!-- Ziegler Text start -->
   <g id="text_01" clip-path="url(#clipPath_text_01_A)">
@@ -143,9 +159,10 @@ All character animate in at once -->
   <!-- Bailey Text end -->
 
   <!-- Divider start -->
-  <g id="divider">
+  <g id="divider" clip-path="url(#clipPath_divider_01_A)">
     <path class='dividerPath' d="M388.188 53.5151L410.663 7.30493H421.212L398.737 53.5151H388.188Z"/>
   </g>
+
   <!-- Divider end -->
 
 </g>
