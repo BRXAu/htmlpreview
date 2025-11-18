@@ -47,7 +47,7 @@
 <body>
 
   <div id="svg-container" style="">
-    <object id="mySvg" type="image/svg+xml" data="logo_container.svg" width="762" height="62"></object>
+    <object id="mySvg" type="image/svg+xml" data="logo_container_02.svg" width="762" height="62"></object>
   </div>
 
   <button id="refreshBtn">Replay</button>
@@ -55,6 +55,7 @@
   <script>
     const refreshBtn = document.getElementById('refreshBtn');
     const svgObject = document.getElementById('mySvg');
+
 
     refreshBtn.addEventListener('click', () => {
       // Add a cache buster to force reload
