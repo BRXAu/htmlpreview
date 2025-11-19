@@ -11,10 +11,12 @@
   --text-01-duration: 0.6s;
   --text-01-start: 0.7s;
   --text-01-step: 0.0s;
+  --text-01-offset-distance: translateX(416px);
 
-  --text-02-duration: 0.8s;
-  --text-02-start: 1.2s;
+  --text-02-duration: 0.6s;
+  --text-02-start: 0.94s;
   --text-02-step: 0.0s;
+  --text-02-offset-distance: translateX(-380px);
 
   --text-easing: cubic-bezier(0, 0.65, 0.5, 1);
 
@@ -35,31 +37,31 @@
 .yellow {
   --text-color: var(--color-yellow);
 }
+
 .black {
   --text-color: var(--color-black);
 }
+
 .gray {
   --text-color: var(--color-gray);
 }
+
 .white {
   --text-color: var(--color-white);
 }
 
-
 /* Zieger text */
-
-
 
 .text_01_characters {
   fill: var(--text-color);
-  transform: translateX(370px);
+  transform: var(--text-01-offset-distance);
   animation: moveText01 var(--text-01-duration) forwards var(--text-easing);
 }
 
 /* Bailey text */
 .text_02_characters {
   fill: var(--text-color);
-  transform: translateX(-370px);
+  transform: var(--text-02-offset-distance);
   animation: moveText02 var(--text-02-duration) forwards var(--text-easing);
 }
 
@@ -112,15 +114,21 @@
 
 </style>
 
+
+
+
+
 <defs>
   <!-- Clip path for Ziegler text start -->
-  <clipPath id="clipPath_text_01_A">
-    <rect width="366" height="62" fill="white"/>
+  <clipPath id="clipPath_text_02_A">
+    <!-- <rect width="366" height="62" fill="white"/> -->
+    <path d="M393 62.0001L811 62L811 -7.62939e-06L425 2.61158e-05L393 62.0001Z" fill="white"/>
   </clipPath>
   <!-- Clip path for Ziegler text end -->
   <!-- Clip path for Bailey text start -->
-  <clipPath id="clipPath_text_02_A">
-    <rect width="318" height="60" fill="white" x="444" y="1"/>
+  <clipPath id="clipPath_text_01_A">
+    <!-- <rect width="318" height="60" fill="white" x="444" y="1"/> -->
+    <path d="M418 3.05176e-05H0V62H386L418 3.05176e-05Z" fill="white"/>
   </clipPath>
   <clipPath id="clipPath_divider_01_A">
     <rect width="36" height="62" fill="white" x="386"/>
