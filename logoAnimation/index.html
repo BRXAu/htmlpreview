@@ -11,7 +11,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: #f0f0f0;
+      background: #ffffff;
       font-family: Arial, sans-serif;
     }
 
@@ -29,6 +29,7 @@
     }
 
     button {
+      margin-bottom: 15px;
       padding: 10px 20px;
       font-size: 16px;
       cursor: pointer;
@@ -51,11 +52,18 @@
   </div>
 
   <button id="refreshBtn">Replay</button>
+  <button id="settingBtn">Settings</button>
 
   <script>
     const refreshBtn = document.getElementById('refreshBtn');
+
+    const settingBtn = document.getElementById('settingBtn');
+
     const svgObject = document.getElementById('mySvg');
 
+    settingBtn.addEventListener('click', () => {
+      window.location.href = 'build.html';
+    });
 
     refreshBtn.addEventListener('click', () => {
       // Add a cache buster to force reload
