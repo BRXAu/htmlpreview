@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>GIF Preview</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+     background: #0d0d0d;
+    }
+    .container {
+      max-width: 970px;
+    }
+    img {
+      width: 970px;
+      height: 250px;
+      display: block;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+
+    h1 {
+      color: #FFF;
+      font-size: 24px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <H1>HOP0040 - Preview GIFS</H1>
+    <img id="preview" src="HOP0040-Money-Magazine-970x250-GIF-Animation-R0.gif" alt="Animated GIF" />
+
+    <button onclick="refreshGif()">Refresh</button>
+  </div>
+
+  <script>
+    function refreshGif() {
+      const img = document.getElementById('preview');
+      img.src = "HOP0040-Money-Magazine-970x250-GIF-Animation-R0.gif?v=" + Date.now();
+    }
+  </script>
+</body>
+</html>
