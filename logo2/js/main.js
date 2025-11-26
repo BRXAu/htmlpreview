@@ -3,11 +3,11 @@ const cssObj = {
   't1-duration':['--text-01-duration', '1.1s'],
   't1-start':['--text-01-start', '0.7s'],
   't1-step':['--text-01-step', '0.0s'],
-  't1-offset':['--text-01-offset-distance', 'translateX(416px)'],
+  't1-offset':['--text-01-offset-distance', 'translateX(126px)'],
   't2-duration':['--text-02-duration', '1.2s'],
   't2-start':['--text-02-start', '1.15s'],
   't2-step':['--text-02-step', '0.0s'],
-  't2-offset':['--text-02-offset-distance', 'translateX(-380px)'],
+  't2-offset':['--text-02-offset-distance', 'translateX(-120px)'],
   'easing':['--text-easing', 'cubic-bezier(0, 1, 1, 1)']
 }
 
@@ -32,6 +32,13 @@ function copyInlineSvg() {
   if (!s) return;
   const serializer = new XMLSerializer();
   const source = serializer.serializeToString(s);
+
+  console.log('insert styles noW!!!')
+  console.log(styles)
+  console.log(document.styleSheets[2])
+  console.log(document.styleSheets[0].cssRules)
+
+
   navigator.clipboard.writeText(source).then(() => {
     downloadBtn.textContent = 'Copied';
     setTimeout(()=> downloadBtn.textContent = 'Copy inline SVG', 1200);
