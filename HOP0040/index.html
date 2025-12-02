@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>GIF Preview</title>
+  <title>Banner Preview</title>
   <style>
     body {
       font-family: sans-serif;
@@ -10,16 +10,32 @@
       background: #0d0d0d;
       color: #fff;
     }
+
     h1 {
       font-size: 24px;
       margin-bottom: 20px;
     }
-    .gif-container {
+
+    .mode-switch {
+      margin-bottom: 20px;
+    }
+
+    .mode-switch button {
+      padding: 8px 16px;
+      margin-right: 10px;
+      cursor: pointer;
+      border: 1px solid #555;
+      background: #222;
+      color: #fff;
+    }
+
+    .banner-container {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
     }
-    .gif-wrapper {
+
+    .banner-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -27,12 +43,22 @@
       padding: 10px;
       background: #111;
     }
-    .gif-wrapper img {
-      display: block;
-      max-width: 100%;
-      height: auto;
+
+    iframe {
+      width: 300px;
+      height: 900px;
+      border: none;
+      background: #000;
     }
-    .gif-wrapper button {
+
+    img {
+      width: 300px;
+      height: auto;
+      display: block;
+      background: #000;
+    }
+
+    .banner-wrapper button {
       margin-top: 10px;
       padding: 6px 12px;
       cursor: pointer;
@@ -40,34 +66,59 @@
       color: #fff;
       border: 1px solid #555;
     }
+
     audio {
       display: none;
     }
   </style>
 </head>
 <body>
-  <h1>HOP0040 - Preview GIFs</h1>
-  <div class="gif-container">
-    <div class="gif-wrapper">
+  <h1>HOP0040 - Banner Preview</h1>
+
+  <div class="mode-switch">
+    <button onclick="setMode('html')">HTML mode</button>
+    <button onclick="setMode('gif')">GIF mode</button>
+  </div>
+
+  <div class="banner-container">
+
+    <!-- HTML banners -->
+    <div class="banner-wrapper html-banner">
+      <iframe id="html1" src="HOP0040_left_300x900_ClickTag.html"></iframe>
+      <button onclick="reloadHTML('html1','HOP0040_left_300x900_ClickTag.html')">Reload HTML</button>
+    </div>
+
+    <div class="banner-wrapper html-banner">
+      <iframe id="html2" src="HOP0040_right_300x900_ClickTag.html"></iframe>
+      <button onclick="reloadHTML('html2','HOP0040_right_300x900_ClickTag.html')">Reload HTML</button>
+    </div>
+
+    <!-- GIF banners -->
+    <div class="banner-wrapper gif-banner">
       <img id="gif1" src="HOP0040-Money-Magazine-160x600-GIF-Animation-R1.gif" alt="160x600 GIF">
-      <button onclick="refreshGif('gif1','HOP0040-Money-Magazine-160x600-GIF-Animation-R1.gif')">Refresh</button>
+      <button onclick="reloadGIF('gif1','HOP0040-Money-Magazine-160x600-GIF-Animation-R1.gif')">Reload GIF</button>
     </div>
-    <div class="gif-wrapper">
+
+    <div class="banner-wrapper gif-banner">
       <img id="gif2" src="HOP0040-Money-Magazine-300x250-GIF-Animation-R1.gif" alt="300x250 GIF">
-      <button onclick="refreshGif('gif2','HOP0040-Money-Magazine-300x250-GIF-Animation-R1.gif')">Refresh</button>
+      <button onclick="reloadGIF('gif2','HOP0040-Money-Magazine-300x250-GIF-Animation-R1.gif')">Reload GIF</button>
     </div>
-    <div class="gif-wrapper">
+
+    <div class="banner-wrapper gif-banner">
       <img id="gif3" src="HOP0040-Money-Magazine-300x600-GIF-Animation-R1.gif" alt="300x600 GIF">
-      <button onclick="refreshGif('gif3','HOP0040-Money-Magazine-300x600-GIF-Animation-R1.gif')">Refresh</button>
+      <button onclick="reloadGIF('gif3','HOP0040-Money-Magazine-300x600-GIF-Animation-R1.gif')">Reload GIF</button>
     </div>
-    <div class="gif-wrapper">
+
+    <div class="banner-wrapper gif-banner">
       <img id="gif4" src="HOP0040-Money-Magazine-728x90-GIF-Animation-R1.gif" alt="728x90 GIF">
-      <button onclick="refreshGif('gif4','HOP0040-Money-Magazine-728x90-GIF-Animation-R1.gif')">Refresh</button>
+      <button onclick="reloadGIF('gif4','HOP0040-Money-Magazine-728x90-GIF-Animation-R1.gif')">Reload GIF</button>
     </div>
-    <div class="gif-wrapper">
+
+    <div class="banner-wrapper gif-banner">
       <img id="gif5" src="HOP0040-Money-Magazine-970x250-GIF-Animation-R1.gif" alt="970x250 GIF">
-      <button onclick="refreshGif('gif5','HOP0040-Money-Magazine-970x250-GIF-Animation-R1.gif')">Refresh</button>
+      <button onclick="reloadGIF('gif5','HOP0040-Money-Magazine-970x250-GIF-Animation-R1.gif')">Reload GIF</button>
     </div>
+
   </div>
 
   <audio id="lowRider" autoplay>
@@ -75,15 +126,43 @@
   </audio>
 
   <script>
-    function refreshGif(id, src) {
+    let currentMode = 'html';
+
+    function setMode(mode) {
+      currentMode = mode;
+      updateVisibility();
+    }
+
+    function updateVisibility() {
+      // HTML banners
+      const htmlBanners = document.querySelectorAll('.html-banner');
+      // GIF banners
+      const gifBanners = document.querySelectorAll('.gif-banner');
+
+      if (currentMode === 'html') {
+        htmlBanners.forEach(i => i.style.display = 'block');
+        gifBanners.forEach(i => i.style.display = 'none');
+      } else {
+        htmlBanners.forEach(i => i.style.display = 'none');
+        gifBanners.forEach(i => i.style.display = 'block');
+      }
+    }
+
+    function reloadHTML(id, src) {
+      const iframe = document.getElementById(id);
+      iframe.src = src + '?v=' + Date.now();
+    }
+
+    function reloadGIF(id, src) {
       const img = document.getElementById(id);
       img.src = src + '?v=' + Date.now();
     }
 
-    // Cue to wake up at 4:15am
+    updateVisibility();
+
+    // Wake-up cue at 4:15am
     const wakeHour = 4;
     const wakeMinute = 15;
-
     function checkWake() {
       const now = new Date();
       if (now.getHours() === wakeHour && now.getMinutes() === wakeMinute) {
@@ -91,7 +170,7 @@
         alert('Wake up, time to get to work!');
       }
     }
-    setInterval(checkWake, 60000); // check every minute
+    setInterval(checkWake, 60000);
   </script>
 </body>
 </html>
