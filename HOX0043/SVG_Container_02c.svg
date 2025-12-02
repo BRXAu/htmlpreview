@@ -30,7 +30,7 @@
   --divider-transform-end:   skewX(0deg)  translateX(0px) scale(1);
 
   --mask-start: 0.2;
-  --mask-duration: 25s;
+  --mask-duration: 5s;
   --mask-easing: linear;
 }
 
@@ -51,14 +51,6 @@
 
 
 @keyframes moveIt { 
-
-0% { transform: translateY(0px); } 
-19.99% { transform: translateY(-100px); } 
-20% { transform: translateY(-116px); } 
-39.99% { transform: translateY(-195px); } 
-40% { transform: translateY(-208px); } 
-59.99% { transform: translateY(-281px); } 
-60% { transform: translateY(-298px); } 
 80% { transform: translateY(-380px); } 
 90% { transform: translateY(-380px); opacity: 1} 
 100% { transform: translateY(-380px); opacity: 0} 
