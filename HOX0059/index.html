@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ad Preview</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #f5f5f5;
+  }
+  .iframe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  iframe {
+    border: 1px solid #ccc;
+  }
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  h3 {
+    margin: 5px 0;
+    font-size: 14px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<script>
+  const folders = [
+    "HOX0059_SMSF_Defection_Consistency_300x250",
+    "HOX0059_SMSF_Defection_Consistency_300x250_81289d09",
+    "HOX0059_SMSF_Defection_Consistency_300x250_bec0bb39",
+    "HOX0059_SMSF_Defection_Consistency_300x250_d818fa49",
+    "HOX0059_SMSF_Defection_Consistency_300x250_f2e51806",
+    "HOX0059_SMSF_Defection_Consistency_300x250_f82040e9",
+    "HOX0059_SMSF_Defection_Consistency_300x600",
+    "HOX0059_SMSF_Defection_Consistency_300x600_180b8ac8",
+    "HOX0059_SMSF_Defection_Consistency_300x600_366e8766",
+    "HOX0059_SMSF_Defection_Consistency_300x600_429e4871",
+    "HOX0059_SMSF_Defection_Consistency_300x600_84fd11e6",
+    "HOX0059_SMSF_Defection_Consistency_300x600_96ffabf6",
+    "HOX0059_SMSF_Defection_Consistency_300x600_98eb4f6a",
+    "HOX0059_SMSF_Defection_Consistency_300x600_b5b0b65d"
+  ];
+
+  function parseSize(folderName) {
+    const match = folderName.match(/(\d+)x(\d+)/);
+    if (match) {
+      return { width: parseInt(match[1]), height: parseInt(match[2]) };
+    }
+    return { width: 300, height: 250 }; // fallback
+  }
+
+  function createIframe(folder) {
+    const size = parseSize(folder);
+    const container = document.createElement('div');
+    container.className = 'iframe-container';
+
+    const title = document.createElement('h3');
+    title.textContent = folder;
+    container.appendChild(title);
+
+    const iframe = document.createElement('iframe');
+    iframe.src = `${folder}/index.html`;
+    iframe.width = size.width;
+    iframe.height = size.height;
+    container.appendChild(iframe);
+
+    const button = document.createElement('button');
+    button.textContent = 'Refresh';
+    button.onclick = () => { iframe.src = iframe.src; };
+    container.appendChild(button);
+
+    document.body.appendChild(container);
+  }
+
+  folders.forEach(createIframe);
+</script>
+
+</body>
+</html>
