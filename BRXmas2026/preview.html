@@ -42,10 +42,12 @@
 
     #desktop {
       width: 640px;
+      height: 1720px;
     }
 
     #mobile {
       width: 340px;
+      height: 1700px;
     }
   </style>
 </head>
@@ -72,8 +74,8 @@
       const desktop = document.getElementById('desktop');
       const mobile = document.getElementById('mobile');
 
-      desktop.src = dark ? 'email-dark-01.html' : 'email.html';
-      mobile.src = dark ? 'email-dark-01.html' : 'email.html';
+      desktop.src = dark ? 'email-dark.html' : 'email.html';
+      mobile.src = dark ? 'email-dark.html' : 'email.html';
     }
 
     function refreshFrames() {
