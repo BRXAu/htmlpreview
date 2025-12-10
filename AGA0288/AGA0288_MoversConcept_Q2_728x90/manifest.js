@@ -14,7 +14,7 @@ window.MANIFEST = {
   "Themes": "default,default,default,default,default",
   "Overlay": "",
   "ExitLink": "",
-  "Terms": "For residential customers moving online only. |$100| bill credit (GST incl) on each of any eligible AGL electricity plan, and any eligible AGL internet plan if you have AGL electricity. ++You must stay with AGL at the same address for 90 days from the start of each plan to receive each bill credit.++ Offer ends 23 Feb 2026, unless varied. Credits not transferable nor refundable. Full T&Cs and eligible plans at agl.com.au",
+  "Terms": "For residential customers moving online only. |$100| bill credit (GST incl) on each of any eligible AGL electricity plan, and any eligible AGL internet plan if you have AGL electricity. ++You must stay with AGL at the same address for 90 days from the start of each plan to receive each bill credit.++ Offer ends 23 Feb 2026, unless varied. Credits not transferable nor refundable. Full T&Cs and eligible plans at agl.com.au|<style>#background1 {z-index:1; pointer-event:none;}</style>|",
   "Layouts": ",,,,",
   "F1_Transitions": "",
   "F1_Animations": "slideInByLine:0.5,fadeOut:0.5",
