@@ -19,6 +19,7 @@
       margin-bottom: 20px;
       display: flex;
       gap: 16px;
+      flex-wrap: wrap;
     }
 
     button {
@@ -56,26 +57,58 @@
   <h1>EDM preview</h1>
 
   <div class="controls">
+    <button onclick="setTemplate('existingClients')">Existing clients</button>
+    <button onclick="setTemplate('friends')">Friends</button>
+    <button onclick="setTemplate('prospectiveClients')">Prospective clients</button>
+
     <button onclick="toggleMode()">Toggle dark mode</button>
     <button onclick="refreshFrames()">Refresh previews</button>
   </div>
 
   <div class="preview-wrap">
-    <iframe id="desktop" src="email.html"></iframe>
-    <iframe id="mobile" src="email.html"></iframe>
+    <iframe id="desktop"></iframe>
+    <iframe id="mobile"></iframe>
   </div>
 
   <script>
     let dark = false;
+    let currentTemplate = 'existingClients';
 
-    function toggleMode() {
-      dark = !dark;
+    const paths = {
+      existingClients: {
+        light: 'existingClients.html',
+        dark: 'existingClients-dark.html'
+      },
+      friends: {
+        light: 'friends.html',
+        dark: 'friends-dark.html'
+      },
+      prospectiveClients: {
+        light: 'prospectiveClients.html',
+        dark: 'prospectiveClients-dark.html'
+      }
+    };
 
+    function loadFrames() {
       const desktop = document.getElementById('desktop');
       const mobile = document.getElementById('mobile');
 
-      desktop.src = dark ? 'email-dark.html' : 'email.html';
-      mobile.src = dark ? 'email-dark.html' : 'email.html';
+      const file = dark
+        ? paths[currentTemplate].dark
+        : paths[currentTemplate].light;
+
+      desktop.src = file;
+      mobile.src = file;
+    }
+
+    function setTemplate(name) {
+      currentTemplate = name;
+      loadFrames();
+    }
+
+    function toggleMode() {
+      dark = !dark;
+      loadFrames();
     }
 
     function refreshFrames() {
@@ -83,6 +116,9 @@
         f.src = f.src;
       });
     }
+
+    // Load default
+    loadFrames();
   </script>
 
 </body>
