@@ -1,0 +1,165 @@
+<mjml>
+  <mj-head>
+  <mj-style>
+@media only screen and (max-width:480px) {
+
+  .text01 {
+    font-size: 20px !important;    
+  }
+
+  .text01 div {
+    font-size: 20px !important;    
+  }
+
+  .text02 {
+    font-size: 15px !important;    
+  }
+
+  .text02 div {
+    font-size: 15px !important;    
+  }
+
+  .text03 {
+    font-size: 19px !important;    
+  }
+
+  .text03 div {
+    font-size: 19px !important;    
+  }
+
+
+}
+
+.logoOnTop img {
+  min-width: 300px!important;
+}
+
+
+  </mj-style>
+    <mj-attributes>
+      <mj-all padding="0" />
+      <mj-body width="600px" />
+
+    <mj-text font-family="Arial" line-height="1.5"/>
+
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body css-class="dark-mode">
+
+    <!-- Row 1 -->
+
+
+    <mj-section padding-top="0px" padding-bottom="0px">
+    <mj-group>
+      <mj-column>
+        <mj-image css-class="logoOnTop" src="brx_xmas_logo_on_white_300.png" alt="BRX" width="300px" height="80px" align="left" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="brx_xmas_spacer_white_300x80.png" alt="BRX" height="80px" align="left"/>
+      </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <!-- Row 2 -->
+    <mj-section>
+      <mj-column>
+        <mj-image src="brx_xmas_hero.jpg" alt="Wishing you a very Merry BRXmas"  padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Row 3 -->
+    <mj-section padding-top="25px" padding-bottom="25px" padding-left="50px" padding-right="45px">
+      <mj-column>
+        <mj-text font-size="30px" font-weight="bold" color="#282828" css-class="text01">
+          Hi {{first_name}},
+        </mj-text>
+        <mj-spacer height="16px" />
+        <mj-text font-size="18px" color="#282828" css-class="text02" >
+          Our little gingerbread friend has a short, AI-fuelled adventure to showcase some of the work we have done together this&nbsp;year.<br><br>
+          See if you can catch the work you made with us this year in this sweet little&nbsp;story.<br><br>
+          His biscuit version will be delivered to you this&nbsp;week, to sweeten your&nbsp;Christmas.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Row 4 -->
+    <mj-section>
+      <mj-column>
+        <mj-image href="{{custom_url}}" alt="Click here" src="brx_xmas_module_01b.png" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Row 5 -->
+    <mj-section padding-top="25px" padding-bottom="25px" padding-left="50px" padding-right="50px">
+      <mj-column>
+        <mj-text font-size="30px" font-weight="bold" color="#282828" css-class="text03" padding-right="20px">
+          From&nbsp;all&nbsp;of&nbsp;us, wishing&nbsp;you a&nbsp;very Merry&nbsp;BRXmas and a wonderful new&nbsp;year. 
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+<mj-section padding-top="0px" padding-bottom="0px">
+    <mj-group>
+      <mj-column>
+        <mj-image css-class="logoOnTop" src="brx_xmas_logo_on_dark_300.png" alt="BRX" width="300px" height="80px" align="left" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="brx_xmas_spacer_dark_300x80.png" height="80px" align="left"/>
+      </mj-column>
+      </mj-group>
+</mj-section>
+
+
+
+
+
+<mj-section padding-top="25px" padding-bottom="25px" padding-left="50px" padding-right="50px" background-color="#282828">
+  <mj-column width="40%">
+    <mj-text color="#FFFFFF">
+    </mj-text>
+  </mj-column>
+
+  <mj-column width="24%">
+    <mj-text color="#FFFFFF" font-size="22px">
+      Melbourne
+    </mj-text>
+    <mj-spacer height="20px" />
+    <mj-text color="#FFFFFF" font-size="14px">
+      25 St Edmonds Rd<br>
+      Prahran VIC 3180<br>
+      03 9234 1000
+    </mj-text>
+  </mj-column>
+
+  <mj-column width="4%">
+    <mj-text color="#FFFFFF" font-size="18px">&nbsp;
+    </mj-text>
+  </mj-column>
+
+ <mj-column width="26%">
+    <mj-text color="#FFFFFF" font-size="22px" >
+      Sydney
+    </mj-text>
+    <mj-spacer height="20px" />
+    <mj-text color="#FFFFFF" font-size="14px">
+      Bay 5-7 North,<br>
+      2 Locomotive St,<br>
+      Eveleigh NSW 2015<br>
+      03 9234 1000
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding-top="25px" padding-bottom="50px" padding-left="50px" padding-right="50px" background-color="#282828">
+  <mj-column>
+    <mj-text color="#FFFFFF" font-size="12px">
+    This email contains a tracking pixel to let us know if you open it. We use this information only to measure engagement and improve our communications. If you’d rather not get these emails, you can unsubscribe <a href="{{unsubscribe}}" style="color:#FFFFFF">here.</a>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+
+  </mj-body>
+</mjml>
