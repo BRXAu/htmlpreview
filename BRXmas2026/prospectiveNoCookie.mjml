@@ -1,0 +1,183 @@
+<mjml>
+  <mj-head>
+  <mj-style>
+@media only screen and (max-width:480px) {
+
+  .text01 {
+    font-size: 20px !important;    
+  }
+
+  .text01 div {
+    font-size: 20px !important;    
+  }
+
+  .text02 {
+    font-size: 15px !important;    
+  }
+
+  .text02 div {
+    font-size: 15px !important;    
+  }
+
+  .text03 {
+    font-size: 19px !important;    
+  }
+
+  .text03 div {
+    font-size: 19px !important;    
+  }
+
+  .text04 {
+    font-size: 15px !important;    
+  }
+
+  .text04 div {
+    font-size: 15px !important;    
+  }
+
+
+}
+
+.logoOnTop img {
+  min-width: 300px!important;
+}
+
+
+  </mj-style>
+    <mj-attributes>
+      <mj-all padding="0" />
+      <mj-body width="600px" />
+
+    <mj-text font-family="Arial" line-height="1.5"/>
+
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body css-class="dark-mode">
+
+    <!-- Row 1 -->
+
+
+    <mj-section padding-top="0px" padding-bottom="0px">
+    <mj-group>
+      <mj-column>
+        <mj-image css-class="logoOnTop" src="brx_xmas_logo_on_white_300.png" alt="BRX" width="300px" height="80px" align="left" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="http://cdn.mcauto-images-production.sendgrid.net/68010c4f402398bf/6b60ec1c-d53c-4e6b-82e4-ebbe3df49326/20x160.png" alt="BRX" height="80px" align="left"/>
+      </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <!-- Row 2 -->
+    <mj-section>
+      <mj-column>
+        <mj-image src="http://cdn.mcauto-images-production.sendgrid.net/68010c4f402398bf/6df8d735-a66a-40f4-83ae-773218d0bdd5/1200x730.jpg" alt="Wishing you a very Merry BRXmas"  padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Row 3 -->
+    <mj-section padding-top="25px" padding-bottom="25px" padding-left="50px" padding-right="45px">
+      <mj-column>
+        <mj-text font-size="30px" font-weight="bold" color="#282828" css-class="text01">
+          Hi {{first_name}},
+        </mj-text>
+        <mj-spacer height="16px" />
+        <mj-text font-size="18px" color="#282828" css-class="text02" >
+          It’s been lovely connecting with you in&nbsp;2025.
+          <br><br>
+          Our little gingerbread friend has a&nbsp;short, AI&#8209;fuelled adventure to showcase some of the work we have done this&nbsp;year, and&nbsp;to excite you about the prospect of working with us&nbsp;in&nbsp;2026.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+
+
+
+
+
+    <!-- Row 4 -->
+    <mj-section>
+      <mj-column>
+        <mj-image href="{{custom_url}}" alt="Click here" src="http://cdn.mcauto-images-production.sendgrid.net/68010c4f402398bf/642deb65-76d4-489e-9fe5-940633a3f825/1200x600.gif" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Row 5 -->
+    <mj-section padding-top="25px" padding-bottom="25px" padding-left="50px" padding-right="50px">
+      <mj-column>
+      <mj-text font-size="18px" color="#282828" css-class="text02" padding-right="20px">
+          We’d love to include you in&nbsp;our story&nbsp;next&nbsp;year.  
+        </mj-text>
+        <mj-spacer height="16px" />
+        <mj-text font-size="20px" font-weight="bold" color="#282828" css-class="text04" padding-right="20px">
+          From&nbsp;all&nbsp;of&nbsp;us, wishing&nbsp;you a&nbsp;very Merry&nbsp;Christmas and a wonderful new&nbsp;year. 
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+<mj-section padding-top="0px" padding-bottom="0px">
+    <mj-group>
+      <mj-column>
+        <mj-image css-class="logoOnTop" src="http://cdn.mcauto-images-production.sendgrid.net/68010c4f402398bf/36da5b6f-1a21-4691-969b-325507ec645e/600x160.png" alt="BRX" width="300px" height="80px" align="left" />
+      </mj-column>
+      <mj-column>
+        <mj-image src="http://cdn.mcauto-images-production.sendgrid.net/68010c4f402398bf/689882a3-6ff0-4d3a-8dee-0dce2d1827ac/20x160.png" height="80px" align="left"/>
+      </mj-column>
+      </mj-group>
+</mj-section>
+
+
+
+
+
+<mj-section padding-top="25px" padding-bottom="25px" padding-left="50px" padding-right="50px" background-color="#282828">
+  <mj-column width="44%">
+    <mj-text color="#FFFFFF">
+    </mj-text>
+  </mj-column>
+
+  <mj-column width="26%">
+    <mj-text color="#FFFFFF" font-size="22px">
+      <span style="text-decoration: none; color: #FFFFFF">M&#8203;elbourne</span>
+    </mj-text>
+    <mj-spacer height="20px" />
+    <mj-text color="#FFFFFF" font-size="14px">
+      <span style="text-decoration: none; color: #FFFFFF">2&#8203;5 S<span style="display:inline-block; width:1px;"></span>t Edmonds R<span style="display:inline-block; width:1px;"></span>d<br>
+      Prahran V<span style="display:inline-block; width:1px;"></span>IC 318<span style="display:inline-block; width:1px;"></span>0<br>
+      03 9&#8203;234 10&#8203;00</span>
+    </mj-text>
+  </mj-column>
+
+  <mj-column width="4%">
+    <mj-text color="#FFFFFF" font-size="18px">&nbsp;
+    </mj-text>
+  </mj-column>
+
+ <mj-column width="26%">
+    <mj-text color="#FFFFFF" font-size="22px" >
+      <span style="text-decoration: none; color: #FFFFFF">S<span style="display:inline-block; width:1px;"></span>ydney</span>
+    </mj-text>
+    <mj-spacer height="20px" />
+    <mj-text color="#FFFFFF" font-size="14px">
+      <span style="text-decoration: none; color: #FFFFFF">Bay 5-7 North,<br>
+      2 Locomotive S<span style="display:inline-block; width:1px; color:#FFFFFF;"></span>t,<br>
+      Evele&#8203;igh N<span style="display:inline-block; width:1px; color:#FFFFFF;"></span>SW 20<span style="display:inline-block; width:1px; color:#FFFFFF;"></span>15<br>
+      0&#8203;3 923&#8203;4 100&#8203;0</span>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding-top="25px" padding-bottom="50px" padding-left="50px" padding-right="50px" background-color="#282828">
+  <mj-column>
+    <mj-text color="#FFFFFF" font-size="12px">
+    This email contains a tracking pixel to let us know if you open it. We use this information only to measure engagement and improve our communications. If you’d rather not get these emails, you can unsubscribe <a href="{{unsubscribe}}" style="color:#FFFFFF">here.</a>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+
+  </mj-body>
+</mjml>
