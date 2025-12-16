@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Groovy Funky Channel 27</title>
+  <title>Loader</title>
   <style>
     html, body {
       margin: 0;
@@ -137,6 +137,7 @@ function startAnimation() {
 
   // Scrub passes
   const scrubs = [0.4, 0.8, 0.9, 0.98].map(progress => {
+    const tweenDuration = (i === arr.length - 1) ? duration * 4 : duration;
     const tween = tl.to(
       tl2,
       { progress, duration, ease: Linear.easeNone },
