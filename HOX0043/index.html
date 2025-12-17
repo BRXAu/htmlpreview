@@ -64,8 +64,12 @@
 </g>
 
 <g id="over" mask="url(#text_masks)">
-	<use x="0" y="0" href="#text_tip_points" fill="#FFD000" />
-	<use x="0" y="0" href="#text_advice_insights" fill="#FFFFFF" />
+  <use x="0" y="0" href="#text_tip_points" fill="#FFD000"/>
+  <use x="0" y="0" href="#text_advice_insights" fill="#FFFFFF" />
+  <g id="fadeOut">
+  	<use x="0" y="0" href="#text_tip_points" fill="#FFD000" stroke="#FFD000" stroke-width="4"/>
+  	<use x="0" y="0" href="#text_advice_insights" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="4" />
+  </g>
 </g>
 </g>
 
@@ -162,7 +166,7 @@ function fullyLoaded(scrub1,scrub2,scrub3,scrub4,tl2){
   scrub4.pause();
 
   TweenMax.to(tl2, 0.5, { progress: 1, ease: Linear.easeNone });
-  TweenMax.to("#under", 0.3, { autoAlpha: 0, ease: Linear.easeNone, delay:0.4 });
+  TweenMax.to("#under,#fadeOut", 0.3, { autoAlpha: 0, ease: Linear.easeNone, delay:0.4 });
   TweenMax.to("#loader-wrapper", 0.3, { autoAlpha: 0, ease: Linear.easeNone, delay:1});
 }
 
