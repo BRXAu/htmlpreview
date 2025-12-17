@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Estimated Loader Bar</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+    #loaderContainer {
+      width: 80%;
+      background: #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    #loaderBar {
+      width: 0%;
+      height: 30px;
+      background: #4caf50;
+      transition: width 0.1s linear;
+    }
+    #status {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Estimated Loader</h1>
+  <div id="loaderContainer">
+    <div id="loaderBar"></div>
+  </div>
+  <div id="status">Starting...</div>
+
+  <script>
+    (async () => {
+      const loaderBar = document.getElementById('loaderBar');
+      const status = document.getElementById('status');
+
+      const url = 'https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js';
+      const fileSizeMB = 5; // <-- Change this to any file size in MB
+      const estimatedBytes = fileSizeMB * 1_000_000; // Convert MB to bytes
+
+      const start = performance.now();
+      const response = await fetch(url, { cache: 'no-store' });
+      const blob = await response.blob();
+      const durationMs = performance.now() - start;
+
+      const bytes = blob.size;
+      const kbps = (bytes * 8) / durationMs; // bits/ms
+      const estimatedDurationMs = (estimatedBytes * 8) / kbps;
+
+      status.textContent = `Estimated download time for ${fileSizeMB} MB: ${(estimatedDurationMs/1000).toFixed(2)} s`;
+
+      // Animate the loader bar based on the estimated duration
+      let startTime = null;
+
+      function animateLoader(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / estimatedDurationMs, 1) * 100;
+        loaderBar.style.width = progress + '%';
+        if (progress < 100) {
+          requestAnimationFrame(animateLoader);
+        } else {
+          status.textContent = 'Download Complete!';
+        }
+      }
+
+      requestAnimationFrame(animateLoader);
+    })();
+  </script>
+</body>
+</html>

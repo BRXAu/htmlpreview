@@ -19,13 +19,33 @@
       background: #002855;
     }
 
+    #loaderContainer {
+      width: 80%;
+      background: #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    #loaderBar {
+      width: 0%;
+      height: 30px;
+      background: #4caf50;
+      transition: width 0.1s linear;
+    }
+    #status {
+      margin-top: 10px;
+    }
+
 
   </style>
 </head>
 <body>
     <img src="https://www.learningcontainer.com/wp-content/uploads/2020/07/Sample-Image-file-Download.jpg" alt="Huge image" width="60" style="display:block">
 
-
+<div id="loaderContainer">
+    <div id="loaderBar"></div>
+  </div>
+  <div id="status">Starting...</div>
 
 <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.13_min.js"></script>
 <script type="text/javascript">
@@ -150,7 +170,6 @@ function startAnimation() {
       )
   })
 
-  const i = 0;
   // Scrub passes
   const scrubs = [0.4, 0.8, 0.9, 0.98].map(progress => {
     const tween = tl.to(
@@ -248,37 +267,45 @@ function isFullyLoaded() {
   return document.readyState === 'complete'
 }
 
-// if ('connection' in navigator) {
-//   const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+(async () => {
+      const loaderBar = document.getElementById('loaderBar');
+      const status = document.getElementById('status');
 
-//   console.log(connection.effectiveType); // 'slow-2g', '2g', '3g', '4g'
-//   console.log(connection.downlink);      // Mbps estimate
-//   console.log(connection.rtt);           // ms
-// }
+      const url = 'https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js';
+      const fileSizeMB = 5; // <-- Change this to any file size in MB
+      const estimatedBytes = fileSizeMB * 1_000_000; // Convert MB to bytes
 
-// const start = performance.now();
+      const start = performance.now();
+      const response = await fetch(url, { cache: 'no-store' });
+      const blob = await response.blob();
+      const durationMs = performance.now() - start;
 
-// fetch('https://placehold.co/400', { cache: 'no-store' })
-//   .then(res => res.blob())
-//   .then(() => {
-//     const duration = performance.now() - start;
-//     console.log('Download time (ms):', duration);
-//   });
+      const bytes = blob.size;
+      const kbps = (bytes * 8) / durationMs; // bits/ms
+      const estimatedDurationMs = (estimatedBytes * 8) / kbps;
 
-const nav = performance.getEntriesByType('navigation')[0];
-console.log(nav)
+      status.textContent = `Estimated download time for ${fileSizeMB} MB: ${(estimatedDurationMs/1000).toFixed(2)} s`;
 
-const bytes = nav.transferSize || 0;
-console.log(bytes)
-const duration = nav.responseEnd - nav.requestStart;
-console.log(duration)
-if (bytes && duration) {
-  const kbps = (bytes * 8) / duration;
-  console.log('Approx HTML kbps:', Math.round(kbps));
-}
+      // Animate the loader bar based on the estimated duration
+      let startTime = null;
+
+      function animateLoader(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const elapsed = timestamp - startTime;
+        const progress = Math.min(elapsed / estimatedDurationMs, 1) * 100;
+        loaderBar.style.width = progress + '%';
+        if (progress < 100) {
+          requestAnimationFrame(animateLoader);
+        } else {
+          status.textContent = 'Download Complete!';
+        }
+      }
+
+      requestAnimationFrame(animateLoader);
+    })();
+
 
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('Dom content loaded')
   appendToBody(inlineSVGContent);
   startAnimation();
   svgContainerBttn = document.getElementById("svgContainerBttn");
