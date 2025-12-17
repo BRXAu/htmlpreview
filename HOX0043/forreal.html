@@ -150,6 +150,7 @@ function startAnimation() {
       )
   })
 
+  const i = 0;
   // Scrub passes
   const scrubs = [0.4, 0.8, 0.9, 0.98].map(progress => {
     const tween = tl.to(
@@ -160,6 +161,8 @@ function startAnimation() {
     delay += duration
     return tween
   })
+
+
 
   const loaded = isFullyLoaded();
   console.log(loaded)
@@ -245,6 +248,34 @@ function isFullyLoaded() {
   return document.readyState === 'complete'
 }
 
+// if ('connection' in navigator) {
+//   const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+
+//   console.log(connection.effectiveType); // 'slow-2g', '2g', '3g', '4g'
+//   console.log(connection.downlink);      // Mbps estimate
+//   console.log(connection.rtt);           // ms
+// }
+
+// const start = performance.now();
+
+// fetch('https://placehold.co/400', { cache: 'no-store' })
+//   .then(res => res.blob())
+//   .then(() => {
+//     const duration = performance.now() - start;
+//     console.log('Download time (ms):', duration);
+//   });
+
+const nav = performance.getEntriesByType('navigation')[0];
+console.log(nav)
+
+const bytes = nav.transferSize || 0;
+console.log(bytes)
+const duration = nav.responseEnd - nav.requestStart;
+console.log(duration)
+if (bytes && duration) {
+  const kbps = (bytes * 8) / duration;
+  console.log('Approx HTML kbps:', Math.round(kbps));
+}
 
 document.addEventListener('DOMContentLoaded', function() {
   console.log('Dom content loaded')

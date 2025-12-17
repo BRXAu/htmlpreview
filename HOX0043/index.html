@@ -135,9 +135,8 @@ function startAnimation() {
       )
   })
 
-  // Scrub passes
+   // Scrub passes
   const scrubs = [0.4, 0.8, 0.9, 0.98].map(progress => {
-    const tweenDuration = (i === arr.length - 1) ? duration * 4 : duration;
     const tween = tl.to(
       tl2,
       { progress, duration, ease: Linear.easeNone },
