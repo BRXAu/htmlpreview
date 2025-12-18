@@ -154,6 +154,7 @@ function startAnimation(duration) {
       )
   })
 
+
   // Scrub passes
   const scrubs = [0.4, 0.8, 0.9, 0.98].map(progress => {
     const tween = tl.to(
@@ -234,20 +235,10 @@ function isFullyLoaded() {
   return document.readyState === 'complete'
 }
 
-
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   appendToBody(inlineSVGContent);
-//   startAnimation();
-//   svgContainerBttn = document.getElementById("svgContainerBttn");
-// }, false);
-
-
 document.addEventListener('DOMContentLoaded', function() {
     // Test download speed
     appendToBody(inlineSVGContent);
-    let userImageLink = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png"; 
+    let userImageLink = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-bannewr.png"; 
     let downloadSize = 5616998; 
     startSpeedTest(userImageLink,downloadSize);
   });
@@ -256,6 +247,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let downloadImgSrc = new Image(); 
     downloadImgSrc.onload = function () { 
       displaySpeed(time_start,downloadSize); 
+    };
+    downloadImgSrc.onerror = function () { 
+      startLoader(20); 
     };
     let time_start = new Date().getTime();
     downloadImgSrc.src = userImageLink; 
@@ -276,15 +270,12 @@ document.addEventListener('DOMContentLoaded', function() {
   function startLoader(speedInMbps){
     let duration = 0;
     if(speedInMbps <= 10){
-      console.log('super slow')
       duration = Math.floor(Math.random() * 6) + 8 // 8–13
     }
     else if((speedInMbps > 10)||(speedInMbps < 40)){
-      console.log('slow')
       duration = Math.floor(Math.random() * 5) + 3 // 3 to 8
     }
     else {
-      console.log('fast')
       duration = Math.floor(Math.random() * 3) + 1 // 0 to 4
     }
 
