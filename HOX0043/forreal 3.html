@@ -155,29 +155,16 @@ function startAnimation(duration) {
   })
 
 
-const scrubs = []
-
-const scrubSteps = [
-  { progress: 0.4, duration: duration },
-  { progress: 0.8, duration: duration * 2 },
-  { progress: 0.9, duration: duration * 3 },
-  { progress: 0.98, duration: duration * 4 }
-]
-
-for (let i = 0; i < scrubSteps.length; i++) {
-  scrubs[i] = tl.to(
-    tl2,
-    {
-      progress: scrubSteps[i].progress,
-      duration: scrubSteps[i].duration,
-      ease: Linear.easeNone
-    },
-    delay
-  )
-
-  delay += scrubSteps[i].duration
-}
-
+  // Scrub passes
+  const scrubs = [0.4, 0.8, 0.9, 0.98].map(progress => {
+    const tween = tl.to(
+      tl2,
+      { progress, duration, ease: Linear.easeNone },
+      delay
+      )
+    delay += duration
+    return tween
+  })
 
 
 
