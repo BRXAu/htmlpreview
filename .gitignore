@@ -6,3 +6,5 @@ _archive/
 
 # Ignore folder and contents _archive
 _work/
+
+node_modules
