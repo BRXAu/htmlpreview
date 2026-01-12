@@ -1,0 +1,33 @@
+<svg width="113" height="126" viewBox="0 0 113 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <clipPath id="circleClip">
+      <circle cx="56" cy="56" r="55" />
+    </clipPath>
+  </defs>
+  
+  <image
+    href="shadow.png"
+    x="0"
+    y="83"
+    width="122"
+    height="43"
+  />
+
+  <image
+    href="icon.jpg"
+    x="1"
+    y="1"
+    width="110"
+    height="110"
+    clip-path="url(#circleClip)"
+    preserveAspectRatio="xMidYMid slice"
+  />
+</svg>
+
+
+
+
+
+
+
+
