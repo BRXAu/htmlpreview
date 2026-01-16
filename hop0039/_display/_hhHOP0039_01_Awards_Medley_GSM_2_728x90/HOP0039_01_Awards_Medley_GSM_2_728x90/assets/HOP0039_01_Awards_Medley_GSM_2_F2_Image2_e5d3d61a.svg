@@ -1,10 +1,10 @@
 <svg width="400" height="440" viewBox="0 0 400 440" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     /* Animate the element */
-    #icon02shine {
+    #iconshine {
       transform: translate(0 0);
       animation: moveIt 0.8s forwards;
-      animation-delay: 0.5s; /* wait 4 seconds before starting */
+      animation-delay: 1s; /* wait 4 seconds before starting */
     }
 
     @keyframes moveIt {
@@ -14,27 +14,27 @@
     }
   </style>
   <defs>
-    <radialGradient id="icon02-shadow-gradient" cx="2.8" cy="414" fx="2.8" fy="414" r="1.8" gradientTransform="translate(-101 16103) scale(108 -38)" gradientUnits="userSpaceOnUse">
+    <radialGradient id="shadow-gradient" cx="2.8" cy="414" fx="2.8" fy="414" r="1.8" gradientTransform="translate(-101 16103) scale(108 -38)" gradientUnits="userSpaceOnUse">
       <stop offset=".6" stop-color="#08172a"/>
       <stop offset="1" stop-color="#08172a" stop-opacity="0"/>
     </radialGradient>
     
 
-    <radialGradient id="icon02-radial-gradient" cx="0" cy="421" fx="0" fy="421" r="1" gradientTransform="translate(6.1 183281.5) scale(435.4 -435.4)" gradientUnits="userSpaceOnUse">
+    <radialGradient id="radial-gradient" cx="0" cy="421" fx="0" fy="421" r="1" gradientTransform="translate(6.1 183281.5) scale(435.4 -435.4)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff3c1"/>
       <stop offset="1" stop-color="#ddba14"/>
     </radialGradient>
-    <linearGradient id="icon02-linear-gradient" x1="3" y1="399" x2="335.1" y2="66.9" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" x1="3" y1="399" x2="335.1" y2="66.9" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#f5dc82"/>
       <stop offset=".5" stop-color="#dfc36a"/>
       <stop offset="1" stop-color="#fff1bb"/>
     </linearGradient>
-    <linearGradient id="icon02-linear-gradient-2" x1="11.1" y1="390.9" x2="329.4" y2="72.6" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient-2" x1="11.1" y1="390.9" x2="329.4" y2="72.6" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#8a744a"/>
       <stop offset=".5" stop-color="#78641f"/>
       <stop offset="1" stop-color="#f2eee2"/>
     </linearGradient>
-    <linearGradient id="icon02-linear-gradient-3" x1="42.2" y1="103.8" x2="296.2" y2="357.8" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient-3" x1="42.2" y1="103.8" x2="296.2" y2="357.8" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#0039d3"/>
       <stop offset=".2" stop-color="#0054ff"/>
       <stop offset=".5" stop-color="#2b6cff"/>
@@ -42,7 +42,9 @@
       <stop offset="1" stop-color="#0039d3"/>
     </linearGradient>
 
-    <linearGradient id="icon02-highlight-gradient" x1="-316.9" y1="560.9" x2="-135" y2="560.9" gradientTransform="translate(227.1 -136.7)" gradientUnits="userSpaceOnUse">
+
+
+    <linearGradient id="highlight-gradient" x1="-316.9" y1="560.9" x2="-135" y2="560.9" gradientTransform="translate(227.1 -136.7)" gradientUnits="userSpaceOnUse">
       <stop offset=".1" stop-color="#fff" stop-opacity="0"/>
       <stop offset=".5" stop-color="#fff" stop-opacity=".8"/>
       <stop offset=".6" stop-color="#fff" stop-opacity=".8"/>
@@ -50,18 +52,18 @@
     </linearGradient>
 
     
-    <clipPath id="icon02circleClip">
+    <clipPath id="circleClip">
       <path d="M400,202.7c0-67.1-33.5-126.3-84.6-162C281.9,15.2,240.1,0,195.1,0H4.5C2,0,0,2,0,4.5v190.5c0,43.9,14.5,84.8,38.9,118,35.5,52.5,95.6,87,163.7,87,109,0,197.4-88.4,197.4-197.4h0Z" fill="#000" stroke-width="0"/>
     </clipPath>
   </defs>
-  <g id="Icon02Shadow">
-    <ellipse cx="199.6" cy="369.8" rx="199.6" ry="70.2" fill="url(#icon02-shadow-gradient)" stroke-width="0"/>
+  <g id="Shadow">
+    <ellipse cx="199.6" cy="369.8" rx="199.6" ry="70.2" fill="url(#shadow-gradient)" stroke-width="0"/>
   </g>
   <path d="M400,202.6c0,109-88.4,197.4-197.4,197.4S5.2,311.6,5.2,202.6V9.7c0-2.5,2-4.4,4.4-4.4h192.9c109,0,197.4,88.4,197.4,197.4h0Z" fill="#816e15" stroke-width="0"/>
-  <path d="M393.7,198.3c-.8,107.5-87.8,194.5-195.3,195.3C89.3,394.4,0,304.1,0,195V4.5C0,2,2,0,4.5,0h190.6c109.1,0,199.4,89.3,198.6,198.3h0Z" fill="url(#icon02-radial-gradient)" stroke-width="0"/>
-  <path d="M196.8,389.1c-51.2,0-99.4-20.3-135.9-57.2C24.5,295.1,4.4,246.5,4.4,195.1V8.7c0-2.3,1.9-4.1,4.1-4.1h186.4c52.1,0,101.2,20.5,138.2,57.8,36.4,36.7,56.3,85,55.9,136-.4,50.8-20.4,98.6-56.3,134.5-35.9,35.9-83.7,55.9-134.5,56.3h-1.4,0Z" fill="url(#icon02-linear-gradient)" stroke-width="0"/>
-  <path d="M196.8,384.6c-49.9,0-97-19.9-132.7-55.9C28.6,292.7,9,245.3,9,195.1V12c0-1.6,1.3-2.9,2.9-2.9h183.2c50.9,0,98.8,20,134.9,56.4,35.6,35.9,55,83,54.6,132.8-.4,49.6-19.9,96.3-55,131.3-35.1,35.1-81.7,54.6-131.3,55h-1.4Z" fill="url(#icon02-linear-gradient-2)" stroke-width="0"/>
-  <path d="M196.8,379.5c-24.6,0-48.4-4.9-71-14.6-21.7-9.4-41.3-22.7-58.1-39.7-16.8-17-30-36.7-39.2-58.6-9.6-22.7-14.4-46.7-14.4-71.3V15.3c0-.6.5-1.2,1.2-1.2h179.9c25,0,49.2,5,72.2,14.7,22.1,9.4,42,23,59.1,40.1,16.8,16.9,30,36.5,39.1,58.3,9.5,22.6,14.2,46.4,14,71-.2,24.4-5.1,48.1-14.6,70.3-9.2,21.5-22.3,40.9-38.9,57.5-16.6,16.6-36,29.7-57.5,38.9-22.3,9.5-45.9,14.4-70.3,14.6h-1.4Z" fill="url(#icon02-linear-gradient-3)" stroke-width="0"/>
+  <path d="M393.7,198.3c-.8,107.5-87.8,194.5-195.3,195.3C89.3,394.4,0,304.1,0,195V4.5C0,2,2,0,4.5,0h190.6c109.1,0,199.4,89.3,198.6,198.3h0Z" fill="url(#radial-gradient)" stroke-width="0"/>
+  <path d="M196.8,389.1c-51.2,0-99.4-20.3-135.9-57.2C24.5,295.1,4.4,246.5,4.4,195.1V8.7c0-2.3,1.9-4.1,4.1-4.1h186.4c52.1,0,101.2,20.5,138.2,57.8,36.4,36.7,56.3,85,55.9,136-.4,50.8-20.4,98.6-56.3,134.5-35.9,35.9-83.7,55.9-134.5,56.3h-1.4,0Z" fill="url(#linear-gradient)" stroke-width="0"/>
+  <path d="M196.8,384.6c-49.9,0-97-19.9-132.7-55.9C28.6,292.7,9,245.3,9,195.1V12c0-1.6,1.3-2.9,2.9-2.9h183.2c50.9,0,98.8,20,134.9,56.4,35.6,35.9,55,83,54.6,132.8-.4,49.6-19.9,96.3-55,131.3-35.1,35.1-81.7,54.6-131.3,55h-1.4Z" fill="url(#linear-gradient-2)" stroke-width="0"/>
+  <path d="M196.8,379.5c-24.6,0-48.4-4.9-71-14.6-21.7-9.4-41.3-22.7-58.1-39.7-16.8-17-30-36.7-39.2-58.6-9.6-22.7-14.4-46.7-14.4-71.3V15.3c0-.6.5-1.2,1.2-1.2h179.9c25,0,49.2,5,72.2,14.7,22.1,9.4,42,23,59.1,40.1,16.8,16.9,30,36.5,39.1,58.3,9.5,22.6,14.2,46.4,14,71-.2,24.4-5.1,48.1-14.6,70.3-9.2,21.5-22.3,40.9-38.9,57.5-16.6,16.6-36,29.7-57.5,38.9-22.3,9.5-45.9,14.4-70.3,14.6h-1.4Z" fill="url(#linear-gradient-3)" stroke-width="0"/>
   <path d="M195.2,14.7c24.9,0,49.1,5,71.9,14.7,11,4.7,21.6,10.5,31.5,17.2,9.8,6.7,19,14.3,27.4,22.8,16.7,16.9,29.9,36.4,39,58.1,9.4,22.5,14.1,46.3,14,70.7-.2,24.3-5.1,47.9-14.6,70.1-9.1,21.4-22.2,40.7-38.8,57.3-16.6,16.6-35.9,29.6-57.3,38.8-22.2,9.5-45.8,14.4-70.1,14.6h-1.4c-24.5,0-48.3-4.9-70.8-14.6-21.7-9.3-41.2-22.7-57.9-39.6-16.7-16.9-29.9-36.6-39.1-58.4-9.5-22.6-14.4-46.6-14.4-71.1V15.3c0-.3.3-.6.6-.6h179.9M195.2,13.6H15.3c-1,0-1.7.8-1.7,1.7v179.9c0,101.1,82.3,184.9,183.3,184.9s.9,0,1.4,0c100.1-.7,181.1-81.7,181.9-181.9.8-101.6-83.3-184.7-184.9-184.7Z" fill="#0044a9" stroke-width="0"/>
   <path d="M20.1,202V22.1c0-1,.8-1.7,1.7-1.7h179.9c50.8,0,97.3,20.8,130.9,54.3-34-37.5-83.2-61.2-137.4-61.2H15.3c-1,0-1.7.8-1.7,1.7v179.9c0,51,20.9,97.5,54.6,131.2-29.9-33-48.1-76.7-48.1-124.3h0Z" fill="#0047cd" stroke-width="0"/>
   <g>
@@ -116,9 +118,9 @@
   <path d="M329.5,145.7l-3.6-8.9h-4.4c0,.1-2.3-5.3-2.3-5.3l26.1-.7,2.3,5.7-19.1,17.7-2.2-5.4,3.2-3h0ZM333.7,141.9l6-5.6-8.2.3,2.2,5.3Z" fill="#fff" stroke-width="0"/>
   <path d="M353,151.5l2.3,9.6c1.1,4.8-1.4,8.6-5.4,9.6-3.7.9-6.4-.2-8.1-2.4l-8.1,7.4-1.5-6.1,7.4-6.5-.5-2.2-8.5,2-1.4-5.6,23.7-5.7h0ZM344.8,162.9c.5,2.2,2.2,2.5,3.3,2.3,1.3-.3,2.5-1.3,2-3.5l-.8-3.3-5.3,1.3.8,3.3Z" fill="#fff" stroke-width="0"/>
 
-  <g id="icon02Container" clip-path="url(#icon02circleClip)">
-    <g id="icon02shine">
-    <rect x="-89.7" y="73" width="181.9" height="702.5" transform="translate(-302.8 128.3) rotate(-45.6)" fill="url(#icon02-highlight-gradient)" stroke-width="0"/>
+  <g id="iconContainer" clip-path="url(#circleClip)">
+    <g id="iconshine">
+    <rect x="-89.7" y="73" width="181.9" height="702.5" transform="translate(-302.8 128.3) rotate(-45.6)" fill="url(#highlight-gradient)" stroke-width="0"/>
   </g>
   </g>
 </svg>
