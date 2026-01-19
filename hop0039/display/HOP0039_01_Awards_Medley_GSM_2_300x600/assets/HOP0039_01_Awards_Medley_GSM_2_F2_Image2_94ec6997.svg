@@ -4,7 +4,7 @@
     #iconshine {
       transform: translate(0 0);
       animation: moveIt 0.8s forwards;
-      animation-delay: 1s; /* wait 4 seconds before starting */
+      animation-delay: 2.8s; /* wait 4 seconds before starting */
     }
 
     @keyframes moveIt {

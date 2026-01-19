@@ -4,7 +4,7 @@
     #icon03shine {
       transform: translate(0 0);
       animation: moveIt 0.8s forwards;
-      animation-delay: 0.5s; /* wait 4 seconds before starting */
+      animation-delay: 3.9s; /* wait 4 seconds before starting */
     }
 
     @keyframes moveIt {
