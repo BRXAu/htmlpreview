@@ -30,9 +30,37 @@ img {
 
 /* Curtain */
 
-#curtain {
+:root {
+  /* Durations */
+  --dur-fast: 0.3s;
+  --dur-base: 0.5s;
+  --dur-stack: 0.6s;
+
+  /* Core delays */
+  --delay-curtain: 0s;
+
+  --delay-text-1: 1s;
+  --delay-text-2: 1.4s;
+  --delay-text-3: 1.7s;
+  --delay-text-4: 2s;
+  --delay-text-cta: 2.8s;
+
+  --delay-fade-all: 5.2s;
+
+  --delay-stack-1: 5.7s;
+  --delay-stack-2: 6s;
+  --delay-stack-3: 6.3s;
+  --delay-stack-4: 6.6s;
+}
+
+/*#curtain {
   opacity: 1;
   animation: fadeOut 0.5s forwards 0s;
+}
+*/
+#curtain {
+  opacity: 1;
+  animation: fadeOut var(--dur-base) forwards var(--delay-curtain);
 }
 
 /* Text blocks */
@@ -40,15 +68,15 @@ img {
 #textBring {
   transform: translate(-300px, 0);
   animation:
-    dropIn 0.5s forwards 1s,
-    fadeOut 0.5s forwards 4.7s;
+    dropIn var(--dur-base) forwards var(--delay-text-1),
+    fadeOut var(--dur-base) forwards var(--delay-fade-all);
 }
 
 #textOn {
   transform: translate(0, -60px);
   animation:
-    dropIn 0.5s forwards 1.4s,
-    fadeOut 0.5s forwards 4.7s;
+    dropIn var(--dur-base) forwards var(--delay-text-2),
+    fadeOut var(--dur-base) forwards var(--delay-fade-all);
 }
 
 #text2026,
@@ -56,25 +84,27 @@ img {
 #manShadow {
   transform: translate(300px, 0);
   animation:
-    dropIn 0.5s forwards 1.7s,
-    fadeOut 0.5s forwards 4.7s;
+    dropIn var(--dur-base) forwards var(--delay-text-3),
+    fadeOut var(--dur-base) forwards var(--delay-fade-all);
 }
 
 #TheManBackEnd {
   transform: translate(300px, 0);
-  animation: dropIn 0.5s forwards 1.7s;
+  animation:
+    dropIn var(--dur-base) forwards var(--delay-text-3);
 }
 
 #textForBusiness {
   transform: translate(0, 50px);
   animation:
-    dropIn 0.3s forwards 2s,
-    fadeOut 0.5s forwards 4.7s;
+    dropIn var(--dur-fast) forwards var(--delay-text-4),
+    fadeOut var(--dur-base) forwards var(--delay-fade-all);
 }
 
 #chatToBusiness {
   opacity: 0;
-  animation: fadeIn 0.3s forwards 2.2s;
+  animation:
+    fadeIn var(--dur-fast) forwards var(--delay-text-cta);
 }
 
 /* SVG stacks */
@@ -88,10 +118,10 @@ img {
   transform: translate(0, 20px) scale(0);
 }
 
-#stackOne { animation: scaleIt 0.6s forwards 5s; }
-#stackTwo { animation: scaleIt 0.6s forwards 5.3s; }
-#stackThree { animation: scaleIt 0.6s forwards 5.6s; }
-#stackFour { animation: scaleIt 0.6s forwards 5.9s; }
+#stackOne { animation: scaleIt var(--dur-stack) forwards var(--delay-stack-1); }
+#stackTwo { animation: scaleIt var(--dur-stack) forwards var(--delay-stack-2); }
+#stackThree { animation: scaleIt var(--dur-stack) forwards var(--delay-stack-3); }
+#stackFour { animation: scaleIt var(--dur-stack) forwards var(--delay-stack-4); }
 
 /* Keyframes */
 
@@ -186,6 +216,7 @@ img {
         <rect x="10" y="122.8" width="12.8" height="21.3" fill="#fdcc08" stroke-width="0"/>
         <path d="M28.5,114.7v9.8h-2.2l-4.5-6v6h-2.3v-9.8h2.2l4.5,6v-6h2.3ZM33.3,117.5c2,0,3.4,1.5,3.4,3.6,0,.2,0,.5,0,.7h-4.7c.2.7.7,1.1,1.5,1.1s1.1-.2,1.5-.6l1.4,1.3c-.7.7-1.8,1.1-3,1.1-2.2,0-3.6-1.4-3.6-3.6s1.4-3.7,3.5-3.7ZM33.3,119.3c-.7,0-1.1.4-1.3,1.1h2.5c-.2-.7-.6-1.1-1.2-1.1ZM44.2,117.7l1.4,4.4,1.3-4.4h2.3l-2.4,6.9h-2.4l-1.3-4.1-1.3,4.1h-2.4l-2.4-6.9h2.3l1.3,4.4,1.4-4.4h2.2Z" fill="#00323a" stroke-width="0"/>
         </g>
+
         <g id="stackThree" >
         <rect x="10" y="135.1" width="147.1" height="45.1" rx="10.1" ry="10.1" fill="#66e4e9" stroke-width="0"/>
         <rect x="10" y="169.1" width="12.8" height="21.3" fill="#66e4e9" stroke-width="0"/>

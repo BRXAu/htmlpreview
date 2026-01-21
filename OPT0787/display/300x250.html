@@ -5,113 +5,150 @@
   <title>300x250 banner</title>
   <meta name="viewport" content="width=300, height=250, initial-scale=1.0">
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 300px;
-      height: 600px;
-      overflow: hidden;
-    }
+    :root {
+  /* Ad size */
+  --ad-width: 300px;
+  --ad-height: 600px;
 
-    #ad {
-      position: relative;
-      width: 300px;
-      height: 250px;
-      cursor: pointer;
-      background: #000;
-    }
+  /* Durations */
+  --dur-fast: 0.3s;
+  --dur-base: 0.5s;
+  --dur-stack: 0.6s;
 
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border: 0;
-    }
+  /* Text delays */
+  --delay-bring: 1s;
+  --delay-on: 1.4s;
+  --delay-main: 1.7s;
+  --delay-business: 2s;
+  --delay-cta: 2.8s;
 
-    /* Animate the element */
-    #curtain {
-      opacity: 1;
-      animation: fadeOut 0.5s forwards;
-      animation-delay: 0s; /* wait 4 seconds before starting */
-    }
+  /* Global fades */
+  --delay-fade-frame: 5.3s;
+  --delay-cta-terms: 7s;
 
-    #FrameOneContent {
-      opacity: 1;
-      animation: fadeOut 0.5s forwards;
-      animation-delay: 105s; /* wait 4 seconds before starting */
-    }
-
-    #CTATerms {
-      opacity: 0;
-      animation: fadeIn 0.5s forwards;
-      animation-delay: 6.2s; /* wait 4 seconds before starting */
-    }
-
-
-    #textBring {
-      transform: translate(-300px, 0);
-      animation:
-        dropIn 0.5s forwards 1s,
-        fadeOut 0.5s forwards 4.7s;
-    }
-
-    #textOn {
-      transform: translate(0, -60px);
-      animation:
-        dropIn 0.5s forwards 1.4s,
-        fadeOut 0.5s forwards 4.7s;
-    }
-
-    #text2026, #textGrad {
-  transform: translate(300px, 0);
-  animation:
-    dropIn 0.5s forwards 1.7s,
-    fadeOut 0.5s forwards 4.7s;
+  /* Stack delays */
+  --delay-stack-1: 5.8s;
+  --delay-stack-2: 6.2s;
+  --delay-stack-3: 6.6s;
 }
 
+/* Base document */
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: var(--ad-width);
+  height: var(--ad-height);
+  overflow: hidden;
+}
+
+/* Ad container */
+
+#ad {
+  position: relative;
+  width: var(--ad-width);
+  height: 250px;
+  cursor: pointer;
+  background: #000;
+}
+
+/* Media */
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+/* Global fades */
+
+#curtain {
+  opacity: 1;
+  animation: fadeOut var(--dur-base) forwards 0s;
+}
+
+#CTATerms {
+  opacity: 0;
+  animation: fadeIn var(--dur-base) forwards var(--delay-cta-terms);
+}
+
+/* Text blocks */
+
+#textBring {
+  transform: translate(-300px, 0);
+  animation:
+    dropIn var(--dur-base) forwards var(--delay-bring),
+    fadeOut var(--dur-base) forwards var(--delay-fade-frame);
+}
+
+#textOn {
+  transform: translate(0, -60px);
+  animation:
+    dropIn var(--dur-base) forwards var(--delay-on),
+    fadeOut var(--dur-base) forwards var(--delay-fade-frame);
+}
+
+#text2026,
+#textGrad {
+  transform: translate(300px, 0);
+  animation:
+    dropIn var(--dur-base) forwards var(--delay-main),
+    fadeOut var(--dur-base) forwards var(--delay-fade-frame);
+}
 
 #TheManBackEnd {
   transform: translate(300px, 0);
-  animation: dropIn 0.5s forwards 1.7s;
+  animation:
+    dropIn var(--dur-base) forwards var(--delay-main);
 }
 
 #textForBusiness {
   transform: translate(0, 50px);
   animation:
-    dropIn 0.3s forwards 2s,
-    fadeOut 0.5s forwards 4.7s;
+    dropIn var(--dur-fast) forwards var(--delay-business),
+    fadeOut var(--dur-base) forwards var(--delay-fade-frame);
 }
 
 #terms_F1 {
   opacity: 1;
   animation:
-    fadeOut 0.5s forwards 4.7s;
+    fadeOut var(--dur-base) forwards var(--delay-fade-frame);
 }
 
 #textChatTo {
   opacity: 0;
-  animation: fadeIn 0.3s forwards 2.2s,
-  fadeOut 0.5s forwards 4.7s;
+  animation:
+    fadeIn var(--dur-fast) forwards var(--delay-cta),
+    fadeOut var(--dur-base) forwards var(--delay-fade-frame);
 }
 
-#stackOne  {
-  transform-box: fill-box;
-  transform-origin: left bottom;
-  transform: translate(0, 0px) scale(0);
-}
+/* SVG stacks */
 
+#stackOne,
 #stackTwo,
 #stackThree {
   transform-box: fill-box;
   transform-origin: left bottom;
-  transform: translate(0, 20px) scale(0);
 }
 
-#stackOne { animation: scaleIt 0.6s forwards 5s; }
-#stackTwo { animation: scaleIt 0.6s forwards 5.3s; }
-#stackThree { animation: scaleIt 0.6s forwards 5.6s; }
+#stackOne {
+  transform: translate(0, 0) scale(0);
+  animation: scaleIt var(--dur-stack) forwards var(--delay-stack-1);
+}
 
+#stackTwo {
+  transform: translate(0, 20px) scale(0);
+  animation: scaleIt var(--dur-stack) forwards var(--delay-stack-2);
+}
+
+#stackThree {
+  transform: translate(0, 20px) scale(0);
+  animation: scaleIt var(--dur-stack) forwards var(--delay-stack-3);
+}
+
+/* Keyframes */
 
 @keyframes scaleIt {
   to {
@@ -119,22 +156,18 @@
   }
 }
 
-    @keyframes fadeOut {
-      to {
-        opacity: 0;
-      }
-    }
+@keyframes fadeOut {
+  to { opacity: 0; }
+}
 
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes dropIn {
+@keyframes dropIn {
   to { transform: translate(0, 0); }
 }
+
   </style>
 
   <script>
