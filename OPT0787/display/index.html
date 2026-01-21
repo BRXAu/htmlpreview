@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Banner preview</title>
+
+  <style>
+    body {
+      margin: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .preview-wrap {
+      display: flex;
+      gap: 20px;
+    }
+
+    .ad-block {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .ad-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    iframe {
+      border: 1px solid #000;
+      display: block;
+    }
+
+    button {
+      padding: 4px 10px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+  </style>
+
+  <script>
+    function reloadIframe(id) {
+      var iframe = document.getElementById(id);
+      iframe.src = iframe.src;
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="preview-wrap">
+
+    <!-- 300x250 -->
+    <div class="ad-block">
+      <div class="ad-header">
+        <strong>300 × 250</strong>
+        <button onclick="reloadIframe('ad300x250')">Reload</button>
+      </div>
+
+      <iframe
+        id="ad300x250"
+        src="300x250.html"
+        width="300"
+        height="250"
+        scrolling="no">
+      </iframe>
+    </div>
+
+    <!-- 300x600 -->
+    <div class="ad-block">
+      <div class="ad-header">
+        <strong>300 × 600</strong>
+        <button onclick="reloadIframe('ad300x600')">Reload</button>
+      </div>
+
+      <iframe
+        id="ad300x600"
+        src="300x600.html"
+        width="300"
+        height="600"
+        scrolling="no">
+      </iframe>
+    </div>
+
+  </div>
+
+</body>
+</html>
