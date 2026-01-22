@@ -143,21 +143,20 @@ img {
   to { transform: translate(0, 0); }
 }
 
-  </style>
+</style>
 
-  <script>
-    var clickTag = clickTag || 'https://www.optus.com.au';
-  </script>
+<script>
+  var clickTag = 'https://www.optus.com.au';
+</script>
 </head>
 
 <body>
-  <a href="javascript:window.open(clickTag)">
-    <div id="ad">
+<div id="ad">
     <svg width="300" height="600" viewBox="0 0 300 600">
   <defs>
-    <stacksClippath id="stacksClippath">
+    <clipPath id="stacksClippath">
       <rect x="10" y="104" width="147.1" height="183.5" fill="none" stroke-width="0"/>
-    </stacksClippath>
+    </clipPath>
 
     <linearGradient id="man-shadow-gradient-01" x1="161" y1="686.9" x2="161" y2="475.6" gradientTransform="translate(0 842) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset=".1" stop-color="#010101" stop-opacity="0"/>
@@ -171,7 +170,7 @@ img {
     </clipPath>
 
     <clipPath id="handClipPath">
-      <path id="handClipPath" d="M95.7,274.7l-6.5-32.1h-30.5l-1.6,2.5,4.6,19.9s-3.5,2.2-4.6,7.9c0,0-9.3-6.5-14.7-4.1l-10.9-3h-3l-12.4,13.3s-11.8,28.4,21.4,46.7c0,0,6,4.6,11.7,3.3,0,0,10.6,5.2,24-6l5.4-1.6s21.5-18.8,22.6-21.3v-4.1l6.3-5.4s2.5-6.8-4.9-6.5c0,0,5.2-12-6.8-9.3Z" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
+      <path d="M95.7,274.7l-6.5-32.1h-30.5l-1.6,2.5,4.6,19.9s-3.5,2.2-4.6,7.9c0,0-9.3-6.5-14.7-4.1l-10.9-3h-3l-12.4,13.3s-11.8,28.4,21.4,46.7c0,0,6,4.6,11.7,3.3,0,0,10.6,5.2,24-6l5.4-1.6s21.5-18.8,22.6-21.3v-4.1l6.3-5.4s2.5-6.8-4.9-6.5c0,0,5.2-12-6.8-9.3Z" fill="none" stroke="#231f20" stroke-miterlimit="10"/>
     </clipPath>
     <clipPath id="onClipPath">
       <rect width="102" height="60" x="64" y="178"/>
@@ -286,7 +285,7 @@ img {
   </g>
 
 <g id="curtain">
-  <rect id="curtain" width="300" height="600" fill="#006280" stroke-width="0"/>
+  <rect id="curtainRect" width="300" height="600" fill="#006280" stroke-width="0"/>
 </g>
 
 
@@ -294,6 +293,12 @@ img {
 
 </svg>
     </div>
-  </a>
+
+<script>
+  document.getElementById('ad').addEventListener('click', function () {
+    window.open(clickTag);
+  });
+</script>
+
 </body>
 </html>

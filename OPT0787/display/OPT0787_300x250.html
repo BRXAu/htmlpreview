@@ -8,7 +8,7 @@
     :root {
   /* Ad size */
   --ad-width: 300px;
-  --ad-height: 600px;
+  --ad-height: 250px;
 
   /* Durations */
   --dur-fast: 0.3s;
@@ -170,16 +170,14 @@ img {
 
   </style>
 
-  <script>
-    var clickTag = clickTag || 'https://www.optus.com.au';
-  </script>
+<script>
+  var clickTag = 'https://www.optus.com.au';
+</script>
 </head>
 
 <body>
-  <a href="javascript:window.open(clickTag)">
-    <div id="ad">
 
-
+<div id="ad">
 <svg width="300" height="250" viewBox="0 0 300 250">
   <defs>
       <radialGradient id="man-radial-gradient" cx="-6.7" cy="538" fx="-6.7" fy="538" r="1" gradientTransform="translate(-4194.7 18678.2) rotate(14) scale(34.3 -35.4)" gradientUnits="userSpaceOnUse">
@@ -250,7 +248,7 @@ img {
 
   <g id="FrameOneContent" data-name="Layer 1">
       <g id="textGrad" opacity=".3">
-        <path d="M188.4,149.1c5.3-16.2,13-32.7,16.2-38.9,6.5,3.8,17.9,14.9,11.7,28.5-7.8,17-27.3,11-27.8,10.4Z" fill="url(#man-radial-gradient)" isolation="isolate" mix-blend-mode="multiply" stroke-width="0"/>
+        <path d="M188.4,149.1c5.3-16.2,13-32.7,16.2-38.9,6.5,3.8,17.9,14.9,11.7,28.5-7.8,17-27.3,11-27.8,10.4Z" fill="url(#man-radial-gradient)" stroke-width="0"/>
       </g>
       <path id="textBring" d="M-.8-.5h20.8c12.2,0,18.6,4.8,18.6,13.7,0,4.8-2.8,8.5-6.7,10.2,4.3,1.5,7.7,5.7,7.7,10.6,0,8.9-6.1,13.8-18.4,13.8H-.9S-.8-.5-.8-.5h0ZM20.5,28.3h-9.9s0,9.8,0,9.8h9.9c4.5,0,7-1.3,7.1-4.9,0-3.6-2.6-4.9-7-4.9ZM19.7,9.2h-9s0,9.5,0,9.5h9c4.1,0,6.8-1.2,6.8-4.8,0-3.6-2.7-4.7-6.8-4.7ZM63.3,13.1c1.6,0,3,.3,3.8.5l-1,10.8c-1.4-.5-3.5-.9-5.4-.9-3.8,0-6.2,1.9-6.2,6.1v18.3s-10.8,0-10.8,0V14s10.4,0,10.4,0v3.9c2-3.3,5.1-4.8,9.3-4.8h0ZM80.7,14v33.9s-10.8,0-10.8,0V14s10.8,0,10.8,0ZM75.3-2.9c3.6,0,6.5,2.8,6.4,6.5,0,3.7-2.8,6.4-6.5,6.4-3.6,0-6.5-2.8-6.5-6.4,0-3.6,2.8-6.5,6.5-6.5ZM106.6,13.1c6.8,0,12,4.7,12,12.6v22.2s-10.8,0-10.8,0v-18.4c0-4-2-6.3-5.3-6.3-3,0-5.5,2-5.5,6.4v18.2s-10.8,0-10.8,0V14s10.4,0,10.4,0v4.2c2.1-3.6,5.6-5.2,10.1-5.2h0ZM137.8,13.1c4.5,0,7.5,1.8,9.5,4.5v-3.5s10.5,0,10.5,0v30.6c0,11.1-7.3,17.7-18.4,17.7-5.7,0-11.4-1.5-15.5-4.3l3.8-8.6c3.3,2.4,6.9,3.5,10.9,3.5,4.4,0,8.5-2.4,8.5-7.8v-2.1c-2,2.6-5,4.3-9.3,4.3-9.1,0-15.7-7.5-15.7-17.1,0-9.6,6.7-17.1,15.7-17.1ZM140.3,23c-4.2,0-7.1,3.1-7.1,7.2,0,4.1,2.9,7.3,7.1,7.3,4.2,0,6.9-3.1,6.9-7.2,0-4.2-2.8-7.3-6.9-7.3Z" fill="#66e4e9" stroke-width="0"/>
 
@@ -303,14 +301,20 @@ img {
       </g>
   </g>
 
-  <g id="curtain">
-  <rect id="curtain" width="300" height="250" fill="#006280" stroke-width="0"/>
+<g id="curtain">
+  <rect id="curtainRect" width="300" height="250" fill="#006280" stroke-width="0"/>
 </g>
 
 
 
 </svg>
-    </div>
-  </a>
+</div>
+
+<script>
+  document.getElementById('ad').addEventListener('click', function () {
+    window.open(clickTag);
+  });
+</script>
+
 </body>
 </html>
