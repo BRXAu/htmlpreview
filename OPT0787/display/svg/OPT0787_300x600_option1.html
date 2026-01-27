@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>300x600 banner</title>
+  <meta name="ad.size" content="width=300,height=600">
+  <style>
+    html, body {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+}
+
+#ad {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  cursor: pointer;
+  background: #000;
+}
+
+</style>
+
+<script>
+  var clickTag = 'https://www.optus.com.au';
+</script>
+</head>
+
+<body>
+<div id="ad">
+</div>
+
+<script>
+  document.getElementById('ad').addEventListener('click', function () {
+    window.open(clickTag);
+  });
+
+  function addObjectToAd(src, width, height) {
+    const adDiv = document.getElementById('ad');
+    if (!adDiv) return;
+
+    // Create the object element
+    const obj = document.createElement('object');
+    obj.setAttribute('data', src);
+    obj.setAttribute('width', width);
+    obj.setAttribute('height', height);
+
+    obj.setAttribute('type', 'image/svg+xml');
+    obj.setAttribute('aria-label', 'Banner ad');
+
+    // Clear any previous content if needed
+    adDiv.innerHTML = '';
+    adDiv.appendChild(obj);
+  }
+
+  
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dataSrc = "OPT0787_300x600.svg";
+  addObjectToAd(dataSrc, 300, 600);
+});
+
+
+
+
+
+</script>
+
+</body>
+</html>
