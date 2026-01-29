@@ -14,7 +14,7 @@ window.MANIFEST = {
   "Themes": "default,default,default,default,default",
   "Overlay": "",
   "ExitLink": "",
-  "Terms": "General advice only. Consider the relevant PDS and TMD available at hostplus.com.au before making a decision. Issued by Host-Plus Pty Limited.",
+  "Terms": "General advice only. Consider the relevant PDS and TMD available at hostplus.com.au before making a decision.\nIssued by Host-Plus Pty Limited.",
   "CustomCSS": ".F1 .cta {opacity:0!important}",
   "Layouts": ",,,,",
   "F1_Transitions": "",
