@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+}
+
+#banner {
+  width: 728px;
+  height: 90px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  cursor: pointer;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #5f5f5f;
+  background-color: #002855;
+}
+
+.asset {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+.retina {
+  top: -1px;
+  left: -1px;
+  width: 728px;
+  height: 90px;
+}
+
+.block {
+  display: block;
+}
+
+#sample{
+  opacity: 0;
+}
+
+#logo {
+  left: 21px;
+  top: 11px;
+  width: 119px;
+  height: auto;
+}
+
+#copy1-cont {
+  width: 0px;
+  height: 50px;
+  left: 155px;
+  top: 7px;
+  overflow: hidden;
+  transform: scale(0.85);
+  transform-origin: 0% 0%;
+}
+
+#copy1 {
+  left: 0px;
+  top: 5px;
+}
+
+#copy2-cont {
+  width: 375px;
+  height: 70px;
+  left: 155px;
+  top: 37px;
+  overflow: hidden;
+  transform: scale(0.85);
+  transform-origin: 0% 0%;
+}
+
+#copy2 {
+  left: 0px;
+  top: 2px;
+}
+
+
+#copy3-cont {
+  width: 368px;
+  height: 40px;
+  left: 160px;
+  top: 21px;
+  overflow: hidden;
+}
+
+#copy3-1 {
+  left: 0px;
+  top: 0px;
+}
+
+#copy3-2 {
+  left: -161px;
+  top: -24px;
+  opacity: 0;
+}
+
+#terms{
+  top:-1px;
+}
+
+#cta,
+#cta-bg {
+  width: 128px;
+  height: 25px;
+  left: 564px;
+  top: 32px;
+/*  border: 1px solid white;*/
+  /* z-index: 999; */
+}
+
+#cta-bg {
+  background-color: #FFD000;
+  display: block;
+}
+
+#cta1,
+#cta2 {
+  left: 17.5px;
+  top: 8px;
+  height: auto;
+  width: 85px;
+}
+
+#cta2 {
+  display: block;
+}
+
+#cta1-arrow,
+#cta2-arrow {
+  left: 111px;
+  top: 7.5px;
+  height: 10px;
+  width: auto;
+}
+
+#cta2-arrow {
+  display: block;
+}
+
+
+#blue-mask {
+  background-color: #002855;
+  width:184px;
+  height:40px;
+  opacity: 0;
+}
+
+#banner-hover {
+  width: 728px;
+  height: 90px;
+  background-color: red;
+  opacity: 0;
+}
