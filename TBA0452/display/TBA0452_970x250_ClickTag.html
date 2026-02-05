@@ -321,13 +321,7 @@ for(var count =1; count<=4; count++){
  timeline.set("#F"+count+"_text_05",{opacity:0,x: xMove,y: yMove},0)
 timeline.set("#F"+count+"_text_06",{opacity:0,x: xMove,y: yMove},0)
 
-
-
 }
-
-
-
-
 
 let frame01Start = 0.1
 
@@ -339,8 +333,6 @@ timeline.set("#F1_Content,#F1_Lines",{opacity:1},frame01Start)
 
 let delay = frame01Start+start;
 
-
-
 timeline.to("#frame01_image",5,{scale: 1},delay)
 
 timeline.to("#F1_text_01",lineDuration,{autoAlpha:1,x:0,y:0},delay)
@@ -350,15 +342,11 @@ delay+=lineDelay;
 timeline.to("#F1_text_03",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 delay+=lineDelay;
 
-
-
 delay+=2.8;
-
 
 timeline.to("#F1_Content,#frame01_image",0.3,{autoAlpha:0,x:0,y:0},delay)
 timeline.to("#frame02_image",0.3,{autoAlpha:1,x:0,y:0},delay)
 timeline.to("#frame02_image",5,{scale:1},delay)
-
 
 delay+=0.3;
 timeline.set("#F2_Content",{autoAlpha:1,x:0,y:0},delay)
@@ -369,13 +357,13 @@ delay+=lineDelay;
 timeline.to("#F2_text_03",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 delay+=lineDelay;
 
-timeline.set("#frame01_image",{scale:0.9,transformOrigin:"center center"},delay)
+timeline.set("#frame01_image",{scale:0.86,transformOrigin:"center center"},delay)
 delay+=2.8;
 
 
 timeline.to("#F2_Content,#frame02_image",0.3,{autoAlpha:0,x:0,y:0},delay)
 timeline.to("#frame01_image",lineDuration,{autoAlpha:1,x:0,y:0},delay)
-timeline.to("#frame01_image",5,{scale: 1},delay)
+timeline.to("#frame01_image",8,{scale: 1},delay)
 delay+=lineDelay;
 
 delay+=0.3;
@@ -386,6 +374,20 @@ timeline.to("#F3_text_02",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 delay+=lineDelay;
 timeline.to("#F3_text_03",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 
+delay+=2.8;
+timeline.set("#F1_text_01",{opacity:0,x: xMove,y: yMove},delay)
+timeline.set("#F1_text_02",{opacity:0,x: xMove,y: yMove},delay)
+timeline.set("#F1_text_03",{opacity:0,x: xMove,y: yMove},delay)
+
+timeline.to("#F3_Content",0.3,{autoAlpha:0,x:0,y:0},delay)
+
+delay+=0.3;
+timeline.set("#F1_Content",{autoAlpha:1,x:0,y:0},delay)
+timeline.to("#F1_text_01",lineDuration,{autoAlpha:1,x:0,y:0},delay)
+delay+=lineDelay;
+timeline.to("#F1_text_02",lineDuration,{autoAlpha:1,x:0,y:0},delay)
+delay+=lineDelay;
+timeline.to("#F1_text_03",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 
 delay+=2.8;
 timeline.set("#frame02_image",{opacity:0,scale:1.1,transformOrigin:"center center"},delay)
@@ -394,7 +396,7 @@ timeline.set("#F2_text_01",{opacity:0,x: xMove,y: yMove},delay)
  timeline.set("#F2_text_03",{opacity:0,x: xMove,y: yMove},delay)
 
 
-timeline.to("#F3_Content",0.3,{autoAlpha:0,x:0,y:0},delay)
+timeline.to("#F1_Content",0.3,{autoAlpha:0,x:0,y:0},delay)
 timeline.to("#frame02_image",0.3,{autoAlpha:1,x:0,y:0},delay)
 timeline.to("#frame02_image",5,{scale:1},delay)
 
@@ -408,6 +410,9 @@ delay+=lineDelay;
 timeline.to("#F2_text_03",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 
 
+//console.log('test');
+//let currentDuration = timeline.duration();
+//console.log(currentDuration);
   // end gsap code //
 }
 
