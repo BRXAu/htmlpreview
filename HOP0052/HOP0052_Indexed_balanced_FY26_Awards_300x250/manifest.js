@@ -18,7 +18,7 @@ window.MANIFEST = {
   "CustomCSS": "",
   "Layouts": ",,,,",
   "F1_Transitions": "",
-  "F1_Animations": "slideWordByWord:0.5,fadeOut:1",
+  "F1_Animations": "slideLineByLine:0.5,fadeOut:1",
   "F1_LayoutClass": ",",
   "F1_Video": "{\"url\":null,\"size\":null,\"position\":null,\"animationIn\":null,\"animationOut\":null,\"frameOut\":null}",
   "F1_Image1": "{\"url\":null,\"size\":null,\"position\":null,\"animationIn\":null,\"animationOut\":null,\"frameOut\":null,\"animatedSVG\":null}",

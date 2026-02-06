@@ -28,7 +28,7 @@ window.MANIFEST = {
   "F1_ProductIcon": "{\"url\":null,\"size\":null,\"position\":null,\"order\":null,\"alignment\":null,\"alignmentPortrait\":null,\"column\":null,\"animationIn\":null,\"animationOut\":null,\"frameOut\":null,\"animatedSVG\":null}",
   "F1_Logo": "{\"url\":\"https://s0.2mdn.net/creatives/assets/5512546/logo_hostplus_isf.svg\",\"alignment\":null,\"position\":null,\"padding\":null,\"layout\":null,\"osp\":false,\"ospSize\":null}",
   "F1_Tap": "{\"url\":null,\"position\":null,\"maxSize\":null,\"alignment\":null,\"delay\":null}",
-  "F1_Headline": "{\"text\":\"\\n[WANT TO PAY\\nLESS FOR]\\nYOUR SUPER?\",\"size\":\"28\",\"weight\":null,\"padding\":null,\"order\":null,\"column\":null,\"delay\":null,\"out\":null}",
+  "F1_Headline": "{\"text\":\"[&nbsp;]\\n[WANT TO PAY\\nLESS FOR]\\nYOUR SUPER?\",\"size\":\"28\",\"weight\":null,\"padding\":null,\"order\":null,\"column\":null,\"delay\":null,\"out\":null}",
   "F1_Headline2": "{\"text\":null,\"size\":null,\"weight\":null,\"padding\":null,\"order\":null,\"column\":null,\"delay\":null}",
   "F1_Subheadline": "{\"text\":null,\"size\":null,\"weight\":null,\"padding\":null,\"order\":null,\"column\":null,\"delay\":null,\"out\":null}",
   "F1_icontext": "{\"text\":null,\"size\":null,\"weight\":null,\"padding\":null,\"order\":null,\"column\":null,\"delay\":null,\"direction\":null,\"out\":null}",
