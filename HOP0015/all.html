@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Banner preview</title>
+<style>
+body { font-family: sans-serif; background:#111; color:#eee; margin:0; padding:20px; }
+h1 { margin-bottom:20px; }
+.controls { margin-bottom:20px; }
+.controls button {
+  margin-right:10px; padding:6px 12px; cursor:pointer;
+  border:none; background:#ffcc00; border-radius:4px; font-weight:bold;
+}
+.container { display:flex; flex-wrap:wrap; gap:20px; }
+.banner { display:flex; flex-direction:column; align-items:center; background:#222; padding:10px; border-radius:6px; }
+iframe { border:1px solid #444; display:block; }
+.banner button { margin-top:6px; padding:4px 10px; cursor:pointer; border:none; background:#ffcc00; border-radius:4px; }
+</style>
+</head>
+<body>
+
+<h1>Banner preview</h1>
+<div class="controls" id="controls"></div>
+<div class="container" id="container"></div>
+
+<script>
+const prefix = [
+  "HOP0015_Choice_Control_Accumulation_",
+  "HOP0015_Choice_Control_Pension_"
+];
+
+const sizes = ["300x250","300x600","160x600","728x90","970x250"];
+
+const sets = {
+  all: [],
+  bySize: {}
+};
+
+for (let s = 0; s < sizes.length; s++) {
+  sets.bySize[sizes[s]] = [];
+}
+
+for (let i = 0; i < prefix.length; i++) {
+  for (let j = 0; j < sizes.length; j++) {
+
+    const file = prefix[i] + sizes[j] + "/index.html";
+
+    const obj = {
+      name: file,
+      prefix: prefix[i],
+      size: sizes[j]
+    };
+
+    sets.all.push(obj);
+    sets.bySize[sizes[j]].push(obj);
+  }
+}
+
+// build buttons dynamically
+const controls = document.getElementById("controls");
+
+const allBtn = document.createElement("button");
+allBtn.textContent = "All";
+allBtn.onclick = () => loadSet("all");
+controls.appendChild(allBtn);
+
+for (let i = 0; i < sizes.length; i++) {
+  const btn = document.createElement("button");
+  btn.textContent = sizes[i];
+  btn.onclick = () => loadSet(sizes[i]);
+  controls.appendChild(btn);
+}
+
+function loadSet(key) {
+
+  const container = document.getElementById("container");
+  container.innerHTML = "";
+
+  const data = key === "all" ? sets.all : sets.bySize[key];
+
+  data.forEach(item => {
+
+    const [w,h] = item.size.split("x");
+
+    const wrap = document.createElement("div");
+    wrap.className = "banner";
+
+    wrap.innerHTML = `
+      <iframe src="${item.name}" width="${w}" height="${h}"></iframe>
+      <button onclick="this.previousElementSibling.src='${item.name}'">Reload</button>
+    `;
+
+    container.appendChild(wrap);
+  });
+}
+
+// default load
+loadSet("all");
+</script>
+
+</body>
+</html>
