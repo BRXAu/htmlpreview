@@ -11,6 +11,7 @@
         .desktop-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
         .mobile-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
               .main-text { font-size:16px !important; line-height:20px !important; }
+              .desktop-br { display:none !important; }
       }
       @media only screen and (min-width:481px) {
         .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
@@ -19,7 +20,7 @@
       }
     </mj-style>
   </mj-head>
-  <mj-body width="560px">
+  <mj-body width="560px" background-color:"#FFFFFF">
 
 
       <mj-section padding="0">
@@ -36,22 +37,28 @@
     <mj-image src="tba0452_edm_header_logo.png" width="46px" alt="Minerals Council of Australia" align="left" padding="0"  href="#" />
   </mj-column>
 
+<mj-column width="50%" vertical-align="middle" padding="0">
+  <mj-navbar align="right">
+    <mj-navbar-link
+      href="#"
+      color="#343A40"
+      font-family="Arial"
+      font-size="12px"
+      padding="0 10px 0 0"
+      text-decoration="none">
+      Home
+    </mj-navbar-link>
 
-
-  <mj-column width="50%" vertical-align="middle" padding="0 0 0 0px">
-  <mj-raw>
-  <table border="0" cellpadding="0" cellspacing="0" align="right">
-    <tr>
-      <td>
-        <a href="#"><img src="tba0452_edm_home_bttn.png" width="34" style="display:block;padding:0" alt="Home" /></a>
-      </td>
-      <td width="10">&nbs;</td> <!-- fixed 10px gap -->
-      <td>
-        <a href="#"><img src="tba0452_edm_viewonline_bttn.png" width="67" style="display:block;" alt="View online" /></a>
-      </td>
-    </tr>
-  </table>
-   </mj-raw>
+    <mj-navbar-link
+      href="#"
+      color="#343A40"
+      font-family="Arial"
+      font-size="12px"
+      padding="0"
+      text-decoration="none">
+      View online
+    </mj-navbar-link>
+  </mj-navbar>
 </mj-column>
   </mj-group>
 
@@ -79,14 +86,27 @@
     </mj-section>
 
 
+<mj-section padding="0 20px">
+  <mj-column padding="0">
 
-    <!-- Row 5: Desktop and mobile image -->
-    <mj-section padding="0 20px">
-      <mj-column>
-        <mj-image src="tba0452_edm_paragraph.png" alt="Australian mining pays enough tax to fund Medicare" width="500px" align="left" padding="0" css-class="desktop-only" />
-        <mj-image src="tba0452_edm_paragraph_mobile.png" alt="Australian mining pays enough tax to fund Medicare" width="260px" align="left" padding="0" css-class="mobile-only" />
-      </mj-column>
-    </mj-section>
+    <mj-raw>
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 400px">
+        <tr>
+          <!-- grey bar -->
+          <td width="8" bgcolor="#D18316"></td>
+
+          <!-- text column -->
+          <td bgcolor="#ffffff" style="padding:20px 0 20px 20px; font-family:Arial; font-size:27px; line-height:30px; font-weight:bold; color:#343A40;">
+            Australian mining pays enough tax to fund Medicare
+          </td>
+        </tr>
+      </table>
+    </mj-raw>
+
+  </mj-column>
+</mj-section>
+
+
 
     <mj-section padding="0 20px">
       <mj-column>
@@ -96,19 +116,18 @@
 
     <!-- Row 11: Footer text left-aligned -->
     <mj-section padding="0 20px">
-      <mj-column>
-        <mj-text css-class="main-text" font-family="Arial" padding="0">
+      <mj-column >
+        <mj-text css-class="main-text" font-family="Arial" padding="0" color="#343A40">
         <mj-raw>
-        <p class="main-text">
-         According to the latest government data, Australian mining paid $74 billion in taxes and royalties in one year.
+        <span class="main-text" style="padding:0; ">
+         According to the latest government data, Australian mining paid $74 billion in taxes and royalties in&nbsp;one&nbsp;year.
 <br><br>
 That’s more tax than any other industry in the country.
 <br><br>
-This contribution helps fund the services Australians rely on every day.
+This contribution helps fund the&nbsp;services Australians rely on&nbsp;every&nbsp;day.
 <br><br>
-It’s enough to fund Medicare, so people can see a GP, visit a specialist or get a scan without paying the full cost on their own.
+It’s enough to fund Medicare, so people can see a GP, visit a specialist or get a scan without paying the full cost on&nbsp;their&nbsp;own.
 </span>
-</p>
         </mj-text>
       </mj-column>
     </mj-section>
@@ -120,11 +139,12 @@ It’s enough to fund Medicare, so people can see a GP, visit a specialist or ge
     </mj-section>
 
 
-    <mj-section padding="0 20px">
-      <mj-column padding="0">
-        <mj-image src="tba0452_edm_cta.png" alt="Find out more" width="135px" align="left" padding="0" href="#"/>
-      </mj-column>
-    </mj-section>
+<mj-section padding="0 20px">
+  <mj-column padding="0">
+    <mj-image src="tba0452_edm_cta-02.png" alt="Find out more" width="151px" href="#" align="left" padding="0" />
+  </mj-column>
+</mj-section>
+
 
 
     <!-- Row 6: Spacer 10px -->
@@ -139,8 +159,8 @@ It’s enough to fund Medicare, so people can see a GP, visit a specialist or ge
     <!-- Row 9: Footer image desktop & mobile -->
     <mj-section padding="0 20px">
       <mj-column>
-        <mj-image src="tba0452_edm_footer.png" alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="522px" align="right" padding="0" css-class="desktop-only" />
-        <mj-image src="tba0452_edm_footer_mobile.png" alt="Mobile Image" width="262px" align="right" padding="0" css-class="mobile-only" />
+        <mj-image src="tba0452_edm_footer.jpg" alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="522px" align="right" padding="0" css-class="desktop-only" />
+        <mj-image src="tba0452_edm_footer_mobile.jpg" alt="Mobile Image" width="262px" align="right" padding="0" css-class="mobile-only" />
       </mj-column>
     </mj-section>
 
@@ -154,7 +174,7 @@ It’s enough to fund Medicare, so people can see a GP, visit a specialist or ge
     <!-- Row 11: Footer text left-aligned -->
     <mj-section padding="0 20px">
       <mj-column>
-        <mj-text align="left"  font-family="Arial" font-size="9px" padding="0">
+        <mj-text align="left"  font-family="Arial" font-size="8px" padding="0" color="#343A40">
           ATO, Taxation Statistics 2022-23 (2025). EY, Royalty and Company Tax Payments (2025). Authorised by T. Constable, Canberra
         </mj-text>
       </mj-column>

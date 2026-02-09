@@ -41,8 +41,6 @@
       margin: 13px 0;
     }
 
-    
-
   </style>
   <!--[if mso]>
     <noscript>
@@ -96,6 +94,38 @@
       }
     }
 
+    noinput.mj-menu-checkbox {
+      display: block !important;
+      max-height: none !important;
+      visibility: visible !important;
+    }
+
+    @media only screen and (max-width:479px) {
+      .mj-menu-checkbox[type="checkbox"]~.mj-inline-links {
+        display: none !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]:checked~.mj-inline-links,
+      .mj-menu-checkbox[type="checkbox"]~.mj-menu-trigger {
+        display: block !important;
+        max-width: none !important;
+        max-height: none !important;
+        font-size: inherit !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]~.mj-inline-links>a {
+        display: block !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]:checked~.mj-menu-trigger .mj-menu-icon-close {
+        display: block !important;
+      }
+
+      .mj-menu-checkbox[type="checkbox"]:checked~.mj-menu-trigger .mj-menu-icon-open {
+        display: none !important;
+      }
+    }
+
   </style>
   <style type="text/css">
     @media only screen and (max-width:480px) {
@@ -116,6 +146,10 @@
       .main-text {
         font-size: 16px !important;
         line-height: 20px !important;
+      }
+
+      .desktop-br {
+        display: none !important;
       }
     }
 
@@ -214,20 +248,20 @@
                   <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                     <tbody>
                       <tr>
-                        <td style="vertical-align:middle;padding:0 0 0 0px;">
+                        <td style="vertical-align:middle;padding:0;">
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                             <tbody>
-                              <table border="0" cellpadding="0" cellspacing="0" align="right">
-                                <tr>
-                                  <td>
-                                    <a href="#"><img src="tba0452_edm_home_bttn.png" width="34" style="display:block;padding:0" alt="Home" /></a>
-                                  </td>
-                                  <td width="10">&nbs;</td> <!-- fixed 10px gap -->
-                                  <td>
-                                    <a href="#"><img src="tba0452_edm_viewonline_bttn.png" width="67" style="display:block;" alt="View online" /></a>
-                                  </td>
-                                </tr>
-                              </table>
+                              <tr>
+                                <td align="right" style="font-size:0px;word-break:break-word;">
+                                  <div class="mj-inline-links" style="">
+                                    <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0" align="right"><tr><td style="padding:0 10px 0 0;" class="" ><![endif]-->
+                                    <a class="mj-link" href="#" target="_blank" style="display:inline-block;color:#343A40;font-family:Arial;font-size:12px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:uppercase;padding:0 10px 0 0;"> Home </a>
+                                    <!--[if mso | IE]></td><td style="padding:0;" class="" ><![endif]-->
+                                    <a class="mj-link" href="#" target="_blank" style="display:inline-block;color:#343A40;font-family:Arial;font-size:12px;font-weight:normal;line-height:22px;text-decoration:none;text-transform:uppercase;padding:0;"> View online </a>
+                                    <!--[if mso | IE]></td></tr></table><![endif]-->
+                                  </div>
+                                </td>
+                              </tr>
                             </tbody>
                           </table>
                         </td>
@@ -333,9 +367,7 @@
         </tbody>
       </table>
     </div>
-    <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- Row 5: Desktop and mobile image -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:560px;" width="560" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:560px;" width="560" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     <div style="margin:0px auto;max-width:560px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
         <tbody>
@@ -343,30 +375,20 @@
             <td style="direction:ltr;font-size:0px;padding:0 20px;text-align:center;">
               <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:520px;" ><![endif]-->
               <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
-                      <td align="left" class="desktop-only" style="font-size:0px;padding:0;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                      <td style="vertical-align:top;padding:0;">
+                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
-                            <tr>
-                              <td style="width:500px;">
-                                <img alt="Australian mining pays enough tax to fund Medicare" src="tba0452_edm_paragraph.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="500" height="auto" />
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td align="left" class="mobile-only" style="font-size:0px;padding:0;word-break:break-word;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-                          <tbody>
-                            <tr>
-                              <td style="width:260px;">
-                                <img alt="Australian mining pays enough tax to fund Medicare" src="tba0452_edm_paragraph_mobile.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="260" height="auto" />
-                              </td>
-                            </tr>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 400px">
+                              <tr>
+                                <!-- grey bar -->
+                                <td width="8" bgcolor="#D18316"></td>
+                                <!-- text column -->
+                                <td bgcolor="#ffffff" style="padding:20px 0 20px 20px; font-family:Arial; font-size:27px; line-height:30px; font-weight:bold; color:#343A40;"> Australian mining pays enough tax to fund Medicare </td>
+                              </tr>
+                            </table>
                           </tbody>
                         </table>
                       </td>
@@ -418,10 +440,8 @@
                   <tbody>
                     <tr>
                       <td align="left" class="main-text" style="font-size:0px;padding:0;word-break:break-word;">
-                        <div style="font-family:Arial;font-size:12px;line-height:16px;text-align:left;color:#000000;"><mj-raw>
-                            <p class="main-text"> According to the latest government data, Australian mining paid $74 billion in taxes and royalties in one year. <br><br> That’s more tax than any other industry in the country. <br><br> This contribution helps fund the services Australians rely on every day. <br><br> It’s enough to fund Medicare, so people can see a GP, visit a specialist or get a scan without paying the full cost on their own. </span>
-                            </p>
-                        </div>
+                        <div style="font-family:Arial;font-size:12px;line-height:16px;text-align:left;color:#343A40;"><mj-raw>
+                            <span class="main-text" style="padding:0; "> According to the latest government data, Australian mining paid $74 billion in taxes and royalties in&nbsp;one&nbsp;year. <br><br> That’s more tax than any other industry in the country. <br><br> This contribution helps fund the&nbsp;services Australians rely on&nbsp;every&nbsp;day. <br><br> It’s enough to fund Medicare, so people can see a GP, visit a specialist or get a scan without paying the full cost on&nbsp;their&nbsp;own. </span></div>
                       </td>
                     </tr>
                   </tbody>
@@ -476,9 +496,9 @@
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                                   <tbody>
                                     <tr>
-                                      <td style="width:135px;">
+                                      <td style="width:151px;">
                                         <a href="#" target="_blank">
-                                          <img alt="Find out more" src="tba0452_edm_cta.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="135" height="auto" />
+                                          <img alt="Find out more" src="tba0452_edm_cta-02.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="151" height="auto" />
                                         </a>
                                       </td>
                                     </tr>
@@ -543,7 +563,7 @@
                           <tbody>
                             <tr>
                               <td style="width:520px;">
-                                <img alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." src="tba0452_edm_footer.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="520" height="auto" />
+                                <img alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." src="tba0452_edm_footer.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="520" height="auto" />
                               </td>
                             </tr>
                           </tbody>
@@ -556,7 +576,7 @@
                           <tbody>
                             <tr>
                               <td style="width:262px;">
-                                <img alt="Mobile Image" src="tba0452_edm_footer_mobile.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="262" height="auto" />
+                                <img alt="Mobile Image" src="tba0452_edm_footer_mobile.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="262" height="auto" />
                               </td>
                             </tr>
                           </tbody>
@@ -612,7 +632,7 @@
                   <tbody>
                     <tr>
                       <td align="left" class="main-text" style="font-size:0px;padding:0;word-break:break-word;">
-                        <div style="font-family:Arial;font-size:9px;line-height:16px;text-align:left;color:#000000;">ATO, Taxation Statistics 2022-23 (2025). EY, Royalty and Company Tax Payments (2025). Authorised by T. Constable, Canberra</div>
+                        <div style="font-family:Arial;font-size:8px;line-height:16px;text-align:left;color:#343A40;">ATO, Taxation Statistics 2022-23 (2025). EY, Royalty and Company Tax Payments (2025). Authorised by T. Constable, Canberra</div>
                       </td>
                     </tr>
                   </tbody>
