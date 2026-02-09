@@ -33,7 +33,7 @@
   
   <!-- logo left -->
   <mj-column width="50%" vertical-align="middle" padding="0">
-    <mj-image src="tba0452_edm_header_logo.png" width="46px" alt="Logo" align="left" padding="0" />
+    <mj-image src="tba0452_edm_header_logo.png" width="46px" alt="Minerals Council of Australia" align="left" padding="0"  href="#" />
   </mj-column>
 
 
@@ -43,11 +43,11 @@
   <table border="0" cellpadding="0" cellspacing="0" align="right">
     <tr>
       <td>
-        <img src="tba0452_edm_viewonline_bttn.png" width="67" style="display:block;" alt="Logo" />
+        <a href="#"><img src="tba0452_edm_home_bttn.png" width="34" style="display:block;padding:0" alt="Home" /></a>
       </td>
       <td width="10">&nbs;</td> <!-- fixed 10px gap -->
       <td>
-        <img src="tba0452_edm_viewonline_bttn.png" width="67" style="display:block;" alt="Logo" />
+        <a href="#"><img src="tba0452_edm_viewonline_bttn.png" width="67" style="display:block;" alt="View online" /></a>
       </td>
     </tr>
   </table>
@@ -68,7 +68,7 @@
     <!-- Row 3: Hero image -->
     <mj-section padding="0 20px">
       <mj-column padding="0">
-        <mj-image src="tba0452_edm_hero.png" alt="Hero Image" width="520px" align="left" padding="0" />
+        <mj-image src="tba0452_edm_hero.png" alt="Australian Mining" width="520px" align="left" padding="0" />
       </mj-column>
     </mj-section>
 
@@ -83,8 +83,8 @@
     <!-- Row 5: Desktop and mobile image -->
     <mj-section padding="0 20px">
       <mj-column>
-        <mj-image src="tba0452_edm_paragraph.png" alt="Desktop Image" width="500px" align="left" padding="0" css-class="desktop-only" />
-        <mj-image src="tba0452_edm_paragraph_mobile.png" alt="Mobile Image" width="260px" align="left" padding="0" css-class="mobile-only" />
+        <mj-image src="tba0452_edm_paragraph.png" alt="Australian mining pays enough tax to fund Medicare" width="500px" align="left" padding="0" css-class="desktop-only" />
+        <mj-image src="tba0452_edm_paragraph_mobile.png" alt="Australian mining pays enough tax to fund Medicare" width="260px" align="left" padding="0" css-class="mobile-only" />
       </mj-column>
     </mj-section>
 
@@ -122,7 +122,7 @@ It’s enough to fund Medicare, so people can see a GP, visit a specialist or ge
 
     <mj-section padding="0 20px">
       <mj-column padding="0">
-        <mj-image src="tba0452_edm_cta.png" alt="Hero Image" width="135px" align="left" padding="0" />
+        <mj-image src="tba0452_edm_cta.png" alt="Find out more" width="135px" align="left" padding="0" href="#"/>
       </mj-column>
     </mj-section>
 
@@ -139,7 +139,7 @@ It’s enough to fund Medicare, so people can see a GP, visit a specialist or ge
     <!-- Row 9: Footer image desktop & mobile -->
     <mj-section padding="0 20px">
       <mj-column>
-        <mj-image src="tba0452_edm_footer.png" alt="Desktop Image" width="522px" align="right" padding="0" css-class="desktop-only" />
+        <mj-image src="tba0452_edm_footer.png" alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="522px" align="right" padding="0" css-class="desktop-only" />
         <mj-image src="tba0452_edm_footer_mobile.png" alt="Mobile Image" width="262px" align="right" padding="0" css-class="mobile-only" />
       </mj-column>
     </mj-section>
