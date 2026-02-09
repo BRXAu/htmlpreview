@@ -1,0 +1,164 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text font-family="Arial" />
+      <mj-button font-family="Arial" />
+      <mj-text css-class="main-text" font-size="12px" line-height="16px" font-family="Arial">
+
+    </mj-attributes>
+    <mj-style>
+      @media only screen and (max-width:480px) {
+        .desktop-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+        .mobile-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+              .main-text { font-size:16px !important; line-height:20px !important; }
+      }
+      @media only screen and (min-width:481px) {
+        .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+        .mobile-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+        .main-text { font-size:12px !important; line-height:16px !important; }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body width="560px">
+
+
+      <mj-section padding="0">
+      <mj-column>
+        <mj-spacer height="10px" />
+      </mj-column>
+    </mj-section>
+
+  <mj-section padding="0 20px">
+  <mj-group>
+  
+  <!-- logo left -->
+  <mj-column width="50%" vertical-align="middle" padding="0">
+    <mj-image src="tba0452_edm_header_logo.png" width="46px" alt="Logo" align="left" padding="0" />
+  </mj-column>
+
+
+
+  <mj-column width="50%" vertical-align="middle" padding="0 0 0 0px">
+  <mj-raw>
+  <table border="0" cellpadding="0" cellspacing="0" align="right">
+    <tr>
+      <td>
+        <img src="tba0452_edm_viewonline_bttn.png" width="67" style="display:block;" alt="Logo" />
+      </td>
+      <td width="10">&nbs;</td> <!-- fixed 10px gap -->
+      <td>
+        <img src="tba0452_edm_viewonline_bttn.png" width="67" style="display:block;" alt="Logo" />
+      </td>
+    </tr>
+  </table>
+   </mj-raw>
+</mj-column>
+  </mj-group>
+
+</mj-section>
+
+      <mj-section padding="0 20px">
+      <mj-column>
+        <mj-spacer height="20px" />
+      </mj-column>
+    </mj-section>
+
+
+
+    <!-- Row 3: Hero image -->
+    <mj-section padding="0 20px">
+      <mj-column padding="0">
+        <mj-image src="tba0452_edm_hero.png" alt="Hero Image" width="520px" align="left" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0">
+      <mj-column>
+        <mj-spacer height="30px" />
+      </mj-column>
+    </mj-section>
+
+
+
+    <!-- Row 5: Desktop and mobile image -->
+    <mj-section padding="0 20px">
+      <mj-column>
+        <mj-image src="tba0452_edm_paragraph.png" alt="Desktop Image" width="500px" align="left" padding="0" css-class="desktop-only" />
+        <mj-image src="tba0452_edm_paragraph_mobile.png" alt="Mobile Image" width="260px" align="left" padding="0" css-class="mobile-only" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0 20px">
+      <mj-column>
+        <mj-spacer height="30px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Row 11: Footer text left-aligned -->
+    <mj-section padding="0 20px">
+      <mj-column>
+        <mj-text css-class="main-text" font-family="Arial" padding="0">
+        <mj-raw>
+        <p class="main-text">
+         According to the latest government data, Australian mining paid $74 billion in taxes and royalties in one year.
+<br><br>
+That’s more tax than any other industry in the country.
+<br><br>
+This contribution helps fund the services Australians rely on every day.
+<br><br>
+It’s enough to fund Medicare, so people can see a GP, visit a specialist or get a scan without paying the full cost on their own.
+</span>
+</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0 20px">
+      <mj-column>
+        <mj-spacer height="30px" />
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section padding="0 20px">
+      <mj-column padding="0">
+        <mj-image src="tba0452_edm_cta.png" alt="Hero Image" width="135px" align="left" padding="0" />
+      </mj-column>
+    </mj-section>
+
+
+    <!-- Row 6: Spacer 10px -->
+    <mj-section padding="0 20px">
+      <mj-column>
+        <mj-spacer height="10px" />
+      </mj-column>
+    </mj-section>
+
+
+
+    <!-- Row 9: Footer image desktop & mobile -->
+    <mj-section padding="0 20px">
+      <mj-column>
+        <mj-image src="tba0452_edm_footer.png" alt="Desktop Image" width="522px" align="right" padding="0" css-class="desktop-only" />
+        <mj-image src="tba0452_edm_footer_mobile.png" alt="Mobile Image" width="262px" align="right" padding="0" css-class="mobile-only" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Row 10: Spacer 10px -->
+    <mj-section padding="0 20px">
+      <mj-column>
+        <mj-spacer height="10px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Row 11: Footer text left-aligned -->
+    <mj-section padding="0 20px">
+      <mj-column>
+        <mj-text align="left"  font-family="Arial" font-size="9px" padding="0">
+          ATO, Taxation Statistics 2022-23 (2025). EY, Royalty and Company Tax Payments (2025). Authorised by T. Constable, Canberra
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
