@@ -34,7 +34,7 @@
   
   <!-- logo left -->
   <mj-column width="50%" vertical-align="middle" padding="0">
-    <mj-image src="tba0452_edm_header_logo.png" width="46px" alt="Minerals Council of Australia" align="left" padding="0"  href="#" />
+    <mj-image src="tba0452_edm_header_logo-02.png" width="44px" alt="Minerals Council of Australia" align="left" padding="0"  href="#" />
   </mj-column>
 
 <mj-column width="50%" vertical-align="middle" padding="0">
@@ -159,8 +159,8 @@ It’s enough to fund Medicare, so people can see a GP, visit a specialist or ge
     <!-- Row 9: Footer image desktop & mobile -->
     <mj-section padding="0 20px">
       <mj-column>
-        <mj-image src="tba0452_edm_footer.jpg" alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="522px" align="right" padding="0" css-class="desktop-only" />
-        <mj-image src="tba0452_edm_footer_mobile.jpg" alt="Mobile Image" width="262px" align="right" padding="0" css-class="mobile-only" />
+        <mj-image src="tba0452_edm_footer-02.png" alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="520px" align="right" padding="0" css-class="desktop-only" />
+        <mj-image src="tba0452_edm_footer_mobile-02.png" alt="Mobile Image" width="262px" align="right" padding="0" css-class="mobile-only" />
       </mj-column>
     </mj-section>
 
