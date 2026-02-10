@@ -1,94 +1,82 @@
 <mjml>
-  <mj-head>
-    <mj-attributes>
-      <mj-text font-family="Arial" />
-      <mj-button font-family="Arial" />
-      <mj-text css-class="main-text" font-size="12px" line-height="16px" font-family="Arial">
+<mj-head>
 
-    </mj-attributes>
-    <mj-style>
-      @media only screen and (max-width:480px) {
-        .desktop-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
-        .mobile-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
-              .main-text { font-size:16px !important; line-height:20px !important; }
-              .desktop-br { display:none !important; }
-      }
-      @media only screen and (min-width:481px) {
-        .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
-        .mobile-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
-        .main-text { font-size:12px !important; line-height:16px !important; }
-      }
-    </mj-style>
-  </mj-head>
-  <mj-body width="560px" background-color:"#FFFFFF">
+<mj-attributes>
+  <mj-text font-family="Arial" />
+  <mj-button font-family="Arial" />
+  <mj-text css-class="main-text" font-size="12px" line-height="16px" font-family="Arial" />
 
+  <!-- Define images here.  Easier to magage image assets.-->
+  <mj-class name="header-logo" src="https://bhp-banners.s3.ap-southeast-2.amazonaws.com/tba0452/tba0452_edm_header_logo-02.png" width="44px" alt="Minerals Council of Australia" align="left" padding="0"  href="https://thatsmining.com.au/" />
+  <mj-class name="hero" src="https://bhp-banners.s3.ap-southeast-2.amazonaws.com/tba0452/tba0452_edm_hero.png" alt="Australian Mining" width="520px" align="left" padding="0" />
+  <mj-class name="cta" src="https://bhp-banners.s3.ap-southeast-2.amazonaws.com/tba0452/tba0452_edm_cta-02.png" alt="Find out more" width="151px" href="https://thatsmining.com.au/" align="left" padding="0" />
+  <mj-class name="footer-desktop" src="https://bhp-banners.s3.ap-southeast-2.amazonaws.com/tba0452/tba0452_edm_footer-02.png" alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="520px" align="right" padding="0" css-class="desktop-only" />
+  <mj-class name="footer-mobile" src="https://bhp-banners.s3.ap-southeast-2.amazonaws.com/tba0452/tba0452_edm_footer_mobile-02.png" alt="hat’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="262px" align="right" padding="0" css-class="mobile-only" />
 
-      <mj-section padding="0">
-      <mj-column>
-        <mj-spacer height="10px" />
-      </mj-column>
-    </mj-section>
+</mj-attributes>
 
-  <mj-section padding="0 20px">
-  <mj-group>
-  
-  <!-- logo left -->
-  <mj-column width="50%" vertical-align="middle" padding="0">
-    <mj-image src="tba0452_edm_header_logo-02.png" width="44px" alt="Minerals Council of Australia" align="left" padding="0"  href="#" />
+<mj-style>
+    @media only screen and (max-width:480px) {
+      .desktop-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+      .mobile-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+      .main-text { font-size:16px !important; line-height:20px !important; }
+      .desktop-br { display:none !important; }
+    }
+    @media only screen and (min-width:481px) {
+      .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+      .mobile-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+      .main-text { font-size:12px !important; line-height:16px !important; }
+    }
+</mj-style>
+
+</mj-head>
+
+<mj-body width="560px" >
+
+<mj-section padding="0">
+  <mj-column>
+    <mj-spacer height="10px" />
   </mj-column>
-
-<mj-column width="50%" vertical-align="middle" padding="0">
-  <mj-navbar align="right">
-    <mj-navbar-link
-      href="#"
-      color="#343A40"
-      font-family="Arial"
-      font-size="12px"
-      padding="0 10px 0 0"
-      text-decoration="none">
-      Home
-    </mj-navbar-link>
-
-    <mj-navbar-link
-      href="#"
-      color="#343A40"
-      font-family="Arial"
-      font-size="12px"
-      padding="0"
-      text-decoration="none">
-      View online
-    </mj-navbar-link>
-  </mj-navbar>
-</mj-column>
-  </mj-group>
-
 </mj-section>
 
-      <mj-section padding="0 20px">
-      <mj-column>
-        <mj-spacer height="20px" />
-      </mj-column>
-    </mj-section>
+<mj-section padding="0 20px">
+  <mj-group>
+    <mj-column width="50%" vertical-align="middle" padding="0">
+      <mj-image mj-class="header-logo"/>
+    </mj-column>
+    <mj-column width="50%" vertical-align="middle" padding="0">
+      <mj-navbar align="right">
+        <mj-navbar-link href="https://thatsmining.com.au/" color="#343A40" font-family="Arial" font-size="12px" padding="0 10px 0 0" text-decoration="none">
+          Home
+        </mj-navbar-link>
+        <mj-navbar-link  href="#" color="#343A40" font-family="Arial" font-size="12px" padding="0" text-decoration="none">
+          View online
+        </mj-navbar-link>
+      </mj-navbar>
+    </mj-column>
+  </mj-group>
+</mj-section>
 
-
-
-    <!-- Row 3: Hero image -->
-    <mj-section padding="0 20px">
-      <mj-column padding="0">
-        <mj-image src="tba0452_edm_hero.png" alt="Australian Mining" width="520px" align="left" padding="0" />
-      </mj-column>
-    </mj-section>
-
-    <mj-section padding="0">
-      <mj-column>
-        <mj-spacer height="30px" />
-      </mj-column>
-    </mj-section>
-
+<mj-section padding="0 20px">
+  <mj-column>
+    <mj-spacer height="20px" />
+  </mj-column>
+</mj-section>
 
 <mj-section padding="0 20px">
   <mj-column padding="0">
+    <mj-image mj-class="hero"/>
+  </mj-column>
+</mj-section>
 
+<mj-section padding="0">
+  <mj-column>
+    <mj-spacer height="30px" />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 20px">
+  <mj-column padding="0">
     <mj-raw>
       <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 400px">
         <tr>
@@ -102,86 +90,73 @@
         </tr>
       </table>
     </mj-raw>
-
   </mj-column>
 </mj-section>
 
+<mj-section padding="0 20px">
+  <mj-column>
+    <mj-spacer height="30px" />
+  </mj-column>
+</mj-section>
 
-
-    <mj-section padding="0 20px">
-      <mj-column>
-        <mj-spacer height="30px" />
-      </mj-column>
-    </mj-section>
-
-    <!-- Row 11: Footer text left-aligned -->
-    <mj-section padding="0 20px">
-      <mj-column >
-        <mj-text css-class="main-text" font-family="Arial" padding="0" color="#343A40">
-        <mj-raw>
+<mj-section padding="0 20px">
+  <mj-column >
+    <mj-text css-class="main-text" font-family="Arial" padding="0" color="#343A40">
+      <mj-raw>
         <span class="main-text" style="padding:0; ">
-         According to the latest government data, Australian mining paid $74 billion in taxes and royalties in&nbsp;one&nbsp;year.
-<br><br>
-That’s more tax than any other industry in the country.
-<br><br>
-This contribution helps fund the&nbsp;services Australians rely on&nbsp;every&nbsp;day.
-<br><br>
-It’s enough to fund Medicare, so people can see a GP, visit a specialist or get a scan without paying the full cost on&nbsp;their&nbsp;own.
-</span>
-        </mj-text>
-      </mj-column>
-    </mj-section>
+          According to the latest government data, Australian mining paid $74 billion in taxes and royalties in&nbsp;one&nbsp;year.
+          <br><br>
+          That’s more tax than any other industry in the country.
+          <br><br>
+          This contribution helps fund the&nbsp;services Australians rely on&nbsp;every&nbsp;day.
+          <br><br>
+          It’s enough to fund Medicare, so people can see a GP, visit a specialist or get a scan without paying the full cost on&nbsp;their&nbsp;own.
+        </span>
+      </mj-raw>
+    </mj-text>
+  </mj-column>
+</mj-section>
 
-    <mj-section padding="0 20px">
-      <mj-column>
-        <mj-spacer height="30px" />
-      </mj-column>
-    </mj-section>
-
+<mj-section padding="0 20px">
+  <mj-column>
+    <mj-spacer height="30px" />
+  </mj-column>
+</mj-section>
 
 <mj-section padding="0 20px">
   <mj-column padding="0">
-    <mj-image src="tba0452_edm_cta-02.png" alt="Find out more" width="151px" href="#" align="left" padding="0" />
+    <mj-image mj-class="cta"/>
   </mj-column>
 </mj-section>
 
+<mj-section padding="0 20px">
+  <mj-column>
+    <mj-spacer height="30px" />
+  </mj-column>
+</mj-section>
 
+<mj-section padding="0 20px">
+  <mj-column>
+    <mj-image mj-class="footer-desktop"/>
+    <mj-raw><!--[if !mso]><!-- --></mj-raw>
+    <mj-image mj-class="footer-mobile"/>
+    <mj-raw><!--<![endif]--></mj-raw>
+  </mj-column>
+</mj-section>
 
-    <!-- Row 6: Spacer 10px -->
-    <mj-section padding="0 20px">
-      <mj-column>
-        <mj-spacer height="30px" />
-      </mj-column>
-    </mj-section>
+<mj-section padding="0 20px">
+  <mj-column>
+    <mj-spacer height="20px" />
+  </mj-column>
+</mj-section>
 
+<mj-section padding="0 20px">
+  <mj-column>
+    <mj-text align="left"  font-family="Arial" font-size="8px" padding="0" color="#343A40">
+      ATO, Taxation Statistics 2022-23 (2025). EY, Royalty and Company Tax Payments (2025). Authorised by T.&nbsp;Constable,&nbsp;Canberra
+    </mj-text>
+  </mj-column>
+</mj-section>
 
-
-    <!-- Row 9: Footer image desktop & mobile -->
-    <mj-section padding="0 20px">
-      <mj-column>
-
-        <mj-image src="tba0452_edm_footer-02.png" alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="520px" align="right" padding="0" css-class="desktop-only" />
-        <mj-raw><!--[if !mso]><!-- --></mj-raw>
-        <mj-image src="tba0452_edm_footer_mobile-02.png" alt="Mobile Image" width="262px" align="right" padding="0" css-class="mobile-only" />
-        <mj-raw><!--<![endif]--></mj-raw>
-      </mj-column>
-    </mj-section>
-
-    <!-- Row 10: Spacer 10px -->
-    <mj-section padding="0 20px">
-      <mj-column>
-        <mj-spacer height="20px" />
-      </mj-column>
-    </mj-section>
-
-    <!-- Row 11: Footer text left-aligned -->
-    <mj-section padding="0 20px">
-      <mj-column>
-        <mj-text align="left"  font-family="Arial" font-size="8px" padding="0" color="#343A40">
-          ATO, Taxation Statistics 2022-23 (2025). EY, Royalty and Company Tax Payments (2025). Authorised by T. Constable, Canberra
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-  </mj-body>
+</mj-body>
 </mjml>

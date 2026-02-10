@@ -1,9 +1,9 @@
-        body {
-      filter: invert(1) hue-rotate(180deg);
-      background: #000;
-    }
+body {
+filter: invert(1) hue-rotate(180deg);
+background: #000;
+}
 
-    /* Restore images */
-    img {
-      filter: invert(1) hue-rotate(180deg);
-    }
+/* Restore images */
+img {
+filter: invert(1) hue-rotate(180deg);
+}
