@@ -158,5 +158,11 @@
   </mj-column>
 </mj-section>
 
+<mj-section padding="0 20px">
+  <mj-column>
+    <mj-spacer height="20px" />
+  </mj-column>
+</mj-section>
+
 </mj-body>
 </mjml>
