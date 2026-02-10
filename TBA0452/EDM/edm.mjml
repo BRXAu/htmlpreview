@@ -150,7 +150,7 @@ It’s enough to fund Medicare, so people can see a GP, visit a specialist or ge
     <!-- Row 6: Spacer 10px -->
     <mj-section padding="0 20px">
       <mj-column>
-        <mj-spacer height="10px" />
+        <mj-spacer height="30px" />
       </mj-column>
     </mj-section>
 
@@ -159,15 +159,18 @@ It’s enough to fund Medicare, so people can see a GP, visit a specialist or ge
     <!-- Row 9: Footer image desktop & mobile -->
     <mj-section padding="0 20px">
       <mj-column>
+
         <mj-image src="tba0452_edm_footer-02.png" alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="520px" align="right" padding="0" css-class="desktop-only" />
+        <mj-raw><!--[if !mso]><!-- --></mj-raw>
         <mj-image src="tba0452_edm_footer_mobile-02.png" alt="Mobile Image" width="262px" align="right" padding="0" css-class="mobile-only" />
+        <mj-raw><!--<![endif]--></mj-raw>
       </mj-column>
     </mj-section>
 
     <!-- Row 10: Spacer 10px -->
     <mj-section padding="0 20px">
       <mj-column>
-        <mj-spacer height="10px" />
+        <mj-spacer height="20px" />
       </mj-column>
     </mj-section>
 
