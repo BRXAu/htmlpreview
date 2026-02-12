@@ -54,7 +54,7 @@ window.MANIFEST = {
   "F3_Image2": "{\"url\":null,\"size\":null,\"position\":null,\"svgType\":null,\"animationIn\":null,\"animationOut\":null,\"frameOut\":null,\"animatedSVG\":null}",
   "F3_Image3": "{\"url\":null,\"size\":null,\"position\":null,\"svgType\":null,\"animationIn\":null,\"animationOut\":null,\"frameOut\":null,\"animatedSVG\":null}",
   "F3_InframeImage": "{\"url\":\"assets/AGA0302_Netflix_Relaunch_-_Bridgerton_Display_F1_InframeImage_81708b68.jpg\",\"size\":null,\"position\":\"0 0 0 0\",\"order\":null,\"alignment\":null,\"alignmentPortrait\":null,\"column\":null,\"animationIn\":null,\"animationOut\":null,\"frameOut\":null,\"animatedSVG\":null}",
-  "F3_Logo": "{\"url\":\"assets/AGA0302_Netflix_Relaunch_-_Bridgerton_Display_F3_Logo_81708b68.svg\",\"alignment\":\"stacked\",\"position\":null,\"padding\":null,\"maxSize\":null}",
+  "F3_Logo": "{\"url\":\"assets/AGA0302_Netflix_Relaunch_-_Bridgerton_Display_F3_Logo_81708b68.svg\",\"alignment\":\"stacked\",\"position\":null,\"padding\":\"0\",\"maxSize\":null}",
   "F3_Headline": "{\"text\":\"[Join the AGL Netflix\\nElectricity Plan]\",\"size\":\"38\",\"weight\":600,\"order\":null,\"column\":null}",
   "F3_Subheadline": "{\"text\":null,\"size\":null,\"weight\":null,\"order\":null,\"column\":null}",
   "F3_icontext": "{\"text\":\"and get |<span style='letter-spacing: -0.12em'>$</span>|120 RRP of Netflix value\\nincluded each year for the life of your plan*\",\"size\":\"20\",\"weight\":null,\"order\":null,\"column\":null}",
