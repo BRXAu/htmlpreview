@@ -98,6 +98,7 @@
   </mj-column>
 </mj-section>
 
+
 <mj-section padding="0 20px">
   <mj-column >
     <mj-text css-class="main-text" font-family="Arial" padding="0" color="#343A40">
@@ -110,7 +111,7 @@
           This contribution helps fund the&nbsp;services Australians rely on&nbsp;every&nbsp;day.
           <br><br>
           It’s enough to fund Medicare, so people can see a GP, visit a specialist or get a scan without paying the full cost n&nbsp;their&nbsp;own.
-           <br>
+           <br><br>
            For more about the ways mining makes a difference to Australia and your local community, visit <a href="#" style="text-decoration: underline; color:#343A40;  font-family: arial;">thatsmining.com.au</a>
         </span>
       </mj-raw>
