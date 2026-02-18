@@ -11,7 +11,7 @@
   <mj-class name="hero" src="https://bhp-banners.s3.ap-southeast-2.amazonaws.com/tba0452/tba0452_edm_hero.png" alt="Australian Mining" width="520px" align="left" padding="0" />
   <mj-class name="cta" src="https://bhp-banners.s3.ap-southeast-2.amazonaws.com/tba0452/tba0452_edm_cta-02.png" alt="Find out more" width="151px" href="https://thatsmining.com.au/" align="left" padding="0" />
   <mj-class name="footer-desktop" src="https://bhp-banners.s3.ap-southeast-2.amazonaws.com/tba0452/tba0452_edm_footer-02.png" alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="520px" align="right" padding="0" css-class="desktop-only" />
-  <mj-class name="footer-mobile" src="https://bhp-banners.s3.ap-southeast-2.amazonaws.com/tba0452/tba0452_edm_footer_mobile-02.png" alt="hat’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="262px" align="right" padding="0" css-class="mobile-only" />
+  <mj-class name="footer-mobile" src="https://bhp-banners.s3.ap-southeast-2.amazonaws.com/tba0452/tba0452_edm_footer_mobile-02.png" alt="That’s the difference Australian mining make. thatsmining.com.au. Minerals Council of Australia." width="262px" align="right" padding="0" css-class="mobile-only" />
 
 </mj-attributes>
 
@@ -48,7 +48,7 @@
         <mj-navbar-link href="https://thatsmining.com.au/" color="#343A40" font-family="Arial" font-size="12px" padding="0 10px 0 0" text-decoration="none">
           Home
         </mj-navbar-link>
-        <mj-navbar-link  href="#" color="#343A40" font-family="Arial" font-size="12px" padding="0" text-decoration="none">
+        <mj-navbar-link  href="https://thatsmining.com.au/" color="#343A40" font-family="Arial" font-size="12px" padding="0" text-decoration="none">
           View online
         </mj-navbar-link>
       </mj-navbar>
@@ -112,7 +112,7 @@
           <br><br>
           It’s enough to fund Medicare, so people can see a GP, visit a specialist or get a scan without paying the full cost on&nbsp;their&nbsp;own.
            <br><br>
-           For more about the ways mining makes a difference to Australia and your local community, visit <a href="#" style="text-decoration: underline; color:#343A40;  font-family: arial;">thatsmining.com.au</a>
+           For more about the ways mining makes a difference to Australia and your local community, visit <a href="https://thatsmining.com.au/" target="_blank" style="text-decoration: underline; color:#343A40;  font-family: arial;">thatsmining.com.au</a>
         </span>
       </mj-raw>
     </mj-text>
