@@ -1,0 +1,27 @@
+<svg width="300" height="600" viewBox="0 0 300 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6867_17256)">
+<g clip-path="url(#clip1_6867_17256)">
+<ellipse cx="208.028" cy="423.384" rx="94.8855" ry="113.041" transform="rotate(6.67 208.028 423.384)" fill="url(#paint0_radial_6867_17256)" fill-opacity="0.75"/>
+<ellipse cx="90.8589" cy="223.857" rx="94.8855" ry="113.041" transform="rotate(-6.67 90.8589 223.857)" fill="url(#paint1_radial_6867_17256)" fill-opacity="0.75"/>
+</g>
+<path d="M133.74 313.48H137.38L140.812 323.256L144.218 313.48H147.728L142.814 327H138.654L133.74 313.48ZM147.308 323.074H150.766C150.974 324.192 151.702 324.868 153.288 324.868C154.744 324.868 155.602 324.296 155.602 323.256C155.602 322.398 155.212 321.878 153.834 321.722L151.468 321.436C148.738 321.098 147.594 319.72 147.594 317.614C147.594 314.988 149.804 313.142 153.184 313.142C156.746 313.142 158.54 315.196 158.696 317.25H155.342C155.186 316.236 154.484 315.612 153.132 315.612C151.78 315.612 150.922 316.236 150.922 317.172C150.922 317.978 151.416 318.472 152.924 318.654L155.264 318.94C157.89 319.252 158.956 320.526 158.956 322.736C158.956 325.596 156.486 327.338 153.262 327.338C149.57 327.338 147.568 325.518 147.308 323.074Z" fill="white"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_6867_17256" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(208.028 423.384) rotate(90) scale(113.041 94.8855)">
+<stop offset="0.365385" stop-color="#F55662" stop-opacity="0.4"/>
+<stop offset="0.629808" stop-color="#F42736"/>
+<stop offset="1" stop-color="#BA1723" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_6867_17256" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(90.8589 223.857) rotate(90) scale(113.041 94.8855)">
+<stop offset="0.365385" stop-color="#F55662" stop-opacity="0.4"/>
+<stop offset="0.629808" stop-color="#F42736"/>
+<stop offset="1" stop-color="#BA1723" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_6867_17256">
+<rect width="300" height="600" fill="white"/>
+</clipPath>
+<clipPath id="clip1_6867_17256">
+<rect width="300" height="600" fill="white"/>
+</clipPath>
+</defs>
+</svg>

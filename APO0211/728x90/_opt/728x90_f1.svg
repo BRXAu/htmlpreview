@@ -1,0 +1,72 @@
+<svg width="728" height="90" viewBox="0 0 728 90" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    #image01{
+      animation: fadeOut 0.5s ease 2s forwards;
+    }
+
+    #image02{
+      opacity:0;
+      animation: fadeIn 0.5s ease 2.5s forwards;
+    }
+
+    #ellipseNow{
+      animation:
+        ellipseFadeOut 0.5s ease 2s forwards,
+        ellipseFadeIn 0.5s ease 2.5s forwards;
+    }
+
+    @keyframes fadeOut{
+      to{ opacity:0; }
+    }
+
+    @keyframes fadeIn{
+      to{ opacity:1; }
+    }
+
+    @keyframes ellipseFadeOut{
+      to{ opacity:0; }
+    }
+
+    @keyframes ellipseFadeIn{
+      to{ opacity:1; }
+    }
+  </style>
+
+  <defs>
+    <mask id="mask1">
+      <image href="728x90_f1_png.png" width="728" height="90"/>
+    </mask>
+
+    <mask id="mask2">
+      <image href="728x90_f2_png.png" width="728" height="90"/>
+    </mask>
+
+    <radialGradient id="ellipse_radial_gradient_001" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(342.409 46.8604) rotate(90) scale(56.6945 47.5887)">
+<stop offset="0.365385" stop-color="#F55662" stop-opacity="0.4"/>
+<stop offset="0.629808" stop-color="#F42736"/>
+<stop offset="1" stop-color="#BA1723" stop-opacity="0"/>
+</radialGradient>
+    <radialGradient id="ellipse_radial_gradient_002" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(464.446 47.0672) rotate(90) scale(56.6945 47.5887)">
+<stop offset="0.365385" stop-color="#F55662" stop-opacity="0.4"/>
+<stop offset="0.629808" stop-color="#F42736"/>
+<stop offset="1" stop-color="#BA1723" stop-opacity="0"/>
+</radialGradient>
+
+  </defs>
+<g id="svgContainer">
+
+<g id="ellipseNow">
+<ellipse cx="342.409" cy="46.8604" rx="47.5887" ry="56.6945" transform="rotate(-6.67 342.409 46.8604)" fill="url(#ellipse_radial_gradient_001)" fill-opacity="0.75"/>
+<ellipse cx="464.446" cy="47.0672" rx="47.5887" ry="56.6945" transform="rotate(6.67 464.446 47.0672)" fill="url(#ellipse_radial_gradient_002)" fill-opacity="0.75"/>
+</g>
+<g id="cs_text_01">
+<path d="M392.82 41.64H395.34L397.716 48.408L400.074 41.64H402.504L399.102 51H396.222L392.82 41.64ZM402.393 48.282H404.787C404.931 49.056 405.435 49.524 406.533 49.524C407.541 49.524 408.135 49.128 408.135 48.408C408.135 47.814 407.865 47.454 406.911 47.346L405.273 47.148C403.383 46.914 402.591 45.96 402.591 44.502C402.591 42.684 404.121 41.406 406.461 41.406C408.927 41.406 410.169 42.828 410.277 44.25H407.955C407.847 43.548 407.361 43.116 406.425 43.116C405.489 43.116 404.895 43.548 404.895 44.196C404.895 44.754 405.237 45.096 406.281 45.222L407.901 45.42C409.719 45.636 410.457 46.518 410.457 48.048C410.457 50.028 408.747 51.234 406.515 51.234C403.959 51.234 402.573 49.974 402.393 48.282Z" fill="white"/>
+</g>
+<g id="image01">
+  <image href="728x90_f1_png.jpg" width="728" height="90" mask="url(#mask1)"/>
+</g>
+<g id="image02">
+<image href="728x90_f2_png.jpg" width="728" height="90" mask="url(#mask2)"/>
+</g>
+</g>
+</svg>

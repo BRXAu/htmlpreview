@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="300" height="250" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 300 250">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-3 {
+        fill-opacity: .8;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-4 {
+        fill: #000;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="36.7" cy="224.6" fx="36.7" fy="224.6" r="1" gradientTransform="translate(-16951.6 -3182.8) rotate(90) scale(90.4 -75.9)" gradientUnits="userSpaceOnUse">
+      <stop offset=".4" stop-color="#f55662" stop-opacity=".4"/>
+      <stop offset=".6" stop-color="#f42736"/>
+      <stop offset="1" stop-color="#ba1723" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clippath">
+      <path class="cls-2" d="M46.6,73.4h64.9c7.4,0,13.4,6,13.4,13.4v79.2c0,7.4-6,13.4-13.4,13.4H46.6c-7.4,0-13.4-6-13.4-13.4v-79.2c0-7.4,6-13.4,13.4-13.4Z" transform="translate(-14.1 10) rotate(-6.7)"/>
+    </clipPath>
+    <radialGradient id="radial-gradient-2" cx="36.8" cy="224.5" fx="36.8" fy="224.5" r="1" gradientTransform="translate(3546.6 -16895.4) rotate(-180) scale(90.4 -75.9)" gradientUnits="userSpaceOnUse">
+      <stop offset=".4" stop-color="#f55662" stop-opacity=".4"/>
+      <stop offset=".6" stop-color="#f42736"/>
+      <stop offset="1" stop-color="#ba1723" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clippath-1">
+      <path class="cls-2" d="M182.1,80.5h79.2c7.4,0,13.4,6,13.4,13.4v64.9c0,7.4-6,13.4-13.4,13.4h-79.2c-7.4,0-13.4-6-13.4-13.4v-64.9c0-7.4,6-13.4,13.4-13.4Z" transform="translate(70.4 331.9) rotate(-83.3)"/>
+    </clipPath>
+  </defs>
+  <g id="f1_image-01" data-name="f1 image-01">
+    <g id="Image_Lockups" data-name="Image Lockups">
+      <g id="Gen_z" data-name="Gen z">
+        <ellipse id="Ellipse_87" data-name="Ellipse 87" class="cls-3" cx="81.9" cy="131.7" rx="75.9" ry="90.4" transform="translate(-14.7 10.4) rotate(-6.7)"/>
+        <g id="Frame_5" data-name="Frame 5">
+          <g id="Image_frames" data-name="Image frames">
+            <g class="cls-6">
+              <g id="Images">
+                <rect id="Gen-Z-2_1" data-name="Gen-Z-2 1" class="cls-2" x="17" y="68" width="121" height="121" transform="translate(-14.4 9.9) rotate(-6.7)"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="text_box_styles" data-name="text box styles">
+          <g id="Text_Highlight" data-name="Text Highlight">
+            <rect class="cls-5" x="58.8" y="164.7" width="52.3" height="24.1" rx="6.1" ry="6.1" transform="translate(-20 11.1) rotate(-6.7)"/>
+            <path id="Label" class="cls-4" d="M72.2,181.1c1.7-.2,2.4-1.5,2.2-2.8h0s-2,.2-2,.2l-.2-1.3,3.6-.4v.8c.4,2.6-.9,4.6-3.6,4.9-2.7.3-4.7-1.4-5-4.3s1.2-5.1,3.9-5.4c2.2-.3,3.6.8,4.2,2.3l-1.7.2c-.3-.8-1.1-1.3-2.3-1.2-1.7.2-2.6,1.6-2.4,3.6v.5c.3,2,1.5,3.1,3.2,2.9ZM83.7,178.9c-.2,1.2-1.1,2.4-2.8,2.6-2,.2-3.5-1-3.8-3.2-.3-2.2.9-3.8,2.8-4,2-.2,3.3,1,3.6,3.2v.4s-4.8.6-4.8.6c.2,1.3.9,1.9,2,1.8.8,0,1.2-.5,1.4-1.2l1.5-.2ZM80.1,175.5c-.9.1-1.5.8-1.5,1.9l3.2-.4c-.2-1-.8-1.6-1.8-1.5ZM86.4,176.4l.5,4.2-1.6.2-.8-6.9,1.6-.2v.8c0,0,.1,0,.1,0,.4-.6.9-1.1,1.8-1.2,1.4-.2,2.4.7,2.5,2.3l.5,4.5-1.6.2-.5-4.4c0-.8-.5-1.3-1.4-1.2-.9.1-1.3.8-1.2,1.6ZM95.2,179.6v-1.2c-.1,0,4.3-7.5,4.3-7.5l-5.3.6-.2-1.3,7.4-.9v1c.1,0-4.4,7.7-4.4,7.7l5.4-.6.2,1.3-7.3.9Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="f1_image-02" data-name="f1 image-02">
+    <g id="Image_Lockups_2" data-name="Image Lockups_2">
+      <g id="Millennials">
+        <ellipse id="Ellipse_87_2" data-name="Ellipse 87_2" class="cls-1" cx="223.4" cy="132.4" rx="90.4" ry="75.9" transform="translate(66 338.9) rotate(-83.3)"/>
+        <g id="Frame_5_2" data-name="Frame 5_2">
+          <g id="Image_frames_2" data-name="Image frames_2">
+            <g class="cls-7">
+              <g id="Images_2" data-name="Images 2">
+                <rect id="miullenial_1" data-name="miullenial 1" class="cls-2" x="152" y="58" width="140" height="140" transform="translate(69.1 333.6) rotate(-83.3)"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="text_box_styles_2" data-name="text box styles_2">
+          <g id="Text_Highlight_2" data-name="Text Highlight_2">
+            <rect class="cls-5" x="203.8" y="135.6" width="24.1" height="82.3" rx="6.1" ry="6.1" transform="translate(15.3 370.7) rotate(-83.3)"/>
+            <path id="Label_2" data-name="Label 2" class="cls-4" d="M187.9,176l-2.1-5.9-.8,7.2-1.6-.2,1.1-9.4,2,.2,2,5.7,3.3-5.1,2,.2-1.1,9.4-1.6-.2.8-7.2-3.5,5.3h-.6ZM195.3,169.3c0-.6.5-.9,1.1-.9.5,0,.9.5.9,1.1,0,.5-.6.9-1.1.9-.6,0-.9-.6-.9-1.1ZM195.2,171.4l1.6.2-.8,6.9-1.6-.2.8-6.9ZM199.6,178.9c-1.2-.1-1.9-.9-1.7-2.1l.9-7.9,1.6.2-.9,7.8c0,.4,0,.7.6.8h.5c0,0-.1,1.3-.1,1.3h-.7ZM203.4,179.3c-1.2-.1-1.9-.9-1.7-2.1l.9-7.9,1.6.2-.9,7.8c0,.4,0,.7.6.8h.5c0,0-.1,1.3-.1,1.3h-.7ZM211.7,178.2c-.5,1.1-1.7,2-3.3,1.8-2-.2-3.2-1.8-2.9-4,.3-2.2,1.8-3.4,3.7-3.2,2,.2,3,1.8,2.7,4v.4s-4.9-.6-4.9-.6c-.1,1.3.5,2.1,1.5,2.2.8,0,1.3-.2,1.6-.8l1.5.2ZM209,174.1c-.9-.1-1.6.4-1.8,1.5l3.2.4c0-1-.5-1.8-1.4-1.9ZM214.9,176.4l-.5,4.2-1.6-.2.8-6.9,1.6.2v.8c0,0,0,0,0,0,.5-.5,1.1-.8,2-.7,1.4.2,2.1,1.3,1.9,2.8l-.5,4.5-1.6-.2.5-4.4c0-.8-.2-1.4-1.1-1.5-.9-.1-1.5.5-1.6,1.3ZM222.3,177.2l-.5,4.2-1.6-.2.8-6.9,1.6.2v.8c0,0,0,0,0,0,.5-.5,1.1-.8,2-.7,1.4.2,2.1,1.3,1.9,2.8l-.5,4.5-1.6-.2.5-4.4c0-.8-.2-1.4-1.1-1.5-.9-.1-1.5.5-1.6,1.3ZM228.6,173.2c0-.6.5-.9,1.1-.9.5,0,.9.5.9,1.1,0,.5-.6.9-1.1.9-.6,0-.9-.6-.9-1.1ZM228.5,175.3l1.6.2-.8,6.9-1.6-.2.8-6.9ZM234.9,182.1c-.4.6-1.2.9-2.2.8-1.3-.2-2.1-1-2-2.3.2-1.3,1.2-1.7,2.4-1.8h1.5c.6,0,.7-.2.8-.7,0-.6-.2-1.1-1.1-1.2-.8,0-1.3.3-1.4,1l-1.6-.2c.2-1.1,1.3-2.2,3.1-1.9,1.8.2,2.7,1.4,2.5,2.9l-.4,3.3c0,.4,0,.9,0,1.2l-1.6-.2c0-.3,0-.6,0-.9h0ZM235.3,179.5c-.2.2-.6.3-.9.3h-.7c-.7.1-1.2.4-1.2,1,0,.6.3,1,1,1.1.9.1,1.7-.4,1.8-1.3v-1.1ZM240,183.6c-1.2-.1-1.9-.9-1.7-2.1l.9-7.9,1.6.2-.9,7.8c0,.4,0,.7.6.8h.5c0,0-.1,1.3-.1,1.3h-.7ZM241.7,181.8l1.6.2c0,.6.4,1,1.3,1.1.8,0,1.3-.2,1.4-.8,0-.5-.1-.8-.8-.9l-1.2-.3c-1.4-.3-1.8-1.1-1.7-2.1.2-1.3,1.3-2.1,3-1.9,1.8.2,2.5,1.4,2.5,2.4l-1.5-.2c0-.6-.4-1-1.1-1.1-.7,0-1.3.2-1.3.8,0,.4.2.7.9.9l1.2.3c1.3.3,1.8,1,1.7,2.1-.2,1.4-1.5,2.1-3.1,1.9-1.8-.2-2.7-1.3-2.7-2.5Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

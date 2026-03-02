@@ -1,0 +1,15 @@
+<svg width="970" height="250" viewBox="0 0 970 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="mask1">
+      <image href="970x250_f3_png.png" width="970" height="250"/>
+    </mask>
+
+  </defs>
+<g id="svgContainer">
+
+<g id="image01">
+  <image href="970x250_f3_png.jpg" width="970" height="250" mask="url(#mask1)"/>
+</g>
+
+</g>
+</svg>
