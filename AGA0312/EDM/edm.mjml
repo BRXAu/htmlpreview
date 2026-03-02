@@ -1,10 +1,11 @@
 <mjml>
-  <mj-body background-color="#f4f4f4">
+  <mj-body background-color="#FFFFFF">
     <mj-section padding="0" >
       <mj-column width="600px">
         <mj-image
           src="Logo.png"
-          width="122px"
+          width="600px"
+          height="70px"
           padding="0"
           alt="AGL logo"
           align="left"
