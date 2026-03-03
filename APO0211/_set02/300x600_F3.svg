@@ -1,0 +1,22 @@
+<svg width="300" height="250" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
+
+
+  <defs>
+    <mask id="mask1">
+      <image href="300x250_F3_mask.png" width="300" height="250"/>
+    </mask>
+
+
+  </defs>
+<g id="svgContainer">
+  <g id="ellipseNow">
+
+</g>
+
+
+<g id="image01">
+  <image href="300x250_F3_opt.jpg" width="300" height="250" mask="url(#mask1)"/>
+</g>
+
+</g>
+</svg>

@@ -1,0 +1,311 @@
+<mjml>
+  <mj-body background-color="#FFFFFF">
+    <mj-section padding="0" >
+      <mj-column width="600px">
+        <mj-image
+          src="Logo.png"
+          width="600px"
+          height="70px"
+          padding="0"
+          alt="AGL logo"
+          align="left"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column width="600px">
+        <mj-image
+          src="Hero.png"
+          width="600px"
+          padding="0 0 10px 0"
+          alt="Hero image"
+        />
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column width="600px" padding="0">
+
+        <mj-text
+          font-family="Arial, sans-serif"
+          font-size="20px"
+          font-weight="bold"
+          line-height="28px"
+          color="#000000"
+          padding="10px"
+          align="center"
+        >
+          Hi {First name}
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+    <mj-section padding="0">
+      <mj-column width="600px" padding="0">
+
+        <mj-text
+          font-family="Arial, sans-serif"
+          font-size="17px"
+          font-weight="regular"
+          line-height="28px"
+          color="#000000"
+          padding="10px"
+          align="center"
+        >
+          If you are in search of a new energy deal,<br>
+          we may have just the right offer for you!
+          <br><br>
+          Switch your business energy in VIC & NSW to AGL online and stay to receive up to <b>$500 in bill credits</b> which are applied when you stay with us for 90 days. That’s a $300 bill credit for electricity and $200&nbsp;bill&nbsp;credit&nbsp;for&nbsp;gas.*
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0">
+      <mj-column width="600px">
+        <mj-image
+          src="CTA.png"
+          width="190px"
+          padding="20px"
+          alt="Learn more"
+        />
+      </mj-column>
+    </mj-section>
+
+
+
+
+    <mj-section padding="0">
+      <mj-column padding="0">
+
+        <mj-raw>
+          <table width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; border-collapse:collapse;">
+            
+            <!-- Row 1: Icons centered -->
+            <tr>
+              <td width="300" valign="top" style="padding:20px 0 10px 0; text-align:center;">
+                <img src="Icon01.png" width="50" height="50" style="display:block; margin:0 auto; border:0;" alt="">
+              </td>
+              <td width="300" valign="top" style="padding:20px 0 10px 0; text-align:center;">
+                <img src="Icon02.png" width="50" height="50" style="display:block; margin:0 auto; border:0;" alt="">
+              </td>
+            </tr>
+
+            <!-- Row 2: Headings -->
+            <tr>
+              <td width="300" valign="top" style="padding:10px; text-align:center; font-family:Arial,sans-serif; font-size:18px; font-weight:bold; line-height:28px; color:#000000;">
+                Tailored billing
+              </td>
+              <td width="300" valign="top" style="padding:10px; text-align:center; font-family:Arial,sans-serif; font-size:18px; font-weight:bold; line-height:28px; color:#000000;">
+                Switch in minutes
+              </td>
+            </tr>
+
+            <!-- Row 3: Subtext -->
+            <tr>
+              <td width="300" valign="top" style="padding:10px; text-align:center; font-family:Arial,sans-serif; font-size:12px; font-weight:normal; line-height:16px; color:#000000;">
+                Choose how you pay, with options like monthly eBilling or Bill Smoothing for consistent payment amounts each month.
+              </td>
+              <td width="300" valign="top" style="padding:10px; text-align:center; font-family:Arial,sans-serif; font-size:12px; font-weight:normal; line-height:16px; color:#000000;">
+                You’re 5 minutes away from a great Business Energy plan.
+              </td>
+            </tr>
+
+            <!-- Row 4: Icons centered -->
+            <tr>
+              <td width="300" valign="top" style="padding:20px 0 10px 0; text-align:center;">
+                <img src="Icon03.png" width="50" height="50" style="display:block; margin:0 auto; border:0;" alt="">
+              </td>
+              <td width="300" valign="top" style="padding:20px 0 10px 0; text-align:center;">
+                <img src="Icon04.png" width="50" height="50" style="display:block; margin:0 auto; border:0;" alt="">
+              </td>
+            </tr>
+
+            <!-- Row 5: Headings -->
+            <tr>
+              <td width="300" valign="top" style="padding:10px; text-align:center; font-family:Arial,sans-serif; font-size:18px; font-weight:bold; line-height:28px; color:#000000;">
+                App control
+              </td>
+              <td width="300" valign="top" style="padding:10px; text-align:center; font-family:Arial,sans-serif; font-size:18px; font-weight:bold; line-height:28px; color:#000000;">
+                Proudly Australian
+              </td>
+            </tr>
+
+            <!-- Row 6: Subtext -->
+            <tr>
+              <td width="300" valign="top" style="padding:10px 10px 40px 10px; text-align:center; font-family:Arial,sans-serif; font-size:12px; font-weight:normal; line-height:16px; color:#000000;">
+                See all of your business locations to manage energy use, make payments and more with our mobile app.
+              </td>
+              <td width="300" valign="top" style="padding:10px 10px 40px 10px; text-align:center; font-family:Arial,sans-serif; font-size:12px; font-weight:normal; line-height:16px; color:#000000;">
+                Australian made electricity and gas.
+              </td>
+            </tr>
+
+          </table>
+        </mj-raw>
+
+      </mj-column>
+    </mj-section>
+
+
+
+
+
+    <mj-section padding="0">
+      <mj-column width="600px" background-color="#E6FCFD">
+        <mj-image
+          src="ChatIcon.png"
+          width="50px"
+          padding="30px 0"
+          alt="AGL logo"
+          align="center"
+        />
+      </mj-column>
+    </mj-section>
+
+     <mj-section padding="0">
+      <mj-column width="600px" padding="0" background-color="#E6FCFD">
+
+        <mj-text
+          font-family="Arial, sans-serif"
+          font-size="30px"
+          font-weight="bold"
+          line-height="31px"
+          color="#333333"
+          padding="20px"
+          align="center"
+        >
+          We’re here to help
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section padding="0">
+      <mj-column width="600px" padding="0" background-color="#E6FCFD">
+
+        <mj-text
+          font-family="Arial, sans-serif"
+          font-size="17px"
+          font-weight="regular"
+          line-height="17px"
+          color="#333333"
+          padding="10px 0 0 0"
+          align="center"
+        >
+          Have some questions? Find answers and ways to get in touch.
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0">
+      <mj-column width="600px" padding="0" background-color="#E6FCFD">
+
+        <mj-text
+          font-family="Arial, sans-serif"
+          font-size="17px"
+          font-weight="BOLD"
+          line-height="17px"
+          color="#001CB0"
+          padding="40px"
+          align="center"
+        >
+          HELP &amp; SUPPORT
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0">
+      <mj-column width="600px" background-color="#001CB0">
+        <mj-image
+          src="AGL.png"
+          width="75px"
+          padding="20px 45px"
+          alt="AGL logo"
+          align="RIGHT"
+        />
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0">
+      <mj-column width="600px" padding="0" background-color="#001CB0">
+
+        <mj-divider
+          width="510px"
+          border-width="1px"
+          border-style="solid"
+          border-color="#00DFED"
+          padding="20px 0"
+        />
+
+      </mj-column>
+    </mj-section>
+
+     <mj-section padding="0">
+      <mj-column width="600px" padding="0" background-color="#001CB0">
+
+        <mj-text
+          font-family="Arial, sans-serif"
+          font-size="12px"
+          font-weight="regular"
+          line-height="28px"
+          color="#FFFFFF"
+          padding="20px 45px"
+          align="left"
+        >
+         <b>*You must stay with AGL at the same address for 90 days from the commencement of the electricity/gas plan to receive each credit.</b> $300 one-off credit on selected AGL electricity plans and $200 one-off credit on selected gas plans for new and moving Small Business customers only in NSW & VIC where AGL operates. Credit amounts are GST inclusive, non-transferable, non-refundable. Not available in conjunction with any other offer. Full T&Cs at agl.com.au
+         <br><br>
+         If you wish to unsubscribe from future AGL marketing emails, please click the unsubscribe button below.
+
+AGL Sales Pty Limited ABN 88 090 538 337
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0">
+      <mj-column width="600px" padding="20px 0" background-color="#001CB0">
+
+        <mj-raw>
+          <table width="510" cellpadding="0" cellspacing="0" border="0" align="center" style="width:510px; border-collapse:collapse;">
+                  <tr>
+
+                    <!-- Icon 1 -->
+                    <td width="15" align="left" valign="middle" style="width:15px;">
+                      <img src="footer_icon_contact.png" width="9" height="9" alt="" style="display:block; border:0;">
+                    </td>
+
+                    <!-- Contact us -->
+                    <td width="60" align="left" valign="middle" style="font-family:Arial, sans-serif; font-size:9px; line-height:11px; color:#FFFFFF;">
+                      <a href="#" style="color:#FFFFFF; text-decoration:none;">Contact us</a>
+                    </td>
+
+                    <!-- Icon 2 -->
+                    <td width="15" align="left" valign="middle" style="width:15px;">
+                      <img src="footer_icon_privacy.png" width="9" height="9" alt="" style="display:block; border:0;">
+                    </td>
+
+                    <!-- Privacy policy -->
+                    <td align="left" valign="middle" style="font-family:Arial, sans-serif; font-size:9px; line-height:11px; color:#FFFFFF;">
+                      <a href="#" style="color:#FFFFFF; text-decoration:none;">Privacy policy</a>
+                    </td>
+
+                    <!-- Privacy policy -->
+                    <td align="left" valign="middle" style="font-family:Arial, sans-serif; font-size:9px; line-height:11px; color:#FFFFFF;">
+                      &nbsp;
+                    </td>
+
+                  </tr>
+                </table>
+        </mj-raw>
+
+
+
+      </mj-column>
+    </mj-section>
+
+
+  </mj-body>
+</mjml>
