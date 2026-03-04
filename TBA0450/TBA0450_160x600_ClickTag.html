@@ -259,7 +259,7 @@ function events(){
 function startAd(){
   events();
   // start gsap code //
-   //events();
+    //events();
   
   // start gsap code //
   // GSAP code goes here
@@ -352,6 +352,7 @@ timeline.to("#F3_text_04",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 
 delay+=2.8;
 timeline.to("#F3_Content",0.3,{autoAlpha:0,x:0,y:0},delay)
+delay+=0.3;
 
 timeline.set("#F4_Content",{autoAlpha:1,x:0,y:0},delay)
 timeline.to("#F4_text_01",lineDuration,{autoAlpha:1,x:0,y:0},delay)
@@ -364,6 +365,7 @@ timeline.to("#F4_text_04",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 
 delay+=2.8;
 timeline.to("#F4_Content",0.3,{autoAlpha:0,x:0,y:0},delay)
+delay+=0.3;
 timeline.set("#F1_text_01",{opacity:0,x: xMove,y: yMove},delay)
 timeline.set("#F1_text_02",{opacity:0,x: xMove,y: yMove},delay)
 timeline.set("#F1_text_03",{opacity:0,x: xMove,y: yMove},delay)
@@ -384,8 +386,8 @@ timeline.to("#F1_text_04",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 
 
 
- //
-// end gsap code //
+
+  // end gsap code //
 }
 
 function elementExist(str){
