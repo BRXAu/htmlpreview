@@ -1,0 +1,44 @@
+<svg width="320" height="50" viewBox="0 0 320 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6972_9267)">
+<rect width="320" height="50" fill="#DC1928"/>
+<g clip-path="url(#clip1_6972_9267)">
+<g clip-path="url(#clip2_6972_9267)">
+<g filter="url(#filter0_d_6972_9267)">
+<g clip-path="url(#clip3_6972_9267)">
+<path d="M115.706 112.126C163.978 112.126 203.11 72.994 203.11 24.7222C203.11 -23.5496 163.978 -62.6816 115.706 -62.6816C67.4343 -62.6816 28.3022 -23.5496 28.3022 24.7222C28.3022 72.994 67.4343 112.126 115.706 112.126Z" fill="url(#paint0_linear_6972_9267)"/>
+</g>
+</g>
+<rect x="-288.017" width="353.5" height="49.9451" fill="#DC1928"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_6972_9267" x="27.4282" y="-63.5557" width="177.43" height="177.43" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="0.437019" dy="0.437019"/>
+<feGaussianBlur stdDeviation="0.655529"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.584314 0 0 0 0 0.141176 0 0 0 0 0.145098 0 0 0 0.6 0"/>
+<feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_6972_9267"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6972_9267" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_6972_9267" x1="203.11" y1="112.126" x2="53.4746" y2="-35.936" gradientUnits="userSpaceOnUse">
+<stop stop-color="#952425"/>
+<stop offset="0.298778" stop-color="#CA1C27"/>
+<stop offset="0.449738" stop-color="#DC1928"/>
+</linearGradient>
+<clipPath id="clip0_6972_9267">
+<rect width="320" height="50" fill="white"/>
+</clipPath>
+<clipPath id="clip1_6972_9267">
+<rect width="320" height="50" fill="white"/>
+</clipPath>
+<clipPath id="clip2_6972_9267">
+<rect width="808" height="49.9451" fill="white" transform="translate(-165.929)"/>
+</clipPath>
+<clipPath id="clip3_6972_9267">
+<rect x="28.3022" y="-62.6816" width="174.808" height="174.808" rx="87.4039" fill="white"/>
+</clipPath>
+</defs>
+</svg>

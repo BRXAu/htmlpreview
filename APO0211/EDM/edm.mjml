@@ -1,0 +1,136 @@
+<mjml>
+<mj-head>
+
+<mj-attributes>
+  <mj-text font-family="Arial" />
+  <mj-button font-family="Arial" />
+  <mj-text css-class="main-text" font-size="16px" line-height="16px" font-family="Arial" />
+
+  <!-- Define images here.  Easier to magage image assets.-->
+
+  <mj-class name="hero" src="APO0211_Header.png" alt="The Australia Post eCommerce Report 2026 is out now" width="650px" align="left" padding="0" />
+  <mj-class name="cta" src="APO0211_CTA.png" alt="Read the report now" width="201px" href="#" align="left" padding="0" />
+
+</mj-attributes>
+
+<mj-style>
+    @media only screen and (max-width:480px) {
+      .desktop-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+      .mobile-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+      .main-text { font-size:16px !important; line-height:20px !important; }
+    }
+    @media only screen and (min-width:481px) {
+      .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+      .mobile-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+      .main-text { font-size:12px !important; line-height:16px !important; }
+    }
+</mj-style>
+
+</mj-head>
+
+<mj-body width="650px" >
+
+<mj-section padding="0">
+  <mj-column>
+    <mj-spacer height="10px" />
+  </mj-column>
+</mj-section>
+
+
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-image mj-class="hero"/>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0">
+  <mj-column>
+    <mj-spacer height="30px" />
+  </mj-column>
+</mj-section>
+
+<mj-raw>
+<table 
+    align="center" 
+    border="0" 
+    cellpadding="0" 
+    cellspacing="0" 
+    role="presentation" 
+    style="width:100%; max-width:570px; margin:0 auto; background:#FFFFFF;">
+  <tr>
+<td width="100" style="width:100px; padding:0px; background:#FFFFFF; border:1px solid #D3D3D5; font-family:Arial, sans-serif; font-size:12px; line-height:16px; color:#333333; text-align:left;">
+</mj-raw>
+
+
+
+<mj-section padding="20px">
+  <mj-column>
+    <mj-text css-class="main-text" font-family="Arial" font-size="16px" line-height="24px" padding="0" color="#343A40">
+      <mj-raw>
+
+Dear {name},
+<br><br>
+Aussies are spending big online - $82.6 billion in 2025, up 13.9% year‑on‑year. If you’re planning for growth in a fast‑moving retail landscape, having the right data matters. 
+<br><br>
+The Australia Post eCommerce Report 2026 is now live, bringing together trusted, Australia‑wide delivery and consumer data to help retailers make confident decisions for the year ahead.
+<br><br>
+<b>Inside the report, you’ll uncover:</b>
+<br>
+<ul>
+  <li>What’s driving record online spend - and where growth is coming from</li>
+  <li>How shopper expectations around value, speed and delivery choice are evolving</li>
+  <li>Why delivery experience now directly influences conversion and loyalty, with 3 in 4 shoppers saying it makes them more likely to buy online</li>
+  <li>The key trends retailers need to act on now - from marketplaces and recommerce to agentic AI and social commerce</li>
+</ul>
+<br>
+Whether you’re refining your eCommerce strategy, planning for peak, or looking to stay competitive in 2026 and beyond, this is an essential resource.
+
+
+      </mj-raw>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 20px">
+  <mj-column>
+    <mj-spacer height="30px" />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 20px">
+  <mj-column padding="0" >
+    <mj-image mj-class="cta"/>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 20px">
+  <mj-column>
+    <mj-spacer height="30px" />
+  </mj-column>
+</mj-section>
+
+
+<mj-section  border-radius="4px" padding="0">
+      <mj-column width="100%" background-color="#EEEEEE">
+        <mj-table>
+          <tr>
+            <td width="24" style="width:24px">
+              <img src="https://image.email.auspost.com.au/lib/fe6415707c66047a7215/m/1/2cf1bec3-b542-4592-9868-3bb9928ea4ca.png" 
+                   width="24" height="auto" style="vertical-align:middle;display:block;border:0;width:24px;max-width:24px" alt="Security icon" />
+            </td>
+            <td style="text-align:left;vertical-align:middle;font-family:Arial, sans-serif;font-size:12px;line-height:12px;color:#333333;padding-left:20px;padding-right:20px">
+              Australia Post will never send you an unsolicited email asking for your password, credit card details or account information.
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+     <mj-raw>   
+    </td>
+  </tr>
+</table>
+ </mj-raw>  
+
+</mj-body>
+</mjml>

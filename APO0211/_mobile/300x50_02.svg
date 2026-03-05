@@ -1,0 +1,21 @@
+<svg width="300" height="50" viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg">
+
+
+  <defs>
+    <mask id="mask1">
+      <image href="300x50_02_mask.png" width="300" height="50"/>
+    </mask>
+
+
+
+
+
+  </defs>
+
+<g id="image01">
+  <image href="300x50_02.jpg" width="300" height="50" mask="url(#mask1)"/>
+</g>
+
+
+
+</svg>
