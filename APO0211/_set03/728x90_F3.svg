@@ -1,0 +1,21 @@
+<svg width="728" height="90" viewBox="0 0 728 90" xmlns="http://www.w3.org/2000/svg">
+
+
+  <defs>
+    <mask id="mask1">
+      <image href="728x90_F3_mask.png" width="728" height="90"/>
+    </mask>
+
+
+
+
+
+  </defs>
+
+<g id="image01">
+  <image href="728x90_F3_opt.jpg" width="728" height="90" mask="url(#mask1)"/>
+</g>
+
+
+
+</svg>

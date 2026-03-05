@@ -1,0 +1,62 @@
+<svg width="300" height="600" viewBox="0 0 300 600" xmlns="http://www.w3.org/2000/svg">
+<style>
+    #image01{
+      animation: fadeOut 0.5s ease 2s forwards;
+    }
+
+    #image02{
+      opacity:0;
+      animation: fadeIn 0.5s ease 2.5s forwards;
+    }
+
+    #ellipseNow{
+      animation:
+        ellipseFadeOut 0.5s ease 2s forwards,
+        ellipseFadeIn 0.5s ease 2.5s forwards;
+    }
+
+    @keyframes fadeOut{
+      to{ opacity:0; }
+    }
+
+    @keyframes fadeIn{
+      to{ opacity:1; }
+    }
+
+    @keyframes ellipseFadeOut{
+      to{ opacity:0; }
+    }
+
+    @keyframes ellipseFadeIn{
+      to{ opacity:1; }
+    }
+  </style>
+
+  <defs>
+    <mask id="mask1">
+      <image href="300x600_F1_mask.jpg" width="300" height="600"/>
+    </mask>
+    <mask id="mask2">
+      <image href="300x600_F2_mask.jpg" width="300" height="600"/>
+    </mask>
+
+
+
+
+  </defs>
+<g id="svgContainer">
+  <g id="ellipseNow">
+
+</g>
+
+
+
+<g id="image01">
+  <image href="300x600_F1_opt.jpg" width="300" height="600" mask="url(#mask1)"/>
+</g>
+<g id="image02">
+  <image href="300x600_F2_opt.jpg" width="300" height="600" mask="url(#mask2)"/>
+</g>
+
+</g>
+</svg>
