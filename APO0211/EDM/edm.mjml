@@ -14,10 +14,31 @@
 </mj-attributes>
 
 <mj-style>
+  .mobile-zero-padding > table > tbody > tr > td {
+
+  }
+
+  .main-text {
+    border-left:1px solid #eeeeee;
+    border-right:1px solid #eeeeee;
+    border-top:1px solid #eeeeee;
+    padding: 20px!important;
+  }
+
+  .side-borders {
+    border-left:1px solid #eeeeee;
+    border-right:1px solid #eeeeee;
+    padding: 0 20px!important;
+  }
+
     @media only screen and (max-width:480px) {
       .desktop-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
       .mobile-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
       .main-text { font-size:16px !important; line-height:20px !important; }
+      .bmobile-zero-padding > table > tbody > tr > td {
+          padding-left: 30px !important;
+          padding-right: 30px !important;
+        }
     }
     @media only screen and (min-width:481px) {
       .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
@@ -25,6 +46,7 @@
       .main-text { font-size:12px !important; line-height:16px !important; }
     }
 </mj-style>
+
 
 </mj-head>
 
@@ -49,21 +71,11 @@
   </mj-column>
 </mj-section>
 
-<mj-raw>
-<table 
-    align="center" 
-    border="0" 
-    cellpadding="0" 
-    cellspacing="0" 
-    role="presentation" 
-    style="width:100%; max-width:570px; margin:0 auto; background:#FFFFFF;">
-  <tr>
-<td width="100%" style="width:100px; padding:0px; background:#FFFFFF; border:1px solid #EEEEEE; font-family:Arial, sans-serif; font-size:12px; line-height:16px; color:#333333; text-align:left;">
-</mj-raw>
 
 
 
-<mj-section padding="20px">
+
+<mj-section css-class="mobile-zero-padding" padding="0 40px">
   <mj-column>
     <mj-text css-class="main-text" font-family="Arial" font-size="16px" line-height="24px" padding="0" color="#343A40">
       <mj-raw>
@@ -91,27 +103,24 @@ Whether you’re refining your eCommerce strategy, planning for peak, or looking
   </mj-column>
 </mj-section>
 
-<mj-section padding="0 20px">
+<mj-section padding="0 40px">
   <mj-column>
-    <mj-spacer height="30px" />
+    <mj-spacer css-class="side-borders" height="30px" />
   </mj-column>
 </mj-section>
 
-<mj-section padding="0 20px">
+<mj-section css-class="mobile-zero-padding" padding="0 40px">
   <mj-column padding="0" >
-    <mj-image mj-class="cta"/>
+    <mj-image css-class="side-borders" mj-class="cta"/>
   </mj-column>
 </mj-section>
 
-<mj-section padding="0 20px">
+<mj-section padding="0 40px">
   <mj-column>
-    <mj-spacer height="30px" />
+    <mj-spacer css-class="side-borders" height="30px" />
   </mj-column>
 </mj-section>
 <mj-raw>   
-    </td>
-  </tr>
-</table>
  
 
 
