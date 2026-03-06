@@ -121,9 +121,28 @@
         line-height: 20px !important;
       }
 
-      .bmobile-zero-padding>table>tbody>tr>td {
+      .bobile-zero-padding>table>tbody>tr>td {
         padding-left: 30px !important;
         padding-right: 30px !important;
+      }
+
+      .removePaddingMobile {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+      }
+
+      .main-text {
+        border-left: 0px none !important;
+        border-right: 0px none !important;
+        border-top: 0px none !important;
+        padding: 0px !important;
+      }
+
+      .side-borders {
+        border-left: 0px none !important;
+        border-right: 0px none !important;
+        border-top: 0px none !important;
+        padding: 0px !important;
       }
     }
 
@@ -366,26 +385,33 @@
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-      <tr>
-        <td align="center" style="padding:0;">
-          <table role="presentation" width="100%" style="max-width:570px; background-color:#EEEEEE; border-radius:0 0 5px 5px;" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td style="padding:0;">
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                  <tr>
-                    <td width="24" style="width:24px;">
-                      <img src="https://image.email.auspost.com.au/lib/fe6415707c66047a7215/m/1/2cf1bec3-b542-4592-9868-3bb9928ea4ca.png" width="24" style="display:block;border:0;width:24px;max-width:24px;vertical-align:middle; padding: 20px 10px 20px 20px;" alt="Security icon">
-                    </td>
-                    <td style="text-align:left;vertical-align:middle;font-family:Arial, sans-serif;font-size:12px;line-height:12px;color:#333333;padding-left:20px;padding-right:20px;"> Australia Post will never send you an unsolicited email asking for your password, credit card details or account information. </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+    <mj-section padding="0 40px">
+      <mj-column>
+        <mj-spacer height="30px" />
+      </mj-column>
+    </mj-section>
+    <mj-raw>
+      <mj-raw>
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="removePaddingMobile" align="center" style="padding:0 40px;">
+              <table role="presentation" width="100%" style="max-width:570px; background-color:#EEEEEE; border-radius:0 0 5px 5px;" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td style="padding:0;">
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td width="24" style="width:24px;">
+                          <img src="https://image.email.auspost.com.au/lib/fe6415707c66047a7215/m/1/2cf1bec3-b542-4592-9868-3bb9928ea4ca.png" width="24" style="display:block;border:0;width:24px;max-width:24px;vertical-align:middle; padding: 20px 10px 20px 20px;" alt="Security icon">
+                        </td>
+                        <td style="border-left:1px solid #4D4D54; text-align:left;vertical-align:middle;font-family:Arial, sans-serif;font-size:12px;line-height:12px;color:#333333;padding-left:20px;padding-right:20px;"> Australia Post will never send you an unsolicited email asking for your password, credit card details or account information. </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
   </div>
 </body>
 
