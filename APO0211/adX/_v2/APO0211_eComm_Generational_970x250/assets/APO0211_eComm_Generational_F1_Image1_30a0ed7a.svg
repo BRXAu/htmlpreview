@@ -1,0 +1,48 @@
+<svg width="970" height="250" viewBox="0 0 970 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="970x250_background" clip-path="url(#clip0_6875_6480)">
+<rect width="970" height="250" fill="url(#paint0_linear_6875_6480)"/>
+<g id="970x250backgroundima" clip-path="url(#clip1_6875_6480)">
+<g id="Swoosh970x250" clip-path="url(#clip2_6875_6480)">
+<g id="Swoosh" filter="url(#filter0_d_6875_6480)">
+<g clip-path="url(#clip3_6875_6480)">
+<path id="Vector" d="M311.5 562C553.125 562 749 366.125 749 124.5C749 -117.125 553.125 -313 311.5 -313C69.8754 -313 -126 -117.125 -126 124.5C-126 366.125 69.8754 562 311.5 562Z" fill="url(#paint1_linear_6875_6480)"/>
+</g>
+</g>
+<rect id="Rectangle 3471455" x="-944" width="957" height="250" fill="#DC1928"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_6875_6480" x="-130.375" y="-317.375" width="888.125" height="888.125" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="2.1875" dy="2.1875"/>
+<feGaussianBlur stdDeviation="3.28125"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.584314 0 0 0 0 0.141176 0 0 0 0 0.145098 0 0 0 0.6 0"/>
+<feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_6875_6480"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6875_6480" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_6875_6480" x1="485" y1="0" x2="485" y2="250" gradientUnits="userSpaceOnUse">
+<stop stop-color="#952425"/>
+<stop offset="0.75" stop-color="#DC1928"/>
+</linearGradient>
+<linearGradient id="paint1_linear_6875_6480" x1="749" y1="562" x2="5.162e-05" y2="-179.125" gradientUnits="userSpaceOnUse">
+<stop stop-color="#952425"/>
+<stop offset="0.298778" stop-color="#CA1C27"/>
+<stop offset="0.449738" stop-color="#DC1928"/>
+</linearGradient>
+<clipPath id="clip0_6875_6480">
+<rect width="970" height="250" fill="white"/>
+</clipPath>
+<clipPath id="clip1_6875_6480">
+<rect width="970" height="250" fill="white"/>
+</clipPath>
+<clipPath id="clip2_6875_6480">
+<rect width="1940" height="250" fill="white" transform="translate(-944)"/>
+</clipPath>
+<clipPath id="clip3_6875_6480">
+<rect x="-126" y="-313" width="875" height="875" rx="437.5" fill="white"/>
+</clipPath>
+</defs>
+</svg>

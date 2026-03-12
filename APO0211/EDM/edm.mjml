@@ -4,66 +4,66 @@
 <mj-attributes>
   <mj-text font-family="Arial" />
   <mj-button font-family="Arial" />
-  <mj-text css-class="main-text" font-size="16px" line-height="16px" font-family="Arial" />
+  <mj-text css-class="ap-main-text" font-size="16px" line-height="16px" font-family="Arial" />
 
   <!-- Define images here.  Easier to magage image assets.-->
 
-  <mj-class name="hero" src="APO0211_Header.png" alt="The Australia Post eCommerce Report 2026 is out now" width="650px" align="left" padding="0" />
-  <mj-class name="cta" src="APO0211_CTA.png" alt="Read the report now" width="201px" href="#" align="left" padding="0" />
+  <mj-class name="hero" src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0211_Header.png" alt="The Australia Post eCommerce Report 2026 is out now" href="https://ad.doubleclick.net/ddm/trackclk/N97602.3193772OCTOMEDIAAU/B35400260.441979753;dc_trk_aid=635539373;dc_trk_cid=251464121;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1;dc_transparent=1;?https://auspost.com.au/business/ecommerce/ecommerce-report?cid=:6810532:con::441979753:251464121" width="650px" align="left" padding="0" />
+  <mj-class name="cta" src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0211_CTA.png" alt="Read the report now" width="201px" href="https://ad.doubleclick.net/ddm/trackclk/N97602.3193772OCTOMEDIAAU/B35400260.441979753;dc_trk_aid=635539373;dc_trk_cid=251464121;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1;dc_transparent=1;?https://auspost.com.au/business/ecommerce/ecommerce-report?cid=:6810532:con::441979753:251464121" align="left" padding="0" />
 
 </mj-attributes>
 
-<mj-style>
-  .mobile-zero-padding > table > tbody > tr > td {
+<mj-style inline="inline">
 
-  }
-
-  .main-text {
+  .ap-main-text {
     border-left:1px solid #eeeeee;
     border-right:1px solid #eeeeee;
     border-top:1px solid #eeeeee;
     padding: 20px!important;
   }
 
-  .side-borders {
+  .ap-side-borders {
     border-left:1px solid #eeeeee;
     border-right:1px solid #eeeeee;
     padding: 0 20px!important;
   }
 
+  </mj-style>
+
+
+  <mj-style>
+
     @media only screen and (max-width:480px) {
-      .desktop-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
-      .mobile-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
-      .main-text { font-size:16px !important; line-height:20px !important; }
-      .bobile-zero-padding > table > tbody > tr > td {
+
+
+        .ap-main-text { font-size:16px !important; line-height:20px !important; }
+        
+        .ap-mobile-zero-padding > table > tbody > tr > td {
           padding-left: 30px !important;
           padding-right: 30px !important;
         }
 
-        .removePaddingMobile {
+        .ap-removePaddingMobile {
           padding-left: 0px!important;
           padding-right: 0px!important;
         }
 
-        .main-text {
-    border-left:0px none!important;
-    border-right:0px none!important;
-    border-top:0px none!important;
-    padding: 0px!important;
-  }
+        .ap-main-text {
+          border-left:0px none!important;
+          border-right:0px none!important;
+          border-top:0px none!important;
+          padding: 0px!important;
+        }
 
-  .side-borders  {
-    border-left:0px none!important;
-    border-right:0px none!important;
-    border-top:0px none!important;
-    padding: 0px!important;
-  }
+        .ap-side-borders  {
+          border-left:0px none!important;
+          border-right:0px none!important;
+          border-top:0px none!important;
+          padding: 0px!important;
+        }
     }
-    @media only screen and (min-width:481px) {
-      .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
-      .mobile-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
-      .main-text { font-size:12px !important; line-height:16px !important; }
-    }
+
+
 </mj-style>
 
 
@@ -92,29 +92,26 @@
 
 
 
-
-
-<mj-section css-class="mobile-zero-padding" padding="0 40px">
+<mj-section css-class="ap-mobile-zero-padding" padding="0 40px">
   <mj-column>
-    <mj-text css-class="main-text" font-family="Arial" font-size="16px" line-height="24px" padding="0" color="#343A40">
+    <mj-text css-class="ap-main-text" font-family="Arial" font-size="16px" line-height="24px" padding="0" color="#343A40">
       <mj-raw>
 
-Dear {name},
-<br><br>
-Aussies are spending big online - $82.6 billion in 2025, up 13.9% year‑on‑year. If you’re planning for growth in a fast‑moving retail landscape, having the right data matters. 
-<br><br>
-The Australia Post eCommerce Report 2026 is now live, bringing together trusted, Australia‑wide delivery and consumer data to help retailers make confident decisions for the year ahead.
-<br><br>
-<b>Inside the report, you’ll uncover:</b>
-<br>
+Dear {name},<br><br>
+
+Aussies are spending big online - $82.6&nbsp;billion in 2025, up 13.9% year‑on‑year. If you’re planning for growth in a fast‑moving retail landscape, having the right data matters.<br><br>
+
+The Australia&nbsp;Post eCommerce Report 2026 is now live, bringing together trusted, Australia‑wide delivery and consumer data to help retailers make confident decisions for the year ahead.<br><br>
+
+<b>Inside the report, you’ll uncover:</b><br>
 <ul>
-  <li>What’s driving record online spend - and where growth is coming from</li>
-  <li>How shopper expectations around value, speed and delivery choice are evolving</li>
-  <li>Why delivery experience now directly influences conversion and loyalty, with 3 in 4 shoppers saying it makes them more likely to buy online</li>
-  <li>The key trends retailers need to act on now - from marketplaces and recommerce to agentic AI and social commerce</li>
-</ul>
-<br>
-Whether you’re refining your eCommerce strategy, planning for peak, or looking to stay competitive in 2026 and beyond, this is an essential resource.
+  <li>What’s driving record online spend - and where growth is coming&nbsp;from</li>
+  <li>How shopper expectations around value, speed and delivery&nbsp;choice are&nbsp;evolving</li>
+  <li>Why delivery experience now directly influences conversion and loyalty, with 3&nbsp;in&nbsp;4 shoppers saying it makes them more likely to&nbsp;buy&nbsp;online</li>
+  <li>The key trends retailers need to act on now - from marketplaces and recommerce to agentic&nbsp;AI and social&nbsp;commerce</li>
+</ul><br>
+
+Whether you’re refining your eCommerce strategy, planning for peak, or&nbsp;looking to stay competitive in 2026 and beyond, this is an essential&nbsp;resource.
 
 
       </mj-raw>
@@ -124,35 +121,27 @@ Whether you’re refining your eCommerce strategy, planning for peak, or looking
 
 <mj-section padding="0 40px">
   <mj-column>
-    <mj-spacer css-class="side-borders" height="30px" />
+    <mj-spacer css-class="ap-side-borders" height="30px" />
   </mj-column>
 </mj-section>
 
-<mj-section css-class="mobile-zero-padding" padding="0 40px">
+<mj-section css-class="ap-mobile-zero-padding" padding="0 40px">
   <mj-column padding="0" >
-    <mj-image css-class="side-borders" mj-class="cta"/>
+    <mj-image css-class="ap-side-borders" mj-class="cta"/>
   </mj-column>
 </mj-section>
 
 <mj-section padding="0 40px">
   <mj-column>
-    <mj-spacer css-class="side-borders" height="30px" />
+    <mj-spacer css-class="ap-side-borders" height="30px" />
   </mj-column>
 </mj-section>
-
-
-<mj-section padding="0 40px">
-  <mj-column>
-    <mj-spacer height="10px" />
-  </mj-column>
-</mj-section>
-
 
 
 <mj-raw> 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
-    <td class="removePaddingMobile" align="center" style="padding:0 40px;">
+    <td class="ap-removePaddingMobile" align="center" style="padding:0 40px;">
 
       <table role="presentation" width="100%" style="max-width:570px; background-color:#EEEEEE; border-radius:0 0 5px 5px;" cellpadding="0" cellspacing="0" border="0">
         <tr>
@@ -160,8 +149,8 @@ Whether you’re refining your eCommerce strategy, planning for peak, or looking
 
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
-                <td width="24" style="width:24px; padding: 20px 10px 20px 20px">
-                  <img src="https://image.email.auspost.com.au/lib/fe6415707c66047a7215/m/1/2cf1bec3-b542-4592-9868-3bb9928ea4ca.png"
+                <td width="24" style="width:24px; padding: 20px 10px 20px 20px;">
+                  <img src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0211_lock.png"
                        width="24"
                        style="display:block;border:0;width:24px;max-width:24px;vertical-align:middle; "
                        alt="Security icon">
@@ -176,18 +165,9 @@ Whether you’re refining your eCommerce strategy, planning for peak, or looking
           </td>
         </tr>
       </table>
-
     </td>
   </tr>
 </table>
 </mj-raw> 
- 
-
-
-
-
-
-
-
 </mj-body>
 </mjml>

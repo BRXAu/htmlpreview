@@ -1,0 +1,458 @@
+<mjml>
+<mj-head>
+
+<mj-attributes>
+  <mj-text font-family="Arial" />
+  <mj-button font-family="Arial" />
+
+  <!-- Define images here.  Easier to magage image assets.-->
+
+  <mj-class name="hero" src="APO0235_Header.png" alt="" width="650px" align="left" padding="0" />
+  <mj-class name="logoTop" src="APO0235_Auspost_logo_top.png" alt="Australia Post Logo" width="123px" align="left" padding="0" />
+  <mj-class name="iconMail" src="APO0235_Icon_Mail.png" alt="Australia Post Logo" width="63px" align="left" padding="0" />
+  <mj-class name="bodyImage" src="APO0235_BodyImage.png" alt="" width="496px" align="left" padding="0" />
+  <mj-class name="ctaEnterNow" src="APO0235_CTA.png" alt="Enter Now" width="100px" href="#" align="left" padding="0" />
+
+<mj-class name="ctaGetTickets" src="APO0235_CTA_GetTickets.png" alt="Get Tickets" width="100px" href="#" align="left" padding="0" />
+
+
+<mj-class name="Acknowledge" src="APO0235_Acknowledge.png" alt="Acknowledgement" width="115px" href="#" align="left" padding="0" />
+
+
+
+
+</mj-attributes>
+
+<mj-style>
+  .mobile-zero-padding > table > tbody > tr > td {
+
+  }
+
+  .main-text {
+    border-left:1px solid #eeeeee;
+    border-right:1px solid #eeeeee;
+    padding: 0px 20px!important;
+  }
+
+  .side-borders {
+    border-left:1px solid #eeeeee;
+    border-right:1px solid #eeeeee;
+    padding: 0 20px!important;
+  }
+
+  .inner-cta-borders{
+    border-left:1px solid #eeeeee;
+    border-right:1px solid #eeeeee;
+    padding: 0 20px 0 100px!important;
+  }
+
+  .table-side-borders {
+    .border-left:1px solid #eeeeee;
+    .border-right:1px solid #eeeeee;
+    .padding: 0 20px!important;
+  }
+
+  .col-borders {
+    border-left:1px solid #eeeeee;
+    border-right:1px solid #eeeeee;
+  }
+
+  .side-borders-left {
+    border-left:1px solid #eeeeee;
+    padding: 0 20px!important;
+  }
+
+  .side-borders-right {
+    border-right:1px solid #eeeeee;
+    padding: 0 20px!important;
+  }
+
+
+    @media only screen and (max-width:480px) {
+      .desktop-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+      .mobile-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+      .main-text { font-size:16px !important; line-height:20px !important; }
+      .bobile-zero-padding > table > tbody > tr > td {
+          padding-left: 30px !important;
+          padding-right: 30px !important;
+        }
+
+        .removePaddingMobile {
+          padding-left: 0px!important;
+          padding-right: 0px!important;
+        }
+
+        .main-text {
+    border-left:0px none!important;
+    border-right:0px none!important;
+    border-top:0px none!important;
+    padding: 0px!important;
+  }
+
+  .side-borders  {
+    border-left:0px none!important;
+    border-right:0px none!important;
+    border-top:0px none!important;
+    padding: 0px!important;
+  }
+
+  .inner-cta-borders {
+    border-left:0px none!important;
+    border-right:0px none!important;
+    border-top:0px none!important;
+    padding: 0px!important;
+  }
+
+  .table-side-borders {
+    border-left:0px none!important;
+    border-right:0px none!important;
+    border-top:0px none!important;
+    padding: 0px!important;
+  }
+
+  .side-borders .stack-col {
+      display:block !important;
+      width:100% !important;
+      padding-left:0 !important;
+    }
+
+  .side-borders-left  {
+    border-left:0px none!important;
+    border-right:0px none!important;
+    border-top:0px none!important;
+    padding: 0px!important;
+  }
+
+  .side-borders-right  {
+    border-left:0px none!important;
+    border-right:0px none!important;
+    border-top:0px none!important;
+    padding: 0px!important;
+  }
+    }
+    @media only screen and (min-width:481px) {
+      .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+      .mobile-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+      .main-text { font-size:12px !important; line-height:16px !important; }
+    }
+</mj-style>
+
+
+</mj-head>
+
+<mj-body width="650px" >
+
+<mj-section padding="0">
+  <mj-column>
+    <mj-spacer height="10px" />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="20px 32px">
+  <mj-group>
+  <mj-column padding="0">
+    <mj-image mj-class="logoTop"/>
+  </mj-column>
+  <mj-column padding="0" vertical-align="middle">
+    <mj-text font-family="Arial" font-size="9px" align="right" line-height="20px" padding="0" color="#343A40">
+  <a href="#" style="color:#343A40;">VIEW ONLINE</a>
+</mj-text>
+  </mj-column>
+</mj-group>
+</mj-section>
+
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-image mj-class="hero"/>
+  </mj-column>
+</mj-section>
+
+
+<mj-section padding="0 40px">
+  <mj-column>
+    <mj-spacer css-class="side-borders" height="20px" />
+  </mj-column>
+</mj-section>
+
+<mj-section css-class="mobile-zero-padding" padding="0 40px">
+  <mj-column>
+    <mj-text css-class="main-text" font-family="Arial" font-size="16px" line-height="24px" padding="0" color="#343A40">
+
+
+
+Dear {name},<br><br>
+<b>Is your business making an impact worth recognising?</b>
+<br><br>
+Proudly supported by Australia Post, the Online Retail Industry Awards (ORIAS) recognise the businesses shaping Australian eCommerce across 17 categories
+from micro and small teams to established national brands, including three Australia Post Impact awards that are free to enter.
+<br>
+<ul>
+<li>Small Business Innovation Award</li>
+<li>Sustainability Impact Award </li>
+<li>Diversity and Inclusion Impact Award</li>
+</ul>
+
+Businesses can enter one or multiple categories, and entry is open to online retailers of all sizes.
+
+
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 40px">
+  <mj-column>
+    <mj-spacer css-class="side-borders" height="20px" />
+  </mj-column>
+</mj-section>
+
+<mj-section css-class="mobile-zero-padding" padding="0 40px">
+  <mj-column padding="0">
+    <mj-image css-class="side-borders" mj-class="bodyImage"/>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 40px">
+  <mj-column>
+    <mj-spacer css-class="side-borders" height="20px" />
+  </mj-column>
+</mj-section>
+
+<mj-section css-class="mobile-zero-padding" padding="0 40px">
+  <mj-column>
+    <mj-text css-class="main-text" font-family="Arial" font-size="16px" line-height="24px" padding="0" color="#343A40">
+<b>Put your work in the spotlight</b><br><br>
+If you’ve built or grown a successful online business, strengthened your customer experience, or delivered meaningful impact in a challenging environment, there’s an ORIAS category designed to recognise your work. <br><br>
+Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders and put your work in the spotlight.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 40px">
+  <mj-column>
+    <mj-spacer css-class="side-borders" height="20px" />
+  </mj-column>
+</mj-section>
+
+<mj-section css-class="mobile-zero-padding" padding="0 40px">
+  <mj-column padding="0" >
+    <mj-image css-class="side-borders" mj-class="ctaEnterNow"/>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 40px">
+  <mj-column>
+    <mj-spacer css-class="side-borders" height="20px" />
+  </mj-column>
+</mj-section>
+
+<mj-section css-class="mobile-zero-padding" padding="0 40px">
+  <mj-column>
+    <mj-text css-class="main-text" font-family="Arial" font-size="16px" line-height="24px" padding="0" color="#343A40">
+
+
+<b>Event details</b>
+
+
+
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 40px">
+  <mj-column>
+    <mj-spacer css-class="side-borders" height="20px" />
+  </mj-column>
+</mj-section>
+
+
+<mj-section padding="0 40px">
+  <mj-column>
+  <mj-table css-class="side-borders">
+      <tr>
+        <!-- icon column -->
+        <td class="stack-col" width="66" style="width:66px; vertical-align:top;">
+          <img src="APO0235_Icon_Mail.png" width="66" style="display:block;" />
+        </td>
+
+        <!-- text column -->
+        <td class="stack-col" style="padding-left:12px; font-family:Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;">
+          <b>The ORIAS 2026</b><br><br>
+          Date: Thursday, 23 July 2026<br>
+          Time: 6:30pm - 11:00pm (AEST)<br>
+          Location: Grand Ballroom, Level 5, ICC Sydney<br><br>
+        </td>
+      </tr>
+    </mj-table>
+    </mj-column>
+</mj-section>
+
+
+
+<mj-section css-class="mobile-zero-padding" padding="0 40px">
+  <mj-column padding="0" >
+    <mj-image css-class="inner-cta-borders" mj-class="ctaGetTickets"/>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 40px">
+  <mj-column>
+    <mj-spacer css-class="side-borders" height="20px" />
+  </mj-column>
+</mj-section>
+
+<mj-raw> 
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td class="removePaddingMobile" align="center" style="padding:0 40px;">
+
+      <table role="presentation" width="100%" style="max-width:570px; background-color:#EEEEEE; border-radius:0 0 5px 5px;" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td style="padding:0;">
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td width="24" style="width:24px; padding: 20px 10px 20px 20px;">
+                  <img src="https://image.email.auspost.com.au/lib/fe6415707c66047a7215/m/1/2cf1bec3-b542-4592-9868-3bb9928ea4ca.png"
+                       width="24"
+                       style="display:block;border:0;width:24px;max-width:24px;vertical-align:middle; "
+                       alt="Security icon">
+                </td>
+
+                <td style="text-align:left;vertical-align:middle;font-family:Arial, sans-serif;font-size:12px;line-height:12px;color:#333333;padding-left:20px;padding-right:20px;">
+                  Australia Post will never send you an unsolicited email asking for your password, credit card details or account information.
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+</mj-raw> 
+
+
+<<mj-section padding="20px">
+  <mj-column>
+
+    <mj-table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+      <tr>
+
+        <!-- logo -->
+        <td width="28" style="width:28px; padding:0 8px 0 0;">
+          <img
+            src="APO0235_Logo_Icon.png"
+            width="20"
+            style="display:block;"
+            alt="Logo"
+          />
+        </td>
+
+        <!-- flexible gap -->
+        <td style="font-size:0; line-height:0;">
+          &nbsp;
+        </td>
+
+        <!-- instagram -->
+        <td width="33" style="width:33px; padding:0; text-align:right;">
+          <img
+            src="APO0235_Social_Instagram.png"
+            width="25"
+            align="right"
+            style="display:block;"
+            alt="Instagram"
+          />
+        </td>
+
+        <!-- facebook -->
+        <td width="33" style="width:33px; padding:0; text-align:right;">
+          <img
+            src="APO0235_Social_Facebook.png"
+            width="25"
+            align="right"
+            style="display:block;"
+            alt="Facebook"
+          />
+        </td>
+
+        <!-- linkedin -->
+        <td width="33" style="width:33px; padding:0; text-align:right;">
+          <img
+            src="APO0235_Social_LinkedIn.png"
+            width="25"
+            align="right"
+            style="display:block;"
+            alt="LinkedIn"
+          />
+        </td>
+
+      </tr>
+
+    </mj-table>
+
+  </mj-column>
+</mj-section>
+
+<mj-section css-class="mobile-zero-padding" padding="0 40px">
+  <mj-column>
+    <mj-text font-family="Arial" font-size="11px" line-height="14px" padding="0" color="#343A40">
+
+This email was sent by Australia Post, 480 Swan Street, RICHMOND VIC 3121. If you have any concerns, or don't think you should have received this email, please call us on 13 POST (13 7678). Visit auspost.com.au for further information on our online security.
+<br><br>
+If you do not wish to receive such information you can unsubscribe at any time. Australia Post does not represent, warrant or guarantee that the integrity of this email communication has been maintained nor that the communication is free of errors, viruses, or interference.
+<br><br>
+<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Terms and Conditions</a>&nbsp;&nbsp;<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Help & Support</a>&nbsp;&nbsp;<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Privacy Statement</a>
+
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 40px">
+  <mj-column>
+     <mj-divider   border-width="1px" border-color="#D3D3D5" padding="20px 0" />
+   </mj-column>
+</mj-section>
+
+<mj-section css-class="mobile-zero-padding" padding="0 40px">
+  <mj-column>
+    <mj-text font-family="Arial" font-size="11px" line-height="14px" padding="0" color="#343A40">
+
+© 2026 Australia Post. All Rights Reserved
+
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 40px">
+  <mj-column>
+    <mj-spacer height="20px" />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 40px">
+  <mj-column background-color="#373740">
+
+    <mj-table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <!-- fixed column -->
+        <td width="115" style="width:115px;">
+          <img src="APO0235_Acknowledge.png" style="display:block;" width="115" alt="" >
+        </td>
+
+        <!-- flexible column -->
+        <td style="padding: 10px; font-family:Arial; font-size:10px; line-height:14px; color:#FFFFFF;">
+          Australia Post acknowledges the Traditional Custodians of the land on which we operate, live and gather as employees, and recognise their continuing connection to land, water and community. We pay respect to Elders past, present and emerging.
+        </td>
+
+      </tr>
+
+    </mj-table>
+
+  </mj-column>
+</mj-section>
+
+</mj-body>
+</mjml>
