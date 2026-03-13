@@ -46,7 +46,7 @@
     <mj-column width="50%" vertical-align="middle" padding="0">
       <mj-navbar align="right">
         <mj-navbar-link href="https://thatsmining.com.au/" color="#343A40" font-family="Arial" font-size="12px" padding="0 10px 0 0" text-decoration="none">
-          Home
+          Home1
         </mj-navbar-link>
         <mj-navbar-link  href="https://thatsmining.com.au/" color="#343A40" font-family="Arial" font-size="12px" padding="0" text-decoration="none">
           View online

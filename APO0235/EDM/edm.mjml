@@ -10,7 +10,8 @@
   <mj-class name="hero" src="APO0235_Header.png" alt="" width="650px" align="left" padding="0" />
   <mj-class name="logoTop" src="APO0235_Auspost_logo_top.png" alt="Australia Post Logo" width="123px" align="left" padding="0" />
   <mj-class name="iconMail" src="APO0235_Icon_Mail.png" alt="Australia Post Logo" width="63px" align="left" padding="0" />
-  <mj-class name="bodyImage" src="APO0235_BodyImage.png" alt="" width="496px" align="left" padding="0" />
+  <mj-class name="bodyImage" src="APO0235_BodyImage.png" alt="" width="472px" align="left" padding="0" css-class="side-borders desktop-only" />
+  <mj-class name="bodyImageMobile" src="APO0235_BodyImage_mobile.png" alt="" width="496px" align="left" padding="0" css-class="side-borders mobile-only" />
   <mj-class name="ctaEnterNow" src="APO0235_CTA.png" alt="Enter Now" width="100px" href="#" align="left" padding="0" />
 
 <mj-class name="ctaGetTickets" src="APO0235_CTA_GetTickets.png" alt="Get Tickets" width="100px" href="#" align="left" padding="0" />
@@ -18,10 +19,14 @@
 
 <mj-class name="Acknowledge" src="APO0235_Acknowledge.png" alt="Acknowledgement" width="115px" href="#" align="left" padding="0" />
 
-
-
-
 </mj-attributes>
+
+<mj-style inline="inline">
+
+
+.mobile-only { display:none; width:0; max-height:0; overflow:hidden; }
+
+</mj-style>
 
 <mj-style>
   .mobile-zero-padding > table > tbody > tr > td {
@@ -68,9 +73,16 @@
   }
 
 
+    @media only screen and (min-width:481px) {
+      .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+      .mobile-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+    }
+
+
     @media only screen and (max-width:480px) {
       .desktop-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
       .mobile-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+
       .main-text { font-size:16px !important; line-height:20px !important; }
       .bobile-zero-padding > table > tbody > tr > td {
           padding-left: 30px !important;
@@ -87,6 +99,15 @@
     border-right:0px none!important;
     border-top:0px none!important;
     padding: 0px!important;
+  }
+
+  .stack-table td {
+    display:block !important;
+    width:100% !important;
+  }
+
+  .stack-image {
+    text-align:left !important;
   }
 
   .side-borders  {
@@ -140,7 +161,7 @@
 
 </mj-head>
 
-<mj-body width="650px" >
+<mj-body width="600px" >
 
 <mj-section padding="0">
   <mj-column>
@@ -180,7 +201,7 @@
 
 
 
-Dear {name},<br><br>
+Dear {name4},<br><br>
 <b>Is your business making an impact worth recognising?</b>
 <br><br>
 Proudly supported by Australia Post, the Online Retail Industry Awards (ORIAS) recognise the businesses shaping Australian eCommerce across 17 categories
@@ -207,7 +228,10 @@ Businesses can enter one or multiple categories, and entry is open to online ret
 
 <mj-section css-class="mobile-zero-padding" padding="0 40px">
   <mj-column padding="0">
-    <mj-image css-class="side-borders" mj-class="bodyImage"/>
+    <mj-image mj-class="bodyImage"/>
+    <mj-raw><!--[if !mso]><!-- --></mj-raw>
+    <mj-image mj-class="bodyImageMobile"/>
+    <mj-raw><!--<![endif]--></mj-raw>
   </mj-column>
 </mj-section>
 
@@ -266,16 +290,22 @@ Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders an
 
 
 <mj-section padding="0 40px">
-  <mj-column>
-  <mj-table css-class="side-borders">
+  <mj-column padding="0">
+
+    <mj-table css-class="side-borders" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <!-- icon column -->
-        <td class="stack-col" width="66" style="width:66px; vertical-align:top;">
-          <img src="APO0235_Icon_Mail.png" width="66" style="display:block;" />
+        <td class="stack-col"
+            width="66"
+            style="width:66px; vertical-align:top; line-height:0; font-size:0; padding:0 0 20px 0;">
+          <img src="APO0235_Icon_Mail.png"
+               width="66"
+               style="display:block; width:66px; height:auto !important; border:0; line-height:0; font-size:0; -ms-interpolation-mode:bicubic;"
+               alt="">
         </td>
-
         <!-- text column -->
-        <td class="stack-col" style="padding-left:12px; font-family:Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;">
+        <td class="stack-col"
+            style="padding-left:12px; font-family:Arial, sans-serif; font-size:14px; line-height:20px; color:#333333; vertical-align:top; padding-bottom:20px;">
           <b>The ORIAS 2026</b><br><br>
           Date: Thursday, 23 July 2026<br>
           Time: 6:30pm - 11:00pm (AEST)<br>
@@ -283,7 +313,7 @@ Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders an
         </td>
       </tr>
     </mj-table>
-    </mj-column>
+  </mj-column>
 </mj-section>
 
 
@@ -303,7 +333,7 @@ Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders an
 <mj-raw> 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr>
-    <td class="removePaddingMobile" align="center" style="padding:0 40px;">
+    <td class="" align="center" style="padding:0 40px;">
 
       <table role="presentation" width="100%" style="max-width:570px; background-color:#EEEEEE; border-radius:0 0 5px 5px;" cellpadding="0" cellspacing="0" border="0">
         <tr>
@@ -432,23 +462,26 @@ If you do not wish to receive such information you can unsubscribe at any time. 
   </mj-column>
 </mj-section>
 
-<mj-section padding="0 40px">
-  <mj-column background-color="#373740">
+<mj-section padding="0">
+  <mj-column background-color="#373740" padding="0">
 
     <mj-table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
+
         <!-- fixed column -->
-        <td width="115" style="width:115px;">
-          <img src="APO0235_Acknowledge.png" style="display:block;" width="115" alt="" >
+        <td width="115" style="width:115px; vertical-align:top; line-height:0; font-size:0;">
+          <img src="APO0235_Acknowledge.png"
+               width="115"
+               style="display:block; width:115px; height:auto !important; border:0; line-height:0; font-size:0; -ms-interpolation-mode:bicubic;"
+               alt="">
         </td>
 
         <!-- flexible column -->
-        <td style="padding: 10px; font-family:Arial; font-size:10px; line-height:14px; color:#FFFFFF;">
+        <td style="padding:10px; font-family:Arial; font-size:10px; line-height:14px; color:#FFFFFF; vertical-align:top;">
           Australia Post acknowledges the Traditional Custodians of the land on which we operate, live and gather as employees, and recognise their continuing connection to land, water and community. We pay respect to Elders past, present and emerging.
         </td>
 
       </tr>
-
     </mj-table>
 
   </mj-column>
