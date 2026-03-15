@@ -7,3 +7,35 @@ background: #000;
 img {
 filter: invert(1) hue-rotate(180deg);
 }
+
+
+
+
+
+
+    body {
+      background: #000000!important;
+
+    }
+
+    table,
+
+
+    p {
+      color: #FFFFFF!important;
+    }
+
+    div {
+      color: #FFFFFF!important;
+    }
+
+    a {
+      color: #FFFFFF!important;
+    }
+
+    td:not(.no-dark-mode) {
+      /* styles here */
+      color: #FFFFFF!important;
+    }
+
+    color: #FFFFFF!important;

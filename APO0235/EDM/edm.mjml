@@ -335,7 +335,7 @@ Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders an
   <tr>
     <td class="" align="center" style="padding:0 40px;">
 
-      <table role="presentation" width="100%" style="max-width:570px; background-color:#EEEEEE; border-radius:0 0 5px 5px;" cellpadding="0" cellspacing="0" border="0">
+      <table role="presentation" width="100%" style="max-width:520px; background-color:#EEEEEE; border-radius:0 0 5px 5px;" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td style="padding:0;">
 
@@ -348,7 +348,7 @@ Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders an
                        alt="Security icon">
                 </td>
 
-                <td style="text-align:left;vertical-align:middle;font-family:Arial, sans-serif;font-size:12px;line-height:12px;color:#333333;padding-left:20px;padding-right:20px;">
+                <td class="no-dark-mode" style="text-align:left;vertical-align:middle;font-family:Arial, sans-serif;font-size:12px;line-height:12px;color:#333333;padding-left:20px;padding-right:20px;">
                   Australia Post will never send you an unsolicited email asking for your password, credit card details or account information.
                 </td>
               </tr>
