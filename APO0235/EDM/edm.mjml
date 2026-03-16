@@ -5,12 +5,12 @@
   <mj-button font-family="Arial" />
   <!-- Define images here.  Easier to magage image assets.-->
   <mj-class name="hero" src="APO0235_Header.png" alt="From checkout to centre stage. Celbrating Australia's best in eCommerce." width="650px" align="left" padding="0" />
-  <mj-class name="logoTop" src="APO0235_Auspost_logo_top.png" alt="Australia Post Logo" width="123px" align="left" padding="0" />
+  <mj-class name="logoTop" src="APO0235_Auspost_logo_top.png" alt="Australia Post Logo" href="https://auspost.com.au/" width="123px" align="left" padding="0" />
   <mj-class name="iconMail" src="APO0235_Icon_Mail.png" alt="Australia Post" width="63px" align="left" padding="0" />
   <mj-class name="bodyImage" src="APO0235_BodyImage.png" alt="" width="472px" align="left" padding="0" css-class="side-borders desktop-only" />
   <mj-class name="bodyImageMobile" src="APO0235_BodyImage_mobile.png" alt="" width="496px" align="left" padding="0" css-class="side-borders mobile-only" />
-  <mj-class name="ctaEnterNow" src="APO0235_CTA.png" alt="Enter Now" width="100px" href="#" align="left" padding="0" />
-  <mj-class name="ctaGetTickets" src="APO0235_CTA_GetTickets.png" alt="Get Tickets" width="100px" href="#" align="left" padding="0" />
+  <mj-class name="ctaEnterNow" src="APO0235_CTA.png" alt="Enter Now" width="100px" href="https://www.onlineretailer.com/en-gb/orias.html" align="left" padding="0" />
+  <mj-class name="ctaGetTickets" src="APO0235_CTA_GetTickets.png" alt="Get Tickets" width="100px" href="https://www.onlineretailer.com/en-gb/orias.html" align="left" padding="0" />
   <mj-class name="Acknowledge" src="APO0235_Acknowledge.png" alt="Acknowledgement" width="115px" href="#" align="left" padding="0" />
 </mj-attributes>
 <mj-style inline="inline">
@@ -273,7 +273,9 @@ Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders an
 
         <!-- logo -->
         <td width="28" style="width:28px; padding:0 8px 0 0;">
-          <img src="APO0235_Logo_Icon.png" width="20" style="display:block;" alt="Logo" />
+          <a href="https://auspost.com.au/" target="_blank" style="text-decoration:none;">
+          <img src="APO0235_Logo_Icon.png" border="0" width="20" style="display:block;" alt="Logo" style="display:block; width:20px; height:auto; border:0; outline:none; text-decoration:none;" />
+          </a>
         </td>
 
         <!-- flexible gap -->
@@ -283,17 +285,23 @@ Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders an
 
         <!-- instagram -->
         <td width="33" style="width:33px; padding:0; text-align:right;">
-          <img src="APO0235_Social_Instagram.png" width="25"  align="right"  style="display:block;" alt="Instagram" />
+          <a href="https://www.instagram.com/auspost/" target="_blank" style="text-decoration:none;">
+          <img src="APO0235_Social_Instagram.png" width="25"  align="right"  style="display:block; width:25px; height:auto; border:0; outline:none; text-decoration:none;" alt="Instagram" />
+          </a>
         </td>
 
         <!-- facebook -->
         <td width="33" style="width:33px; padding:0; text-align:right;">
-          <img src="APO0235_Social_Facebook.png" width="25" align="right" style="display:block;" alt="Facebook" />
+          <a href="https://www.facebook.com/australiapost" target="_blank" style="text-decoration:none;">
+          <img src="APO0235_Social_Facebook.png" width="25" align="right" style="display:block; width:25px; height:auto; border:0; outline:none; text-decoration:none;" alt="Facebook" />
+          </a>
         </td>
 
         <!-- linkedin -->
         <td width="33" style="width:33px; padding:0; text-align:right;">
-          <img src="APO0235_Social_LinkedIn.png" width="25" align="right" style="display:block;" alt="LinkedIn"/>
+          <a href="https://www.linkedin.com/company/australia-post" target="_blank" style="text-decoration:none;">
+          <img src="APO0235_Social_LinkedIn.png" width="25" align="right" style="display:block; width:25px; height:auto; border:0; outline:none; text-decoration:none;" alt="LinkedIn"/>
+          </a>
         </td>
 
       </tr>
@@ -310,7 +318,7 @@ This email was sent by Australia Post, 480 Swan Street, RICHMOND VIC 3121. If yo
 <br><br>
 If you do not wish to receive such information you can unsubscribe at any time. Australia Post does not represent, warrant or guarantee that the integrity of this email communication has been maintained nor that the communication is free of errors, viruses, or interference.
 <br><br>
-<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Terms&nbsp;and&nbsp;Conditions</a>&nbsp;&nbsp;&nbsp;<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Help&nbsp;&amp;&nbsp;Support</a>&nbsp;&nbsp;&nbsp;<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Privacy&nbsp;Statement</a>
+<a href="#" target="_blank" style="font-weight: bold; text-decoration: none; color: #212129">Terms&nbsp;and&nbsp;Conditions</a>&nbsp;&nbsp;&nbsp;<a href="https://auspost.com.au/help-and-support" target="_blank" style="font-weight: bold; text-decoration: none; color: #212129">Help&nbsp;&amp;&nbsp;Support</a>&nbsp;&nbsp;&nbsp;<a href="https://auspost.com.au/privacy" target="_blank" style="font-weight: bold; text-decoration: none; color: #212129">Privacy&nbsp;Statement</a>
     </mj-text>
   </mj-column>
 </mj-section>
