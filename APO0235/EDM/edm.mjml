@@ -7,17 +7,14 @@
 
   <!-- Define images here.  Easier to magage image assets.-->
 
-  <mj-class name="hero" src="APO0235_Header.png" alt="" width="650px" align="left" padding="0" />
+  <mj-class name="hero" src="APO0235_Header.png" alt="From checkout to centre stage. Celbrating Australia's best in eCommerce." width="650px" align="left" padding="0" />
   <mj-class name="logoTop" src="APO0235_Auspost_logo_top.png" alt="Australia Post Logo" width="123px" align="left" padding="0" />
-  <mj-class name="iconMail" src="APO0235_Icon_Mail.png" alt="Australia Post Logo" width="63px" align="left" padding="0" />
+  <mj-class name="iconMail" src="APO0235_Icon_Mail.png" alt="Australia Post" width="63px" align="left" padding="0" />
   <mj-class name="bodyImage" src="APO0235_BodyImage.png" alt="" width="472px" align="left" padding="0" css-class="side-borders desktop-only" />
   <mj-class name="bodyImageMobile" src="APO0235_BodyImage_mobile.png" alt="" width="496px" align="left" padding="0" css-class="side-borders mobile-only" />
   <mj-class name="ctaEnterNow" src="APO0235_CTA.png" alt="Enter Now" width="100px" href="#" align="left" padding="0" />
-
-<mj-class name="ctaGetTickets" src="APO0235_CTA_GetTickets.png" alt="Get Tickets" width="100px" href="#" align="left" padding="0" />
-
-
-<mj-class name="Acknowledge" src="APO0235_Acknowledge.png" alt="Acknowledgement" width="115px" href="#" align="left" padding="0" />
+  <mj-class name="ctaGetTickets" src="APO0235_CTA_GetTickets.png" alt="Get Tickets" width="100px" href="#" align="left" padding="0" />
+  <mj-class name="Acknowledge" src="APO0235_Acknowledge.png" alt="Acknowledgement" width="115px" href="#" align="left" padding="0" />
 
 </mj-attributes>
 
@@ -25,13 +22,6 @@
 
 
 .mobile-only { display:none; width:0; max-height:0; overflow:hidden; }
-
-</mj-style>
-
-<mj-style>
-  .mobile-zero-padding > table > tbody > tr > td {
-
-  }
 
   .main-text {
     border-left:1px solid #eeeeee;
@@ -51,111 +41,53 @@
     padding: 0 20px 0 100px!important;
   }
 
-  .table-side-borders {
-    .border-left:1px solid #eeeeee;
-    .border-right:1px solid #eeeeee;
-    .padding: 0 20px!important;
-  }
+</mj-style>
 
-  .col-borders {
-    border-left:1px solid #eeeeee;
-    border-right:1px solid #eeeeee;
-  }
+<mj-style>
 
-  .side-borders-left {
-    border-left:1px solid #eeeeee;
-    padding: 0 20px!important;
-  }
-
-  .side-borders-right {
-    border-right:1px solid #eeeeee;
-    padding: 0 20px!important;
+  @media only screen and (min-width:481px) {
+    
   }
 
 
-    @media only screen and (min-width:481px) {
-      .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
-      .mobile-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+  @media only screen and (max-width:480px) {
+    .desktop-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+    .mobile-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+
+    .main-text {
+      font-size:16px !important; line-height:20px !important;
+      border-left:0px none!important;
+      border-right:0px none!important;
+      border-top:0px none!important;
+      padding: 0px!important;
     }
 
+    .side-borders  {
+      border-left:0px none!important;
+      border-right:0px none!important;
+      border-top:0px none!important;
+      padding: 0px!important;
+    }
 
-    @media only screen and (max-width:480px) {
-      .desktop-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
-      .mobile-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+    .inner-cta-borders {
+      border-left:0px none!important;
+      border-right:0px none!important;
+      border-top:0px none!important;
+      padding: 0px!important;
+    }
 
-      .main-text { font-size:16px !important; line-height:20px !important; }
-      .bobile-zero-padding > table > tbody > tr > td {
-          padding-left: 30px !important;
-          padding-right: 30px !important;
-        }
-
-        .removePaddingMobile {
-          padding-left: 0px!important;
-          padding-right: 0px!important;
-        }
-
-        .main-text {
-    border-left:0px none!important;
-    border-right:0px none!important;
-    border-top:0px none!important;
-    padding: 0px!important;
-  }
-
-  .stack-table td {
-    display:block !important;
-    width:100% !important;
-  }
-
-  .stack-image {
-    text-align:left !important;
-  }
-
-  .side-borders  {
-    border-left:0px none!important;
-    border-right:0px none!important;
-    border-top:0px none!important;
-    padding: 0px!important;
-  }
-
-  .inner-cta-borders {
-    border-left:0px none!important;
-    border-right:0px none!important;
-    border-top:0px none!important;
-    padding: 0px!important;
-  }
-
-  .table-side-borders {
-    border-left:0px none!important;
-    border-right:0px none!important;
-    border-top:0px none!important;
-    padding: 0px!important;
-  }
-
-  .side-borders .stack-col {
+    .side-borders .stack-col {
       display:block !important;
       width:100% !important;
       padding-left:0 !important;
     }
 
-  .side-borders-left  {
-    border-left:0px none!important;
-    border-right:0px none!important;
-    border-top:0px none!important;
-    padding: 0px!important;
   }
-
-  .side-borders-right  {
-    border-left:0px none!important;
-    border-right:0px none!important;
-    border-top:0px none!important;
-    padding: 0px!important;
+  @media only screen and (min-width:481px) {
+    .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
+    .mobile-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
+    .main-text { font-size:12px !important; line-height:16px !important; }
   }
-    }
-    @media only screen and (min-width:481px) {
-      .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
-      .mobile-only { display:none !important; width:0 !important; max-height:0 !important; overflow:hidden !important; }
-      .main-text { font-size:12px !important; line-height:16px !important; }
-    }
 </mj-style>
 
 
@@ -198,24 +130,12 @@
 <mj-section css-class="mobile-zero-padding" padding="0 40px">
   <mj-column>
     <mj-text css-class="main-text" font-family="Arial" font-size="16px" line-height="24px" padding="0" color="#343A40">
-
-
-
-Dear {name4},<br><br>
+Dear {name},<br><br>
 <b>Is your business making an impact worth recognising?</b>
 <br><br>
-Proudly supported by Australia Post, the Online Retail Industry Awards (ORIAS) recognise the businesses shaping Australian eCommerce across 17 categories
-from micro and small teams to established national brands, including three Australia Post Impact awards that are free to enter.
-<br>
-<ul>
-<li>Small Business Innovation Award</li>
-<li>Sustainability Impact Award </li>
-<li>Diversity and Inclusion Impact Award</li>
-</ul>
-
-Businesses can enter one or multiple categories, and entry is open to online retailers of all sizes.
-
-
+Proudly supported by Australia Post, the Online Retail Industry Awards (ORIAS) recognise the businesses shaping Australian eCommerce across 19 categories from micro and small teams to established national brands.
+<br><br>
+Businesses can enter one or multiple categories, and entry is open to online retailers of all sizes..
     </mj-text>
   </mj-column>
 </mj-section>
@@ -245,8 +165,8 @@ Businesses can enter one or multiple categories, and entry is open to online ret
   <mj-column>
     <mj-text css-class="main-text" font-family="Arial" font-size="16px" line-height="24px" padding="0" color="#343A40">
 <b>Put your work in the spotlight</b><br><br>
-If you’ve built or grown a successful online business, strengthened your customer experience, or delivered meaningful impact in a challenging environment, there’s an ORIAS category designed to recognise your work. <br><br>
-Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders and put your work in the spotlight.
+If you’ve built or grown a successful online business, strengthened your customer experience, or delivered meaningful impact in a challenging environment, there’s an ORIAS category designed to recognise  your&nbsp;work. <br><br>
+Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders and put your work in the&nbsp;spotlight.
     </mj-text>
   </mj-column>
 </mj-section>
@@ -309,7 +229,7 @@ Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders an
           <b>The ORIAS 2026</b><br><br>
           Date: Thursday, 23 July 2026<br>
           Time: 6:30pm - 11:00pm (AEST)<br>
-          Location: Grand Ballroom, Level 5, ICC Sydney<br><br>
+          Location: Grand Ballroom, Level 5, ICC Sydney
         </td>
       </tr>
     </mj-table>
@@ -329,6 +249,13 @@ Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders an
     <mj-spacer css-class="side-borders" height="20px" />
   </mj-column>
 </mj-section>
+
+<mj-section padding="0 40px">
+  <mj-column>
+    <mj-spacer css-class="side-borders" height="10px" />
+  </mj-column>
+</mj-section>
+
 
 <mj-raw> 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -434,7 +361,7 @@ This email was sent by Australia Post, 480 Swan Street, RICHMOND VIC 3121. If yo
 <br><br>
 If you do not wish to receive such information you can unsubscribe at any time. Australia Post does not represent, warrant or guarantee that the integrity of this email communication has been maintained nor that the communication is free of errors, viruses, or interference.
 <br><br>
-<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Terms and Conditions</a>&nbsp;&nbsp;<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Help & Support</a>&nbsp;&nbsp;<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Privacy Statement</a>
+<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Terms&nbsp;and&nbsp;Conditions</a>&nbsp;&nbsp;&nbsp;<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Help&nbsp;&amp;&nbsp;Support</a>&nbsp;&nbsp;&nbsp;<a href="#" style="font-weight: bold; text-decoration: none; color: #212129">Privacy&nbsp;Statement</a>
 
     </mj-text>
   </mj-column>
@@ -478,7 +405,7 @@ If you do not wish to receive such information you can unsubscribe at any time. 
 
         <!-- flexible column -->
         <td style="padding:10px; font-family:Arial; font-size:10px; line-height:14px; color:#FFFFFF; vertical-align:top;">
-          Australia Post acknowledges the Traditional Custodians of the land on which we operate, live and gather as employees, and recognise their continuing connection to land, water and community. We pay respect to Elders past, present and emerging.
+         Australia Post acknowledges the Traditional Custodians of the land on which we operate, live and gather as employees, and recognise their continuing connection to land, water and community. We pay respect to Elders past, present and emerging.
         </td>
 
       </tr>
