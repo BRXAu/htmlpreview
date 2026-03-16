@@ -47,34 +47,59 @@
 </head>
 <body>
 
+  
   <button class="toggle-button" onclick="toggleDark()">Toggle Dark Mode</button>
+<button class="toggle-button" onclick="switchTo('edm')">Version 01</button>
+<button class="toggle-button" onclick="switchTo('edm02')">Version 02</button>
 
-  <div class="preview-container">
+<div class="preview-container">
 
-    <!-- Desktop Preview -->
-    <div class="iframe-wrapper">
-      <span class="iframe-label">Desktop</span>
-      <iframe id="desktop-frame" src="edm.html" width="650" height="2240" title="Desktop EDM Preview"></iframe>
-    </div>
-
-    <!-- Mobile Preview -->
-    <div class="iframe-wrapper">
-      <span class="iframe-label">Mobile</span>
-      <iframe id="mobile-frame" src="edm.html" width="400" height="2240" title="Mobile EDM Preview"></iframe>
-    </div>
-
+  <!-- Desktop Preview -->
+  <div class="iframe-wrapper">
+    <span class="iframe-label" id="iframe-label-desktop">Desktop version  1</span>
+    <iframe id="desktop-frame" src="edm.html" width="650" height="2240" title="Desktop EDM Preview"></iframe>
   </div>
 
-  <script>
-    let darkMode = false;
+  <!-- Mobile Preview -->
+  <div class="iframe-wrapper">
+    <span class="iframe-label" id="iframe-label-mobile">Mobile version 2</span>
+    <iframe id="mobile-frame" src="edm.html" width="400" height="2240" title="Mobile EDM Preview"></iframe>
+  </div>
 
-    function toggleDark() {
-      darkMode = !darkMode;
-      const newUrl = darkMode ? 'edm-dark.html' : 'edm.html';
-      document.getElementById('desktop-frame').src = newUrl;
-      document.getElementById('mobile-frame').src = newUrl;
-    }
-  </script>
+</div>
+
+<script>
+
+let darkMode = false;
+let currentVersion = 'edm';
+
+function updateFrames() {
+  const suffix = darkMode ? '-dark.html' : '.html';
+  const newUrl = currentVersion + suffix;
+
+  let version = "1"
+  if(currentVersion=="edm02"){
+      version = "2"
+  }
+
+  document.getElementById('iframe-label-desktop').innerHTML = 'Desktop version '+ version;
+  document.getElementById('iframe-label-mobile').innerHTML = 'Desktop version '+ version;
+
+  document.getElementById('desktop-frame').src = newUrl;
+  document.getElementById('mobile-frame').src = newUrl;
+}
+
+function toggleDark() {
+  darkMode = !darkMode;
+  updateFrames();
+}
+
+function switchTo(version) {
+  currentVersion = version;
+  updateFrames();
+}
+
+</script>
 
 </body>
 </html>

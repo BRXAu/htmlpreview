@@ -122,42 +122,22 @@
   <mj-column>
     <mj-text css-class="main-text" font-family="Arial" font-size="16px" line-height="24px" padding="0" color="#343A40">
 Dear {name},<br><br>
-<b>Is your business making an impact worth recognising?</b>
+This is your last chance to enter the 2026 Australia Post Online Retail Industry Awards (ORIAS).
 <br><br>
-Proudly supported by Australia Post, the Online Retail Industry Awards (ORIAS) recognise the businesses shaping Australian eCommerce across 19 categories, from micro and small teams to established national brands.
+<b>Australia’s leading awards for online retail</b>
 <br><br>
-Businesses can enter one or multiple categories and entry is open to online retailers of all sizes.
-    </mj-text>
-  </mj-column>
-</mj-section>
-
-<mj-section padding="0 40px">
-  <mj-column>
-    <mj-spacer css-class="side-borders" height="20px" />
-  </mj-column>
-</mj-section>
-
-<mj-section css-class="mobile-zero-padding" padding="0 40px">
-  <mj-column padding="0">
-    <mj-image mj-class="bodyImage"/>
-    <mj-raw><!--[if !mso]><!-- --></mj-raw>
-    <mj-image mj-class="bodyImageMobile"/>
-    <mj-raw><!--<![endif]--></mj-raw>
-  </mj-column>
-</mj-section>
-
-<mj-section padding="0 40px">
-  <mj-column>
-    <mj-spacer css-class="side-borders" height="20px" />
-  </mj-column>
-</mj-section>
-
-<mj-section css-class="mobile-zero-padding" padding="0 40px">
-  <mj-column>
-    <mj-text css-class="main-text" font-family="Arial" font-size="16px" line-height="24px" padding="0" color="#343A40">
-<b>Put your work in the spotlight</b><br><br>
-If you’ve built or grown a successful online business, strengthened your customer experience or delivered meaningful impact in a challenging environment, there’s an ORIAS category designed to recognise  your&nbsp;work. <br><br>
-Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders and put your work in the&nbsp;spotlight.
+With 19 categories recognising excellence across Australian eCommerce, the ORIAS bring together and celebrate Australia’s most innovative and successful online retailers. For businesses driving positive change, the three Australia Post Impact Awards  offer a streamlined entry experience and are free to enter:
+<br>
+<ul>
+<li>Small Business Innovation Award</li>
+<li>Sustainability Impact Award</li>
+<li>Diversity and Inclusion Impact Award</li>
+</ul> 
+Businesses can enter one or multiple categories, and entry is open to online retailers of all sizes.
+<br><br>
+<b>This is your moment to be recognised</b>
+<br><br>
+Proud of what your business has achieved? Don’t miss your opportunity to connect with Australia’s eCommerce leaders and put your work in the spotlight.
     </mj-text>
   </mj-column>
 </mj-section>
