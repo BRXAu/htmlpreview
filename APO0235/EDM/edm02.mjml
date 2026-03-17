@@ -4,7 +4,7 @@
   <mj-text font-family="Arial" />
   <mj-button font-family="Arial" />
   <!-- Define images here.  Easier to magage image assets.-->
-  <mj-class name="hero" src="APO0235_Header.png" alt="From checkout to centre stage. Celbrating Australia's best in eCommerce." width="650px" align="left" padding="0" />
+  <mj-class name="hero" src="APO0235_Header_02.png" alt="Enter the 2026 ORIAS. Australia’s premier eCommerce awards." width="650px" align="left" padding="0" />
   <mj-class name="logoTop" src="APO0235_Auspost_logo_top.png" alt="Australia Post Logo" href="https://auspost.com.au/" width="123px" align="left" padding="0" />
   <mj-class name="iconMail" src="APO0235_Icon_Mail.png" alt="Australia Post" width="63px" align="left" padding="0" />
   <mj-class name="bodyImage" src="APO0235_BodyImage.png" alt="" width="472px" align="left" padding="0" css-class="side-borders desktop-only" />
@@ -75,6 +75,14 @@
       padding-left:0 !important;
     }
 
+    .cta-header-spacing {
+      height: 32px!important;
+    }
+
+    .icon-mail-image {
+      width: 38px!important;
+    }
+
   }
   @media only screen and (min-width:481px) {
     .desktop-only { display:block !important; width:auto !important; max-height:none !important; overflow:visible !important; }
@@ -129,9 +137,9 @@ This is your last chance to enter the 2026 Australia Post Online Retail Industry
 With <a href="https://www.onlineretailer.com/en-gb/orias/orias-award-category-criteria.html" target="_blank" style="font-weight: regular; text-decoration: underline; color: #212129">19 categories</a> recognising excellence across Australian eCommerce, the ORIAS bring together and celebrate Australia’s most innovative and successful online retailers. For businesses driving positive change, the three Australia Post Impact Awards  offer a streamlined entry experience and are free to enter:
 <br>
 <ul>
-<li>Small Business Innovation Award</li>
-<li>Sustainability Impact Award</li>
-<li>Diversity and Inclusion Impact Award</li>
+<li style="font-weight: bold">Small Business Innovation Award</li>
+<li style="font-weight: bold">Sustainability Impact Award</li>
+<li style="font-weight: bold">Diversity and Inclusion Impact Award</li>
 </ul> 
 Businesses can enter one or multiple categories, and entry is open to online retailers of all sizes.
 <br><br>
@@ -156,7 +164,7 @@ Proud of what your business has achieved? Don’t miss your opportunity to conne
 
 <mj-section padding="0 40px">
   <mj-column>
-    <mj-spacer css-class="side-borders" height="20px" />
+    <mj-spacer css-class="side-borders cta-header-spacing" height="20px" />
   </mj-column>
 </mj-section>
 

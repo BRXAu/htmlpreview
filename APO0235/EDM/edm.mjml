@@ -255,7 +255,7 @@ Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders an
                        style="display:block;border:0;width:24px;max-width:24px;vertical-align:middle; "
                        alt="Security icon">
                 </td>
-                <td class="no-dark-mode" style="text-align:left;vertical-align:middle;font-family:Arial, sans-serif;font-size:12px;line-height:12px;color:#333333;padding-left:20px;padding-right:20px;">
+                <td class="no-dark-mode" style="text-align:left;vertical-align:middle;font-family:Arial, sans-serif;font-size:12px;line-height:12px;color:#333333;padding: 20px 10px 20px 10px;">
                   Australia Post will never send you an unsolicited email asking for your password, credit card details or account information.
                 </td>
               </tr>
