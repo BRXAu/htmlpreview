@@ -13,6 +13,10 @@
   <mj-class name="ctaGetTickets" src="APO0235_CTA_GetTickets.png" alt="Get Tickets" width="100px" href="https://www.onlineretailer.com/en-gb/orias.html" align="left" padding="0" />
   <mj-class name="Acknowledge" src="APO0235_Acknowledge.png" alt="Acknowledgement" width="115px" href="#" align="left" padding="0" />
 </mj-attributes>
+
+<mj-style >
+/*darkmodestyles*/
+</mj-style>
 <mj-style inline="inline">
 
 .mobile-only { display:none; width:0; max-height:0; overflow:hidden; }
@@ -320,9 +324,9 @@ Proud of what you’ve achieved? Connect with Australia’s eCommerce leaders an
     <mj-text font-family="Arial" font-size="11px" line-height="14px" padding="0" color="#343A40">
 This email was sent by Australia Post, 480 Swan Street, RICHMOND VIC 3121. If you have any concerns, or don't think you should have received this email, please call us on 13 POST (13 7678). Visit <a href="#" target="_blank" style="font-weight: regular; text-decoration: none; color: #212129">auspost.com.au</a> for further information on our <a href="https://auspost.com.au/privacy" target="_blank" style="font-weight: regular; text-decoration: none; color: #212129">online security.</a>
 <br><br>
-If you do not wish to receive such information you can <a href="#" target="_blank" style="font-weight: regular; text-decoration: none; color: #212129">unsubscribe</a> at any time. Australia Post does not represent, warrant or guarantee that the integrity of this email communication has been maintained nor that the communication is free of errors, viruses, or interference.
+Australia Post does not represent, warrant or guarantee that the integrity of this email communication has been maintained nor that the communication is free of errors, viruses, or interference.
 <br><br>
-<a href="#" target="_blank" style="font-weight: bold; text-decoration: none; color: #212129">Terms&nbsp;and&nbsp;Conditions</a>&nbsp;&nbsp;&nbsp;<a href="https://auspost.com.au/help-and-support" target="_blank" style="font-weight: bold; text-decoration: none; color: #212129">Help&nbsp;&amp;&nbsp;Support</a>&nbsp;&nbsp;&nbsp;<a href="https://auspost.com.au/privacy" target="_blank" style="font-weight: bold; text-decoration: none; color: #212129">Privacy&nbsp;Statement</a>
+<a href="https://auspost.com.au/terms-conditions" target="_blank" style="font-weight: bold; text-decoration: none; color: #212129">Terms&nbsp;and&nbsp;Conditions</a>&nbsp;&nbsp;&nbsp;<a href="https://auspost.com.au/help-and-support" target="_blank" style="font-weight: bold; text-decoration: none; color: #212129">Help&nbsp;&amp;&nbsp;Support</a>&nbsp;&nbsp;&nbsp;<a href="https://auspost.com.au/privacy" target="_blank" style="font-weight: bold; text-decoration: none; color: #212129">Privacy&nbsp;Statement</a>
     </mj-text>
   </mj-column>
 </mj-section>
