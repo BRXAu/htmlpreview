@@ -4,7 +4,7 @@
   <mj-text font-family="Arial" />
   <mj-button font-family="Arial" />
   <!-- Define images here.  Easier to magage image assets.-->
-  <mj-class name="hero" src="APO0235_Header.png" alt="From checkout to centre stage. Celbrating Australia's best in eCommerce." width="650px" align="left" padding="0" />
+  <mj-class name="hero" src="APO0235_Header.jpg" alt="From checkout to centre stage. Celbrating Australia's best in eCommerce." width="650px" align="left" padding="0" />
   <mj-class name="logoTop" src="APO0235_Auspost_logo_top.png" alt="Australia Post Logo" href="https://auspost.com.au/" width="123px" align="left" padding="0" />
   <mj-class name="iconMail" src="APO0235_Icon_Mail.png" alt="Australia Post" width="63px" align="left" padding="0" />
   <mj-class name="bodyImage" src="APO0235_BodyImage.png" alt="" width="472px" align="left" padding="0" css-class="side-borders desktop-only" />
