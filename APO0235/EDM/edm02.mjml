@@ -4,14 +4,14 @@
   <mj-text font-family="Arial" />
   <mj-button font-family="Arial" />
   <!-- Define images here.  Easier to magage image assets.-->
-  <mj-class name="hero" src="APO0235_Header_02.jpg" alt="Enter the 2026 ORIAS. Australia’s premier eCommerce awards." width="650px" align="left" padding="0" />
-  <mj-class name="logoTop" src="APO0235_Auspost_logo_top.png" alt="Australia Post Logo" href="https://auspost.com.au/" width="123px" align="left" padding="0" />
-  <mj-class name="iconMail" src="APO0235_Icon_Mail.png" alt="Australia Post" width="63px" align="left" padding="0" />
-  <mj-class name="bodyImage" src="APO0235_BodyImage.png" alt="" width="472px" align="left" padding="0" css-class="side-borders desktop-only" />
-  <mj-class name="bodyImageMobile" src="APO0235_BodyImage_mobile.png" alt="" width="496px" align="left" padding="0" css-class="side-borders mobile-only" />
-  <mj-class name="ctaEnterNow" src="APO0235_CTA.png" alt="Enter Now" width="100px" href="https://www.onlineretailer.com/en-gb/orias.html" align="left" padding="0" />
-  <mj-class name="ctaGetTickets" src="APO0235_CTA_GetTickets.png" alt="Get Tickets" width="100px" href="https://www.onlineretailer.com/en-gb/orias.html" align="left" padding="0" />
-  <mj-class name="Acknowledge" src="APO0235_Acknowledge.png" alt="Acknowledgement" width="115px" href="#" align="left" padding="0" />
+  <mj-class name="hero"  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_Header_02.jpg" alt="Enter the 2026 ORIAS. Australia’s premier eCommerce awards." width="650px" align="left" padding="0" />
+  <mj-class name="logoTop"  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_Auspost_logo_top.png" alt="Australia Post Logo" href="https://auspost.com.au/" width="123px" align="left" padding="0" />
+  <mj-class name="iconMail"  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_Icon_Mail.png" alt="Australia Post" width="63px" align="left" padding="0" />
+  <mj-class name="bodyImage"  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_BodyImage.png" alt="" width="472px" align="left" padding="0" css-class="side-borders desktop-only" />
+  <mj-class name="bodyImageMobile"  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_BodyImage_mobile.png" alt="" width="496px" align="left" padding="0" css-class="side-borders mobile-only" />
+  <mj-class name="ctaEnterNow"  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_CTA.png" alt="Enter Now" width="100px" href="https://www.onlineretailer.com/en-gb/orias.html" align="left" padding="0" />
+  <mj-class name="ctaGetTickets"  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_CTA_GetTickets.png" alt="Get Tickets" width="100px" href="https://www.onlineretailer.com/en-gb/orias.html" align="left" padding="0" />
+  <mj-class name="Acknowledge"  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_Acknowledge.png" alt="Acknowledgement" width="115px" href="#" align="left" padding="0" />
 </mj-attributes>
 
 <mj-style >
@@ -194,7 +194,7 @@ Proud of what your business has achieved? Don’t miss your opportunity to conne
       <tr>
         <!-- icon column -->
         <td class="stack-col icon-mail-image" width="66" style="width:66px; vertical-align:top; line-height:0; font-size:0; padding:0 0 25px 0;">
-          <img class="icon-mail-image" src="APO0235_Icon_Mail.png" width="66" style="display:block; width:66px; height:auto !important; border:0; line-height:0; font-size:0; -ms-interpolation-mode:bicubic;" alt="Mail">
+          <img class="icon-mail-image"  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_Icon_Mail.png" width="66" style="display:block; width:66px; height:auto !important; border:0; line-height:0; font-size:0; -ms-interpolation-mode:bicubic;" alt="Mail">
         </td>
         <!-- text column -->
         <td class="stack-col"
@@ -239,7 +239,7 @@ Proud of what your business has achieved? Don’t miss your opportunity to conne
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
               <tr>
                 <td width="24" style="width:24px; padding: 20px 10px 20px 20px;">
-                  <img src="https://image.email.auspost.com.au/lib/fe6415707c66047a7215/m/1/2cf1bec3-b542-4592-9868-3bb9928ea4ca.png"
+                  <img  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0211_lock.png"
                        width="24"
                        style="display:block;border:0;width:24px;max-width:24px;vertical-align:middle; "
                        alt="Security icon">
@@ -267,7 +267,7 @@ Proud of what your business has achieved? Don’t miss your opportunity to conne
         <!-- logo -->
         <td width="28" style="width:28px; padding:0 8px 0 0;">
           <a href="https://auspost.com.au/" target="_blank" style="text-decoration:none;">
-          <img src="APO0235_Logo_Icon.png" border="0" width="20" style="display:block;" alt="Logo" style="display:block; width:20px; height:auto; border:0; outline:none; text-decoration:none;" />
+          <img  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_Logo_Icon.png" border="0" width="20" style="display:block;" alt="Logo" style="display:block; width:20px; height:auto; border:0; outline:none; text-decoration:none;" />
           </a>
         </td>
 
@@ -279,21 +279,21 @@ Proud of what your business has achieved? Don’t miss your opportunity to conne
         <!-- instagram -->
         <td width="33" style="width:33px; padding:0; text-align:right;">
           <a href="https://www.instagram.com/auspost/" target="_blank" style="text-decoration:none;">
-          <img src="APO0235_Social_Instagram.png" width="25"  align="right"  style="display:block; width:25px; height:auto; border:0; outline:none; text-decoration:none;" alt="Instagram" />
+          <img  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_Social_Instagram.png" width="25"  align="right"  style="display:block; width:25px; height:auto; border:0; outline:none; text-decoration:none;" alt="Instagram" />
           </a>
         </td>
 
         <!-- facebook -->
         <td width="33" style="width:33px; padding:0; text-align:right;">
           <a href="https://www.facebook.com/australiapost" target="_blank" style="text-decoration:none;">
-          <img src="APO0235_Social_Facebook.png" width="25" align="right" style="display:block; width:25px; height:auto; border:0; outline:none; text-decoration:none;" alt="Facebook" />
+          <img  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_Social_Facebook.png" width="25" align="right" style="display:block; width:25px; height:auto; border:0; outline:none; text-decoration:none;" alt="Facebook" />
           </a>
         </td>
 
         <!-- linkedin -->
         <td width="33" style="width:33px; padding:0; text-align:right;">
           <a href="https://www.linkedin.com/company/australia-post" target="_blank" style="text-decoration:none;">
-          <img src="APO0235_Social_LinkedIn.png" width="25" align="right" style="display:block; width:25px; height:auto; border:0; outline:none; text-decoration:none;" alt="LinkedIn"/>
+          <img  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_Social_LinkedIn.png" width="25" align="right" style="display:block; width:25px; height:auto; border:0; outline:none; text-decoration:none;" alt="LinkedIn"/>
           </a>
         </td>
 
@@ -342,7 +342,7 @@ Australia Post does not represent, warrant or guarantee that the integrity of th
       <tr>
         <!-- fixed column -->
         <td width="115" style="width:115px; vertical-align:top; line-height:0; font-size:0;">
-          <img src="APO0235_Acknowledge.png" width="115" style="display:block; width:115px; height:auto !important; border:0; line-height:0; font-size:0; -ms-interpolation-mode:bicubic;" alt="Acknowledgement">
+          <img  src="https://auspost-edm-images-2026.s3.ap-southeast-2.amazonaws.com/APO0235_Acknowledge.png" width="115" style="display:block; width:115px; height:auto !important; border:0; line-height:0; font-size:0; -ms-interpolation-mode:bicubic;" alt="Acknowledgement">
         </td>
         <!-- flexible column -->
         <td style="padding:10px; font-family:Arial; font-size:10px; line-height:14px; color:#FFFFFF; vertical-align:top;">

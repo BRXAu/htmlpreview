@@ -51,6 +51,7 @@
   <button class="toggle-button" onclick="toggleDark()">Toggle Dark Mode</button>
 <button class="toggle-button" onclick="switchTo('edm')">Version 01</button>
 <button class="toggle-button" onclick="switchTo('edm02')">Version 02</button>
+<button class="toggle-button" onclick="toggleImages()">Toggle Images</button>
 
 <div class="preview-container">
 
@@ -77,16 +78,25 @@ function updateFrames() {
   const suffix = darkMode ? '-dark.html' : '.html';
   const newUrl = currentVersion + suffix;
 
-  let version = "1"
-  if(currentVersion=="edm02"){
-      version = "2"
+  let version = "1";
+  if (currentVersion == "edm02") {
+    version = "2";
   }
 
-  document.getElementById('iframe-label-desktop').innerHTML = 'Desktop version '+ version;
-  document.getElementById('iframe-label-mobile').innerHTML = 'Desktop version '+ version;
+  document.getElementById('iframe-label-desktop').innerHTML = 'Desktop version ' + version;
+  document.getElementById('iframe-label-mobile').innerHTML = 'Mobile version ' + version;
 
-  document.getElementById('desktop-frame').src = newUrl;
-  document.getElementById('mobile-frame').src = newUrl;
+  const desktop = document.getElementById('desktop-frame');
+  const mobile = document.getElementById('mobile-frame');
+
+  desktop.src = newUrl;
+  mobile.src = newUrl;
+
+  // reapply image toggle after reload
+  if (imagesOff) {
+    applyImageToggle('desktop-frame');
+    applyImageToggle('mobile-frame');
+  }
 }
 
 function toggleDark() {
@@ -97,6 +107,39 @@ function toggleDark() {
 function switchTo(version) {
   currentVersion = version;
   updateFrames();
+}
+
+let imagesOff = false;
+
+function toggleImages() {
+  imagesOff = !imagesOff;
+  applyImageToggle('desktop-frame');
+  applyImageToggle('mobile-frame');
+}
+
+function applyImageToggle(frameId) {
+  const iframe = document.getElementById(frameId);
+
+  iframe.onload = function () {
+    const doc = iframe.contentDocument || iframe.contentWindow.document;
+    const imgs = doc.querySelectorAll('img');
+
+    imgs.forEach(img => {
+      if (imagesOff) {
+        // store original src if not already stored
+        if (!img.dataset.src) {
+          img.dataset.src = img.src;
+        }
+        // break the image
+        img.src = '';
+      } else {
+        // restore original src
+        if (img.dataset.src) {
+          img.src = img.dataset.src;
+        }
+      }
+    });
+  };
 }
 
 </script>
