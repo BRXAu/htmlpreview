@@ -1,7 +1,7 @@
 window.MANIFEST = {
   "Unique_ID": "",
-  "Reporting_Label": "HOX0077_Brand Pillar Update_NB_300x600",
-  "Creative": "HOX0077_Brand Pillar Update_NB",
+  "Reporting_Label": "DEV_TEST_March2026_300x600",
+  "Creative": "DEV_TEST_March2026",
   "Creative_Dimension": "300x600",
   "Targeting_ID": "",
   "Placement_ID": "",
@@ -21,7 +21,7 @@ window.MANIFEST = {
   "F1_Animations": "slideLineByLine:0.5,",
   "F1_LayoutClass": ",",
   "F1_Video": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\"}",
-  "F1_Image1": "{\"url\":\"assets/HOX0077_Brand_Pillar_Update_NB_F1_Image1_51e1bc3f.jpg\",\"size\":\"\",\"position\":\"0 -30\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
+  "F1_Image1": "{\"url\":\"assets/DEV_TEST_March2026_F1_Image1_2c1b0977.jpg\",\"size\":\"\",\"position\":\"0 -30\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
   "F1_Image2": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
   "F1_Image3": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
   "F1_InframeImage": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"order\":\"\",\"alignment\":\"\",\"alignmentPortrait\":\"\",\"column\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
