@@ -13,7 +13,7 @@ window.MANIFEST = {
   "FrameOrder": "F1:2,F2:2,F3:2",
   "Themes": "red,red,red,red,red",
   "Overlay": "",
-  "ExitLink": "",
+  "ExitLink": "https://auspost.com.au/travel-essentials",
   "Terms": "",
   "CustomCSS": "",
   "Layouts": ",,,,",
