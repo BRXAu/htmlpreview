@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>970x250 SVG Rotator External</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner {
+    position: relative;
+    width: 970px;
+    height: 250px;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .slide {
+    position: absolute;
+    width: 970px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    animation: fadeCycle 25s infinite;
+  }
+
+/*  .slide:nth-child(1) { animation-delay: 0s; }
+  .slide:nth-child(2) { animation-delay: 5s; }
+  .slide:nth-child(3) { animation-delay: 10s; }
+  .slide:nth-child(4) { animation-delay: 15s; }
+  .slide:nth-child(5) { animation-delay: 20s; }
+
+  @keyframes fadeCycle {
+    0%   { opacity: 0; }
+    4%   { opacity: 1; }
+    16%  { opacity: 1; }
+    20%  { opacity: 0; }
+    100% { opacity: 0; }
+  }*/
+
+  object {
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none; /* allows clickthrough layer if needed */
+  }
+
+  /* optional clickthrough */
+  .clickthrough {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 970px;
+    height: 250px;
+    z-index: 10;
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+
+  <a class="clickthrough" href="https://example.com" target="_blank"></a>
+
+  <div class="slide">
+    <object data="slide01.svg" type="image/svg+xml"></object>
+  </div>
+
+  <div class="slide">
+    <object data="slide02.svg" type="image/svg+xml"></object>
+  </div>
+
+  <div class="slide">
+    <object data="slide03.svg" type="image/svg+xml"></object>
+  </div>
+
+  <div class="slide">
+    <object data="slide04.svg" type="image/svg+xml"></object>
+  </div>
+
+  <div class="slide">
+    <object data="slide05.svg" type="image/svg+xml"></object>
+  </div>
+
+</div>
+
+</body>
+</html>
