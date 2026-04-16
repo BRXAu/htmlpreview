@@ -15,7 +15,7 @@ window.MANIFEST = {
   "Overlay": "",
   "ExitLink": "",
   "Terms": "",
-  "CustomCSS": ".F3 .highlight {text-transform: none !important; line-height:28px !important;} .inlineTerms {display:block}",
+  "CustomCSS": ".F3 .highlight {text-transform: none !important; line-height:28px !important;} .inlineTerms {display:blockdisplay:block!important}",
   "Layouts": ",,,,",
   "F1_Transitions": "",
   "F1_Animations": "slideLineByLine:0.5,fadeOut:0.5",
