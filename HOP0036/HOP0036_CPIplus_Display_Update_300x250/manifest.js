@@ -33,7 +33,7 @@ window.MANIFEST = {
   "F1_Subheadline": "{\"text\":\"\",\"size\":\"\",\"weight\":\"\",\"padding\":\"\",\"order\":\"\",\"column\":\"\",\"delay\":\"\",\"out\":\"\"}",
   "F1_icontext": "{\"text\":\"\",\"size\":\"\",\"weight\":\"\",\"padding\":\"\",\"order\":\"\",\"column\":\"\",\"delay\":\"\",\"direction\":\"\",\"out\":\"\"}",
   "F1_price": "{\"text\":\"\",\"padding\":\"\",\"position\":\"\",\"preText\":\"\",\"product\":\"\",\"disclaimer\":\"\",\"roundel\":\"\",\"size\":\"\",\"weight\":\"\",\"order\":\"\",\"column\":\"\",\"delay\":\"\"}",
-  "F1_Terms": "{\"text\":\"General advice only. Consider the Hostplus Pension PDS and TMD  at hostplus.com.au before deciding. Returns above inflation are set annually, but Hostplus may shorten the return period. Hostplus  may adjust the rate of return with at least 30 days’ notice. Past performance is not a reliable indicator of future returns. Issued by Host-Plus Pty Limited ABN 79 008 634 704.\",\"alignment\":\"\",\"style\":\"\",\"position\":\"\",\"out\":\"\",\"padding\":\"\"}",
+  "F1_Terms": "{\"text\":\"General advice only. Consider the Hostplus Pension PDS and TMD  at hostplus.com.au before deciding. Returns above inflation are set annually, but Hostplus may shorten the return period. Hostplus  may adjust the rate of return with at least 30 days’ notice. Past performance is not a reliable indicator of future returns. Issued by Host-Plus Pty Limited ABN 79&#8203;008&#8203;634&#8203;704 --.\",\"alignment\":\"\",\"style\":\"\",\"position\":\"\",\"out\":\"\",\"padding\":\"\"}",
   "F1_Cta": "{\"text\":\"\",\"alignment\":\"\",\"position\":\"\",\"size\":\"\",\"labelSize\":\"\",\"delay\":\"\",\"out\":\"\"}",
   "F2_Transitions": "",
   "F2_Animations": ",",
