@@ -69,8 +69,12 @@
     function toggleDark() {
       darkMode = !darkMode;
       const newUrl = darkMode ? 'edm-dark.html' : 'edm.html';
-      document.getElementById('desktop-frame').src = newUrl;
-      document.getElementById('mobile-frame').src = newUrl;
+      // document.getElementById('desktop-frame').src = newUrl;
+      // document.getElementById('mobile-frame').src = newUrl;
+
+      const iframe = document.getElementById('desktop-frame');
+  const doc = iframe.contentDocument || iframe.contentWindow.document;
+  doc.body.classList.toggle('dark');
     }
   </script>
 
