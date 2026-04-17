@@ -16,12 +16,17 @@ fi
 # Move into the chosen directory
 cd "$base_dir" || { echo "Folder not found: $base_dir"; exit 1; }
 
-# Parent folder name
-parent=$(basename "$base_dir")
-
 # Loop through subfolders and zip each
 for dir in */; do
     dirname=$(basename "$dir")
     zipname="${dirname}.zip"
-    zip -r "$zipname" "$dir"
+
+    zip -r "$zipname" "$dir" \
+        -x "*.DS_Store" \
+        -x "**/.DS_Store" \
+        -x "*.AppleDouble" \
+        -x "*.LSOverride" \
+        -x "Icon?" \
+        -x "._*" \
+        -x "*/main.js.LICENSE.txt"
 done
