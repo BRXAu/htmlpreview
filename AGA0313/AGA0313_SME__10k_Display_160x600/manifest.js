@@ -14,7 +14,7 @@ window.MANIFEST = {
   "Themes": "default,default,default,default,default",
   "Overlay": "",
   "ExitLink": "",
-  "Terms": "*Ends 31/7/2026. For small business customers who switch an energy service to AGL. ++Prizes++: 5 x $10,000 AGL electricity or gas bill credit (inc. GST). ++Draw++: 12pm 7/8/2026 at Level 9, 628 Bourke Street, Melbourne VIC 3000. Winners notified by phone/email and published at agl.com.au by 14/8/2026. ++T&Cs++ apply - see: agl.com.au/businesswin. ++Permit Nos.++: NSW Authority No. TP/04927 and SA Permit No. T26/446",
+  "Terms": "*Ends 31/7/2026. For small business customers who switch an energy service to AGL. ++Prizes++: 5 x $10,000 AGL electricity or gas bill credit (inc. GST). ++Draw++: 12pm 7/8/2026 at Level 9, 628 Bourke Street, Melbourne VIC 3000. Winners notified by phone/email and published at agl.com.au by 14/8/2026. ++T&Cs++ apply - see:\nagl.com.au/businesswin. \n++Permit Nos.++: NSW Authority No. TP/04927 and SA Permit No. T26/446",
   "Layouts": ",,,,",
   "F1_Transitions": "",
   "F1_Animations": "slideInByLine:0.5,",
