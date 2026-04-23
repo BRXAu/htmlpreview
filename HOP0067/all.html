@@ -25,10 +25,10 @@ iframe { border:1px solid #444; display:block; }
 
 <script>
 const prefix = [
-  "HOP0067_"
+  "HOP0067_Awards_Medley_Partners_Fremantle_Dockers_Trial_"
 ];
 
-const sizes = ["1280x100"];
+const sizes = ["300x250","300x600","728x90","970x250","1280x100"];
 
 const sets = {
   all: [],
@@ -42,7 +42,7 @@ for (let s = 0; s < sizes.length; s++) {
 for (let i = 0; i < prefix.length; i++) {
   for (let j = 0; j < sizes.length; j++) {
 
-    const file = prefix[i] + sizes[j] + ".html";
+    const file = prefix[i] + sizes[j] + "/index.html";
 
     const obj = {
       name: file,
