@@ -7,7 +7,7 @@
     body {
       font-family: system-ui, sans-serif;
       padding: 20px;
-      max-width: 600px;
+      max-width: 700px;
     }
 
     textarea {
@@ -24,68 +24,163 @@
       cursor: pointer;
     }
 
-    #output {
+    #output, #keyDisplay {
       margin-top: 16px;
       padding: 12px;
       border: 1px solid #ccc;
-      min-height: 60px;
+      height: 60px;
       white-space: pre-wrap;
+      font-family: monospace;
+      font-size: 13px;
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
 
-  <h1>Text encoder / decoder</h1>
+<h1>Text encoder / decoder</h1>
 
-  <textarea id="input" placeholder="Enter text here"></textarea>
+<textarea id="input" placeholder="Enter text here"></textarea>
 
-  <div>
-    <button id="encodeBtn">Encode</button>
-    <button id="decodeBtn">Decode</button>
-  </div>
+<div>
+  <button id="encodeBtn">Encode</button>
+  <button id="decodeBtn">Decode</button>
+  <button id="newKeyBtn">New substitution key</button>
+  <button id="scrambleBtn">Scramble text</button>
+  <button id="unscrambleBtn">Unscramble text</button>
+  <button id="minifyBtn">Minify text</button>
+  <button id="copyBtn">Copy output</button>
+</div>
 
-  <div id="output"></div>
+<h3>Output</h3>
+<div id="output"></div>
 
-  <script>
-    const charset =
-      "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,!?<>/-{}";
+<h3>Conversion key</h3>
+<div id="keyDisplay"></div>
 
-    const shuffled =
-      "klm}nopqr>stuvwxyzAB12Cabcd-efghijXYZ034/5DE{FGHIJKLMN?OPQRSTUVW6789 .,!<";
+<script>
+const charset =
+  "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,!?<>/-{};[]'\"";
 
-    const encodeMap = Object.fromEntries(
-      charset.split("").map((char, index) => [char, shuffled[index]])
-    );
+let shuffled = shuffleString(charset);
+let scrambleKey = [];
 
-    const decodeMap = Object.fromEntries(
-      shuffled.split("").map((char, index) => [char, charset[index]])
-    );
+// --- helpers ---
+function shuffleString(str) {
+  const arr = str.split("");
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr.join("");
+}
 
-    function encode(text) {
-      return text
-        .split("")
-        .map(char => encodeMap[char] || char)
-        .join("");
-    }
+function buildMaps() {
+  return {
+    encodeMap: Object.fromEntries(
+      charset.split("").map((c, i) => [c, shuffled[i]])
+    ),
+    decodeMap: Object.fromEntries(
+      shuffled.split("").map((c, i) => [c, charset[i]])
+    )
+  };
+}
 
-    function decode(text) {
-      return text
-        .split("")
-        .map(char => decodeMap[char] || char)
-        .join("");
-    }
+function displayKey() {
+  document.getElementById("keyDisplay").textContent =
+    "CHARSET : " + charset + "\n\n" +
+    "SHUFFLED: " + shuffled;
+}
 
-    const input = document.getElementById("input");
-    const output = document.getElementById("output");
+// --- substitution encode/decode ---
+function encode(text) {
+  const { encodeMap } = buildMaps();
+  return text.split("").map(c => encodeMap[c] || c).join("");
+}
 
-    document.getElementById("encodeBtn").addEventListener("click", () => {
-      output.textContent = encode(input.value);
-    });
+function decode(text) {
+  const { decodeMap } = buildMaps();
+  return text.split("").map(c => decodeMap[c] || c).join("");
+}
 
-    document.getElementById("decodeBtn").addEventListener("click", () => {
-      output.textContent = decode(input.value);
-    });
-  </script>
+// --- scramble ---
+function scramble(text) {
+  const arr = text.split("");
+  scrambleKey = arr.map((_, i) => i);
+
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+    [scrambleKey[i], scrambleKey[j]] = [scrambleKey[j], scrambleKey[i]];
+  }
+
+  document.getElementById("keyDisplay").textContent =
+    "SCRAMBLE KEY (index map):\n" + JSON.stringify(scrambleKey);
+
+  return arr.join("");
+}
+
+function unscramble(text) {
+  const arr = text.split("");
+  const result = [];
+
+  scrambleKey.forEach((originalIndex, i) => {
+    result[originalIndex] = arr[i];
+  });
+
+  return result.join("");
+}
+
+// --- minify (updates input) ---
+function minify() {
+  const input = document.getElementById("input");
+  input.value = input.value
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// --- copy output ---
+function copyOutput() {
+  const output = document.getElementById("output").textContent;
+  navigator.clipboard.writeText(output);
+}
+
+// --- UI ---
+const input = document.getElementById("input");
+const output = document.getElementById("output");
+
+document.getElementById("encodeBtn").onclick = () => {
+  output.textContent = encode(input.value);
+};
+
+document.getElementById("decodeBtn").onclick = () => {
+  output.textContent = decode(input.value);
+};
+
+document.getElementById("newKeyBtn").onclick = () => {
+  shuffled = shuffleString(charset);
+  displayKey();
+};
+
+document.getElementById("scrambleBtn").onclick = () => {
+  output.textContent = scramble(input.value);
+};
+
+document.getElementById("unscrambleBtn").onclick = () => {
+  output.textContent = unscramble(input.value);
+};
+
+document.getElementById("minifyBtn").onclick = () => {
+  minify();
+};
+
+document.getElementById("copyBtn").onclick = () => {
+  copyOutput();
+};
+
+// init
+displayKey();
+</script>
 
 </body>
 </html>
