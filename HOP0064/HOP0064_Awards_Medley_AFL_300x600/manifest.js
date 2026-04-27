@@ -10,7 +10,7 @@ window.MANIFEST = {
   "End_Date": "",
   "Default": "",
   "Active": "",
-  "FrameOrder": "F1:.5,F2:.5,F3:1.75",
+  "FrameOrder": "F1:.5,F2:.5,F3:1.75,F4:2",
   "Themes": "default,default,default,default,default",
   "Overlay": "",
   "ExitLink": "",

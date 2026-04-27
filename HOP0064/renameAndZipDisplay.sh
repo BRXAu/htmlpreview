@@ -22,6 +22,6 @@ parent=$(basename "$base_dir")
 # Loop through subfolders and zip each
 for dir in */; do
     dirname=$(basename "$dir")
-    zipname="${parent}_${dirname}.zip"
+    zipname="${dirname}.zip"
     zip -r "$zipname" "$dir"
 done
