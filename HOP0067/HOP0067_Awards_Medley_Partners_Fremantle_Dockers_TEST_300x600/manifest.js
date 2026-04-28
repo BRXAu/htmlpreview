@@ -22,7 +22,7 @@ window.MANIFEST = {
   "F1_LayoutClass": ",",
   "F1_Video": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\"}",
   "F1_Image1": "{\"url\":\"assets/HOP0067_Awards_Medley_Partners_Fremantle_Dockers_TEST_F1_Image1_a967856d.svg\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"\",\"animationOut\":\"fadeOut:0.5:power1.in\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
-  "F1_Image2": "{\"url\":\"assets/HOP0067_Awards_Medley_Partners_Fremantle_Dockers_TEST_F1_Image2_a967856d.svg\",\"size\":\"299 289\",\"position\":\"0 252\",\"animationIn\":\"fadeInTop:0.5:10:Power1.out:0.5\",\"animationOut\":\"fadeOut:0.5:power1.in\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
+  "F1_Image2": "{\"url\":\"assets/HOP0067_Awards_Medley_Partners_Fremantle_Dockers_TEST_F1_Image2_a967856d.svg\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"fadeInTop:0.5:10:Power1.out:0.5\",\"animationOut\":\"fadeOut:0.5:power1.in\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
   "F1_Image3": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
   "F1_InframeImage": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"order\":\"\",\"alignment\":\"\",\"alignmentPortrait\":\"\",\"column\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
   "F1_ProductIcon": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"order\":\"\",\"alignment\":\"\",\"alignmentPortrait\":\"\",\"column\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
