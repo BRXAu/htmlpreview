@@ -6,15 +6,43 @@
 <style>
 body { font-family: sans-serif; background:#111; color:#eee; margin:0; padding:20px; }
 h1 { margin-bottom:20px; }
+
 .controls { margin-bottom:20px; }
+
 .controls button {
   margin-right:10px; padding:6px 12px; cursor:pointer;
   border:none; background:#ffcc00; border-radius:4px; font-weight:bold;
 }
+
 .container { display:flex; flex-wrap:wrap; gap:20px; }
-.banner { display:flex; flex-direction:column; align-items:center; background:#222; padding:10px; border-radius:6px; }
+
+.banner {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background:#222;
+  padding:10px;
+  border-radius:6px;
+}
+
+.foldername {
+  font-size:12px;
+  color:#aaa;
+  margin-bottom:6px;
+  word-break:break-all;
+  text-align:center;
+}
+
 iframe { border:1px solid #444; display:block; }
-.banner button { margin-top:6px; padding:4px 10px; cursor:pointer; border:none; background:#ffcc00; border-radius:4px; }
+
+.banner button {
+  margin-top:6px;
+  padding:4px 10px;
+  cursor:pointer;
+  border:none;
+  background:#ffcc00;
+  border-radius:4px;
+}
 </style>
 </head>
 <body>
@@ -56,7 +84,6 @@ for (let i = 0; i < prefix.length; i++) {
   }
 }
 
-// build buttons dynamically
 const controls = document.getElementById("controls");
 
 const allBtn = document.createElement("button");
@@ -85,7 +112,19 @@ function loadSet(key) {
     const wrap = document.createElement("div");
     wrap.className = "banner";
 
+    const folderName = item.prefix;
+
+    let title = ""
+
+    if(item.prefix == prefix[0]){
+      title = "broken"
+    }
+    else {
+      title = "fixed - maybe?"
+    }
+
     wrap.innerHTML = `
+      <div class="foldername">${title}</div>
       <iframe src="${item.name}" width="${w}" height="${h}"></iframe>
       <button onclick="this.previousElementSibling.src='${item.name}'">Reload</button>
     `;

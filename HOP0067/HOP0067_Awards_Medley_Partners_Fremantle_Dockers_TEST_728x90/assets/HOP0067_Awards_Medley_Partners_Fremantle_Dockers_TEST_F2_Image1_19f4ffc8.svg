@@ -1,4 +1,4 @@
-<svg width="728" height="90" viewBox="0 0 728 90" fill="none" shape-rendering="geometricPrecision" xmlns="http://www.w3.org/2000/svg">
+<svg width="728" height="90" viewBox="0 0 728 90" shape-rendering="geometricPrecision" fill="none" xmlns="http://www.w3.org/2000/svg">
 
 <style>
 
@@ -32,7 +32,7 @@
     #icon03_container {
       transform: scale(0);
       transform-box: fill-box;
-    	transform-origin: 70px 30px;
+      transform-origin: 70px 30px;
       animation: scaleIt 0.4s forwards;
       animation-delay: 3.6s; 
     }
@@ -40,7 +40,7 @@
     #icon02_container {
       transform: scale(0);
       transform-box: fill-box;
-    	transform-origin: 70px 30px;
+      transform-origin: 70px 30px;
       animation: scaleIt 0.4s forwards;
       animation-delay: 2s; 
     }
@@ -48,25 +48,25 @@
     #icon01_container {
       transform: scale(0);
       transform-box: fill-box;
-    	transform-origin: 70px 30px;
+      transform-origin: 70px 30px;
       animation: scaleIt 0.4s forwards;
       animation-delay: 0.4s; 
     }
 
     #texttext01 {
-    	transform: translateY(-34px);
+      transform: translateY(-34px);
       animation: moveIt 0.4s forwards;
       animation-delay: 0.8s; 
     }
 
     #textSet {
-    	transform: translateY(-34px);
+      transform: translateY(-34px);
       animation: moveIt 0.4s forwards;
       animation-delay: 2.4s; 
     }
 
     #texttext03 {
-    	transform: translateY(-34px);
+      transform: translateY(-34px);
       animation: moveIt 0.4s forwards;
       animation-delay: 4s; 
     }
@@ -86,19 +86,31 @@
 
 
 <defs>
-	<clipPath id="text01ClipPath"><rect x="77" y="25" width="126" height="43" fill="#FFFFFF"/></clipPath>
+  <clipPath id="text01ClipPath"><rect x="77" y="25" width="126" height="43" fill="#FFFFFF"/></clipPath>
   <clipPath id="text02ClipPath"><rect x="257" y="25" width="126" height="43" fill="#FFFFFF"/></clipPath>
   <clipPath id="text03ClipPath"><rect x="444" y="25" width="126" height="43" fill="#FFFFFF"/></clipPath>
 
+  <mask id="icon01circleMask" >
+    <rect width="200" height="200" fill="black"/>
+    <circle cx="200" cy="200" r="198" fill="white"/>
+  </mask>
+
+  <mask id="icon02circleMask" >
+    <rect width="100%" height="100%" fill="black"/>
+    <path d="M400,202.7c0-67.1-33.5-126.3-84.6-162C281.9,15.2,240.1,0,195.1,0H4.5C2,0,0,2,0,4.5v190.5c0,43.9,14.5,84.8,38.9,118,35.5,52.5,95.6,87,163.7,87,109,0,197.4-88.4,197.4-197.4h0Z" fill="#FFFFFF" stroke-width="0"/>
+  </mask>
+
+  <mask id="icon03circleMask" >
+    <rect width="100%" height="100%" fill="black"/>
+    <path d="M400,382.4v-126.4c0-41.7,0-74-2.1-99.8-2.1-26-6.5-46.9-16-65.5-15.9-31.2-41.3-56.6-72.5-72.5-18.7-9.5-39.5-13.9-65.5-16C218,0,185.7,0,144,0H17.6s-1,0-2,0c-1.1,0-3.3.4-5.8,1.5l-.5.2c-3,1.5-5.5,3.9-7.1,6.8l-.3.6C.5,12,.2,14.5,0,15.6c0,1,0,1.9,0,2v126.4C0,185.7,0,218,2.1,243.8c2.1,26,6.5,46.9,16,65.5,15.9,31.2,41.3,56.6,72.5,72.5,18.7,9.5,39.5,13.9,65.5,16,25.8,2.1,58.1,2.1,99.8,2.1h126.4s1,0,2,0c1.2,0,3.6-.4,6.4-1.8,3.2-1.6,5.8-4.2,7.4-7.4,1.4-2.7,1.7-5.2,1.8-6.4,0-1,0-1.9,0-2ZM305.1,33.9c0,0-.2-.1-.3-.2.4.2.9.5,1.3.7-.3-.2-.7-.4-1-.5ZM367.7,97.9l.2.5s0,0,0,0c0-.2-.2-.3-.2-.5-.9-1.8-1.8-3.5-2.8-5.2,1,1.7,1.9,3.4,2.8,5.2Z" fill="#FFFFFF" stroke-width="0"/>
+  </mask>
 
 
-
-
-  <radialGradient id="icon01-radial-gradient" cx="2.8" cy="25" fx="3" fy="25" r="2" gradientTransform="translate(-101 -598) scale(108 38)" gradientUnits="userSpaceOnUse">
+  <radialGradient id="icon01-radial-gradient" cx="2.8" cy="25.5" fx="2.8" fy="25.5" r="1.8" gradientTransform="translate(-101 -598.5) scale(108 38)" gradientUnits="userSpaceOnUse">
       <stop offset=".6" stop-color="#08172a"/>
       <stop offset="1" stop-color="#08172a" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="icon01-shadow-gradient" x1="-317" y1="561" x2="-135" y2="561" gradientTransform="translate(227 -137)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="icon01-shadow-gradient" x1="-316.9" y1="560.9" x2="-135" y2="560.9" gradientTransform="translate(227.1 -136.7)" gradientUnits="userSpaceOnUse">
       <stop offset=".1" stop-color="#fff" stop-opacity="0"/>
       <stop offset=".5" stop-color="#fff" stop-opacity=".8"/>
       <stop offset=".6" stop-color="#fff" stop-opacity=".8"/>
@@ -109,8 +121,13 @@
       <circle cx="200" cy="200" r="200" />
     </clipPath>
 
+    <mask id="icon01circleMask" >
+      <rect width="200" height="200" fill="black"/>
+      <circle cx="200" cy="200" r="200" fill="white"/>
+    </mask>
 
-    <radialGradient id="icon02-shadow-gradient" cx="3" cy="414" fx="3" fy="414" r="2" gradientTransform="translate(-101 16103) scale(108 -38)" gradientUnits="userSpaceOnUse">
+
+    <radialGradient id="icon02-shadow-gradient" cx="2.8" cy="414" fx="2.8" fy="414" r="1.8" gradientTransform="translate(-101 16103) scale(108 -38)" gradientUnits="userSpaceOnUse">
       <stop offset=".6" stop-color="#08172a"/>
       <stop offset="1" stop-color="#08172a" stop-opacity="0"/>
     </radialGradient>
@@ -120,17 +137,17 @@
       <stop offset="0" stop-color="#fff3c1"/>
       <stop offset="1" stop-color="#ddba14"/>
     </radialGradient>
-    <linearGradient id="icon02-linear-gradient" x1="3" y1="399" x2="335" y2="67" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="icon02-linear-gradient" x1="3" y1="399" x2="335.1" y2="66.9" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#f5dc82"/>
       <stop offset=".5" stop-color="#dfc36a"/>
       <stop offset="1" stop-color="#fff1bb"/>
     </linearGradient>
-    <linearGradient id="icon02-linear-gradient-2" x1="11" y1="391" x2="330" y2="73" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="icon02-linear-gradient-2" x1="11.1" y1="390.9" x2="329.4" y2="72.6" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#8a744a"/>
       <stop offset=".5" stop-color="#78641f"/>
       <stop offset="1" stop-color="#f2eee2"/>
     </linearGradient>
-    <linearGradient id="icon02-linear-gradient-3" x1="42" y1="104" x2="296" y2="358" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="icon02-linear-gradient-3" x1="42.2" y1="103.8" x2="296.2" y2="357.8" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#0039d3"/>
       <stop offset=".2" stop-color="#0054ff"/>
       <stop offset=".5" stop-color="#2b6cff"/>
@@ -138,7 +155,7 @@
       <stop offset="1" stop-color="#0039d3"/>
     </linearGradient>
 
-    <linearGradient id="icon02-highlight-gradient" x1="-317" y1="561" x2="-135" y2="561" gradientTransform="translate(227 -137)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="icon02-highlight-gradient" x1="-316.9" y1="560.9" x2="-135" y2="560.9" gradientTransform="translate(227.1 -136.7)" gradientUnits="userSpaceOnUse">
       <stop offset=".1" stop-color="#fff" stop-opacity="0"/>
       <stop offset=".5" stop-color="#fff" stop-opacity=".8"/>
       <stop offset=".6" stop-color="#fff" stop-opacity=".8"/>
@@ -150,19 +167,25 @@
       <path d="M400,202.7c0-67.1-33.5-126.3-84.6-162C281.9,15.2,240.1,0,195.1,0H4.5C2,0,0,2,0,4.5v190.5c0,43.9,14.5,84.8,38.9,118,35.5,52.5,95.6,87,163.7,87,109,0,197.4-88.4,197.4-197.4h0Z" fill="#000" stroke-width="0"/>
     </clipPath>
 
-    <linearGradient id="icon03-linear-gradient" x1="36" y1="254" x2="114" y2="254" gradientTransform="translate(0 400) scale(1 -1)" gradientUnits="userSpaceOnUse">
+
+    <mask id="icon02circleMask" >
+      <rect width="100%" height="100%" fill="black"/>
+      <path d="M400,202.7c0-67.1-33.5-126.3-84.6-162C281.9,15.2,240.1,0,195.1,0H4.5C2,0,0,2,0,4.5v190.5c0,43.9,14.5,84.8,38.9,118,35.5,52.5,95.6,87,163.7,87,109,0,197.4-88.4,197.4-197.4h0Z" fill="#FFFFFF" stroke-width="0"/>
+    </mask>
+
+    <linearGradient id="icon03-linear-gradient" x1="36" y1="253.9" x2="114.1" y2="253.9" gradientTransform="translate(0 400) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#e1e31f"/>
       <stop offset="1" stop-color="#2b783b"/>
     </linearGradient>
-    <linearGradient id="icon03-linear-gradient-2" x1="115" y1="246" x2="38" y2="246" gradientTransform="translate(0 400) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="icon03-linear-gradient-2" x1="114.5" y1="246.1" x2="37.8" y2="246.1" gradientTransform="translate(0 400) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#e1e31f"/>
       <stop offset="1" stop-color="#2b783b"/>
     </linearGradient>
-    <radialGradient id="icon03-radial-gradient" cx="3" cy="414" fx="3" fy="414" r="2" gradientTransform="translate(-101 16103) scale(108 -38)" gradientUnits="userSpaceOnUse">
+    <radialGradient id="icon03-radial-gradient" cx="2.8" cy="414" fx="2.8" fy="414" r="1.8" gradientTransform="translate(-101 16103) scale(108 -38)" gradientUnits="userSpaceOnUse">
       <stop offset=".6" stop-color="#08172a"/>
       <stop offset="1" stop-color="#08172a" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="icon03-shadow-gradient" x1="-317" y1="561" x2="-135" y2="561" gradientTransform="translate(227 -137)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="icon03-shadow-gradient" x1="-316.9" y1="560.9" x2="-135" y2="560.9" gradientTransform="translate(227.1 -136.7)" gradientUnits="userSpaceOnUse">
       <stop offset=".1" stop-color="#fff" stop-opacity="0"/>
       <stop offset=".5" stop-color="#fff" stop-opacity=".8"/>
       <stop offset=".6" stop-color="#fff" stop-opacity=".8"/>
@@ -170,30 +193,32 @@
     </linearGradient>
 
 
-<clipPath id="icon03circleClip">
-      <path d="M400,382.4v-126.4c0-41.7,0-74-2.1-99.8-2.1-26-6.5-46.9-16-65.5-15.9-31.2-41.3-56.6-72.5-72.5-18.7-9.5-39.5-13.9-65.5-16C218,0,185.7,0,144,0H17.6s-1,0-2,0c-1.1,0-3.3.4-5.8,1.5l-.5.2c-3,1.5-5.5,3.9-7.1,6.8l-.3.6C.5,12,.2,14.5,0,15.6c0,1,0,1.9,0,2v126.4C0,185.7,0,218,2.1,243.8c2.1,26,6.5,46.9,16,65.5,15.9,31.2,41.3,56.6,72.5,72.5,18.7,9.5,39.5,13.9,65.5,16,25.8,2.1,58.1,2.1,99.8,2.1h126.4s1,0,2,0c1.2,0,3.6-.4,6.4-1.8,3.2-1.6,5.8-4.2,7.4-7.4,1.4-2.7,1.7-5.2,1.8-6.4,0-1,0-1.9,0-2ZM305.1,33.9c0,0-.2-.1-.3-.2.4.2.9.5,1.3.7-.3-.2-.7-.4-1-.5ZM367.7,97.9l.2.5s0,0,0,0c0-.2-.2-.3-.2-.5-.9-1.8-1.8-3.5-2.8-5.2,1,1.7,1.9,3.4,2.8,5.2Z" fill="#000" stroke-width="0"/>
-    </clipPath>
+
+
 
   </defs>
 
   <rect width="728" height="90" fill="#002855"/>
 
 <!-- <image
-    href="728x90_guide.png"
+    href="guide_r2_300x600.png"
     x="0"
     y="0"
-    width="728"
-    height="90"
+    width="300"
+    height="250"
     preserveAspectRatio="xMidYMid slice"
-    opacity="0.4"
+    opacity="0.1"
   /> -->
+
 
 
 <g id="icon03_container">
 <g transform="translate(392, 16)">
 <g transform="scale(0.14)">
 
-<g id="icon03Shadow"><ellipse cx="200" cy="370" rx="200" ry="70" fill="url(#icon03-radial-gradient)" stroke-width="0"/></g>
+<g id="icon03Shadow">
+    <ellipse cx="199.6" cy="369.8" rx="199.6" ry="70.2" fill="url(#icon03-radial-gradient)" stroke-width="0"/>
+  </g>
   
   <image
     href="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAeAAD/4QMxaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA5LjEtYzAwMiA3OS5kYmEzZGEzYjUsIDIwMjMvMTIvMTUtMTA6NDI6MzcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyNS42IChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA0NTJERkZERTQ0MjExRjA5MkVFRTI3OUVBNjVDOEUzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA0NTJERkZFRTQ0MjExRjA5MkVFRTI3OUVBNjVDOEUzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDQ1MkRGRkJFNDQyMTFGMDkyRUVFMjc5RUE2NUM4RTMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDQ1MkRGRkNFNDQyMTFGMDkyRUVFMjc5RUE2NUM4RTMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAAQCwsLDAsQDAwQFw8N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"
@@ -256,24 +281,21 @@
     <path d="M114.7,189.1l-.2-29.6c0-20.1-1.1-24.5-7.6-33.5-7.6-10.7-20.6-16-34.7-16h-36.2c79.8,14.6,78.7,79.1,78.7,79.1Z" fill="#38b449" fill-rule="evenodd" stroke-width="0"/>
     <path d="M85,189.1c-19.9,0-24.2-1.1-33.2-7.6-10.6-7.7-15.8-20.8-15.8-35v-36.5c14.5,80.6,78.3,79.1,78.3,79.1h-29.3Z" fill="#38b449" fill-rule="evenodd" stroke-width="0"/>
   </g>
-
-   <g id="icon03Container" clip-path="url(#icon03circleClip)">
+   <g id="icon03Container" mask="url(#icon03circleMask)">
     <g id="icon03shine">
-    <rect x="-90" y="73" width="182" height="704" transform="translate(-302.8 128.3) rotate(-45.6)" fill="url(#icon03-shadow-gradient)" stroke-width="0"/>
+    <rect x="-150" y="60" width="300" height="900" transform="translate(-302.8 128.3) rotate(-45.6)" fill="url(#icon01-shadow-gradient)" stroke-width="0"/>
   </g>
   </g>
 </g>
 </g>
 </g>
-
-
-
-
 
 <g id="icon02_container">
 <g transform="translate(206, 16)">
 <g transform="scale(0.15)">
-   <g id="Icon02Shadow"><ellipse cx="200" cy="370" rx="200" ry="70" fill="url(#icon02-shadow-gradient)" stroke-width="0"/></g>
+  <g id="Icon02Shadow">
+    <ellipse cx="199.6" cy="369.8" rx="199.6" ry="70.2" fill="url(#icon02-shadow-gradient)" stroke-width="0"/>
+  </g>
   <path d="M400,202.6c0,109-88.4,197.4-197.4,197.4S5.2,311.6,5.2,202.6V9.7c0-2.5,2-4.4,4.4-4.4h192.9c109,0,197.4,88.4,197.4,197.4h0Z" fill="#816e15" stroke-width="0"/>
   <path d="M393.7,198.3c-.8,107.5-87.8,194.5-195.3,195.3C89.3,394.4,0,304.1,0,195V4.5C0,2,2,0,4.5,0h190.6c109.1,0,199.4,89.3,198.6,198.3h0Z" fill="url(#icon02-radial-gradient)" stroke-width="0"/>
   <path d="M196.8,389.1c-51.2,0-99.4-20.3-135.9-57.2C24.5,295.1,4.4,246.5,4.4,195.1V8.7c0-2.3,1.9-4.1,4.1-4.1h186.4c52.1,0,101.2,20.5,138.2,57.8,36.4,36.7,56.3,85,55.9,136-.4,50.8-20.4,98.6-56.3,134.5-35.9,35.9-83.7,55.9-134.5,56.3h-1.4,0Z" fill="url(#icon02-linear-gradient)" stroke-width="0"/>
@@ -333,9 +355,9 @@
   <path d="M329.5,145.7l-3.6-8.9h-4.4c0,.1-2.3-5.3-2.3-5.3l26.1-.7,2.3,5.7-19.1,17.7-2.2-5.4,3.2-3h0ZM333.7,141.9l6-5.6-8.2.3,2.2,5.3Z" fill="#fff" stroke-width="0"/>
   <path d="M353,151.5l2.3,9.6c1.1,4.8-1.4,8.6-5.4,9.6-3.7.9-6.4-.2-8.1-2.4l-8.1,7.4-1.5-6.1,7.4-6.5-.5-2.2-8.5,2-1.4-5.6,23.7-5.7h0ZM344.8,162.9c.5,2.2,2.2,2.5,3.3,2.3,1.3-.3,2.5-1.3,2-3.5l-.8-3.3-5.3,1.3.8,3.3Z" fill="#fff" stroke-width="0"/>
 
-  <g id="icon02Container" clip-path="url(#icon02circleClip)">
+  <g id="icon02Container" mask="url(#icon02circleMask)">
   <g id="icon02shine">
-    <rect x="-90" y="73" width="220" height="704" transform="translate(-303 128) rotate(-46)" fill="url(#icon02-highlight-gradient)" stroke-width="0"/>
+    <rect x="-150" y="60" width="300" height="900" transform="translate(-302.8 128.3) rotate(-45.6)" fill="url(#icon01-shadow-gradient)" stroke-width="0"/>
   </g>
   </g>
 
@@ -348,8 +370,9 @@
 <g transform="translate(10, 16)">
 <g transform="scale(0.15)">
 
- <g id="icon01Shadow"><ellipse cx="200" cy="370" rx="200" ry="70" fill="url(#icon01-radial-gradient)" stroke-width="0"/></g>
-
+  <g id="icon01Shadow">
+    <ellipse cx="199.6" cy="371.1" rx="199.6" ry="70.2" fill="url(#icon01-radial-gradient)" stroke-width="0"/>
+  </g>
   <path d="M401.2,202.6c0,110.5-89.6,200-200.1,199.9C90.6,402.5,1.1,312.9,1.2,202.4c0-110.5,89.6-200,200.1-199.9,110.5,0,200,89.7,199.9,200.1Z" fill="#fff" stroke="#a39161" stroke-width="2.3"/>
   <path d="M361.8,202.5c0,88.8-72,160.8-160.8,160.8S40.2,291.3,40.2,202.5,112.2,41.7,201,41.7s160.8,72,160.8,160.8h0Z" fill="#a39161" stroke-width="0"/>
   <path d="M64.3,232.7h262.9" fill="none" stroke="#fff" stroke-width="2.1"/>
@@ -432,21 +455,22 @@
   <path d="M336.4,337.8l-4.4-4-.6-9.3c-.2-3,0-4.6-1.5-6-1.2-1.1-1.7-1-2.8.2-.6.6-1.1,1.2-1.3,1.5l2,1.8-3.5,3.8-4.9-4.5c.6-1,2.5-3.6,4.3-5.5,4.6-4.9,6.3-5.1,9.9-1.8,2.6,2.4,2.3,3.5,2.9,10.3l.5,7,3.6-3.9-2.2-2,3.5-3.8,5.1,4.7-10.5,11.4h-.1Z" fill="#a39161" stroke-width="0"/>
   <path d="M353.4,318.8c-4.1,5.3-6.5,5-14.4-1.1l-.3-.2c-4.2-3.2-5.9-4.8-6.3-7-.3-2.1,1.9-6.3,5-11.4l4.1,2.2c-2.2,3.7-3.9,6.6-3.8,7.5,0,.8.5,1.3,2.2,2.6.5-1.2,1.5-3,2.5-4.3,2.3-2.9,4.1-3.5,9.5.6,4.9,3.7,5.4,6.2,1.6,11.1h-.1ZM350.2,316.2c1.1-1.4,1.1-2.2-1.3-4-2.8-2.2-3.5-2.3-4.6-.9-.5.7-1,1.5-1.4,2.3l2.5,1.9c3,2.3,3.7,2.1,4.8.7Z" fill="#a39161" stroke-width="0"/>
   
-  <g id="icon01Container" clip-path="url(#icon01circleClip)">
+  <g id="icon01Container" mask="url(#icon01circleMask)">
     <g id="icon01shine">
-    <rect x="-90" y="73" width="220" height="704" transform="translate(-303 128) rotate(-46)" fill="url(#icon01-shadow-gradient)" stroke-width="0"/>
+    <rect x="-150" y="60" width="300" height="900" transform="translate(-302.8 128.3) rotate(-45.6)" fill="url(#icon01-shadow-gradient)" stroke-width="0"/>
   </g>
   </g>
 
 </g>
 </g>
 </g>
+
 
 <g transform="translate(0,0)">
 <g transform="scale(1)">
   <g id="text03TextContainer" clip-path="url(#text03ClipPath)">
-  	<g id="texttext03">
-	<path d="M477.958 39.4409H471.634V55.3872H466.059V39.4409H459.674V34.6128H477.958V39.4409ZM485.649 42.2124H493.311V34.6128H498.824V55.3872H493.311V47.2583H485.649V55.3872H480.136V34.6128H485.649V42.2124ZM510.838 34.6128C511.959 34.6128 512.966 34.7586 513.859 35.0493C514.773 35.34 515.551 35.7756 516.195 36.3569C516.839 36.9176 517.337 37.6238 517.69 38.4751C518.043 39.3264 518.219 40.3128 518.219 41.4341C518.219 42.8045 517.918 43.9987 517.316 45.0161C516.714 46.0127 515.914 46.8124 514.918 47.4146L519.372 55.3872H513.454L509.934 48.3169H507.63V55.3872H502.242V34.6128H510.838ZM536.438 39.3784H527.001V42.5864H534.755V47.0718H527.001V50.6226H537.091V55.3872H521.488V34.6128H536.438V39.3784ZM554.589 39.3784H545.152V42.5864H552.907V47.0718H545.152V50.6226H555.243V55.3872H539.638V34.6128H554.589V39.3784ZM507.63 43.9878H510.308C511.035 43.9878 511.627 43.7695 512.084 43.3335C512.54 42.8768 512.769 42.275 512.769 41.5278C512.769 40.7388 512.551 40.1155 512.115 39.6587C511.679 39.2019 511.066 38.9731 510.277 38.9731H507.63V43.9878Z" fill="#FFD000"/>
+    <g id="texttext03">
+  <path d="M477.958 39.4409H471.634V55.3872H466.059V39.4409H459.674V34.6128H477.958V39.4409ZM485.649 42.2124H493.311V34.6128H498.824V55.3872H493.311V47.2583H485.649V55.3872H480.136V34.6128H485.649V42.2124ZM510.838 34.6128C511.959 34.6128 512.966 34.7586 513.859 35.0493C514.773 35.34 515.551 35.7756 516.195 36.3569C516.839 36.9176 517.337 37.6238 517.69 38.4751C518.043 39.3264 518.219 40.3128 518.219 41.4341C518.219 42.8045 517.918 43.9987 517.316 45.0161C516.714 46.0127 515.914 46.8124 514.918 47.4146L519.372 55.3872H513.454L509.934 48.3169H507.63V55.3872H502.242V34.6128H510.838ZM536.438 39.3784H527.001V42.5864H534.755V47.0718H527.001V50.6226H537.091V55.3872H521.488V34.6128H536.438V39.3784ZM554.589 39.3784H545.152V42.5864H552.907V47.0718H545.152V50.6226H555.243V55.3872H539.638V34.6128H554.589V39.3784ZM507.63 43.9878H510.308C511.035 43.9878 511.627 43.7695 512.084 43.3335C512.54 42.8768 512.769 42.275 512.769 41.5278C512.769 40.7388 512.551 40.1155 512.115 39.6587C511.679 39.2019 511.066 38.9731 510.277 38.9731H507.63V43.9878Z" fill="#FFD000"/>
 </g>
 </g>
 </g>
@@ -455,9 +479,9 @@
 <g transform="translate(0,0)">
 <g transform="scale(1)">
 <g id="text02TextContainer" clip-path="url(#text02ClipPath)">
-	<g id="textSet">
-	<path d="M324.225 34.083C325.783 34.083 327.226 34.3528 328.555 34.8926C329.883 35.4324 331.025 36.1911 331.98 37.167C332.935 38.1221 333.684 39.2744 334.223 40.624C334.763 41.9529 335.033 43.4064 335.033 44.9844C335.033 46.5624 334.763 48.0264 334.223 49.376C333.684 50.7049 332.935 51.8571 331.98 52.833C331.025 53.7881 329.883 54.5458 328.555 55.1064C327.226 55.6463 325.783 55.917 324.225 55.917C322.668 55.917 321.224 55.6463 319.895 55.1064C318.587 54.5458 317.445 53.788 316.47 52.833C315.514 51.8571 314.767 50.7048 314.227 49.376C313.687 48.0263 313.418 46.5625 313.418 44.9844C313.418 43.4063 313.687 41.9529 314.227 40.624C314.767 39.2745 315.514 38.1221 316.47 37.167C317.445 36.1911 318.587 35.4324 319.895 34.8926C321.224 34.3527 322.668 34.083 324.225 34.083ZM293.016 39.4717H284.046V43.4893H290.992V48.0371H284.046V55.418H278.533V34.6436H293.016V39.4717ZM303.79 34.6436C304.911 34.6436 305.918 34.7894 306.811 35.0801C307.725 35.3707 308.504 35.8064 309.147 36.3877C309.791 36.9483 310.289 37.6546 310.642 38.5059C310.995 39.3572 311.172 40.3436 311.172 41.4648C311.172 42.8353 310.871 44.0294 310.268 45.0469C309.666 46.0434 308.867 46.8432 307.87 47.4453L312.324 55.418H306.406L302.887 48.3486H300.582V55.418H295.194V34.6436H303.79ZM348.479 43.707L353.431 34.6436H358.726L359.692 55.418H354.117L353.618 43.2402L349.974 50.3418H346.953L342.904 43.2402L342.499 55.418H337.204L338.17 34.6436H343.433L348.479 43.707ZM324.225 39.2227C323.416 39.2227 322.688 39.378 322.045 39.6895C321.422 39.9801 320.893 40.3853 320.457 40.9043C320.021 41.4234 319.688 42.0362 319.46 42.7422C319.231 43.4481 319.117 44.1954 319.117 44.9844C319.117 45.7733 319.231 46.5207 319.46 47.2266C319.688 47.9325 320.021 48.5453 320.457 49.0645C320.893 49.5835 321.422 49.9991 322.045 50.3105C322.688 50.6012 323.416 50.7461 324.225 50.7461C325.035 50.7461 325.751 50.6011 326.374 50.3105C327.018 49.9991 327.558 49.5836 327.994 49.0645C328.43 48.5454 328.762 47.9325 328.99 47.2266C329.218 46.5206 329.333 45.7733 329.333 44.9844C329.333 44.1954 329.218 43.4481 328.99 42.7422C328.762 42.0363 328.43 41.4234 327.994 40.9043C327.558 40.3852 327.018 39.9802 326.374 39.6895C325.751 39.3781 325.035 39.2227 324.225 39.2227ZM300.582 44.0186H303.261C303.987 44.0186 304.579 43.8011 305.036 43.3652C305.493 42.9085 305.721 42.306 305.721 41.5586C305.721 40.7696 305.503 40.1463 305.067 39.6895C304.631 39.2327 304.018 39.0039 303.229 39.0039H300.582V44.0186Z" fill="white"/>
-	</g>
+  <g id="textSet">
+  <path d="M324.225 34.083C325.783 34.083 327.226 34.3528 328.555 34.8926C329.883 35.4324 331.025 36.1911 331.98 37.167C332.935 38.1221 333.684 39.2744 334.223 40.624C334.763 41.9529 335.033 43.4064 335.033 44.9844C335.033 46.5624 334.763 48.0264 334.223 49.376C333.684 50.7049 332.935 51.8571 331.98 52.833C331.025 53.7881 329.883 54.5458 328.555 55.1064C327.226 55.6463 325.783 55.917 324.225 55.917C322.668 55.917 321.224 55.6463 319.895 55.1064C318.587 54.5458 317.445 53.788 316.47 52.833C315.514 51.8571 314.767 50.7048 314.227 49.376C313.687 48.0263 313.418 46.5625 313.418 44.9844C313.418 43.4063 313.687 41.9529 314.227 40.624C314.767 39.2745 315.514 38.1221 316.47 37.167C317.445 36.1911 318.587 35.4324 319.895 34.8926C321.224 34.3527 322.668 34.083 324.225 34.083ZM293.016 39.4717H284.046V43.4893H290.992V48.0371H284.046V55.418H278.533V34.6436H293.016V39.4717ZM303.79 34.6436C304.911 34.6436 305.918 34.7894 306.811 35.0801C307.725 35.3707 308.504 35.8064 309.147 36.3877C309.791 36.9483 310.289 37.6546 310.642 38.5059C310.995 39.3572 311.172 40.3436 311.172 41.4648C311.172 42.8353 310.871 44.0294 310.268 45.0469C309.666 46.0434 308.867 46.8432 307.87 47.4453L312.324 55.418H306.406L302.887 48.3486H300.582V55.418H295.194V34.6436H303.79ZM348.479 43.707L353.431 34.6436H358.726L359.692 55.418H354.117L353.618 43.2402L349.974 50.3418H346.953L342.904 43.2402L342.499 55.418H337.204L338.17 34.6436H343.433L348.479 43.707ZM324.225 39.2227C323.416 39.2227 322.688 39.378 322.045 39.6895C321.422 39.9801 320.893 40.3853 320.457 40.9043C320.021 41.4234 319.688 42.0362 319.46 42.7422C319.231 43.4481 319.117 44.1954 319.117 44.9844C319.117 45.7733 319.231 46.5207 319.46 47.2266C319.688 47.9325 320.021 48.5453 320.457 49.0645C320.893 49.5835 321.422 49.9991 322.045 50.3105C322.688 50.6012 323.416 50.7461 324.225 50.7461C325.035 50.7461 325.751 50.6011 326.374 50.3105C327.018 49.9991 327.558 49.5836 327.994 49.0645C328.43 48.5454 328.762 47.9325 328.99 47.2266C329.218 46.5206 329.333 45.7733 329.333 44.9844C329.333 44.1954 329.218 43.4481 328.99 42.7422C328.762 42.0363 328.43 41.4234 327.994 40.9043C327.558 40.3852 327.018 39.9802 326.374 39.6895C325.751 39.3781 325.035 39.2227 324.225 39.2227ZM300.582 44.0186H303.261C303.987 44.0186 304.579 43.8011 305.036 43.3652C305.493 42.9085 305.721 42.306 305.721 41.5586C305.721 40.7696 305.503 40.1463 305.067 39.6895C304.631 39.2327 304.018 39.0039 303.229 39.0039H300.582V44.0186Z" fill="white"/>
+  </g>
 </g>
 </g>
 </g>
@@ -465,9 +489,9 @@
 <g transform="translate(0,0)">
 <g transform="scale(1)">
 <g id="text01TextContainer" clip-path="url(#text01ClipPath)">
-	<g id="texttext01">
-	<path d="M102.443 39.4409H96.1202V55.3872H90.545V39.4409H84.1602V34.6128H102.443V39.4409ZM110.135 42.2124H117.797V34.6128H123.31V55.3872H117.797V47.2583H110.135V55.3872H104.622V34.6128H110.135V42.2124ZM135.323 34.6128C136.445 34.6128 137.452 34.7586 138.345 35.0493C139.258 35.34 140.037 35.7756 140.681 36.3569C141.324 36.9176 141.823 37.6238 142.176 38.4751C142.529 39.3264 142.705 40.3128 142.705 41.4341C142.705 42.8045 142.404 43.9987 141.802 45.0161C141.2 46.0127 140.4 46.8124 139.403 47.4146L143.858 55.3872H137.94L134.42 48.3169H132.115V55.3872H126.728V34.6128H135.323ZM160.924 39.3784H151.486V42.5864H159.241V47.0718H151.486V50.6226H161.577V55.3872H145.974V34.6128H160.924V39.3784ZM179.074 39.3784H169.638V42.5864H177.393V47.0718H169.638V50.6226H179.729V55.3872H164.124V34.6128H179.074V39.3784ZM132.115 43.9878H134.794C135.521 43.9878 136.113 43.7695 136.569 43.3335C137.026 42.8768 137.255 42.275 137.255 41.5278C137.255 40.7388 137.037 40.1155 136.601 39.6587C136.165 39.2019 135.552 38.9731 134.763 38.9731H132.115V43.9878Z" fill="white"/>
-	</g>
+  <g id="texttext01">
+  <path d="M102.443 39.4409H96.1202V55.3872H90.545V39.4409H84.1602V34.6128H102.443V39.4409ZM110.135 42.2124H117.797V34.6128H123.31V55.3872H117.797V47.2583H110.135V55.3872H104.622V34.6128H110.135V42.2124ZM135.323 34.6128C136.445 34.6128 137.452 34.7586 138.345 35.0493C139.258 35.34 140.037 35.7756 140.681 36.3569C141.324 36.9176 141.823 37.6238 142.176 38.4751C142.529 39.3264 142.705 40.3128 142.705 41.4341C142.705 42.8045 142.404 43.9987 141.802 45.0161C141.2 46.0127 140.4 46.8124 139.403 47.4146L143.858 55.3872H137.94L134.42 48.3169H132.115V55.3872H126.728V34.6128H135.323ZM160.924 39.3784H151.486V42.5864H159.241V47.0718H151.486V50.6226H161.577V55.3872H145.974V34.6128H160.924V39.3784ZM179.074 39.3784H169.638V42.5864H177.393V47.0718H169.638V50.6226H179.729V55.3872H164.124V34.6128H179.074V39.3784ZM132.115 43.9878H134.794C135.521 43.9878 136.113 43.7695 136.569 43.3335C137.026 42.8768 137.255 42.275 137.255 41.5278C137.255 40.7388 137.037 40.1155 136.601 39.6587C136.165 39.2019 135.552 38.9731 134.763 38.9731H132.115V43.9878Z" fill="white"/>
+  </g>
 </g>
 </g>
 </g>

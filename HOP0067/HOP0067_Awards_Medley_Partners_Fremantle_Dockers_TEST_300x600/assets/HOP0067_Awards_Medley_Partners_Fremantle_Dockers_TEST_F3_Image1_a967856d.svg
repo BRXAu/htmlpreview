@@ -4,7 +4,7 @@
     #iconshine {
       transform: translate(0 0);
       animation: moveIt 0.8s forwards;
-      animation-delay: 3s; /* wait 4 seconds before starting */
+      animation-delay: 1s; /* wait 4 seconds before starting */
     }
 
     @keyframes moveIt {
@@ -20,21 +20,21 @@
     </radialGradient>
     
 
-    <radialGradient id="radial-gradient" cx="0" cy="421" fx="0" fy="421" r="1" gradientTransform="translate(6 183282) scale(435 -435)" gradientUnits="userSpaceOnUse">
+    <radialGradient id="radial-gradient" cx="0" cy="421" fx="0" fy="421" r="1" gradientTransform="translate(6.1 183281.5) scale(435.4 -435.4)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff3c1"/>
       <stop offset="1" stop-color="#ddba14"/>
     </radialGradient>
-    <linearGradient id="linear-gradient" x1="3" y1="399" x2="335" y2="70" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" x1="3" y1="399" x2="335.1" y2="66.9" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#f5dc82"/>
       <stop offset=".5" stop-color="#dfc36a"/>
       <stop offset="1" stop-color="#fff1bb"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="11.1" y1="391" x2="329" y2="73" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient-2" x1="11.1" y1="390.9" x2="329.4" y2="72.6" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#8a744a"/>
       <stop offset=".5" stop-color="#78641f"/>
       <stop offset="1" stop-color="#f2eee2"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-3" x1="42" y1="104" x2="296" y2="358" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient-3" x1="42.2" y1="103.8" x2="296.2" y2="357.8" gradientTransform="translate(0 402) scale(1 -1)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#0039d3"/>
       <stop offset=".2" stop-color="#0054ff"/>
       <stop offset=".5" stop-color="#2b6cff"/>
@@ -44,7 +44,7 @@
 
 
 
-     <linearGradient id="highlight-gradient" x1="-317" y1="561" x2="-135" y2="561" gradientTransform="translate(227 -137)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="highlight-gradient" x1="-316.9" y1="560.9" x2="-135" y2="560.9" gradientTransform="translate(227.1 -136.7)" gradientUnits="userSpaceOnUse">
       <stop offset=".1" stop-color="#fff" stop-opacity="0"/>
       <stop offset=".5" stop-color="#fff" stop-opacity=".8"/>
       <stop offset=".6" stop-color="#fff" stop-opacity=".8"/>
@@ -55,9 +55,14 @@
     <clipPath id="circleClip">
       <path d="M400,202.7c0-67.1-33.5-126.3-84.6-162C281.9,15.2,240.1,0,195.1,0H4.5C2,0,0,2,0,4.5v190.5c0,43.9,14.5,84.8,38.9,118,35.5,52.5,95.6,87,163.7,87,109,0,197.4-88.4,197.4-197.4h0Z" fill="#000" stroke-width="0"/>
     </clipPath>
+
+    <mask id="icon02circleMask" >
+    <rect width="200" height="200" fill="black"/>
+    <path d="M400,202.7c0-67.1-33.5-126.3-84.6-162C281.9,15.2,240.1,0,195.1,0H4.5C2,0,0,2,0,4.5v190.5c0,43.9,14.5,84.8,38.9,118,35.5,52.5,95.6,87,163.7,87,109,0,197.4-88.4,197.4-197.4h0Z" fill="#FFFFFF" stroke-width="0"/>
+    </mask>
   </defs>
   <g id="Shadow">
-    <ellipse cx="200" cy="371" rx="200" ry="70" fill="url(#shadow-gradient)" stroke-width="0"/>
+    <ellipse cx="199.6" cy="369.8" rx="199.6" ry="70.2" fill="url(#shadow-gradient)" stroke-width="0"/>
   </g>
   <path d="M400,202.6c0,109-88.4,197.4-197.4,197.4S5.2,311.6,5.2,202.6V9.7c0-2.5,2-4.4,4.4-4.4h192.9c109,0,197.4,88.4,197.4,197.4h0Z" fill="#816e15" stroke-width="0"/>
   <path d="M393.7,198.3c-.8,107.5-87.8,194.5-195.3,195.3C89.3,394.4,0,304.1,0,195V4.5C0,2,2,0,4.5,0h190.6c109.1,0,199.4,89.3,198.6,198.3h0Z" fill="url(#radial-gradient)" stroke-width="0"/>
@@ -118,9 +123,9 @@
   <path d="M329.5,145.7l-3.6-8.9h-4.4c0,.1-2.3-5.3-2.3-5.3l26.1-.7,2.3,5.7-19.1,17.7-2.2-5.4,3.2-3h0ZM333.7,141.9l6-5.6-8.2.3,2.2,5.3Z" fill="#fff" stroke-width="0"/>
   <path d="M353,151.5l2.3,9.6c1.1,4.8-1.4,8.6-5.4,9.6-3.7.9-6.4-.2-8.1-2.4l-8.1,7.4-1.5-6.1,7.4-6.5-.5-2.2-8.5,2-1.4-5.6,23.7-5.7h0ZM344.8,162.9c.5,2.2,2.2,2.5,3.3,2.3,1.3-.3,2.5-1.3,2-3.5l-.8-3.3-5.3,1.3.8,3.3Z" fill="#fff" stroke-width="0"/>
 
-  <g id="iconContainer" clip-path="url(#circleClip)">
+  <g id="iconContainer" mask="url(#icon02circleMask)">
     <g id="iconshine">
-    <rect x="-90" y="73" width="182" height="703" transform="translate(-303 128) rotate(-46)" fill="url(#highlight-gradient)" stroke-width="0"/>
+    <rect x="-200" y="60" width="400" height="900" transform="translate(-302.8 128.3) rotate(-45.6)" fill="url(#highlight-gradient)" stroke-width="0"/>
   </g>
   </g>
 </svg>
