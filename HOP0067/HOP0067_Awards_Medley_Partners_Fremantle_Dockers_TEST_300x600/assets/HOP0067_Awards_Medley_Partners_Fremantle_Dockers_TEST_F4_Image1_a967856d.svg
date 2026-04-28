@@ -2,16 +2,27 @@
   <style>
     /* Animate the element */
     #iconshine {
-      transform: translate(0 0);
-      animation: moveIt 0.8s forwards;
-      animation-delay: 1s; /* wait 4 seconds before starting */
-    }
+  transform: translate(0, 0);
+  animation: moveIt 0.8s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
 
-    @keyframes moveIt {
-      to {
-        transform: translate(400px, -400px);
-      }
-    }
+@keyframes moveIt {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(400px, -400px);
+    opacity: 1;
+  }
+}
   </style>
 
   <defs>

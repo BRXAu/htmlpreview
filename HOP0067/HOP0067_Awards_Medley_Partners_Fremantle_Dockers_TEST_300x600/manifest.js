@@ -71,7 +71,7 @@ window.MANIFEST = {
   "F3_price": "{\"text\":\"\",\"padding\":\"\",\"position\":\"\",\"preText\":\"\",\"product\":\"\",\"disclaimer\":\"\",\"roundel\":\"\",\"size\":\"\",\"weight\":\"\",\"order\":\"\",\"column\":\"\",\"delay\":\"\"}",
   "F3_Terms": "{\"text\":\"{{Click for terms}}\",\"alignment\":\"\",\"style\":\"\",\"position\":\"\",\"out\":\"\",\"padding\":\"\"}",
   "F3_Cta": "{\"text\":\"\",\"alignment\":\"\",\"position\":\"\",\"size\":\"\",\"labelSize\":\"\",\"delay\":\"\",\"out\":\"\"}",
-  "F4_Transitions": "fadeIn:1",
+  "F4_Transitions": "fadeIn:0.4",
   "F4_Animations": "slideLineByLine:0.5,",
   "F4_LayoutClass": ",center",
   "F4_Video": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\"}",
