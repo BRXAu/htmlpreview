@@ -21,13 +21,7 @@
     }
 
     @keyframes shineIt {
-      0% {
-        opacity: 0.001;
-      }
-      1% {
-        opacity: 1;
-      }
-      100% {
+      to {
         transform: translate(400px, -400px);
       }
     }
@@ -35,6 +29,7 @@
 
     /* Animate the element */
     #icon03_container {
+      opacity: 0.001;
       transform: scale(0.001);
       transform-box: fill-box;
       transform-origin: 140px 60px;
@@ -43,6 +38,7 @@
     }
 
     #icon02_container {
+    opacity: 0.001;
       transform: scale(0.001);
       transform-box: fill-box;
       transform-origin: 140px 60px;
@@ -51,6 +47,7 @@
     }
 
     #icon01_container {
+    opacity: 0.001;
       transform: scale(0.001);
       transform-box: fill-box;
       transform-origin: 140px 60px;
@@ -77,10 +74,16 @@
     }
 
     @keyframes scaleIt {
-      from {
+      0% {
+        opacity: 0.001;
+        transform: scale(0.001); /* Added to prevent a jump from scale(1) at the start */
+      }
+      1% {
+        opacity: 1;
         transform: scale(0.001);
       }
-      to {
+      100% {
+        opacity: 1; /* Ensures it stays visible while scaling */
         transform: scale(1);
       }
     }
