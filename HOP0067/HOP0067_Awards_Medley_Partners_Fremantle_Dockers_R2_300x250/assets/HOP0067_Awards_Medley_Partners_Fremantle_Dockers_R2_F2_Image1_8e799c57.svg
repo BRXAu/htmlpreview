@@ -30,7 +30,7 @@
 
     /* Animate the element */
     #icon03_container {
-      transform: scale(0);
+      transform: scale(0.001);
       transform-box: fill-box;
       transform-origin: 70px 30px;
       animation: scaleIt 0.4s forwards;
@@ -38,7 +38,7 @@
     }
 
     #icon02_container {
-      transform: scale(0);
+      transform: scale(0.001);
       transform-box: fill-box;
       transform-origin: 70px 30px;
       animation: scaleIt 0.4s forwards;
@@ -46,7 +46,7 @@
     }
 
     #icon01_container {
-      transform: scale(0);
+      transform: scale(0.001);
       transform-box: fill-box;
       transform-origin: 70px 30px;
       animation: scaleIt 0.4s forwards;
@@ -72,6 +72,9 @@
     }
 
     @keyframes scaleIt {
+      from {
+    transform: scale(0.001);
+      }
       to {
         transform: scale(1);
       }

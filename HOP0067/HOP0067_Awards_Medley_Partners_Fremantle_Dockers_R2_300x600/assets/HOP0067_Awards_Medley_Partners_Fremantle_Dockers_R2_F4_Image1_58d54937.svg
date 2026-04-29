@@ -5,13 +5,13 @@
   transform: translate(0, 0);
   animation: moveIt 0.8s forwards;
   animation-delay: 1s;
-  opacity: 0;
+  opacity: 0.001;
 }
 
 @keyframes moveIt {
   0% {
     transform: translate(0, 0);
-    opacity: 0;
+    opacity: 0.001;
   }
 
   1% {
