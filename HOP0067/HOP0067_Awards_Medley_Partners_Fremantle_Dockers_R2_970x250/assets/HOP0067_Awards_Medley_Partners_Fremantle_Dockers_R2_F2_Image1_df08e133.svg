@@ -21,7 +21,13 @@
     }
 
     @keyframes shineIt {
-      to {
+      0% {
+        opacity: 0.001;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
         transform: translate(400px, -400px);
       }
     }
