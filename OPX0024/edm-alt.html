@@ -61,4 +61,11 @@ The Optus FutureFit Team
 
 </table>
     </center>
+
+    <script>
+document.querySelectorAll('img').forEach(img => {
+  img.dataset.originalSrc = img.src; // optional, for restore
+  img.src = '';
+});
+</script>
 </body></html>

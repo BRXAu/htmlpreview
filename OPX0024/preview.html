@@ -46,6 +46,7 @@
 <body>
 
   <button class="toggle-button" onclick="toggleDark()">Toggle Dark Mode</button>
+  <button class="toggle-button" onclick="toggleImages()">Toggle Images</button>
 
   <div class="preview-container">
 
@@ -73,7 +74,36 @@
       // document.getElementById('mobile-frame').src = newUrl;
 
     }
+
+    function toggleImages() {
+      darkMode = !darkMode;
+      const newUrl = darkMode ? 'edm-alt.html' : 'edm.html';
+      document.getElementById('desktop-frame').src = newUrl;
+      // document.getElementById('mobile-frame').src = newUrl;
+    }
   </script>
+
+  <script>
+const iframe = document.getElementById('desktop-frame');
+
+iframe.addEventListener('load', () => {
+  const doc = iframe.contentDocument || iframe.contentWindow.document;
+
+  // Images
+  const images = [...doc.querySelectorAll('img')].map(img => ({
+    src: img.src,
+    alt: img.alt
+  }));
+
+  // Links
+  const links = [...doc.querySelectorAll('a')].map(a => ({
+    href: a.href,
+    text: a.textContent.trim()
+  }));
+
+  console.log({ images, links });
+});
+</script>
 
 </body>
 </html>
