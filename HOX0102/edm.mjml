@@ -1,0 +1,126 @@
+<mjml>
+<mj-head>
+
+<mj-attributes>
+  <mj-text font-family="Tahoma, Arial, sans-serif" />
+  <mj-button font-family="Tahoma, Arial, sans-serif" />
+  <!-- Define images here.  Easier to magage image assets.-->
+  <mj-class name="hero" src="BRX-Hostplus-Test_Hero_01.png" alt="HERE'S YOUR QUATERLY UPDATE" width="600px" align="left" padding="0" fill="#002855"/>
+  <mj-class name="video" src="BRX-Hostplus-Test_Video_01.png" alt="Play Video" src="# " width="600px" align="left" padding="0" fill="#002855"/>
+  <mj-class name="tap" src="BRX-Hostplus-Test_TAP_01.png" alt="THAT'S A PLUS" width="287px" align="left" padding="0" fill="#002855"/>
+</mj-attributes>
+
+
+
+</mj-head>
+
+<mj-body width="600px" >
+
+<mj-section padding="0 0px" background-color="#002855">
+  <mj-column padding="0">
+    <mj-image mj-class="hero"/>
+  </mj-column>
+</mj-section>
+<mj-section padding="0 0px" background-color="#002855">
+  <mj-column padding="0">
+    <mj-image mj-class="video"/>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0" background-color="#002855">
+  <mj-column>
+    <mj-spacer height="30px"  />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 25px" background-color="#002855">
+  <mj-column width="500px">
+    <mj-button
+      width="100%"
+      href="#"
+      background-color="#FFD000"
+      color="#002855"
+      font-size="16px"
+      font-weight="bold"
+      padding="0px"
+      inner-padding="8px 0px"
+    >
+      <span style="display:inline-block; vertical-align:middle;">
+        Watch the update
+      </span>
+      <img src="BRX-Hostplus-CTA-arrow_01.png" width="14" height="14" style="display:inline-block; vertical-align:middle; margin-left:4px;" alt="" />
+    </mj-button>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0" background-color="#002855">
+  <mj-column>
+    <mj-spacer height="30px"  />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 25px" background-color="#002855">
+  <mj-column width="500px">
+    <mj-text font-family="Arial" font-weight="Bold" font-size="20px" line-height="22px" padding="0" color="#FFD000">
+          Hi {Member}
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section padding="0" background-color="#002855">
+  <mj-column width="500px">
+    <mj-spacer height="30px"  />
+  </mj-column>
+</mj-section>
+<mj-section padding="0 25px" background-color="#002855">
+  <mj-column  width="500px">
+    <mj-text font-weight="Bold" font-size="20px" line-height="22px" padding="0" color="#FFD000">
+          A steadier lens on a volatile quarter
+    </mj-text>
+  </mj-column>
+</mj-section>
+<mj-section padding="0" background-color="#002855">
+  <mj-column>
+    <mj-spacer height="20px"  />
+  </mj-column>
+</mj-section>
+<mj-section padding="0 25px" background-color="#002855">
+  <mj-column  width="500px">
+    <mj-text font-weight="Regular" line-height="20px" font-size="16px" padding="0" color="#FFFFFF">
+Market ups and downs are a normal part of investing, and the March 2026 quarter was a reminder of that. While markets started positively, conditions became more variable toward the end of March.
+<br><br>
+In this update, Sam Sicilia explains what drove the late-March uncertainty and what it meant for your super returns.
+<br><br>
+It’s a quick watch (about five minutes), and a helpful reminder of why we stay diversified and focused on long-term outcomes.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0" background-color="#002855">
+  <mj-column>
+    <mj-spacer height="50px"  />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0 25px" background-color="#002855">
+  <mj-column padding="0"  width="500px">
+    <mj-image mj-class="tap"/>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0" background-color="#002855">
+  <mj-column>
+    <mj-spacer height="30px"  />
+  </mj-column>
+</mj-section>
+
+
+<mj-section padding="0 25px">
+  <mj-column>
+    <mj-spacer height="30px" />
+  </mj-column>
+</mj-section>
+
+
+
+</mj-body>
+</mjml>

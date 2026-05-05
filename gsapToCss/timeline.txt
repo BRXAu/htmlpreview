@@ -1,0 +1,47 @@
+  const tl = gsap.timeline();
+
+  let delay = 0;
+
+  tl.set("#icon01_container, #icon02_container, #icon03_container", { scale: 0, transformOrigin: "70px 30px" },delay);
+  tl.set("#icon01shine, #icon02shine, #icon03shine", { x: 0, y: 0 },delay);
+  tl.set("#CTA", { opacity: 0 },delay);
+  tl.set("#texttext01, #textSet, #textMatch", { y: -52 },delay);
+  tl.set(".ad, .logo, .icons", { opacity: 1 },delay);
+
+  tl.set("#F1_text_01_clipPath", { opacity: 1, scaleX: 0 },delay);
+  tl.set("#F3_text_01_clipPath", { opacity: 1, scaleX: 0 },delay);
+  
+  tl.set(".lifestyle", { opacity: 0, y: 10 },delay);
+
+  tl.set("#F3_text_02", { opacity: 0, y: -50} ,delay);
+
+  delay += 0.1;
+
+  tl.to("#F1_text_01_clipPath", { opacity: 1, scale:1, duration: 0.8 }, delay); delay += 0.6;
+  
+  tl.to(".lifestyle", { opacity: 1, x: 0, y: 0, duration: 0.5 }, delay); delay += 0.3;
+  tl.to(".terms", { opacity: 1, duration: 0.3 }, delay); delay += 2;
+
+  tl.to("#F1_text_02_container, .lifestyle", { opacity: 0, x: 0, y: 0, duration: 0.3 }, delay); delay += 0.3;
+
+  tl.to("#icon01_container", { scale: 1, duration: 0.4 }, delay); delay += 0.4;
+  tl.to("#icon01shine", { x: 400, y: -400, duration: 0.8 }, delay);
+  tl.to("#texttext01", { y: 0, duration: 0.4 }, delay); delay += 0.8;
+
+  tl.to("#icon02_container", { scale: 1, duration: 0.4 }, delay); delay += 0.4;
+  tl.to("#icon02shine", { x: 400, y: -400, duration: 0.8 }, delay);
+  tl.to("#textSet", { y: 0, duration: 0.4 }, delay); delay += 0.8;
+
+  tl.to("#icon03_container", { scale: 1, duration: 0.4 }, delay); delay += 0.4;
+  tl.to("#icon03shine", { x: 400, y: -400, duration: 0.8 }, delay);
+  tl.to("#textMatch", { y: 0, duration: 0.4 }, delay); delay += 2;
+
+  tl.to("#icon01_container, #icon02_container, #icon03_container, #texttext01, #textSet, #textMatch", { opacity: 0, x: 0, y: 0, duration: 0.3 }, delay); delay += 0.3;
+
+  tl.to("#F3_text_01_clipPath", { opacity: 1, scale:1, duration: 0.8 }, delay); delay += 0.3;
+  tl.to("#F3_text_02", { opacity: 1, x: 0, y: 0, duration: 0.5 }, delay);delay += 0.3;
+  tl.to("#icon01_f3", { opacity: 1, x: 0, y: 0, duration: 0.5 }, delay); delay += 0.3;
+  tl.to("#icon02_f3", { opacity: 1, x: 0, y: 0, duration: 0.5 }, delay); delay += 0.3;
+  tl.to("#icon03_f3", { opacity: 1, x: 0, y: 0, duration: 0.5 }, delay); delay += 0.5;
+
+  tl.to("#CTA", { opacity: 1, x: 0, y: 0, duration: 0.5 }, delay);
