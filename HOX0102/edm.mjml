@@ -1,16 +1,23 @@
 <mjml>
 <mj-head>
-
 <mj-attributes>
   <mj-text font-family="Tahoma, Arial, sans-serif" />
   <mj-button font-family="Tahoma, Arial, sans-serif" />
   <!-- Define images here.  Easier to magage image assets.-->
-  <mj-class name="hero" src="BRX-Hostplus-Test_Hero_01.png" alt="HERE'S YOUR QUATERLY UPDATE" width="600px" align="left" padding="0" fill="#002855"/>
-  <mj-class name="video" src="BRX-Hostplus-Test_Video_01.png" alt="Play Video" src="# " width="600px" align="left" padding="0" fill="#002855"/>
-  <mj-class name="tap" src="BRX-Hostplus-Test_TAP_01.png" alt="THAT'S A PLUS" width="287px" align="left" padding="0" fill="#002855"/>
+  <mj-class name="hero" src="BRX-Hostplus-Test_Hero_01.png" alt="HERE'S YOUR QUATERLY UPDATE" width="600px" align="left" padding="0" />
+  <mj-class name="video" src="BRX-Hostplus-Test_Video_01.png" alt="Play Video" href="# " width="600px" align="left" padding="0" />
+  <mj-class name="tap" src="BRX-Hostplus-Test_TAP_01.png" alt="THAT'S A PLUS" width="287px" align="left" padding="0" />
 </mj-attributes>
 
-
+<mj-raw>
+  <style>
+    /* Force Outlook.com to respect the background color in Dark Mode */
+    [data-ogsc] .dark-fix { background-color: #002855 !important; }
+    @media (prefers-color-scheme: dark) {
+      .dark-fix { background-color: #002855 !important; }
+    }
+  </style>
+</mj-raw>
 
 </mj-head>
 
@@ -21,6 +28,7 @@
     <mj-image mj-class="hero"/>
   </mj-column>
 </mj-section>
+
 <mj-section padding="0 0px" background-color="#002855">
   <mj-column padding="0">
     <mj-image mj-class="video"/>
@@ -35,20 +43,15 @@
 
 <mj-section padding="0 25px" background-color="#002855">
   <mj-column width="500px">
-    <mj-button
-      width="100%"
-      href="#"
-      background-color="#FFD000"
-      color="#002855"
-      font-size="16px"
-      font-weight="bold"
-      padding="0px"
-      inner-padding="8px 0px"
-    >
-      <span style="display:inline-block; vertical-align:middle;">
-        Watch the update
-      </span>
-      <img src="BRX-Hostplus-CTA-arrow_01.png" width="14" height="14" style="display:inline-block; vertical-align:middle; margin-left:4px;" alt="" />
+    <mj-button width="100%" href="#" background-color="#FFD000" color="#002855" font-size="16px" font-weight="bold" padding="0px" inner-padding="10px 0px" border-radius="3px">
+      <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFD000" style="margin: 0 auto; border-collapse: collapse; background-color: #FFD000;">
+        <tr>
+          <td style="vertical-align: middle; color: #002855; font-family: Tahoma, Arial, sans-serif; font-size: 16px; font-weight: bold; background-color: #FFD000;">Watch the update</td>
+          <td style="vertical-align: middle; padding-left: 8px; background-color: #FFD000;">
+            <img src="BRX-Hostplus-CTA-arrow_01.png" width="14" height="14" style="display: block; border: 0;" alt="" />
+          </td>
+        </tr>
+      </table>
     </mj-button>
   </mj-column>
 </mj-section>
@@ -61,7 +64,7 @@
 
 <mj-section padding="0 25px" background-color="#002855">
   <mj-column width="500px">
-    <mj-text font-family="Arial" font-weight="Bold" font-size="20px" line-height="22px" padding="0" color="#FFD000">
+    <mj-text font-weight="Bold" font-size="20px" line-height="22px" padding="0" color="#FFD000">
           Hi {Member}
     </mj-text>
   </mj-column>
@@ -113,14 +116,11 @@ It’s a quick watch (about five minutes), and a helpful reminder of why we stay
   </mj-column>
 </mj-section>
 
-
 <mj-section padding="0 25px">
   <mj-column>
     <mj-spacer height="30px" />
   </mj-column>
 </mj-section>
-
-
 
 </mj-body>
 </mjml>

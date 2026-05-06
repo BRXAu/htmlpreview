@@ -1,0 +1,28 @@
+<mjml>
+<mj-head>
+<mj-attributes>
+  <mj-class name="tap" src="BRX-Hostplus-Test_TAP_01.png" alt="THAT'S A PLUS" width="287px" align="left" padding="0" />
+</mj-attributes>
+
+<mj-raw>
+  <style>
+    /* Force Outlook.com to respect the background color in Dark Mode */
+    [data-ogsc] .dark-fix { background-color: #002855 !important; }
+    @media (prefers-color-scheme: dark) {
+      .dark-fix { background-color: #002855 !important; }
+    }
+  </style>
+</mj-raw>
+
+</mj-head>
+
+<mj-body width="600px" >
+
+<mj-section padding="0 25px" background-color="#002855">
+  <mj-column padding="0"  width="500px">
+    <mj-image mj-class="tap"/>
+  </mj-column>
+</mj-section>
+
+</mj-body>
+</mjml>

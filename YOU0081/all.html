@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Banner preview</title>
+<style>
+body { font-family: sans-serif; background:#111; color:#eee; margin:0; padding:20px; }
+h1 { margin-bottom:20px; }
+.controls { margin-bottom:20px; }
+.controls button {
+  margin-right:10px; padding:6px 12px; cursor:pointer;
+  border:none; background:#ffcc00; border-radius:4px; font-weight:bold;
+}
+.container { display:flex; flex-wrap:wrap; gap:20px; }
+.banner { display:flex; flex-direction:column; align-items:center; background:#222; padding:10px; border-radius:6px; }
+iframe { border:none; display:block; }
+.banner button { margin-top:6px; padding:4px 10px; cursor:pointer; border:none; background:#ffcc00; border-radius:4px; }
+</style>
+</head>
+<body>
+
+<h1>Banner preview</h1>
+<div class="controls" id="controls"></div>
+<div class="container" id="container"></div>
+
+<script>
+const banners = [
+  "YOU0081_Onsite_160x600_ClickTag",
+  "YOU0081_Onsite_300x250_ClickTag",
+  "YOU0081_Offsite_320x50_ClickTag",
+  "YOU0081_Offsite_300x50_ClickTag"
+];
+
+const sets = {
+  all: [],
+  bySize: {}
+};
+
+// build data from banners
+banners.forEach(name => {
+
+  // extract size from filename (e.g. 300x250)
+  const match = name.match(/(\d+x\d+)/);
+
+  if (!match) return;
+
+  const size = match[1];
+
+  const obj = {
+    name: name + ".html",
+    size: size
+  };
+
+  sets.all.push(obj);
+
+  if (!sets.bySize[size]) {
+    sets.bySize[size] = [];
+  }
+
+  sets.bySize[size].push(obj);
+});
+
+// build buttons dynamically
+const controls = document.getElementById("controls");
+
+// All button
+const allBtn = document.createElement("button");
+allBtn.textContent = "All";
+allBtn.onclick = () => loadSet("all");
+controls.appendChild(allBtn);
+
+// size buttons (derived, not hardcoded)
+Object.keys(sets.bySize).forEach(size => {
+  const btn = document.createElement("button");
+  btn.textContent = size;
+  btn.onclick = () => loadSet(size);
+  controls.appendChild(btn);
+});
+
+function loadSet(key) {
+
+  const container = document.getElementById("container");
+  container.innerHTML = "";
+
+  const data = key === "all" ? sets.all : sets.bySize[key];
+
+  data.forEach(item => {
+
+    const [w, h] = item.size.split("x");
+
+    const wrap = document.createElement("div");
+    wrap.className = "banner";
+
+    wrap.innerHTML = `
+      <iframe src="${item.name}" width="${w}" height="${h}"></iframe>
+      <button onclick="this.previousElementSibling.src='${item.name}'">Reload</button>
+    `;
+
+    container.appendChild(wrap);
+  });
+}
+
+// default load
+loadSet("all");
+</script>
+</body>
+</html>
