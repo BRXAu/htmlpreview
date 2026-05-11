@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+© Big Red Communications Group Pty Ltd 2023. All Rights Reserved.
+You may not copy, reproduce or communicate any of the contents of this
+file without the permission of the copyright owner.
+-->
+<meta cset="UTF-8">
+<meta name='ad.size' content='width=320, height=50'>
+
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.2.4_min.js"></script>
+
+
+
+
+<style>
+
+
+
+  body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: unset;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;
+    -webkit-text-size-adjust: none;
+  }
+
+  svg {
+    transform: translateZ(0);
+  }
+
+  svg {
+    will-change: transform;
+  }
+
+  .placement.mrec {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 320px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background: #000000;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  .svgContainer {
+    font-family: Fellix;
+    font-weight: 400;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 320px;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+  }
+
+  #exitBttn {
+    width: 100%; 
+    height: 100%; 
+    position:absolute; 
+    display: block; 
+    top: 0px; 
+    left:0px; 
+    z-index:999;
+    cursor: pointer;
+  }
+
+
+  
+
+
+
+
+
+  
+
+
+
+  a:-webkit-any-link  {
+      cursor: pointer;
+      fill: white!important;
+      text-decoraton: none;
+  }
+
+</style>
+
+<script type='text/javascript'>
+  /* ClickTag Content Start */
+   var clickTag = "https://www.youi.com.au";
+  /* ClickTag Content End */
+</script>
+</head>
+
+  <body>
+    <div id="placement" class="placement mrec"><div class="svgContainer" id="svgContainer"></div></div>
+    
+
+
+    </div>
+
+<script>'strict';
+
+
+const jk = `1bi6S9c!rr=/r6RD5kP!ikIg/AS1r6RS}ibP-=/qf8/S-IiR-P=/[8/S6iI}Z5o=/8S8Sqf8S[8/SBicc=/k5kI/So3ckr=/-PP :UU}}}G}qG5gRUf888Ur6R/AS1RSib=/u.j8842_.BBriPI_qf8o[8/AS1RS9ci ' !P-=/agc(#9ci 8_qH2n_q48q)/AS1 !P-Sb=/e8S2fD8S[Gqnf[4S[Gqnf[4S8S2fS8Oq84Dq2HGhfnS8Sqf8S[Gqnf[4Sqf8S2fwq4Dqf8SHHGhfnHSq2HGhfnS[8Sq84S[8O8w2f</SBicc=/Kc!9W/UAS1RSib=/u5aiSd5R5/AS1RSib=/u5aiSgI6IgrISc5R5/S9ci ' !P-=/agc(#9ci 2_qH2n_q48q)/AS1RSib=/mg5a /AS1 !P-Sib=/wI9P5g/Sb=/ef44G[fhSffG882[Df4hG4n2SffG882[Sf4[G[fnSfqGqHqqSf4[G[fnSf[G888nDf4[G[fnSfhGh[4Sf4hG4n2Sf4G8884Sf44G[fhSf4G8884Dfp8G242Sf4G8884Sfp2G[fnSfhGh[h[Sfp2G[fnSf[G888nDfp2G[fnSfqGqHHpSfp8G24qSffG882[Sf44G[fhSffG882[</SBicc=/Kc!9W/UAS1 !P-Sib=/wI9P5g_f/Sb=/eq8qGpppS22G[882OfnhGpp[DfnHG[84S22G[882SfnfGHpqS2qG[2[hSfnfGHpqS2[Gppppwq4GHpppOq8qGpppDq8hGH4hSq4GHpppSq84G[SqhGH4HHSq84G[SqHG8882w2[GppppDq84G[S2qG[2[hSq8hGH4hS22G[882Sq8qGpppS22G[882<efnhGpp[SqHG8882dfnpGhfSf4G8p[[dfnhGfHHSf8G[882OfnnG44[df48GHHSfhGfHh[df4fGpp[Sf8G[882Of4HGhqhdfn4Ghq[SqHG8882OfnhGppHOfnhGpp[<ef44G[fhSfpG[884Df4hG8H2SfpG[884Sf4HG8fhSfnGH4hfSf4HG8fhSf[G888pDf4HG8fhSffG[2[nSf4hG8H2Sf8G[882Sf44G[fhSf8G[882Dfp2G822Sf8G[882SfpqG8fnSffG[2[nSfpqG8fnSf[G888pDfpqG8fnSfnGH4hfSfp2G82qSfpG[884Sf44G[fhSfpG[884<eq82GqnHSf[Gn[8fDq82GqnHSfhGpnhpSq88Gn4qSf4G8hnhSfppG4nHSf4Gn[8qDfppGfHhSfpGff24Sfp4GHhnSfpG[822SfpnGhfqSfpG[822DfphGnnpSfpG[822Sfp[Gpp4SfpGffffSfp[GqnqSf4Gn[8qDfpHGHhfSf4G8hnhSfpqG4nqSfhGpnnfSfpqG4nqSf[Gn[8fwf8G[882Ofp[Gqnqwf[Gn[8fDfp[GqnqSfhGppfqSfphGq42Sf4G8822SfpnGhfqSf4G8822Dfp4G4hhSf4G8822SfppG4nHSfhGppfnSfppG4nHSf[Gn[8fwf8G[882Oq82GqnHwf[Gn[8f<eq8qGpppSfpG[884Oq8fGHppwf8G[882Oq8qGpppwfpG[884<eq8qGfHpS2nG4n[fDq8fGhfnS2nG4n[fSq8fG2fqS2nGqnq2Sq8fG2fqS2hGn[82Dq8fG2fqS2hG2fnfSq8fGhfnS2[Ghf[Sq8qGfHpS2[Ghf[Dq8qG4nfS2[Ghf[Sq8HGqnqS2hG2f4nSq8HGqnqS2hGn[82Dq8HGqnqS2nGqn2[Sq8qG4nS2nG4n[fSq8qGfHpS2nG4n[f</SBicc=/Kc!9W/UAS1 !P-Sib=/wI9P5g_q/Sb=/eq28SqHG8882Dq28SqnGq2H2Sq8nGq2qSH8Sq8qGpp4SH8Ofn8Gppqw2[GppppDfn8GppqS2fGh4[pSfnqGhnpS28SfnhGppHS28Oq8qGpppDq8nGq2qS28Sq28S2fGh4[pSq28S2[GppppwqqGppp4dq28SqHG8882<eq84G[S2hG888fDq84G[S2qG[2[pSq8hGH4[S22G[88HSq8qGpp4S22G[88HOfnhGppHDfnHG[84S22G[88HSfnfGHpqS2qG[2[pSfnfGHpqS2hG888fwq4G[88fOq8qGpppDq8hGH4[Sq4G[88fSq84G[SqhGH4HnSq84G[SqHG888Hw2[Gppppdq84G[S2hG888f<ef44G[fhSf8G[882Df4hG8H2Sf8G[882Sf4HG8f[SffG[2[nSf4HG8f[Sf[G888pDf4HG8f[SfnGH4hfSf4hG8H2SfpG[884Sf44G[fhSfpG[884Dfp2G822SfpG[884SfpqG8fhSfnGH4hfSfpqG8fhSf[G888pDfpqG8fhSffG[2[nSfp2G82qSf8G[882Sf44G[fhSf8G[882<efp2G[fhSf[G888pDfp2G[fhSfhGh[hnSfp8G24qSf4G8822Sf44G[fhSf4G8822Df4hG4h4Sf4G8822Sf4[G[fnSfhGh[hnSf4[G[fnSf[G888pDf4[G[fnSfqGqH[2Sf4hG4n2SffG882nSf44G[fhSffG882nDfp8G242SffG882nSfp2G[fhSfqGqHqhSfp2G[fhSf[G888p<eq8qGpp4SfpG[884Oq8fGHppwf8G[882Oq8qGpp4wfpG[884<eq82GqnHSf8G[882wf[Gn[8fDq82GqnHSfhGpnhpSq88Gn4qSf4G8hnhSfppG4nqSf4Gn[8qDfppGfH[SfpGff24Sfp4GHhnSfpG[822SfpnGhfqSfpG[822DfphGnnpSfpG[822Sfp[Gpp4SfpGffffSfp[GqnfSf4Gn[8qDfpHGHh2Sf4G8hnhSfpqG4nfSfhGpnnfSfpqG4nfSf[Gn[8fwf8G[882Ofp[Gqnfwf[Gn[8fDfp[GqnfSfhGppfqSfphGq4Sf4G8822SfpnGhfqSf4G8822Dfp4G4hhSf4G8822SfppG4nqSfhGppfnSfppG4nqSf[Gn[8fwf8G[882Oq82GqnH<ef4HGhqhSf8G[882dfn4Ghq[SqHG8882OfnhGppHdfnpGh2pSf4G8p[[dfnhGfHHSf8G[882OfnnG44[df48GHHSfhGfHh[df4fGpp[Sf8G[882Of4HGhqhOf4HGhqh<eq8HGqnfS2hGn[82Dq8HGqnfS2nGqnfnSq8qG4nS2nG4n[fSq8qGfHpS2nG4n[fDq8fGhfnS2nG4n[fSq8fG2fqS2nGqnq2Sq8fG2fqS2hGn[82Dq8fG2fqS2hG2fnfSq8fGhfhS2[Ghf[Sq8qGfHpS2[Ghf[Dq8qG4n2S2[Ghf[Sq8HGqnfS2hG2f4nSq8HGqnfS2hGn[82</SBicc=/}-iPI/UAS1URAS1URAS1URAS1RSib=/v2_D5kPIkP/AS1 !P-Sib=/v2_PIoP_82/Sb=/efHG82hS28G4Of[Gp4HdffGf[hSffOf8Gn8Hd24G8hHS2qG444d2[GHfHSffO2qG4nfd28G2f4S28G4O2fG22fd2HGh44S24Gp2fd2nGq2fS28G4O24G4hHdf2GHnfS24Gp2fdfHG82hS28G4<efpG[fnqS2HG82hDq2G42[qS2HG82hSqqG[p2qS2[GnnhSqqG[p2qS24G8phDqqG[p2qSf8GHSq2G42[qSffG2hSfpG[fnqSffG2hDfnGfqpqSffG2hSf[GHnpqSf8GHSf[GHnpqS24G8phDf[GHnpqS2[GnnhSfnGfqpqS2HG82hSfpG[fnqS2HG82h<efpG[fnqS2[Gn2fDf4Gf2[qS2[Gn2fSfnGf8nqS2hGn[fSfnGf8nqS24G8phDfnGf8nqS2pGHfHSf4Gf2[qSf8GHH4SfpG[fnqSf8GHH4Dq8G4fqqSf8GHH4Sq2G4hqqS2pGHfHSq2G4hqqS24G8phDq2G4hqqS2hGn[fSq8G4fqqS2[Gn2fSfpG[fnqS2[Gn2f<eqHGp28pSffw2HG2nhOqhGn8fpw2[GfphDqnG8q4pS2HG[HHSqnGpqHpS2HG82hSq4Gh4hpS2HG82hDqpG84hpS2HG82hSqpGHq4pS2HG84SqpGhn4pS2HG2pfdqpGH4hpS2[GpfDqpG2p4pS2[GnpfSq4G4HhpS2[Gnf4Sq4G[28pS2[Gnf4DqnGhHhpS2[Gnf4SqhGn8fpS2hGHH4SqhGn8fpS2nG4fHwffOqHGp28p<eH[Ghf8[S2HG2nhOHnG4HH[dHHGfHH[S2nGpqhdH4G288[SffOH[Gn48[dHfGHh4[S24GqfwffOH8Ghnh[w28G4OHfGHh4[w2nG[qhdH[Ghf8[S2HG2nh<e[[Gqf[qSffG22fD[qG[pnqSffG22fS[fGqh[qSf2G884S[fGqh[qS2pG8nfw2[G4nfO[8G4nnqw2HG2nhO[fGqh[qw2fG84O[HG2[nqw2HG2nhO[hGf8[qw2[G4nfO[HG2[nqw24GppfD[HG2[nqS2pGp8HS[HGn42fSf8GHH4S[[G[h[qSf8GHH4D[[Gn[nqSf8GHH4S[hG8fpqSf8GHS[hG24pqSf8Gq[fd[hGf4[qSf2GpfD[hG8fpqSffG8H4S[[Ghh2qSffG22fS[[Gqf[qSffG22f<ehqG8[n4S2nGnhDhqG8[n4S2hG[f4ShfGqf24S2[Gnf4Sh2G2hp4S2[Gnf4Dh8G8824S2[Gnf4S[pGfHp4S2hG[f4S[pGfHp4S2nGnhwffO[nGH[n4w28G4O[pGfHp4w2[GH84D[pGnH[4S2HG[f4Sh8G[h24S2HG82hSh2Gh824S2HG82hDhqGh2n4S2HG82hShHG4Hp4S2[GqhShHG4Hp4S2nG[qhwffOhqG8[n4w2nGnh<enHGqnnS2HG2nhwffOnfG[4[wf8G[pfDnfG8f[Sf2G[4HSn2G8h[SffG2hShpG482SffG2hDhnGnf2SffG2hShhG8nqSf8GqqhShhG8nqS24G84DhhG8nqS2[G4fHShnGnf2S2HG82hShpG482S2HG82hDn2G8h[S2HG82hSnfG8f[S2HG[pfSnfG[4[S2[G[h4w2HG2nhOnHGqnn<en8Gf82Sf8GHhHDn2G[h2Sf8GHhHSnfG[4[S2pGHHSnfG[4[S24G84DnfG[4[S2hGnqhSn2G[h2S2[Gn2fSn8Gf82S2[Gn2fDh4G4nqS2[Gn2fShnG42nS2hGnh4ShnG42nS24G84DhnG42nS2pGH84Sh4G4nqSf8GHhHSn8Gf82Sf8GHhH<enpGnhf4SffG22fDn4G8qH4SffG22fSnhG48f4Sf2G884SnhG48f4S2pG8nfw2[G4nfOn[Gq2H4w2HG2nhOnhG48f4w2fG84On4G[pH4w2HG2nhO48GhHf4w2[G4nfOn4G[pH4w24GppfDn4G[pH4S2pGp8HSnpGf244Sf8GHH4S48G88f4Sf8GHH4D48G2pH4Sf8GHH4S48GHhh4Sf8GHS48Ghfh4Sf8Gq[fd48Gnff4Sf2GpfD48GHhh4SffG8H4S48G8p44SffG22fSnpGnhf4SffG22f<e4qG4q4HS28G44D4qG4q4HS22G4HS4qG28fHS2qG2fS4fG2p8HS2HG22fd42Gq28HS2qGnpfD42G4q4HS2qG8[hS4fG2fhHS2fGHphS4fGf4hHS22G4nfD42GnHfHS22GnhS42Gq[4HS22Gq2fS42Gq[4HS28Gnh4D42Gq[4HS28G8phS42Gp24HSpG[qhS4fG[p8HSpG[qhD4qGfn4HSpG[qhS4qG4q4HS28G2f4S4qG4q4HS28G44<e4hGnf4HSffG2nhD4[GHhHHSffG2nhS4HG2f8HSf2Gnf4S4qGq[fHSf2G8Hd4HG8[hHS2pGhphD4HGhH4HSf8GfnfS4[G42hHSf8GhnfS4hGhphHSf8GhnfD4nGH48HSf8GhnfS4nGpnhHSf8Gf44S4nGpnhHS2pG484D4nGpnhHS24Gqh4S4qGhfHHS2pGqnhS4qGhfHHS2hGH4D4qGhfHHS2[G884S4HG444HS2HG82hS4hGh48HS2HG82hD4nGnh4HS2HG82hS44Gp8HHS2HGqfS4pGh84HS2HGphd44Gp8HHS2hGqqhD44Gf48HS2[GnpfS4nG2HHHS2[G[8HS4hG[8HHS2[G[8HD4[G4qfHS2[G[8HS4[GH88HS2[G4fHS4[GH88HS2hGqqhD4[GH88HS2nGhhHS4pG488HS2hG4H4S4pG488HS2pGnHHD4pG488HSf2G2[fS44G[qhHSffG2nhS4hGnf4HSffG2nh<e28fGfqhS2HG2nhwffO288GHHHwf8G[pfDppG44HHSf2G[4HSp4GpfHHSffG2hSpnGhh8HSffG2hDp[G[48HSffG2hSpqGpqfHSf8GqqhSpqGpqfHS24G84DpqGpqfHS2[G4fHSp[G[48HS2HG82hSpnGhh8HS2HG82hDp4GpfHHS2HG82hSppG44HHS2HG[pfS288GHHHS2[G[h4w2HG2nhO28fGfqh<ep4G8h8HSf8GHhHDppGHf8HSf8GHhHS288GHHHS2pGHHS288GHHHS24G84D288GHHHS2hGnqhSppGHf8HS2[Gn2fSp4G8h8HS2[Gn2fDphGnqfHS2[Gn2fSp[GhnhHS2hGnh4Sp[GhnhHS24G84Dp[GhnhHS2pGH84SphGnqfHSf8GHhHSp4G8h8HSf8GHhH</SBicc=/}-iPI/UAS1 !P-Sib=/v2_PIoP_8f/Sb=/e28G4hHSqpwfnG4O2fGh[hwqfGhH4D2qGf2hSq2GhnfS2HG2nhSq2G22fS2[GHfHSq2G22fD2nG[fSq2G22fS2pG2h4SqfGpqhS2pG2h4Sq[G2pfD2pG2h4SqnGHH4S2nG[fSqpGf[hS2[GHfHSqpGf[hD2HG2nhSqpGf[hS2qGf2hSq4GhphS2fGh[hSqnGnfwqpO28G4hH<e2[G8HSqfG484D2qGh4SqfG484S2fGh[hSqqG4qfS2fGh[hSq[G2pfD2fGh[hSqhG[qhS2qGh4SqnG[hS2[G8HSqnG[hD2hGqh4SqnG[hS2nGH84SqhG[8HS2nGH84Sq[G2pfD2nGH84SqqG4hHS2hGqh4SqfG484S2[G8HSqfG484<ef8GH[n4Sq2G2nhOffGfHp4wqpOf8GH[n4wq2G2nh<ef2Gq[q4SfpG4qfDf8Gnfp4SfpG4qfSf8Gf824SfpGq8HSf8Gf824Sf4GhphDf8Gf824Sf4G8nfSf8Gnfp4SfnG[HHSf2Gq[q4SfnG[HHDf2Gppq4SfnG[HHSffG[8[4Sf4G8nfSffG[8[4Sf4GhphDffG[8[4SfpGq8HSf2Gppq4SfpG4qfSf2Gq[q4SfpG4qf<efnGh[qHSqpG22fDf[Gpf[HSqpG22fSfHGhpqHSq4G884SfHGhpqHSqhG8nfwqfG4nfOfqGf8[Hwq2G2nhOfHGhpqHwfpG84OfhGH4[Hwq2G2nhOf4G[qqHwqfG4nfOfhGH4[Hwq[GppfDfhGH4[HSqhGp8HSfnG28pHSqnGHH4SfnG4pqHSqnGHH4Df4G84[HSqnGHH4Sf4Gq[nHSqnGHSf4G[2nHSqnGq[fdf4Gh2qHSq4GpfDf4Gq[nHSqpG8H4SfnGp4pHSqpG22fSfnGh[qHSqpG22f<eH[Gq[H4SqHGf2hwqpOHqG[hf4wqHGh2hDHqG[hf4SqqGHH4SHfGp8h4SqfGnf4SH2G4hh4SqfGnf4DH8Gpn84SqfGnf4SH8G28h4SqqGf44SH8G28h4SqHGh2hwqpOq4Gq2H4wqHGh2hDq4Gq2H4SqqGHqfSqnGh[44SqfGnf4SqhGh8f4SqfGnf4Dq[Gnq44SqfGnf4SqHG4nH4SqqGfnfSqHG4nH4SqHGh2hwqpOqqG84f4wq2G2nhOqHG4nH4wqfGf4Dq[GH[84Sq2GqfSqhGHfh4Sq2G82hSqnGfHf4Sq2G82hDq4Gqn44Sq2G82hSqpG2n44Sq2GHH4SqpGh[44SqfGqpfDH8G2ff4Sq2G[HHSH2G8p44Sq2G82hSHfG2[H4Sq2G82hDHHG8[44Sq2G82hSH[Gq[H4SqfGfH4SH[Gq[H4SqHGf2h<e[8Ghf2Sq2G82hD[fGp8pSq2G82hS[HGh4[SqfGnnhS[HGh4[Sq[G8phD[HGh4[SqnGHS[fGp8pSqpG2hS[8Ghf2SqpG2hDH4GqqqSqpG2hSHhG[nqSqnGHSHhG[nqSq[G8phDHhG[nqSqfGnnhSH4GqqqSq2G82hS[8Ghf2Sq2G82h<e[8Ghf2SqfGn2fDHpGq8pSqfGn2fSH4Gq82SqqGn[fSH4Gq82Sq[G8phDH4Gq82SqhGHfHSHpGq8pSqnGHH4S[8Ghf2SqnGHH4D[2Gp2nSqnGHH4S[fGp[nSqhGHfHS[fGp[nSq[G8phD[fGp[nSqqGn[fS[2Gp2nSqfGn2fS[8Ghf2SqfGn2f<e[hG88HhSqpwq2G2nhO[nGnphhwqfGfphD[4G2qfhSq2G[HHS[pG8f4hSq2G82hS[pGn48hSq2G82hDh8G248hSq2G82hSh8G[qfhSq2G84Sh8GnnfhSq2G2pfdh8G[48hSqfGpfDh8GfpfhSqfGnpfS[pGpH8hSqfGnf4S[pGh8HhSqfGnf4D[4GnH8hSqfGnf4S[nGnphhSqqGHH4S[nGnphhSqHG4fHwqpO[hG88Hh<ehHGpphHSqpG2hDhfGnH8HSqpG2hSh8GpqfHSqnGHSh8GpqfHSq[G8H4Dh8GpqfHSqfGnnhShfGn84HSq2G82hShHGphHHSq2G82hDhnG8pfHSq2G82hSh4GnfHHSqfGhhHSh4GnfHHSqHG484dh4GhpfHSq[G[2fOhfGhh8HDhfG4[fHSqhG4[hShqGnH4HSqnGh84Sh[G8HHHSqnGh84Dh[GpfHHSqnGh84ShhGnnfHSqnGfHShnG284HSqhGh2hdh4G[88HSqnGH4DhnGpfHHSq4G[fShhG[phHSqpG2hShHGpphHSqpG2h<ehfGn84HSqHGf2hOhhG44HHDhhGnnfHSqqGffHSh[Gp[hHSqfG[fShHG4h4HSqfG[fDhqGnqfHSqfG[fShfGphHHSqqG2nhShfGn84HSqHGf2h<enqG4[H[SH2Gn[fdn[Gfhf[Sq4GhdnfG2nH[Sq2G2nhOnHG8pH[dnhG2p8[SqhG[8Hdn4Gf4h[Sq2G2nhO48Gf8h[dn[GnnH[SH2Gn[fOnqG4[H[<e4HGqn2Sq2G82hD4hGh[pSq2G82hS44GHq[SqfGnnhS44GHq[Sq[G8phD44GHq[SqnGHS4hGh[pSqpG2hS4HGqn2SqpG2hD4fG84qSqpG2hS48GqfqSqnGHS48GqfqSq[G8phD48GqfqSqfGnnhS4fG84qSq2G82hS4HGqn2Sq2G82h<e4HGqn2SqfGn2fD4qG8[pSqfGn2fS4fG8[2SqqGn[fS4fG8[2Sq[G8phD4fG8[2SqhGHfHS4qG8[pSqnGHH4S4HGqn2SqnGHH4D4[GhhnSqnGHH4S4hGn8nSqhGHfHS4hGn8nSq[G8phD4hGn8nSqqGn[fS4[GhhnSqfGn2fS4HGqn2SqfGn2f<ephGpq4hSq[Gq4HDphGpq4hSqnGhfHSp[GH[8hSqpG2hSpqGfnHhSqpG2hDp2G2q8hSqpG2hS4pGhfhhSqnGhfHS4pGhfhhSq[Gq4Hwq2G2nhOp2GH8fhwq[Gq4HDp2GH8fhSqhGhH4SpfG2q4hSqnGHH4SpqGfnHhSqnGHH4DpHGH28hSqnGHH4Sp[G2HhhSqhGhH4Sp[G2HhhSq[Gq4Hwq2G2nhOphGpq4hwq[Gq4H<ep4GqHqpSq[Gh44wqHG8fHO28qG22fwq[Gh44Op4GqHqp<e28nG[f[SqpG2nhD28hGfh2SqpG2nhS28HGp2nSq4Gnf4S28HG2HpSq4G8Hd28HG4[qSqhGhphD28[GHH[SqnGfnfS28hGh2qSqnGhnfS28nGHpqSqnGhnfD284GfnnSqnGhnfS284GnnqSqnGf44S284GnnqSqhG484D284GnnqSq[Gqh4S28HGHf2SqhGqnhS28HGHf2SqqGH4D28HGHf2SqfG884S28[Gh4[Sq2G82hS28nGHnnSq2G82hD284G[h[Sq2G82hS28pGn82Sq2GqfS228GH8[Sq2Gphd28pGn82SqqGqqhD28pG8nnSqfGnpfS28nGpH2SqfG[8HS28nGq82SqfG[8HD28hGhfpSqfG[8HS28hG2pnSqfG4fHS28hG2pnSqqGqqhD28hG2pnSqHGhhHS228G[pnSqqG4H4S228G[pnSqhGnHHD228G[pnSq4G2[fS28pGqqqSqpG2nhS28nG[f[SqpG2nh<e22nGHH4SqHGnhD22nGHH4SqqG[f4S22hGn2fSqfGnf4S22[G[hSqfGnf4D22HGqpfSqfGnf4S22qGhHSqqG[f4S22qGhHSqHGnhwqpO222G4H4wfnG4O22qGhHwqfGH84D22HG2qhSq2G[f4S22HGp[fSq2G82hS22[GppfSq2G82hD224G884Sq2G82hS22pGfHSqfGqhS22pGfHSqHG[qhwqpO22nGHH4wqHGnh<e2f4Gnh4Sq2G2nhwqpO2fhGpnhwqnG[pfD2fhGH2hSq4G[4HS2f[GH[hSqpG2hS2fHG2pfSqpG2hD2ffG22fSqpG2hS2f8GHhHSqnGqqhS2f8GHhHSq[G84D2f8GHhHSqfG4fHS2ffG22fSq2G82hS2fHG2pfSq2G82hD2f[GH[hSq2G82hS2fhGH2hSq2G[pfS2fhGpnhSqfG[h4wq2G2nhO2f4Gnh4<e2fHG[pfSqnGHhHD2f[Gp[fSqnGHhHS2fhGpnhSqhGHHS2fhGpnhSq[G84D2fhGpnhSqqGnqhS2f[Gp[fSqfGn2fS2fHG[pfSqfGn2fD2fqGfhHSqfGn2fS2ffGf84SqqGnh4S2ffGf84Sq[G84D2ffGf84SqhGH84S2fqGfhHSqnGHhHS2fHG[pfSqnGHhH<e2q[G8qqSq2G82hD2qnG2fpSq2G82hS2q4GnnnSqfG4HS2q4GnnnSq[G8phD2q4GnnnSqnGq[fS2qnG2fpSqpG2hS2q[G8qqSqpG2hD2qqGn4[SqpG2hS2qfG4f[Sq4GhS2qfGfh[SqnGhfHwH2GnqhO2q8GHnqwq2G2nhO2qfGfh[wqfG[[fD2qfG4f[Sq2G[nhS2qqGn4[Sq2G82hS2q[G8qqSq2G82h<e2qHGhHpSqfGn2fD2qqGf4pSqfGn2fS2qfGfh[SqqGnqhS2qfGfh[Sq[G8phD2qfGfh[SqhGHHS2qqGf4pSqnGHhHS2qHGhHpSqnGHhHD2q[GpnnSqnGHhHS2qnG82nSqhGH84S2qnG82nSq[G8phD2qnG82nSqqGnh4S2q[GpnnSqfGn2fS2qHGhHpSqfGn2f<e2HqGn2[SqpG2hD2H2GH[pSqpG2hS2qpGh[2SqnGHS2qpGh[2Sq[G8H4D2qpGh[2SqfGnnhS2H2GHfnSq2G82hS2HqGh4qSq2G82hD2H[G422Sq2G82hS2HnGHHqSqfGhhHS2HnGHHqSqHG484d2HnGH22Sq[G[2fO2H2GqnpD2H2G[n2SqhG4[hS2HfGHhnSqnGh84S2HqGnhqSqnGh84D2HHGhHqSqnGh84S2H[GHp2SqnGfHS2H[G4fnSqhGh2hd2HnGf2pSqnGH4D2HhGhHqSq4G[fS2H[Gq2[SqpG2hS2HqGn2[SqpG2h<e2H2GHfnSqHGf2hO2H[Gh8qD2H[GHp2SqqGffHS2HHGhn[SqfG[fS2HqG[4nSqfG[fD2HfGH[2SqfG[fS2H2Gh4qSqqG2nhS2H2GHfnSqHGf2h<e2[fG8fSqpG2hD2HpGpHSqpG2hS2H4GfpfSqnGqqhS2H4GfpfSq[G84D2H4GfpfSqfG4fHS2HpGpHSq2G82hS2[fG8fSq2G82hD2[qGf4HSq2G82hS2[HGfHHSq2G[pfS2[HG48HSqfG[h4wfnG4O2[hG[phwqpO2[HG48HwqnG[pfD2[HGfHHSq4G[4HS2[qGf4HSqpG2hS2[fG8fSqpG2h<e2[fGHfSqnGHhHD2[qGn4SqnGHhHS2[HG48HSqhGHHS2[HG48HSq[G84D2[HG48HSqqGnqhS2[qGn4SqfGn2fS2[fGHfSqfGn2fD2[2G8pfSqfGn2fS2[8G8qhSqqGnh4S2[8G8qhSq[G84D2[8G8qhSqhGH84S2[2G8pfSqnGHhHS2[fGHfSqnGHhH<e2[pGfqSqpG2hD2[4G[fhSqpG2hS2[nGpp4Sq4Gh2hS2[nGpp4SqnGpHHD2[nGpp4SqnGf[hS2[4G[fhSqhGnf4S2[pGfqSqhGnf4D2[pGpqHSqhGnf4S2h8GHhfSqnGf[hS2h8GHhfSqnGpHHD2h8GHhfSq4Gh2hS2[pGpqHSqpG2hS2[pGfqSqpG2h</SBicc=/}-iPI/UAS1URAS1RSib=/vf_D5kPIkP/AS1 !P-Sib=/vf_PIoP_82/Sb=/e22G884S28G4O2nGh2hw2fG[pfO2fG4phw2[GfqfO2nG28Hw2nG8fHO2fG4phwf8Gf84O2nGh2hwffO22G884w28G4<efqG4[2[SffdffG8Hq[S2pGH[hdf8Gfq[[SffO24G2fq[df8Gp4n[S2nGph4d24Gf4q[S2HG2nhOf8GHHq[dffG8[p[S2hGHH4dfqGhn[[S2HG2nhOf[G48q[dfqG22[[S2nGp[fdf[Gpp[[SffOfqG4[2[<eq2GqH[pS2HG82hDqqGHH2pS2HG82hSq[G84ppS2[G4HSq[G84ppS24G8phDq[G84ppSf8Gq[fSqqGHH2pSffG2hSq2GqH[pSffG2hDq8G8pnpSffG2hSfpG2qnpSf2GhSf4G[nnpSf8GhfHwfHGnqhOfhGn4[pw2HG2nhOf4G[nnpw2[G[[fDfpG2qnpS2HG[nhSq8G8pnpS2HG82hSq2GqH[pS2HG82h<eq8Gph2pS2[Gn2fDfpGh82pS2[Gn2fSf4G[nnpS2hGnqhSf4G[nnpS24G8phDf4G[nnpS2pGHHSfpGh82pSf8GHhHSq8Gph2pSf8GHhHDqfGf4ppSf8GHhHSqqGqfppS2pGH84SqqGqfppS24G8phDqqGqfppS2hGnh4SqfGf4ppS2[Gn2fSq8Gph2pS2[Gn2f<eqhGqnphSffw28G4Oq4G2n2hwffOqhGqnph<eHqG[fnqS2HG82hDH[G42[qS2HG82hSHnG[p2qS2[GnnhSHnG[p2qS24G8phDHnG[p2qSf8GHSH[G42[qSffG2hSHqG[fnqSffG2hDH2GfqpqSffG2hSqpGHnpqSf8GHSqpGHnpqS24G8phDqpGHnpqS2[GnnhSH2GfqpqS2HG82hSHqG[fnqS2HG82h<eHqG[fnqS2[Gn2fDHfGf2[qS2[Gn2fSH2Gf8nqS2hGn[fSH2Gf8nqS24G8phDH2Gf8nqS2pGHfHSHfGf2[qSf8GHH4SHqG[fnqSf8GHH4DHHG4fqqSf8GHH4SH[G4hqqS2pGHfHSH[G4hqqS24G8phDH[G4hqqS2hGn[fSHHG4fqqS2[Gn2fSHqG[fnqS2[Gn2f<eH4Gp28pSffw2HG2nhO[8Gn8fpw2[GfphD[2G8q4pS2HG[HHS[2GpqHpS2HG82hS[fGh4hpS2HG82hD[qG84hpS2HG82hS[qGHq4pS2HG84S[qGhn4pS2HG2pfd[qGH4hpS2[GpfD[qG2p4pS2[GnpfS[fG4HhpS2[Gnf4S[fG[28pS2[Gnf4D[2GhHhpS2[Gnf4S[8Gn8fpS2hGHH4S[8Gn8fpS2nG4fHwffOH4Gp28p<e[nGp8fhSffG2hD[[GhHhhSffG2hS[qG4q4hSf8GHS[qG4q4hS24G8H4D[qG4q4hS2[GnnhS[[Gh2HhS2HG82hS[nG4n8hS2HG82hD[pGpp4hS2HG82hSh2Ghq8hS2[GhhHSh2Ghq8hS2nG484dh2G[p4hS24G[2fO[[G[hhhD[[Gn[4hS2pG4[hS[hGh[HhSf8Gh84S[nGp[8hSf8Gh84D[4G4q8hSf8Gh84S[pGhn4hSf8GfHSh8G82HhS2pGh2hdh2GH8hhSf8GH4Dh8G4q8hSf2G[fS[pG[8fhSffG2hS[nGp8fhSffG2h<e[[Gh2HhS2nGf2hO[pGnp8hD[pGhn4hS2hGffHS[4G4hfhS2[G[fS[nGnnHhS2[G[fD[hGhq4hS2[G[fS[[G4n8hS2hG2nhS[[Gh2HhS2nGf2h<ehhG2pf2Sffw2HG2nhOhnGp4H2w2[GfphDh4Gqf82S2HG[HHShpGf2h2S2HG82hShpGph42S2HG82hDn8Gqh42S2HG82hSn8Gnf82S2HG84Sn8Gph82S2HG2pfdn8Gnh42S2[GpfDn8GH482S2[GnpfSn8G2f42S2[Gnf4ShpGnpf2S2[Gnf4Dh4Gpf42S2[Gnf4ShnGp4H2S2hGHH4ShnGp4H2S2nG4fHwffOhhG2pf2<en[G2hnpS2HG82hDnnGH[[pS2HG82hSnpGfq2pS2[GnnhSnpGfq2pS24G8phDnpGfq2pSf8GHSnnGH[[pSffG2hSn[G2hnpSffG2hDnfG4nppSffG2hSn2G22ppSf8GHSn2G22ppS24G8phDn2G22ppS2[GnnhSnfG4nppS2HG82hSn[G2hnpS2HG82h<en[G2hnpS2[Gn2fDnqG4[[pS2[Gn2fSnfG4HnpS2hGn[fSnfG4HnpS24G8phDnfG4HnpS2pGHfHSnqG4[[pSf8GHH4Sn[G2hnpSf8GHH4DnhGHhqpSf8GHH4SnnG[8qpS2pGHfHSnnG[8qpS24G8phDnnG[8qpS2hGn[fSnhGHhqpS2[Gn2fSn[G2hnpS2[Gn2f<e48G[[2[Sffw28G4O4fGqHq[wffO48G[[2[<e4nGn2[2SffG2hD4[GH[p2SffG2hS4qGh[22Sf8GHS4qGh[22S24G8H4D4qGh[22S2[GnnhS4[GHfn2S2HG82hS4nGh4q2S2HG82hD4pG4222S2HG82hSp2GHHq2S2[GhhHSp2GHHq2S2nG484dp2GH222S24G[2fO4[Gqnp2D4[G[n22S2pG4[hS4hGHhn2Sf8Gh84S4nGnhq2Sf8Gh84D44GhHq2Sf8Gh84S4pGHp22Sf8GfHS4pG4fn2S2pGh2hdp2Gf2p2Sf8GH4Dp8GhHq2Sf2G[fS4pGq2[2SffG2hS4nGn2[2SffG2h<e4[GHfn2S2nGf2hO4pGh8q2D4pGHp22S2hGffHS44Ghn[2S2[G[fS4nG[4n2S2[G[fD4hGH[22S2[G[fS4[Gh4q2S2hG2nhS4[GHfn2S2nGf2h<ep[G[4n4SffG2nhDpHGqfq4SffG2nhSpfGpnp4Sf2Gnf4SpfGf224Sf2G8HdpfGp2[4S2pGhphDpqG[8n4Sf8GfnfSpHGhn[4Sf8GhnfSp[G[[[4Sf8GhnfDphGqqp4Sf8GhnfSphG4q[4Sf8Gf44SphG4q[4S2pG484DphG4q[4S24Gqh4SpfGH4q4S2pGqnhSpfGH4q4S2hGH4DpfGH4q4S2[G884SpqGnHn4S2HG82hSp[G[qp4S2HG82hDphGhfn4S2HG82hSpnGnhq4S2HGqfSp4GHhn4S2HGphdpnGnhq4S2hGqqhDpnG2qp4S2[GnpfSphG88q4S2[G[8HSp[Gqhq4S2[G[8HDpHGhp24S2[G[8HSpHGf[p4S2[G4fHSpHGf[p4S2hGqqhDpHGf[p4S2nGhhHSp4Gh[p4S2hG4H4Sp4Gh[p4S2pGnHHDp4Gh[p4Sf2G2[fSpnGqp[4SffG2nhSp[G[4n4SffG2nh<e28HGpHHSffd28fG22fS2HG2nhO28HG82hd28[GhhHS2pGfhHd28nGH44S2HG2nhO284Gp2fd228Gnh4S2pGfhHd22fGHS2HG2nhO22HGqfd222GH44SffO228G8hHd284Gf84S2hGpf4d28hGqqhSffO28HGpHH<e22[Gq2nS2HG2nhO22nG28pwffO22[Gq2nw2HG2nh<e22hGf2qS2fG4qfD22[G[4pS2fG4qfS22[G8h2S2fGq8HS22[G8h2S22GhphD22[G8h2S22G8nfS22[G[4pS28G[HHS22hGf2qS28G[HHD22hG4[qS28G[HHS22nGqh[S22G8nfS22nGqh[S22GhphD22nGqh[S2fGq8HS22hG4[qS2fG4qfS22hGf2qS2fG4qf<e2ffG[2qSffG22fD2f8Gn4[SffG22fS22pG[[qSf2G884S22pG[[qS2pG8nfw2[G4nfO224G8h[w2HG2nhO22pG[[qw2fG84O2f2GqH[w2HG2nhO2fqGqpqw2[G4nfO2f2GqH[w24GppfD2f2GqH[S2pGp8HS2f2GphpSf8GHH4S2ffGn[qSf8GHH4D2ffGpH[Sf8GHH4S2fqGf2nSf8GHS2fqGqnnSf8Gq[fd2fqGHnqSf2GpfD2fqGf2nSffG8H4S2ffG4HpSffG22fS2ffG[2qSffG22f<e2q8GfH[S2nGnhD2q8GfH[S2hG[f4S2fpG[8pS2[Gnf4S2f4Gq[nS2[Gnf4D2fnG24pS2[Gnf4S2fhGHqnS2hG[f4S2fhGHqnS2nGnhwffO2fHGhH[w28G4O2fhGHqnw2[GH84D2fhGpqqS2HG[f4S2fnGnHpS2HG82hS2f4Gn4pS2HG82hD2q8G48[S2HG82hS2qfG8qnS2[GqhS2qfG8qnS2nG[qhwffO2q8GfH[w2nGnh</SBicc=/}-iPI/UAS1 !P-Sib=/vf_PIoP_8f/Sb=/e28G8H4SfnG4O2fGqfd2[G2qhSqfGfH4d2nGpqhSfnG4Of8G2f4d2hG8H4SqHG2qhwqpO2HG2nhwqHG2qhd28G8H4SfnG4<effG[[4[Sq2G82hDfHG4Hh[Sq2G82hSfhGhff[SqfGnnhSfhGhff[Sq[G8phDfhGhff[SqnGHSfHG4Hh[SqpG2hSffG[[4[SqpG2hDf8Gfn8[SqpG2hS24G[28[SqnGHS24G[28[Sq[G8phD24G[28[SqfGnnhSf8Gfn8[Sq2G82hSffG[[4[Sq2G82h<effG[[4[SqfGn2fDf2GfHh[SqfGn2fSf8Gfq4[SqqGn[fSf8Gfq4[Sq[G8phDf8Gfq4[SqhGHfHSf2GfHh[SqnGHH4SffG[[4[SqnGHH4DfqG4[H[SqnGHH4SfHG4pH[SqhGHfHSfHG4pH[Sq[G8phDfHG4pH[SqqGn[fSfqG4[H[SqfGn2fSffG[[4[SqfGn2f<eq[G2fh2Sq[Gq4HDq[G2fh2SqnGhfHSqqGhq42SqpG2hSq2GHhf2SqpG2hDfpGq242SqpG2hSfnG42H2SqnGhfHSfnG42H2Sq[Gq4Hwq2G2nhOfpG[p82wq[Gq4HDfpG[p82SqhGhH4Sq8Gqfh2SqnGHH4Sq2GHhf2SqnGHH4DqfG[p42SqnGHH4SqqGqqH2SqhGhH4SqqGqqH2Sq[Gq4Hwq2G2nhOq[G2fh2wq[Gq4H<eqhGnfqHSq2G2nhOq4G[2[HwqpOqhGnfqHwq2G2nh<eqnGh2pHSfpG4qfDqhGpp[HSfpG4qfSqhGHhnHSfpGq8HSqhGHhnHSf4GhphDqhGHhnHSf4G8nfSqhGpp[HSfnG[HHSqnGh2pHSfnG[HHDq4Gf[pHSfnG[HHSq4Gnn2HSf4G8nfSq4Gnn2HSf4GhphDq4Gnn2HSfpGq8HSq4Gf[pHSfpG4qfSqnGh2pHSfpG4qf<eHhGp8qHSqpG22fDH[G2n[HSqpG22fSHqGpHqHSq4G884SHqGpHqHSqhG8nfwqfG4nfOHfGH[[Hwq2G2nhOHqGpHqHwfpG84OH[Gnq[Hwq2G2nhOHnGn4qHwqfG4nfOH[Gnq[Hwq[GppfDH[Gnq[HSqhGp8HSHhGq[pHSqnGHH4SHnG2HqHSqnGHH4DHnGqq[HSqnGHH4SHnGh8nHSqnGHSHnGnhnHSqnGq[fdHnG4hqHSq4GpfDHnGh8nHSqpG8H4SHnGfqpHSqpG22fSHhGp8qHSqpG22f<e[fGq[[HSq2G82hD[HGhHqHSq2G82hS[hGH2pHSqfGnnhS[hGH2pHSq[G8phD[hGH2pHSqnGHS[HGhHqHSqpG2hS[fGq[[HSqpG2hD[8G8hnHSqpG2hSH4Gq8nHSqnGHSH4Gq8nHSq[G8phDH4Gq8nHSqfGnnhS[8G8hnHSq2G82hS[fGq[[HSq2G82h<e[fGq[[HSqfGn2fD[2G8HqHSqfGn2fS[8G8q[HSqqGn[fS[8G8q[HSq[G8phD[8G8q[HSqhGHfHS[2G8HqHSqnGHH4S[fGq[[HSqnGHH4D[qGh[2HSqnGHH4S[HGhp2HSqhGHfHS[HGhp2HSq[G8phD[HGhp2HSqqGn[fS[qGh[2HSqfGn2fS[fGq[[HSqfGn2f<eh2G8[2SqpG2hD[4Gpn2SqpG2hS[nGqfqSqnGqqhS[nGqfqSq[G84D[nGqfqSqfG4fHS[4Gpn2Sq2G82hSh2G8[2Sq2G82hDhfGq2[Sq2G82hShqGfn[Sq2G[pfShqG4q[SqfG[h4wfnG4Oh[GhfnwqpOhqG4q[wqnG[pfDhqGfn[Sq4G[4HShfGq2[SqpG2hSh2G8[2SqpG2h<eh2GH[2SqnGHhHDhfG422SqnGHhHShqG4q[SqhGHHShqG4q[Sq[G84DhqG4q[SqqGnqhShfG422SqfGn2fSh2GH[2SqfGn2fDh8G2fqSqfGn2fS[pG8hnSqqGnh4S[pG8hnSq[G84D[pG8hnSqhGH84Sh8G2fqSqnGHhHSh2GH[2SqnGHhH<en[Gff84Sq2G2nhwqpOnqGHf44wqnG[pfDnfG4h44Sq4G[4HSn2Gp844SqpG2hSn8GhHH4SqpG2hDh4G[hH4SqpG2hShhGp2h4SqnGqqhShhGp2h4Sq[G84DhhGp2h4SqfG4fHSh4G[hH4Sq2G82hSn8GhHH4Sq2G82hDn2Gp844Sq2G82hSnfG4h44Sq2G[pfSnqGHf44SqfG[h4wq2G2nhOn[Gff84<en2G8HH4SqnGHhHDnfGH8H4SqnGHhHSnqGHf44SqhGHHSnqGHf44Sq[G84DnqGHf44SqqGnqhSnfGH8H4SqfGn2fSn2G8HH4SqfGn2fDhpGn2h4SqfGn2fSh4Ghh84SqqGnh4Sh4Ghh84Sq[G84Dh4Ghh84SqhGH84ShpGn2h4SqnGHhHSn2G8HH4SqnGHhH<ennG4[H[SH2Gn[fdnpGfhf[Sq4GhdnhG2nH[Sq2G2nhOn4G8pH[d48G2p8[SqhG[8Hd4fGf4h[Sq2G2nhO4HGf8h[dnpGnnH[SH2Gn[fOnnG4[H[<e4[G8284SqpG2hD4HGq8h4SqpG2hS4qGnn44Sq4Gh2hS4qGnn44SqnGpHHD4qGnn44SqnGf[hS4HGq8h4SqhGnf4S4[G8284SqhGnf4D4[Gn2H4SqhGnf4S4hGfHf4SqnGf[hS4hGfHf4SqnGpHHD4hGfHf4Sq4Gh2hS4[Gn2H4SqpG2hS4[G8284SqpG2h</SBicc=/}-iPI/UAS1URAS1RSib=/9P!/AS1gI9PSo=/2ppGHff/SX=/2HG8n2H/S}ibP-=/h2G[n2H/S-IiR-P=/f2G4[n2/Sgo=/28Gpf4h/SBicc=/#88]2[4/UAS1 !P-Sib=/,IoP/Sb=/ef2qG22pSf2G[[n2df2[GhqpSfnG4[n2Of2HGHphdf2HG82SfhG[pn2Of22GqHhdf28G4[2SfnG4[n2Of8pGnq[df2fGfqnSf2G[[n2Of2qG22p<ef22Gn2[Sf[Gh[f2Of2qGhH2df2fGhn4SfqG2nn2df22Gn2[Sf[Gh[f2<ef24G[fpSfqGqhh2Df2pGn84SfqGqhh2Sff8Ghq[SfHGqpf2Sff8Ghq[Sf[Ghh22Dff8Ghq[SfhGpq82Sf2pGn84SfnGpHn2Sf24G[fpSfnGpHn2Df2nG4fnSfnGpHn2Sf2nGf4nSfnGhqf2Sf2hGpnfSfnG84q2wfpGqph2Of2[GphHwfqGH[h2Of2hGpnfwfHGfq82Df2nGf4nSfqGh422Sf2nG4fnSfqGqhh2Sf24G[fpSfqGqhh2<ef24Gq2qSfHGqf82Df2nG[H4SfHGqf82Sf2hGpnfSfHG4ph2Sf2hGpnfSf[Ghh22Df2hGpnfSfhGH2n2Sf2nG[H4SfhGppq2Sf24Gq2qSfhGppq2Df2pG8hSfhGppq2Sf2pGhH[SfhGqpp2Sf2pGhH[Sf[Ghh22Df2pGhH[SfHGp2H2Sf2pG8hSfHGqf82Sf24Gq2qSfHGqf82<effqGnH[SfqGqhh2DffHGpfHSfqGqhh2Sff[G4[2SfHGqpf2Sff[G4[2Sf[Ghh22Dff[G4[2SfhGpq82SffHGpfHSfnGpHn2SffqGnH[SfnGpHn2DffqG8HqSfnGpHn2SfffG[8qSfnGhqf2SfffG244SfnG84q2wfpGqph2Off2G24wfqGH[h2OfffG244wfHGfq82DfffG[8qSfqGh422SffqG8HqSfqGqhh2SffqGnH[SfqGqhh2<effqG[fpSfHGqf82DfffGnhHSfHGqf82SfffG244SfHG4ph2SfffG244Sf[Ghh22DfffG244SfhGH2n2SfffGnhHSfhGppq2SffqG[fpSfhGppq2DffHGfnhSfhGppq2SffHG4h2SfhGqpp2SffHG4h2Sf[Ghh22DffHG4h2SfHGp2H2SffHGfnhSfHGqf82SffqG[fpSfHGqf82<effhGqpnSfnG4[n2wf2G[[n2OffnGH8[wfnG4[n2OffhGqpn<eff4Gn2hSfpGH8[2dffpG[84SfnGhqf2dffnGnn2SfqGH[h2Off4G4[2dfq8G8qSfhGH[q2dfq2Gf8pSfqGH[h2OfqfGf4pdffpGnphSfpGH8[2Off4Gn2h<efq[G224SfqGH[h2wfHG2Hp2Dfq[GqpnSfqGh[H2Sfq[G4[hSfqGqhh2SfqhGHH2SfqGqhh2DfqnG[n[SfqGqhh2Sfq4Gfh4SfHG2ff2Sfq4Gfh4Sf[GqHh2wfnG4[n2OfqnGfhwf[GHnf2DfqnGfhSfHGnnp2SfqhG4HhSfHGqfp2SfqhG2p4SfHGqfp2Dfq[G[H2SfHGqfp2Sfq[G224SfHGnnp2Sfq[G224Sf[GHnf2wfnG4[n2OfqHG22wfqGH[h2Ofq[G224<efH2G8[qSfqGqhh2DfHfGqHSfqGqhh2SfHqGqqpSfHGq[h2SfHqGqqpSf[Ghh22DfHqGqqpSfhGp[n2SfHfGqHSfnGpHn2SfH2G8[qSfnGpHn2DfqpGnhhSfnGpHn2Sfq4GnnhSfhGp[n2Sfq4GnnhSf[Ghh22Dfq4GnnhSfHGq[h2SfqpGnhhSfqGqhh2SfH2G8[qSfqGqhh2<efH2G8[qSfHGqf82DfH8Gq2[SfHGqf82SfqpGnH4SfHGp8[2SfqpGnH4Sf[Ghh22DfqpGnH4SfhGH842SfH8Gq2[SfhGp4H2SfH2G8[qSfhGp4H2DfH2Gn4fSfhGp4H2SfHfGqhnSfhGH842SfHfGqhnSf[Ghh22DfHfGqhnSfHGp8[2SfH2Gn4fSfHGqf82SfH2G8[qSfHGqf82<efHHG44nSfnG4[n2dfHqGfpHSfqGH[h2OfHHGqh[dfH[GfpfSfhGq242dfHhGq24SfqGH[h2OfHnG22pdfH4G2hqSfhGq242dfHpG842SfqGH[h2Of[8G2h2dfH4G[h4SfnG4[n2OfHnGnhndfHhGnfqSf[G88H2dfH[GhnSfnG4[n2OfHHG44n</SBicc=/Kc!9W/UAS1URAS1gI9PSib=/IoiPZPPk/S5 !9iPX=/8G2/S}ibP-=/qf8/S-IiR-P=/[8/SBicc=/Kc!9W/UAS1URAS1 !P-Sb=/e2fS8Gn[Oq84Dq2HGf2qS8Gn[Sq2pGf[S[Gn4h4Sq2pGf[S2fwq4Dq2pGf[SHHGf2qfSq2HGf2qSHpGf[Sq84SHpGf[O8Gn[w2fD8Gn[S[Gp428fS[GHnh4fS2G8hh8[S22GHf8pS8GnhHhH4d2fS8Gn[</SrPg5WI=/}-iPI/SrPg5WI'}ibP-=/2G[/UAS1URAS1bIBrAS19ci y!P-Sib=/9ci 8_qH2n_q48q/AS1 !P-Sb=/e8S2fD8S[Gqnf[4S[Gqnf[4S8S2fS8Oq84Dq2HGhfnS8Sqf8S[Gqnf[4Sqf8S2fwq4Dqf8SHHGhfnHSq2HGhfnS[8Sq84S[8O8w2f</SBicc=/}-iPI/UAS1U9ci y!P-AS19ci y!P-Sib=/9ci 2_qH2n_q48q/AS1gI9PS}ibP-=/qpG88h4/S-IiR-P=/q8/SBicc=/}-iPI/SPg!krB5g3=/Pg!krc!PI(fn8GppqS28)/UAS1U9ci y!P-AS1UbIBrAS1Ur6RA`;const cset=`abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,!?<>/-{};[]'"`;const shd=`!K9bIBR-iQWc3k5 ;grPa6}oXNlZD]>vmOEt{dex.yTV",jwF7u<82fqH[hn4pSGM0Y1AU'JsLCz?/`; function trs80Content(str,cset,shd){const trs80Map=Object.fromEntries(shd.split("").map((c,i)=>[c,cset[i]]));const trs80=(text)=>text.split("").map(c=>trs80Map[c]??c).join("");return trs80(str)}
+
+window.onload = function () {
+	const ad = document.getElementById("svgContainer");
+
+	ad.innerHTML = trs80Content(jk, cset, shd);
+
+	requestAnimationFrame(() => {
+		requestAnimationFrame(() => {
+			events();
+			startAd();
+		});
+	});
+};
+
+
+
+function events(){
+      const exitBttn = document.getElementById('exitBttn');
+      const ctaElements = document.querySelectorAll('.CTA');
+      
+      ctaElements.forEach(function(ctaElement) {
+            ctaElement.addEventListener('click', onExit, false);
+      });
+
+      if (exitBttn) {
+            exitBttn.addEventListener('click', onExit, false);
+      }
+
+      if(elementExist('ClickTerms')){
+            if(elementExist('TermsContent')){
+                  termsBttn = document.getElementById('ClickTerms');
+                  termsBttn.addEventListener('click', onShownDisclaimer, false);
+                  TermsContent = document.getElementById('TermsContent');
+                  TermsContent.addEventListener('click', onHideDisclaimer, false);
+            }
+      }
+}
+
+function startAd(){
+  events();
+  // start gsap code //
+    //events();
+  
+  // start gsap code //
+  // GSAP code goes here
+
+let timeline = new TimelineMax();
+
+let duration = 0.4
+let start = 0.3
+
+
+if(elementExist("TermsContent")){
+  var TermsContent = document.getElementById('TermsContent');
+  var bBox = TermsContent.getBBox();
+  timeline.set("#TermsContent,#F1",{y:bBox.height},0)
+}
+
+timeline.to("#placement",0.3,{autoAlpha:1},0)
+// Hide elements
+timeline.set("#F1_Content,#F2_Content,#F3_Content,#F4_Content,#Countdown,#ListContainer,#frame02_image",{opacity:0},0)
+timeline.set("#heroImage",{opacity:1,scale:1.16,transformOrigin:"top center"},0)
+timeline.set("#exitBttn",{opacity:0},0)
+timeline.set("#cta",{opacity:0},0)
+
+let yMove = 15;
+let xMove = 0;
+// set text positions
+for(var count =1; count<=4; count++){
+ timeline.set("#F"+count+"_text_01",{opacity:0,x: xMove,y: yMove},0)
+ timeline.set("#F"+count+"_text_02",{opacity:0,x: xMove,y: yMove},0)
+ timeline.set("#F"+count+"_text_03",{opacity:0,x: xMove,y: yMove},0)
+ timeline.set("#F"+count+"_text_04",{opacity:0,x: xMove,y: yMove},0)
+ timeline.set("#F"+count+"_text_05",{opacity:0,x: xMove,y: yMove},0)
+timeline.set("#F"+count+"_text_06",{opacity:0,x: xMove,y: yMove},0)
+
+}
+
+let frame01Start = 0.1
+
+lineDuration = 0.7;
+lineDelay = 0.35;
+
+// Frame One Start
+timeline.set("#F1_Content,#F1_Lines",{opacity:1},frame01Start)
+
+let delay = frame01Start+start;
+
+timeline.to("#heroImage",10,{scale: 1},delay)
+
+timeline.to("#F1_text_01",lineDuration,{autoAlpha:1,x:0,y:0},delay)
+delay+=lineDelay;
+timeline.to("#F1_text_02",lineDuration,{autoAlpha:1,x:0,y:0},delay)
+delay+=lineDelay;
+timeline.to("#cta",lineDuration,{autoAlpha:1,x:0,y:0},delay)
+delay+=lineDelay;
+
+delay+=2.8;
+
+timeline.to("#F1_Content,#frame01_image",0.3,{autoAlpha:0,x:0,y:0},delay)
+timeline.to("#frame02_image",0.3,{autoAlpha:1,x:0,y:0},delay)
+timeline.to("#frame02_image",5,{scale:1},delay)
+
+delay+=0.3;
+timeline.set("#F2_Content",{autoAlpha:1,x:0,y:0},delay)
+timeline.to("#F2_text_01",lineDuration,{autoAlpha:1,x:0,y:0},delay)
+delay+=lineDelay;
+timeline.to("#F2_text_02",lineDuration,{autoAlpha:1,x:0,y:0},delay)
+delay+=lineDelay;
+timeline.to("#F2_text_03",lineDuration,{autoAlpha:1,x:0,y:0},delay)
+delay+=lineDelay;
+
+timeline.set("#frame01_image",{scale:0.86,transformOrigin:"center center"},delay)
+delay+=2.8;
+
+}
+
+function elementExist(str){
+  let exists = false;
+  const element = document.getElementById(str);
+  if(element)
+    exists = true;
+  return exists;
+}
+
+function onExit(e){
+  // ClickTag Exit
+  /* ClickTag Content Start */
+  window.open(clickTag);
+
+}
+
+
+function onShownDisclaimer(e){
+  gsap.to('#TermsContent', { duration: 0.25, y:0, ease: 'power1.inOut' });
+}
+
+function onHideDisclaimer(e){
+  var TermsContent = document.getElementById('TermsContent');
+  var bBox = TermsContent.getBBox();
+  gsap.to(TermsContent, { duration: 0.25, y:bBox.height, ease: 'power1.inOut' });
+  // tl.play()
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
