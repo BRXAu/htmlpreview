@@ -17,7 +17,15 @@ PNGtoSVG/
 
 FigmaIndesign/
 
-node_modules
+node_modules/
+
+encodeData/
+
+gsapToCss
+
+Icons
+
+adX/
 
 # --- OS metadata ---
 .DS_Store
