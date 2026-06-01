@@ -64,7 +64,7 @@ window.MANIFEST = {
   "F3_ProductIcon": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"order\":\"\",\"alignment\":\"\",\"alignmentPortrait\":\"\",\"column\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
   "F3_Logo": "{\"url\":\"assets/HOP0067_Awards_Medley_Partners_Maroons_F1_Logo_12b1e030.svg\",\"alignment\":\"\",\"position\":\"\",\"padding\":\"\",\"layout\":\"\",\"osp\":\"\",\"ospSize\":\"\"}",
   "F3_Tap": "{\"url\":\"https://s0.2mdn.net/creatives/assets/5512546/tap_packed.svg\",\"position\":\"\",\"maxSize\":\"310\",\"alignment\":\"\",\"delay\":\"2\"}",
-  "F3_Headline": "{\"text\":\"hostplus\\n[best super]\\nfund winner]\",\"size\":\"47\",\"weight\":\"\",\"padding\":\"20 0 10 0\",\"order\":\"\",\"column\":\"\",\"delay\":\"\",\"out\":\"\"}",
+  "F3_Headline": "{\"text\":\"hostplus\\n[best super]\\n[fund winner]\",\"size\":\"47\",\"weight\":\"\",\"padding\":\"20 0 10 0\",\"order\":\"\",\"column\":\"\",\"delay\":\"\",\"out\":\"\"}",
   "F3_Headline2": "{\"text\":\"\",\"size\":\"\",\"weight\":\"\",\"padding\":\"\",\"order\":\"\",\"column\":\"\",\"delay\":\"\"}",
   "F3_Subheadline": "{\"text\":\"\",\"size\":\"\",\"weight\":\"\",\"padding\":\"\",\"order\":\"\",\"column\":\"\",\"delay\":\"\",\"out\":\"\"}",
   "F3_icontext": "{\"text\":\"\",\"size\":\"\",\"weight\":\"\",\"padding\":\"\",\"order\":\"\",\"column\":\"\",\"delay\":\"\",\"direction\":\"\",\"out\":\"\"}",
