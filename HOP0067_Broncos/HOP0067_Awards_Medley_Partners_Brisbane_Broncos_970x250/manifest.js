@@ -28,7 +28,7 @@ window.MANIFEST = {
   "F1_ProductIcon": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"order\":\"\",\"alignment\":\"\",\"alignmentPortrait\":\"\",\"column\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
   "F1_Logo": "{\"url\":\"assets/HOP0067_Awards_Medley_Partners_Brisbane_Broncos_F1_Logo_ba21c8fb.svg\",\"alignment\":\"\",\"position\":\"\",\"padding\":\"\",\"layout\":\"\",\"osp\":\"\",\"ospSize\":\"\"}",
   "F1_Tap": "{\"url\":\"\",\"position\":\"\",\"maxSize\":\"\",\"alignment\":\"\",\"delay\":\"\"}",
-  "F1_Headline": "{\"text\":\"[three<br>premierships]<br/>\\nin a season?\",\"size\":\"54\",\"weight\":\"\",\"padding\":\"50 0\",\"order\":\"\",\"column\":\"\",\"delay\":\"\",\"out\":\"\"}",
+  "F1_Headline": "{\"text\":\"[three<br>premierships]<br/>\\nin a season?\",\"size\":\"54\",\"weight\":\"\",\"padding\":\"34 0\",\"order\":\"\",\"column\":\"\",\"delay\":\"\",\"out\":\"\"}",
   "F1_Headline2": "{\"text\":\"\",\"size\":\"\",\"weight\":\"\",\"padding\":\"\",\"order\":\"\",\"column\":\"\",\"delay\":\"\"}",
   "F1_Subheadline": "{\"text\":\"\",\"size\":\"\",\"weight\":\"\",\"padding\":\"\",\"order\":\"\",\"column\":\"\",\"delay\":\"\",\"out\":\"\"}",
   "F1_icontext": "{\"text\":\"\",\"size\":\"\",\"weight\":\"\",\"padding\":\"\",\"order\":\"\",\"column\":\"\",\"delay\":\"\",\"direction\":\"\",\"out\":\"\"}",

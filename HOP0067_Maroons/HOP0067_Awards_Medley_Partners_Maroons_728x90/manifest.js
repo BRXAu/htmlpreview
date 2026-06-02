@@ -21,7 +21,7 @@ window.MANIFEST = {
   "F1_Animations": "slideLineByLine:0.6,fadeOut:0.5",
   "F1_LayoutClass": ",",
   "F1_Video": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\"}",
-  "F1_Image1": "{\"url\":\"assets/HOP0067_Awards_Medley_Partners_Maroons_F1_Image1_69894fc5.svg\",\"size\":\"\",\"position\":\"-15 5\",\"animationIn\":\"\",\"animationOut\":\"fadeOut:0.5:power1.in\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
+  "F1_Image1": "{\"url\":\"assets/HOP0067_Awards_Medley_Partners_Maroons_F1_Image1_69894fc5.svg\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"\",\"animationOut\":\"fadeOut:0.5:power1.in\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
   "F1_Image2": "{\"url\":\"assets/HOP0067_Awards_Medley_Partners_Maroons_F1_Image2_69894fc5.svg\",\"size\":\"728 90\",\"position\":\"\",\"animationIn\":\"fadeInTop:0.5:10:power1.out:0.75\",\"animationOut\":\"fadeOut:0.5:power1.in\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
   "F1_Image3": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
   "F1_InframeImage": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"order\":\"\",\"alignment\":\"\",\"alignmentPortrait\":\"\",\"column\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"animatedSVG\":\"\"}",
