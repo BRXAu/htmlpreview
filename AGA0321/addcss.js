@@ -43,20 +43,20 @@ files.forEach(file => {
 
     const svg = fs.readFileSync(file, 'utf8');
 
-    let updatedSvg;
-
-    if (svg.includes('<svg')) {
-
-      updatedSvg = svg.replace(
+    const updatedSvg = svg.includes('<svg')
+  ? svg
+      .replace(/<\?xml[^>]*\?>\s*/i, '')
+      .replace(/<!--[\s\S]*?-->/g, '')
+      .replace(
+        /<svg\b[^>]*viewBox="0 0 (\d+) (\d+)"[^>]*>/i,
+        (_, width, height) =>
+          `<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" fill="none" xmlns="http://www.w3.org/2000/svg">`
+      )
+      .replace(
         /<svg([^>]*)>/i,
         `<svg$1>${css}`
-      );
-
-    } else {
-
-      console.log(`Skipped ${file} (not valid SVG)`);
-      return;
-    }
+      )
+  : svg;
 
     const outputFile = file.replace(
       /-opt\.svg$/i,

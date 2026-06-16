@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Placement</title>
+    <style>
+        /* Resets default browser margins */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Creates a 1000px gap from the top of the page */
+        .spacer {
+            height: 1000px;
+            background-color: #f0f0f0; /* Optional: light grey to easily see the gap */
+        }
+
+        /* Targets the banner container */
+        .banner-container {
+            width: 100%;
+            display: flex;
+            justify-content: center; /* Centers the banner horizontally */
+        }
+
+        /* Optional sizing for your SVG object */
+        .my-banner {
+            width: 300px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- This pushes everything below it down by 1000px -->
+    <div class="spacer"></div>
+
+    <!-- Your banner housed inside an object tag -->
+    <div class="banner-container">
+        <object class="my-banner" type="image/svg+xml" data="AGA0321_Price_VIC_300x600-export-animate.svg">
+        </object>
+    </div>
+
+</body>
+</html>
