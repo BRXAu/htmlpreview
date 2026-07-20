@@ -1,0 +1,43 @@
+<svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect id="hop0069_background" width="137" height="137" fill="#002855"/>
+<path id="hop0069_icon_top" d="M68.4912 31.2784L90.1996 53.0075L121.322 52.8814L68.4912 0L0 68.5386L15.6423 84.1778L68.4912 31.2784Z" fill="#FFFFFF"/>
+<path id="hop0069_icon_bottom" d="M121.391 52.8222L68.5918 105.722L47.1559 84.2447L15.919 84.2267L68.5918 137L137 68.4614L121.391 52.8222Z" fill="#F5EB00"/>
+</svg>
+
+<html>
+	<style>
+		.hop0069_container {
+		position: absolute;
+			display: block;
+			width: 137px;
+			height: 137px;
+			background: #002855;
+		}
+
+		.hop0069_svg_container {
+
+			top: 0px;
+			left: 0px;
+			display: block;
+			width: 137px;
+			height: 137px;
+		}
+
+
+	</style>
+
+	<div class="hop0069_background">
+		<div class="hop0069_svg_container">
+			<svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path id="hop0069_icon_bottom" d="M121.391 52.8222L68.5918 105.722L47.1559 84.2447L15.919 84.2267L68.5918 137L137 68.4614L121.391 52.8222Z" fill="#F5EB00"/>
+			</svg>
+		</div>
+		<div class="hop0069_svg_container">
+			<svg width="137" height="137" viewBox="0 0 137 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path id="hop0069_icon_top" d="M68.4912 31.2784L90.1996 53.0075L121.322 52.8814L68.4912 0L0 68.5386L15.6423 84.1778L68.4912 31.2784Z" fill="#FFFFFF"/>
+			</svg>
+		</div>
+	</div>
+
+
+</html>
