@@ -264,7 +264,7 @@ if(elementExist("TermsContent")){
 timeline.to("#placement",0.3,{autoAlpha:1},0)
 // Hide elements
 timeline.set("#F1_Content,#F2_Content,#F3_Content,#F4_Content,#CTA,#Logo",{opacity:0},0)
-timeline.set("#HeroImageInner",{opacity:1,scale:0.98,transformOrigin:"100% center"},0)
+timeline.set("#HeroImageInner",{opacity:1,scale:1,transformOrigin:"100% center"},0)
 timeline.set("#exitBttn",{opacity:0},0)
 
 let yMove = 0;
@@ -290,7 +290,7 @@ timeline.set("#F1_Content,#F1_Lines",{opacity:1},frame01Start)
 
 let delay = frame01Start+start;
 
-timeline.to("#HeroImageInner",1,{scale: 1},0)
+timeline.to("#HeroImageInner",1,{scale: 1.02},0)
 delay+=1.2;
 timeline.to("#HeroImage",0.3,{autoAlpha: 0},delay)
 delay+=0.3;
