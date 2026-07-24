@@ -56,7 +56,8 @@ const prefix = [
   "TBA0450_Desalination_",
 ];
 
-const sizes = ["300x600","160x600","320x480","300x250","320x100","320x50","300x50","728x90","970x250"];
+const sizes = ["300x600","160x600","300x400","320x480","300x250","320x100","320x50","300x50","728x90","900x500","970x250","970x90"];
+const defaultsizes = ["300x400","900x500","970x90"];
 
 const exempt = [  ]
 
@@ -66,7 +67,8 @@ function isExempt(str) {
 
 const sets = {
   all: [],
-  bySize: {}
+  bySize: {},
+  defaultsize: [],
 };
 
 for (let s = 0; s < sizes.length; s++) {
@@ -85,9 +87,15 @@ for (let i = 0; i < prefix.length; i++) {
     };
 
     sets.all.push(obj);
+    if(defaultsizes.includes(sizes[j])){
+      sets.defaultsize.push(obj);
+    }
+    
     sets.bySize[sizes[j]].push(obj);
   }
 }
+
+
 
 const controls = document.getElementById("controls");
 
@@ -95,6 +103,12 @@ const allBtn = document.createElement("button");
 allBtn.textContent = "All";
 allBtn.onclick = () => loadSet("all");
 controls.appendChild(allBtn);
+
+
+const newBtn = document.createElement("button");
+newBtn.textContent = "New";
+newBtn.onclick = () => loadSet("defaultsize");
+controls.appendChild(newBtn);
 
 for (let i = 0; i < sizes.length; i++) {
   const btn = document.createElement("button");
@@ -108,7 +122,24 @@ function loadSet(key) {
   const container = document.getElementById("container");
   container.innerHTML = "";
 
-  const data = key === "all" ? sets.all : sets.bySize[key];
+  // const data = key === "all" ? sets.all : sets.bySize[key];
+  // const data = key === "all" ? sets.all : key === "defaultsize" ? sets.defaultSize : sets.bySize[key];
+
+
+  let data;
+
+if (key === "all") {
+  data = sets.all;
+} else if (key === "defaultsize") {
+  data = sets.defaultsize;
+} else {
+  data = sets.bySize[key];
+}
+  // third option key == "defaultsize"
+
+  console.log(key)
+  console.log(data)
+  console.log(sets)
 
   data.forEach(item => {
 
@@ -141,7 +172,8 @@ function loadSet(key) {
 }
 
 // default load
-loadSet("all");
+loadSet("defaultsize");
+// loadSet("all");
 </script>
 
 </body>
