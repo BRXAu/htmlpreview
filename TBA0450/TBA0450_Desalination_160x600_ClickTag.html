@@ -271,7 +271,7 @@ if(elementExist("TermsContent")){
 timeline.to("#placement",0.3,{autoAlpha:1},0)
 // Hide elements
 timeline.set("#F1_Content,#F2_Content,#F3_Content,#F4_Content,#Countdown,#ListContainer,#frame02_image",{opacity:0},0)
-timeline.set("#HeroImageInner",{opacity:1,scale:1.1,transformOrigin:"50% 50%"},0)
+timeline.set("#HeroImageInner",{opacity:1,scale:1,transformOrigin:"50% 50%"},0)
 timeline.set("#exitBttn",{opacity:0},0)
 
 let yMove = 0;
@@ -297,7 +297,7 @@ timeline.set("#F1_Content,#F1_Lines",{opacity:1},frame01Start)
 
 let delay = frame01Start+start;
 
-timeline.to("#HeroImageInner",10,{scale: 1},delay)
+timeline.to("#HeroImageInner",17,{scale: 1.14},delay)
 
 timeline.to("#F1_text_01",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 delay+=lineDelay;

@@ -250,7 +250,7 @@ function events(){
 function startAd(){
   events();
   // start gsap code //
-   //events();
+    //events();
   
   // start gsap code //
   // GSAP code goes here
@@ -296,7 +296,7 @@ timeline.set("#F1_Content,#F1_Lines",{opacity:1},frame01Start)
 
 let delay = frame01Start+start;
 
-timeline.to("#HeroImageInner",10,{scale: 1.1},delay)
+timeline.to("#HeroImageInner",16,{scale: 1.14},delay)
 
 timeline.to("#F1_text_01",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 delay+=lineDelay;
@@ -357,9 +357,7 @@ timeline.to("#F4_text_03",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 
 
 
-
- //
-// end gsap code //
+  // end gsap code //
 }
 
 function elementExist(str){

@@ -245,7 +245,7 @@ function events(){
 function startAd(){
   events();
   // start gsap code //
-    //events();
+   //events();
   
   // start gsap code //
   // GSAP code goes here
@@ -264,7 +264,7 @@ if(elementExist("TermsContent")){
 
 timeline.to("#placement",0.3,{autoAlpha:1},0)
 // Hide elements
-timeline.set("#F1_Content,#F2_Content,#F3_Content,#F4_Content,#Countdown,#ListContainer,#frame02_image,#CTA",{opacity:0},0)
+timeline.set("#F1_Content,#F2_Content,#F3_Content,#F4_Content,#Countdown,#ListContainer,#frame02_image",{opacity:0},0)
 timeline.set("#HeroImageInner",{opacity:1,scale:1,transformOrigin:"70% 50%"},0)
 timeline.set("#exitBttn",{opacity:0},0)
 
@@ -291,7 +291,7 @@ timeline.set("#F1_Content,#F1_Lines",{opacity:1},frame01Start)
 
 let delay = frame01Start+start;
 
-timeline.to("#HeroImageInner",10,{scale: 1.1},delay)
+timeline.to("#HeroImageInner",16,{scale: 1.14},delay)
 
 timeline.to("#F1_text_01",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 delay+=lineDelay;
@@ -331,7 +331,7 @@ delay+=lineDelay;
 timeline.to("#F3_text_03",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 
 delay+=2.8;
-timeline.to("#F3_Content,#Logo",0.3,{autoAlpha:0,x:0,y:0},delay)
+timeline.to("#F3_Content",0.3,{autoAlpha:0,x:0,y:0},delay)
 delay+=0.3;
 
 timeline.set("#F4_Content",{autoAlpha:1,x:0,y:0},delay)
@@ -342,9 +342,6 @@ delay+=lineDelay;
 timeline.to("#F4_text_03",lineDuration,{autoAlpha:1,x:0,y:0},delay)
 
 
-delay+=lineDelay;
-timeline.set("#Logo",{x:-138,y:0},delay)
-timeline.to("#CTA,#Logo",lineDuration,{autoAlpha:1},delay)
 
 
 
@@ -354,7 +351,10 @@ timeline.to("#CTA,#Logo",lineDuration,{autoAlpha:1},delay)
 
 
 
-  // end gsap code //
+
+
+ //
+// end gsap code //
 }
 
 function elementExist(str){
