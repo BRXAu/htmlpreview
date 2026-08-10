@@ -65,22 +65,42 @@
   </div>
 
   <script>
-    let darkMode = false;
+
+    let defaultUrl="edm.html"
+    let darkUrl ="edm-dark.html"
+    let noImagesUrl ="edm-no-images.html"
+
+    currentUrl = defaultUrl;
 
     function toggleDark() {
-      darkMode = !darkMode;
-      const newUrl = darkMode ? 'edm-dark.html' : 'edm.html';
-      document.getElementById('desktop-frame').src = newUrl;
-      document.getElementById('mobile-frame').src = newUrl;
+      
+      if(currentUrl!=darkUrl){
+        currentUrl = darkUrl;
+      }
+      else {
+        currentUrl = defaultUrl;
+      }
+
+
+      document.getElementById('desktop-frame').src = currentUrl;
+      document.getElementById('mobile-frame').src = currentUrl;
 
     }
 
     function toggleImages() {
-      darkMode = !darkMode;
-      const newUrl = darkMode ? 'edm-no-images.html' : 'edm.html';
-      document.getElementById('desktop-frame').src = newUrl;
-      document.getElementById('mobile-frame').src = newUrl;
+      if(currentUrl!=noImagesUrl){
+        currentUrl = noImagesUrl;
+      }
+      else {
+        currentUrl = defaultUrl;
+      }
+
+
+      document.getElementById('desktop-frame').src = currentUrl;
+      document.getElementById('mobile-frame').src = currentUrl;
     }
+
+
   </script>
 
   <script>
