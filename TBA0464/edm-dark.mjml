@@ -17,14 +17,21 @@
       <mj-class name="bg-color" background-color="#ffffff" />
       <mj-class name="text-color" color="#6C757D" />
 
+      <mj-class name="pre-bg-color" background-color="#E0DDDB" />
+      <mj-class name="pre-text-color" color="#000000" />
+
       <mj-class name="footer-bg-color" background-color="#F9F7F5" />
       <mj-class name="footer-text-color" color="#707372" />
       --><!-- End colour scheme default -->
 
 
       <!-- Start colour scheme dark -->
+
       <mj-class name="bg-color" background-color="#000000" />
       <mj-class name="text-color" color="#E0E0E0" />
+
+      <mj-class name="pre-bg-color" background-color="#1E1E1E" />
+      <mj-class name="pre-text-color" color="#FFFFFF" />
 
       <mj-class name="footer-bg-color" background-color="#1A1A1A" />
       <mj-class name="footer-text-color" color="#A0A5A4" />
@@ -61,6 +68,9 @@
       .footer-raw-text {
         color: #A0A5A4!important
       }
+      .pre-link-color {
+        color: #FFFFFF!important
+      }
       /* end css dark-mode */
     </mj-style>
 
@@ -69,7 +79,20 @@
     </mj-style>
   </mj-head>
 
+
+
+
   <mj-body class="dark-mode" mj-class="bg-color">
+
+      <mj-section mj-class="pre-bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="pre-text-color" padding="10px 25px" font-size="10px" ine-height="10px" align="center">
+          Having trouble viewing this email? <a class="pre-link-color" href="#" style="color: #707372; text-decoration: underline;">View Online</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
     <mj-section padding="0">
       <mj-column>
         <!-- Desktop image -->
