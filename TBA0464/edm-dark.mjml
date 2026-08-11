@@ -12,6 +12,9 @@
         line-height="24px"
       />
 
+
+      
+
       
       <!-- Start colour scheme default --><!--
       <mj-class name="bg-color" background-color="#ffffff" />
@@ -71,27 +74,32 @@
       .pre-link-color {
         color: #FFFFFF!important
       }
+
+      .cta-link {
+        color: #FFFFFF!important;
+      }
       /* end css dark-mode */
     </mj-style>
 
     <mj-style inline="inline">
+    .cta-link {
+      color: #343A40;
+      font-weight: bold;
+      text-decoration: none;
+    }
 
     </mj-style>
   </mj-head>
 
-
-
-
   <mj-body class="dark-mode" mj-class="bg-color">
 
-      <mj-section mj-class="pre-bg-color" padding="0">
+    <mj-section mj-class="pre-bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="pre-text-color" padding="10px 25px" font-size="10px" ine-height="10px" align="center">
           Having trouble viewing this email? <a class="pre-link-color" href="#" style="color: #707372; text-decoration: underline;">View Online</a>
         </mj-text>
       </mj-column>
     </mj-section>
-
 
     <mj-section padding="0">
       <mj-column>
@@ -110,7 +118,7 @@
 
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
-        <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" ine-height="26px" align="left">
+        <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
           Applications for the 2027 BHP Xplor cohort open on 31 August&nbsp;2026.
         </mj-text>
       </mj-column>
@@ -121,7 +129,6 @@
         <mj-spacer height="20px" padding="0"/>
       </mj-column>
     </mj-section>
-
 
     <mj-section class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
@@ -136,17 +143,34 @@
 
     <mj-section class="bg-color" padding="0">
       <mj-column padding="0">
-        <mj-spacer height="30px" padding="0"/>
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+
+<mj-section class="bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+  <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
+    <table width="100" border="0" cellpadding="0" cellspacing="0" style="width: 100px; border-collapse: collapse;">
+  <tr>
+    <td width="85" style="width: 120px; font-family: Arial, sans-serif; font-size: 13px; color: #333333;">
+      <a class="cta-link" href="#">Learn more</a>
+    </td>
+    <td width="15" style="width: 15px; line-height: 1px;">
+      <a class="cta-link" href="#"><img src="tba0464-01-arrow.png" width="15" height="15" alt="" style="display: block; width: 15px; height: auto;" /></a>
+    </td>
+  </tr>
+</table>
+</mj-text>
       </mj-column>
     </mj-section>
 
 
     <mj-section class="bg-color" padding="0">
-      <mj-column padding="0" width="480px">
-       <mj-image css-class="cta-image" src="tba0464-01-cta.png" alt="Learn more" width="98px" padding="0px 25px" align="left" href="#"/>
+      <mj-column padding="0" width="480px" align="left">
+        <mj-divider width="100px" border-width="1px" border-style="solid"  border-color="#DD5900" padding="0px 25px" align="left"/>
       </mj-column>
     </mj-section>
-
 
     <mj-section class="bg-color" padding="0">
       <mj-column padding="0">
@@ -160,10 +184,12 @@
       </mj-column>
     </mj-section>
 
-
     <mj-section mj-class="footer-bg-color" padding="0">
       <mj-column width="96px" padding="0" vertical-align="bottom">
         <mj-image css-class="logo-image" src="tba0464-01-Logo.png" alt="BHP. Copyright BHP 2020." width="46px" padding="0px 25px" align="left" href="#"/>
+        <mj-text mj-class="text-color" padding="5px 0px 0px 25px" font-size="8px" line-height="8px" align="left">
+          &copy; BHP 2026
+        </mj-text>
       </mj-column>
       <mj-column padding="0" width="454" vertical-align="bottom">
           <mj-raw>
@@ -176,25 +202,22 @@
                     Connect with us and keep up to date with the latest&nbsp;from&nbsp;BHP
                   </span>
                 </td>
-                
                 <!-- Facebook Column -->
-                <td width="22" valign="bottom" style="width: 22px; padding: 0 20px 0 10px;">
+                <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 10px;">
                   <a href="#" target="_blank" style="text-decoration: none; display: block; width: 22px;">
-                    <img src="tba0464-01-icon-fb.png" width="22" height="22" alt="Facebook" border="0" style="display: block; width: 22px; height: 22px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="tba0464-01-icon-fb.png" width="28" height="28" alt="Facebook" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
-                
                 <!-- Instagram Column -->
-                <td width="22" valign="bottom" style="width: 22px; padding: 0 20px 0 0px;">
+                <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 0px;">
                   <a href="#" target="_blank" style="text-decoration: none; display: block; width: 22px;">
-                    <img src="tba0464-01-icon-insta.png" width="22" height="22" alt="Instagram" border="0" style="display: block; width: 22px; height: 22px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="tba0464-01-icon-insta.png" width="28" height="28" alt="Instagram" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
-                
                 <!-- YouTube Column -->
-                <td width="22" valign="bottom" style="width: 22px; padding: 0 25px 0 0px;">
+                <td width="28" valign="bottom" style="width: 22px; padding: 0 25px 0 0px;">
                   <a href="#" target="_blank" style="text-decoration: none; display: block; width: 22px;">
-                    <img src="tba0464-01-icon-yt.png" width="22" height="22" alt="YouTube" border="0" style="display: block; width: 22px; height: 22px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="tba0464-01-icon-yt.png" width="28" height="28" alt="YouTube" border="0" style="display: block; width: 22px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
               </tr>
@@ -202,7 +225,6 @@
           </mj-raw>
       </mj-column>
     </mj-section>
-
 
     <mj-section mj-class="footer-bg-color" padding="0" >
       <mj-column padding="0">
@@ -222,27 +244,21 @@
       </mj-column>
     </mj-section>
 
-
     <mj-section mj-class="footer-bg-color" padding="0">
       <mj-column padding="0" width="550px">
         <mj-text mj-class="footer-text-color" font-size="10px" line-height="14px" align="left" >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           <br><br>
-          <a href="https://example.com" target="_blank" style="color: #707372; text-decoration: underline;">Unsubscribe</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://example.com" target="_blank" style="color: #707372; text-decoration: underline;">Privacy Settings</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://example.com" target="_blank" style="color: #707372; text-decoration: underline;">Contact us</a>
+          <a href="https://example.com" target="_blank" style="color: #707372; text-decoration: underline;">Unsubscribe</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://example.com" target="_blank" style="color: #707372; text-decoration: underline;">Privacy Settings</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" target="_blank" style="color: #707372; text-decoration: underline;">Contact us</a>
         </mj-text>
       </mj-column>
     </mj-section>
-
 
     <mj-section mj-class="footer-bg-color" padding="0">
       <mj-column padding="0">
         <mj-spacer height="30px" padding="0" />
       </mj-column>
     </mj-section>
-
-
-
-
 
   </mj-body>
 </mjml>
