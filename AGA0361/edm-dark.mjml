@@ -9,7 +9,7 @@
       <mj-class name="hero-image-desktop" css-class="desktop-image" src="aga0361_hero-desktop.png" width="600px" />
       <mj-class name="hero-image-mobile" css-class="mobile-image" src="aga0361_hero-mobile.png" />
       <mj-class name="cta-01" css-class="cta-image" src="aga0361-cta-01.png" alt="COMPARE MY BILL" width="196px" padding="0px 25px" align="center" href="#" />
-      <mj-class name="cta-02" css-class="cta-image" src="aga0361-cta-01.png" alt="COMPARE MY BILL" width="196px" padding="0px 25px" align="center" href="#" />
+      <mj-class name="cta-02" css-class="cta-image" src="aga0361-cta-02.png" alt="COMPARE MY BILL" width="312px" padding="0px 25px" align="center" href="#" />
       <mj-class name="did-you-know" src="aga0361_didyouknow.png" alt="Did you know..." width="260px" padding="0px 25px" align="center" href="#"/>
       <mj-class name="awards" src="aga0361-award.png" alt="Talk to an AGL Business expert" width="91px" padding="25px 0 0 25px" align="left" href="#"/>
       <mj-class name="icon-bill" src="aga0361-bill.png" alt="" width="50px" padding="" align="center"/>
@@ -17,7 +17,7 @@
       <mj-class name="icon-rewards" src="aga0361-rewards.png" alt="" width="50px" padding="" align="center"/>
       <mj-class name="chat" src="aga0361-chat.png" alt="" width="50px" padding="" align="center"/>
 
-      <!-- Start colour scheme default -->
+      <!-- Start colour scheme default --><!--
       <mj-class name="columns" padding="0" width="550px"/>
 
       <mj-class name="bg-color" background-color="#ffffff" />
@@ -26,25 +26,32 @@
       <mj-class name="module01-bg-color" background-color="#E6FCFD"  />
       <mj-class name="module01-color" color="#001CB0"  />
 
+      <mj-class name="help" background-color="#E6FCFD">
+
       <mj-class name="pre-bg-color" background-color="#E0DDDB" />
       <mj-class name="pre-text-color" color="#000000" />
 
       <mj-class name="footer-bg-color" background-color="#F9F7F5" />
       <mj-class name="footer-text-color" color="#707372" />
-      <!-- End colour scheme default -->
+      --><!-- End colour scheme default -->
 
 
-      <!-- Start colour scheme dark --><!--
+      <!-- Start colour scheme dark -->
 
       <mj-class name="bg-color" background-color="#000000" />
       <mj-class name="text-color" color="#E0E0E0" />
+
+      <mj-class name="module01-bg-color" background-color="#0B132B"  />
+      <mj-class name="module01-color" color="#64F4F8"  />
+
+      <mj-class name="help" background-color="#0B1C1D">
 
       <mj-class name="pre-bg-color" background-color="#1E1E1E" />
       <mj-class name="pre-text-color" color="#FFFFFF" />
 
       <mj-class name="footer-bg-color" background-color="#1A1A1A" />
       <mj-class name="footer-text-color" color="#A0A5A4" />
-      --><!-- End colour scheme dark -->
+      <!-- End colour scheme dark -->
 
     </mj-attributes>
 
@@ -73,14 +80,20 @@
         }
       }
 
-      /* start css dark-mode */ /*
+      /* start css dark-mode */
       .footer-raw-text {
         color: #A0A5A4!important
       }
       .pre-link-color {
         color: #FFFFFF!important
       }
-      */ /* end css dark-mode */
+
+      .bullet-point-text {
+        color: #6B8CFF!important;
+      }
+
+      <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
+      /* end css dark-mode */
     </mj-style>
 
     <mj-style inline="inline">
@@ -144,7 +157,7 @@
         <td style="vertical-align: middle; width: 30px; padding-bottom: 15px;">
           <img src="aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
         </td>
-        <td style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
+        <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
           It only takes a few minutes
         </td>
       </tr>
@@ -153,7 +166,7 @@
         <td style="vertical-align: middle; width: 30px; padding-bottom: 15px;">
           <img src="aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
         </td>
-        <td style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
+        <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
           It’s completely free and there’s no obligation to switch
         </td>
       </tr>
@@ -162,7 +175,7 @@
         <td style="vertical-align: middle; width: 30px; padding-bottom: 15px;">
           <img src="aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
         </td>
-        <td style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
+        <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
           It could uncover great business savings
         </td>
       </tr>
@@ -381,7 +394,8 @@
   </mj-column>
 </mj-section>
 
-<mj-section padding="0" background-color="#E6FCFD">
+
+<mj-section mj-class="help" padding="0">
   <mj-column padding="50px 25px">
     <mj-image mj-class="chat"/>
     <mj-text mj-class="text-color"  padding="10px" font-size="20px" font-weight="bold" line-height="14px" align="center" >
