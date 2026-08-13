@@ -22,7 +22,7 @@
       heroMobile.src="tba0464-01-hero-desktop.jpg"
       heroAlt="BHP Xplor. Go further with BHP Xplor."
 
-      icon01.src="tba0464-01-icon-insta.png"
+      icon01.src="tba0464-01-icon-fb.png"
       icon01.alt="Facebook"
       icon01.url="#"
 
@@ -47,7 +47,7 @@
       <mj-image name="hero-image" alt="${heroAlt}" padding="0" />
       <mj-image name="hero-desktop" css-class="desktop-image" src="${urlpath}${heroDesktop.src}"  width="600px" />
       <mj-class name="hero-mobile" css-class="mobile-image" src="${urlpath}${heroMobile.src}" />
-      <mj-class name="logo-image" src="${urlpath}${logo.src}" alt="${logo.alt}" width="46px" padding="0px 25px" align="left" href="#"/>
+      <mj-class name="logo-image" css-class="both" src="${urlpath}${logo.src}" alt="${logo.alt}" width="46px" padding="0px 25px" align="left" href="#"/>
 
       <!-- Start colour scheme default -->
       <mj-class name="bg-color" background-color="#ffffff" />
@@ -86,6 +86,8 @@
         .desktop-image {
           display: none !important;
         }
+
+        
       }
 
       @media only screen and (min-width: 600px) {
@@ -120,6 +122,10 @@
       font-weight: bold;
       text-decoration: none;
     }
+
+    .both {
+          display: block !important;
+        }
 
     </mj-style>
   </mj-head>

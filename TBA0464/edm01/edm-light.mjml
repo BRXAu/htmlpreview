@@ -22,7 +22,7 @@
       heroMobile.src="tba0464-01-hero-desktop.jpg"
       heroAlt="BHP Xplor. Go further with BHP Xplor."
 
-      icon01.src="tba0464-01-icon-insta.png"
+      icon01.src="tba0464-01-icon-fb.png"
       icon01.alt="Facebook"
       icon01.url="#"
 
@@ -47,7 +47,7 @@
       <mj-image name="hero-image" alt="BHP Xplor. Go further with BHP Xplor." padding="0" />
       <mj-image name="hero-desktop" css-class="desktop-image" src="tba0464-01-hero-desktop.jpg"  width="600px" />
       <mj-class name="hero-mobile" css-class="mobile-image" src="tba0464-01-hero-desktop.jpg" />
-      <mj-class name="logo-image" src="tba0464-01-Logo.png" alt="BHP. Copyright BHP 2026." width="46px" padding="0px 25px" align="left" href="#"/>
+      <mj-class name="logo-image" css-class="both" src="tba0464-01-Logo.png" alt="BHP. Copyright BHP 2026." width="46px" padding="0px 25px" align="left" href="#"/>
 
       <!-- Start colour scheme default -->
       <mj-class name="bg-color" background-color="#ffffff" />
@@ -86,6 +86,8 @@
         .desktop-image {
           display: none !important;
         }
+
+        
       }
 
       @media only screen and (min-width: 600px) {
@@ -120,6 +122,10 @@
       font-weight: bold;
       text-decoration: none;
     }
+
+    .both {
+          display: block !important;
+        }
 
     </mj-style>
   </mj-head>
@@ -233,7 +239,7 @@
                 <!-- Facebook Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 10px;">
                   <a href="#" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="tba0464-01-icon-insta.png" width="28" height="28" alt="Facebook" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="tba0464-01-icon-fb.png" width="28" height="28" alt="Facebook" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
                 <!-- Instagram Column -->
