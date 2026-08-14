@@ -21,6 +21,7 @@ parent=$(basename "$base_dir")
 
 # Loop through subfolders and zip each
 for dir in */; do
+    rm $dir/main.js.LICENSE.txt
     dirname=$(basename "$dir")
     zipname="_zip/${dirname}.zip"
     zip -r "$zipname" "$dir"
