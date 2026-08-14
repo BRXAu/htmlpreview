@@ -16,7 +16,7 @@
       Create any variables below.  In code reference as ${variable}
       Run node watch.js to export files
 
-      urlpath=""
+      urlpath="https://brxau.github.io/htmlpreview/TBA0464/edm01/"
 
       hero.desktop.src="tba0464-01-hero-desktop.jpg"
       hero.mobile.src="tba0464-01-hero-mobile.jpg"
@@ -41,6 +41,8 @@
       cta.text="Learn more"
       cta.url="https://www.bhp.com/xplor"
       cta.src="tba0464-01-arrow.png"
+
+
       
       End custom variables -->
 
@@ -90,14 +92,16 @@
 
       @media only screen and (min-width: 600px) {
         .desktop-image {
-          display: block !important;
-          width: 100% !important;
-          height: auto !important;
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
         }
         .mobile-image {
           display: none !important;
         }
       }
+
+      
 
       /* start css dark-mode */ /*
       .footer-raw-text {
@@ -124,6 +128,16 @@
           display: block !important;
         }
 
+
+        .desktop-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+        .mobile-image {
+          display: none;
+        }
+
     </mj-style>
   </mj-head>
 
@@ -139,7 +153,7 @@
     <mj-section padding="0">
       <mj-column>
         <mj-image mj-class="hero-image hero-desktop" />
-        <mj-image mj-class="hero-image hero-mobile"  />
+        <edm-not-outlook-open><mj-image mj-class="hero-image hero-mobile"  /><edm-not-outlook-close>
       </mj-column>
     </mj-section>
 
@@ -189,7 +203,7 @@
                 <a class="cta-link" href="${cta.url}" target="blank">${cta.text}</a>
               </td>
               <td width="15" style="width: 15px; line-height: 1px;">
-                <a class="cta-link" href="${cta.url}" target="blank"><img src="${cta.src}" width="15" height="15" alt="" style="display: block; width: 15px; height: auto;" /></a>
+                <a class="cta-link" href="${cta.url}" target="blank"><img src="${urlpath}${cta.src}" width="15" height="15" alt="" style="display: block; width: 15px; height: auto;" /></a>
               </td>
             </tr>
           </table>
@@ -236,19 +250,19 @@
                 <!-- Facebook Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 10px;">
                   <a href="${icon01.url}" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="${icon01.src}" width="28" height="28" alt="${icon01.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="${urlpath}${icon01.src}" width="28" height="28" alt="${icon01.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
                 <!-- Instagram Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 0px;">
                   <a href="${icon02.url}" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="${icon02.src}" width="28" height="28" alt="${icon02.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="${urlpath}${icon02.src}" width="28" height="28" alt="${icon02.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
                 <!-- YouTube Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 25px 0 0px;">
                   <a href="${icon03.url}" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="${icon03.src}" width="28" height="28" alt="${icon03.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="${urlpath}${icon03.src}" width="28" height="28" alt="${icon03.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
               </tr>

@@ -16,7 +16,7 @@
       Create any variables below.  In code reference as ${variable}
       Run node watch.js to export files
 
-      urlpath=""
+      urlpath="https://brxau.github.io/htmlpreview/TBA0464/edm01/"
 
       hero.desktop.src="tba0464-01-hero-desktop.jpg"
       hero.mobile.src="tba0464-01-hero-mobile.jpg"
@@ -41,14 +41,16 @@
       cta.text="Learn more"
       cta.url="https://www.bhp.com/xplor"
       cta.src="tba0464-01-arrow.png"
+
+
       
       End custom variables -->
 
 
       <mj-image name="hero-image" alt="BHP Xplor. Go further with BHP Xplor." padding="0" />
-      <mj-image name="hero-desktop" css-class="desktop-image" src="tba0464-01-hero-desktop.jpg"  width="600px" />
-      <mj-class name="hero-mobile" css-class="mobile-image" src="tba0464-01-hero-mobile.jpg" />
-      <mj-class name="logo-image" css-class="both" src="tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
+      <mj-image name="hero-desktop" css-class="desktop-image" src="https://brxau.github.io/htmlpreview/TBA0464/edm01/tba0464-01-hero-desktop.jpg"  width="600px" />
+      <mj-class name="hero-mobile" css-class="mobile-image" src="https://brxau.github.io/htmlpreview/TBA0464/edm01/tba0464-01-hero-mobile.jpg" />
+      <mj-class name="logo-image" css-class="both" src="https://brxau.github.io/htmlpreview/TBA0464/edm01/tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
 
       <!-- Start colour scheme default --><!--
       <mj-class name="bg-color" background-color="#ffffff" />
@@ -90,14 +92,16 @@
 
       @media only screen and (min-width: 600px) {
         .desktop-image {
-          display: block !important;
-          width: 100% !important;
-          height: auto !important;
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
         }
         .mobile-image {
           display: none !important;
         }
       }
+
+      
 
       /* start css dark-mode */
       .footer-raw-text {
@@ -124,6 +128,16 @@
           display: block !important;
         }
 
+
+        .desktop-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+        .mobile-image {
+          display: none;
+        }
+
     </mj-style>
   </mj-head>
 
@@ -139,7 +153,7 @@
     <mj-section padding="0">
       <mj-column>
         <mj-image mj-class="hero-image hero-desktop" />
-        <mj-image mj-class="hero-image hero-mobile"  />
+        <!--[if !mso]><!--><mj-image mj-class="hero-image hero-mobile"  /><!--<![endif]-->
       </mj-column>
     </mj-section>
 
@@ -189,7 +203,7 @@
                 <a class="cta-link" href="https://www.bhp.com/xplor" target="blank">Learn more</a>
               </td>
               <td width="15" style="width: 15px; line-height: 1px;">
-                <a class="cta-link" href="https://www.bhp.com/xplor" target="blank"><img src="tba0464-01-arrow.png" width="15" height="15" alt="" style="display: block; width: 15px; height: auto;" /></a>
+                <a class="cta-link" href="https://www.bhp.com/xplor" target="blank"><img src="https://brxau.github.io/htmlpreview/TBA0464/edm01/tba0464-01-arrow.png" width="15" height="15" alt="" style="display: block; width: 15px; height: auto;" /></a>
               </td>
             </tr>
           </table>
@@ -236,19 +250,19 @@
                 <!-- Facebook Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 10px;">
                   <a href="https://www.facebook.com/BHP/" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="tba0464-01-icon-fb.png" width="28" height="28" alt="Facebook" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="https://brxau.github.io/htmlpreview/TBA0464/edm01/tba0464-01-icon-fb.png" width="28" height="28" alt="Facebook" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
                 <!-- Instagram Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 0px;">
                   <a href="https://www.linkedin.com/company/bhp" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="tba0464-01-icon-insta.png" width="28" height="28" alt="LinkedIn" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="https://brxau.github.io/htmlpreview/TBA0464/edm01/tba0464-01-icon-insta.png" width="28" height="28" alt="LinkedIn" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
                 <!-- YouTube Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 25px 0 0px;">
                   <a href="https://www.youtube.com/BHP" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="tba0464-01-icon-yt.png" width="28" height="28" alt="YouTube" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="https://brxau.github.io/htmlpreview/TBA0464/edm01/tba0464-01-icon-yt.png" width="28" height="28" alt="YouTube" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
               </tr>
