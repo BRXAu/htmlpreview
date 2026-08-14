@@ -5,17 +5,56 @@
       <mj-all font-family="Arial, Helvetica, sans-serif"/>
       <mj-text font-family="Arial, Helvetica, sans-serif"/>
 
-      <mj-class name="hero-image" padding="0" alt="AGL Business.  Could a better energy plan* boost your business?  Get a bill comparison with AGL. REQUEST A CALLBACK." />
+
+      <!-- Start custom variables
+      Create any variables below.  In code reference as ${variable}
+      Run node watch.js to export files
+
+      urlpath=""
+
+      hero.desktop.src="aga0361_hero-desktop.png"
+      hero.mobile.src="aga0361_hero-mobile.png"
+      hero.alt="AGL Business.  Could a better energy plan* boost your business?  Get a bill comparison with AGL. REQUEST A CALLBACK."
+      hero.url="#"
+
+      cta01.src="aga0361-cta-01.png"
+      cta01.alt="COMPARE MY BILL"
+      cta01.url="#"
+
+      cta02.src="aga0361-cta-02.png"
+      cta02.alt="TALK TO AN AGL ENERGY SPECIALIST"
+      cta02.url="#"
+
+      didYouKnow.src="aga0361_didyouknow.png"
+      didYouKnow.alt="Did you know..."
+
+      award.src="aga0361-award.png"
+      award.alt="Talk to an AGL Business expert"
+
+      icon01.src="aga0361-bill.png"
+      icon01.alt=""
+      icon02.src="aga0361-aussiemade.png"
+      icon02.alt=""
+      icon03.src="aga0361-rewards.png"
+      icon03.alt=""
+
+      chat.src="aga0361-rewards.png"
+      chat.alt=""
+      
+      End custom variables -->
+
+
+      <mj-class name="hero-image" padding="0" alt="AGL Business.  Could a better energy plan* boost your business?  Get a bill comparison with AGL. REQUEST A CALLBACK." href="#"/>
       <mj-class name="hero-image-desktop" css-class="desktop-image" src="aga0361_hero-desktop.png" width="600px" />
       <mj-class name="hero-image-mobile" css-class="mobile-image" src="aga0361_hero-mobile.png" />
       <mj-class name="cta-01" css-class="cta-image" src="aga0361-cta-01.png" alt="COMPARE MY BILL" width="196px" padding="0px 25px" align="center" href="#" />
-      <mj-class name="cta-02" css-class="cta-image" src="aga0361-cta-02.png" alt="COMPARE MY BILL" width="312px" padding="0px 25px" align="center" href="#" />
+      <mj-class name="cta-02" css-class="cta-image" src="aga0361-cta-02.png" alt="TALK TO AN AGL ENERGY SPECIALIST" width="312px" padding="0px 25px" align="center" href="#" />
       <mj-class name="did-you-know" src="aga0361_didyouknow.png" alt="Did you know..." width="260px" padding="0px 25px" align="center" href="#"/>
       <mj-class name="awards" src="aga0361-award.png" alt="Talk to an AGL Business expert" width="91px" padding="25px 0 0 25px" align="left" href="#"/>
       <mj-class name="icon-bill" src="aga0361-bill.png" alt="" width="50px" padding="" align="center"/>
       <mj-class name="icon-aussie" src="aga0361-aussiemade.png" alt="" width="56px" padding="" align="center"/>
       <mj-class name="icon-rewards" src="aga0361-rewards.png" alt="" width="50px" padding="" align="center"/>
-      <mj-class name="chat" src="aga0361-chat.png" alt="" width="50px" padding="" align="center"/>
+      <mj-class name="chat" src="aga0361-rewards.png" alt="" width="50px" padding="" align="center"/>
 
       <!-- Start colour scheme default --><!--
       <mj-class name="columns" padding="0" width="550px"/>
@@ -217,7 +256,7 @@
     <mj-text mj-class="module01-color" padding="25px 25px 0px 25px" font-size="17px" line-height="26px" align="center" >
       More than half of Australian small businesses expect rising costs to remain one of their biggest challenges.
       <br><br>
-      Nearly 1 in 5 Aussie businesses are renegotiating supplier contracts to reduce costs this year,1 so make sure your energy retailer has a performance review as well.
+      Nearly 1 in 5 Aussie businesses are renegotiating supplier contracts to reduce costs this year,<sup>1</sup> so make sure your energy retailer has a performance review as well.
     </mj-text>
   </mj-column>
 

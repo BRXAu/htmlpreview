@@ -44,17 +44,17 @@
       End custom variables -->
 
 
-      <mj-class name="hero-image" padding="0" alt="${hero.alt}" href="${hero.url}"/>
-      <mj-class name="hero-image-desktop" css-class="desktop-image" src="${urlpath}${hero.desktop.src}" width="600px" />
-      <mj-class name="hero-image-mobile" css-class="mobile-image" src="${urlpath}${hero.mobile.src}" />
-      <mj-class name="cta-01" css-class="cta-image" src="${urlpath}${cta01.src}" alt="${cta01.alt}" width="196px" padding="0px 25px" align="center" href="${cta01.url}" />
-      <mj-class name="cta-02" css-class="cta-image" src="${urlpath}${cta02.src}" alt="${cta02.alt}" width="312px" padding="0px 25px" align="center" href="${cta02.url}" />
-      <mj-class name="did-you-know" src="${urlpath}${didYouKnow.src}" alt="${didYouKnow.alt}" width="260px" padding="0px 25px" align="center" href="#"/>
-      <mj-class name="awards" src="${urlpath}${award.src}" alt="${award.alt}" width="91px" padding="25px 0 0 25px" align="left" href="#"/>
-      <mj-class name="icon-bill" src="${urlpath}${icon01.src}" alt="${icon01.alt}" width="50px" padding="" align="center"/>
-      <mj-class name="icon-aussie" src="${urlpath}${icon02.src}" alt="${icon02.alt}" width="56px" padding="" align="center"/>
-      <mj-class name="icon-rewards" src="${urlpath}${icon03.src}" alt="${icon03.alt}" width="50px" padding="" align="center"/>
-      <mj-class name="chat" src="${urlpath}${chat.src}" alt="${chat.alt}" width="50px" padding="" align="center"/>
+      <mj-class name="hero-image" padding="0" alt="AGL Business.  Could a better energy plan* boost your business?  Get a bill comparison with AGL. REQUEST A CALLBACK." href="#"/>
+      <mj-class name="hero-image-desktop" css-class="desktop-image" src="aga0361_hero-desktop.png" width="600px" />
+      <mj-class name="hero-image-mobile" css-class="mobile-image" src="aga0361_hero-mobile.png" />
+      <mj-class name="cta-01" css-class="cta-image" src="aga0361-cta-01.png" alt="COMPARE MY BILL" width="196px" padding="0px 25px" align="center" href="#" />
+      <mj-class name="cta-02" css-class="cta-image" src="aga0361-cta-02.png" alt="TALK TO AN AGL ENERGY SPECIALIST" width="312px" padding="0px 25px" align="center" href="#" />
+      <mj-class name="did-you-know" src="aga0361_didyouknow.png" alt="Did you know..." width="260px" padding="0px 25px" align="center" href="#"/>
+      <mj-class name="awards" src="aga0361-award.png" alt="Talk to an AGL Business expert" width="91px" padding="25px 0 0 25px" align="left" href="#"/>
+      <mj-class name="icon-bill" src="aga0361-bill.png" alt="" width="50px" padding="" align="center"/>
+      <mj-class name="icon-aussie" src="aga0361-aussiemade.png" alt="" width="56px" padding="" align="center"/>
+      <mj-class name="icon-rewards" src="aga0361-rewards.png" alt="" width="50px" padding="" align="center"/>
+      <mj-class name="chat" src="aga0361-rewards.png" alt="" width="50px" padding="" align="center"/>
 
       <!-- Start colour scheme default -->
       <mj-class name="columns" padding="0" width="550px"/>

@@ -24,21 +24,22 @@
 
       icon01.src="tba0464-01-icon-fb.png"
       icon01.alt="Facebook"
-      icon01.url="#"
+      icon01.url="https://www.facebook.com/BHP/"
 
       icon02.src="tba0464-01-icon-insta.png"
-      icon02.alt="Instagram"
-      icon02.url="#"
+      icon02.alt="LinkedIn"
+      icon02.url="https://www.linkedin.com/company/bhp"
 
       icon03.src="tba0464-01-icon-yt.png"
       icon03.alt="YouTube"
-      icon03.url="#"
+      icon03.url="https://www.youtube.com/BHP"
 
       logo.src="tba0464-01-Logo.png"
-      logo.alt="BHP. Copyright BHP 2026."
+      logo.alt="BHP"
+      logo.url="https://www.bhp.com/"
 
       cta.text="Learn more"
-      cta.url="#"
+      cta.url="https://www.bhp.com/xplor"
       cta.src="tba0464-01-arrow.png"
       
       End custom variables -->
@@ -47,7 +48,7 @@
       <mj-image name="hero-image" alt="BHP Xplor. Go further with BHP Xplor." padding="0" />
       <mj-image name="hero-desktop" css-class="desktop-image" src="tba0464-01-hero-desktop.jpg"  width="600px" />
       <mj-class name="hero-mobile" css-class="mobile-image" src="tba0464-01-hero-desktop.jpg" />
-      <mj-class name="logo-image" css-class="both" src="tba0464-01-Logo.png" alt="BHP. Copyright BHP 2026." width="46px" padding="0px 25px" align="left" href="#"/>
+      <mj-class name="logo-image" css-class="both" src="tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
 
       <!-- Start colour scheme default -->
       <mj-class name="bg-color" background-color="#ffffff" />
@@ -155,7 +156,7 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
-          Applications for the 2027 BHP Xplor cohort open on 31 August&nbsp;2026.
+          Applications for the 2027 BHP Xplor cohort open on 31 August&nbsp;2026. 
         </mj-text>
       </mj-column>
     </mj-section>
@@ -170,9 +171,9 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
-          BHP Xplor is a nine-month program for exploration and mining technology companies, with US$500,000 in equity&#8209;free funding, technical access, commercial support and industry connections. 
+          BHP Xplor is a nine-month program for mineral exploration companies, with US$500,000 in equity&#8209;free funding, technical access, commercial support and industry connections.
           <br><br>
-          If you’re ready to pursue what you already believe in, get ready to go further with BHP&nbsp;Xplor. 
+          Get ready to go further with BHP&nbsp;Xplor.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -189,10 +190,10 @@
           <table width="100" border="0" cellpadding="0" cellspacing="0" style="width: 100px; border-collapse: collapse;">
             <tr>
               <td width="85" style="width: 120px; font-family: Arial, sans-serif; font-size: 13px; color: #333333;">
-                <a class="cta-link" href="#">Learn more</a>
+                <a class="cta-link" href="https://www.bhp.com/xplor" target="blank">Learn more</a>
               </td>
               <td width="15" style="width: 15px; line-height: 1px;">
-                <a class="cta-link" href="#"><img src="tba0464-01-arrow.png" width="15" height="15" alt="" style="display: block; width: 15px; height: auto;" /></a>
+                <a class="cta-link" href="https://www.bhp.com/xplor" target="blank"><img src="tba0464-01-arrow.png" width="15" height="15" alt="" style="display: block; width: 15px; height: auto;" /></a>
               </td>
             </tr>
           </table>
@@ -238,53 +239,25 @@
                 </td>
                 <!-- Facebook Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 10px;">
-                  <a href="#" target="_blank" style="text-decoration: none; display: block; width: 28px;">
+                  <a href="https://www.facebook.com/BHP/" target="_blank" style="text-decoration: none; display: block; width: 28px;">
                     <img src="tba0464-01-icon-fb.png" width="28" height="28" alt="Facebook" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
                 <!-- Instagram Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 0px;">
-                  <a href="#" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="tba0464-01-icon-insta.png" width="28" height="28" alt="Instagram" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                  <a href="https://www.linkedin.com/company/bhp" target="_blank" style="text-decoration: none; display: block; width: 28px;">
+                    <img src="tba0464-01-icon-insta.png" width="28" height="28" alt="LinkedIn" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
                 <!-- YouTube Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 25px 0 0px;">
-                  <a href="#" target="_blank" style="text-decoration: none; display: block; width: 28px;">
+                  <a href="https://www.youtube.com/BHP" target="_blank" style="text-decoration: none; display: block; width: 28px;">
                     <img src="tba0464-01-icon-yt.png" width="28" height="28" alt="YouTube" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
               </tr>
             </table>
           </mj-raw>
-      </mj-column>
-    </mj-section>
-
-    <mj-section mj-class="footer-bg-color" padding="0" >
-      <mj-column padding="0">
-        <mj-spacer height="30px" padding="0" />
-      </mj-column>
-    </mj-section>
-
-    <mj-section mj-class="footer-bg-color" padding="0" >
-      <mj-column padding="0" width="550px">
-        <mj-divider border-width="1px" border-style="solid"  border-color="#ADB5BD" padding="0px 25px" />
-      </mj-column>
-    </mj-section>
-
-    <mj-section mj-class="footer-bg-color" padding="0">
-      <mj-column padding="0">
-        <mj-spacer height="30px" padding="0" />
-      </mj-column>
-    </mj-section>
-
-    <mj-section mj-class="footer-bg-color" padding="0">
-      <mj-column padding="0" width="550px">
-        <mj-text mj-class="footer-text-color" font-size="10px" line-height="14px" align="left" >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <br><br>
-          <a href="https://example.com" target="_blank" style="color: #707372; text-decoration: underline;">Unsubscribe</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://example.com" target="_blank" style="color: #707372; text-decoration: underline;">Privacy Settings</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" target="_blank" style="color: #707372; text-decoration: underline;">Contact us</a>
-        </mj-text>
       </mj-column>
     </mj-section>
 
