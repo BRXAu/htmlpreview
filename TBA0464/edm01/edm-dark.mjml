@@ -18,9 +18,9 @@
 
       urlpath=""
 
-      heroDesktop.src="tba0464-01-hero-desktop.jpg"
-      heroMobile.src="tba0464-01-hero-desktop.jpg"
-      heroAlt="BHP Xplor. Go further with BHP Xplor."
+      hero.desktop.src="tba0464-01-hero-desktop.jpg"
+      hero.mobile.src="tba0464-01-hero-mobile.jpg"
+      hero.alt="BHP Xplor. Go further with BHP Xplor."
 
       icon01.src="tba0464-01-icon-fb.png"
       icon01.alt="Facebook"
@@ -47,7 +47,7 @@
 
       <mj-image name="hero-image" alt="BHP Xplor. Go further with BHP Xplor." padding="0" />
       <mj-image name="hero-desktop" css-class="desktop-image" src="tba0464-01-hero-desktop.jpg"  width="600px" />
-      <mj-class name="hero-mobile" css-class="mobile-image" src="tba0464-01-hero-desktop.jpg" />
+      <mj-class name="hero-mobile" css-class="mobile-image" src="tba0464-01-hero-mobile.jpg" />
       <mj-class name="logo-image" css-class="both" src="tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
 
       <!-- Start colour scheme default --><!--
@@ -83,12 +83,9 @@
           width: 100% !important;
           height: auto !important;
         }
-
         .desktop-image {
           display: none !important;
         }
-
-        
       }
 
       @media only screen and (min-width: 600px) {
@@ -97,7 +94,6 @@
           width: 100% !important;
           height: auto !important;
         }
-
         .mobile-image {
           display: none !important;
         }

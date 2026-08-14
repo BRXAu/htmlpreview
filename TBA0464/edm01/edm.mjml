@@ -18,9 +18,9 @@
 
       urlpath=""
 
-      heroDesktop.src="tba0464-01-hero-desktop.jpg"
-      heroMobile.src="tba0464-01-hero-desktop.jpg"
-      heroAlt="BHP Xplor. Go further with BHP Xplor."
+      hero.desktop.src="tba0464-01-hero-desktop.jpg"
+      hero.mobile.src="tba0464-01-hero-mobile.jpg"
+      hero.alt="BHP Xplor. Go further with BHP Xplor."
 
       icon01.src="tba0464-01-icon-fb.png"
       icon01.alt="Facebook"
@@ -45,9 +45,9 @@
       End custom variables -->
 
 
-      <mj-image name="hero-image" alt="${heroAlt}" padding="0" />
-      <mj-image name="hero-desktop" css-class="desktop-image" src="${urlpath}${heroDesktop.src}"  width="600px" />
-      <mj-class name="hero-mobile" css-class="mobile-image" src="${urlpath}${heroMobile.src}" />
+      <mj-image name="hero-image" alt="${hero.alt}" padding="0" />
+      <mj-image name="hero-desktop" css-class="desktop-image" src="${urlpath}${hero.desktop.src}"  width="600px" />
+      <mj-class name="hero-mobile" css-class="mobile-image" src="${urlpath}${hero.mobile.src}" />
       <mj-class name="logo-image" css-class="both" src="${urlpath}${logo.src}" alt="${logo.alt}" width="46px" padding="0px 25px" align="left" href="${logo.url}"/>
 
       <!-- Start colour scheme default -->
@@ -83,12 +83,9 @@
           width: 100% !important;
           height: auto !important;
         }
-
         .desktop-image {
           display: none !important;
         }
-
-        
       }
 
       @media only screen and (min-width: 600px) {
@@ -97,7 +94,6 @@
           width: 100% !important;
           height: auto !important;
         }
-
         .mobile-image {
           display: none !important;
         }
