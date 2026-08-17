@@ -78,7 +78,7 @@
       <mj-class name="hero-image-desktop" css-class="desktop-image" src="${urlpath}${hero.desktop.src}" width="600px" />
       <mj-class name="hero-image-mobile" css-class="mobile-image" src="${urlpath}${hero.mobile.src}" />
       <mj-class name="cta-01" css-class="cta-image" src="${urlpath}${cta01.src}" alt="${cta01.alt}" width="196px" padding="0px 25px" align="center" href="${cta01.url}" />
-      <mj-class name="cta-02" css-class="cta-image" src="${urlpath}${cta02.src}" alt="${cta02.alt}" width="312px" padding="0px 25px" align="center" href="${cta02.url}" />
+      <mj-class name="cta-02" css-class="cta-image" src="${urlpath}${cta02.src}" alt="${cta02.alt}" width="327px" padding="0px 25px" align="center" href="${cta02.url}" />
       
       <mj-class name="aga0361-contentbox-01-desktop" css-class="aga0361-contentbox-01-desktop" src="${urlpath}${aga0361Contentbox01Desktop.src}" width="540px" />
       <mj-class name="aga0361-contentbox-01-mobile" css-class="aga0361-contentbox-01-mobile" src="${urlpath}${aga0361Contentbox01Mobile.src}" />
