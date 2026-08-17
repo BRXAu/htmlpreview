@@ -37,6 +37,17 @@
       aga0361Contentbox02.alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards."
       aga0361Contentbox02.url="#"
 
+      aga0361Contentbox03Desktop.src="aga0361-contentbox-03-desktop.png"
+      aga0361Contentbox03Mobile.src="aga0361-contentbox-03-mobile.png"
+      aga0361Contentbox03.alt="AGL is here to help. Have some questions? Find answers and ways to get in touch. HELP AND SUPPORT."
+      aga0361Contentbox03.url="#"
+
+      aga0361Contentbox04Desktop.src="aga0361-contentbox-04-desktop.png"
+      aga0361Contentbox04Mobile.src="aga0361-contentbox-04-mobile.png"
+      aga0361Contentbox04.alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards."
+      aga0361Contentbox04.url="#"
+
+
       didYouKnow.src="aga0361_didyouknow.png"
       didYouKnow.alt="Did you know..."
 
@@ -70,7 +81,15 @@
       <mj-class name="aga0361-contentbox-02-mobile" css-class="aga0361-contentbox-02-mobile" src="aga0361-contentbox-02-mobile.png" />
       <mj-class name="aga0361-contentbox-02" alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards." href="#" />
 
-      <mj-class name="did-you-know" src="aga0361_didyouknow.png" alt="Did you know..." width="260px" padding="0px 25px" align="center" href="#"/>
+
+      <mj-class name="aga0361-contentbox-03-desktop" padding="0" css-class="aga0361-contentbox-03-desktop" src="aga0361-contentbox-03-desktop.png" width="600px" />
+      <mj-class name="aga0361-contentbox-03-mobile" css-class="aga0361-contentbox-03-mobile" src="aga0361-contentbox-03-mobile.png" />
+      <mj-class name="aga0361-contentbox-03" alt="AGL is here to help. Have some questions? Find answers and ways to get in touch. HELP AND SUPPORT." href="#" />
+
+      <mj-class name="aga0361-contentbox-04-desktop" css-class="aga0361-contentbox-04-desktop" src="aga0361-contentbox-04-desktop.png" width="540px" />
+      <mj-class name="aga0361-contentbox-04-mobile" css-class="aga0361-contentbox-04-mobile" src="aga0361-contentbox-04-mobile.png" />
+      <mj-class name="aga0361-contentbox-04" alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards." href="#" />
+
 
 
       <mj-class name="awards" src="aga0361-award.png" alt="Talk to an AGL Business expert" width="91px" padding="25px 0 0 25px" align="left" href="#"/>
@@ -136,9 +155,18 @@
         .aga0361-contentbox-02-desktop {
           display: none !important;
         }
+
+        .aga0361-contentbox-03-desktop {
+          display: none !important;
+        }
+
+        .aga0361-contentbox-04-desktop {
+          display: none !important;
+        }
       }
 
       @media only screen and (min-width: 600px) {
+
         .desktop-image {
           display: block !important;
           width: 100% !important;
@@ -153,12 +181,25 @@
           display: none !important;
         }
 
+        .aga0361-contentbox-03-mobile {
+          display: none !important;
+        }
+
+        .aga0361-contentbox-04-mobile {
+          display: none !important;
+        }
+
         .mobile-image {
           display: none !important;
         }
       }
 
       /* start css dark-mode */
+
+      body {
+          background: #000000!important;
+        }
+
       .footer-raw-text {
         color: #A0A5A4!important
       }
@@ -192,9 +233,6 @@
     <mj-image mj-class="hero-image hero-image-mobile"  />
   </mj-column>
 </mj-section>
-
-
-
 
 <mj-section padding="0">
   <mj-column padding="0">
@@ -383,12 +421,18 @@
   </mj-column>
 
 </mj-section>
-<mj-section mj-class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0" >
   <mj-column padding="0">
-    <mj-spacer height="20px" padding="0"/>
+    <mj-spacer height="5px" padding="0"/>
   </mj-column>
 </mj-section>
 
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-image mj-class="aga0361-contentbox-04 aga0361-contentbox-04-desktop"/>
+    <mj-image mj-class="aga0361-contentbox-04 aga0361-contentbox-04-mobile"/>
+  </mj-column>
+</mj-section>
 
 <mj-section padding="0">
   <mj-column padding="0">
@@ -397,24 +441,13 @@
   </mj-column>
 </mj-section>
 
-
-
-
-
-<mj-section mj-class="help" padding="0">
-  <mj-column padding="50px 25px">
-    <mj-image mj-class="chat"/>
-    <mj-text mj-class="text-color"  padding="10px" font-size="20px" font-weight="bold" line-height="14px" align="center" >
-      AGL is here to help
-    </mj-text>
-    <mj-text mj-class="text-color"  padding="10px" font-size="17px" line-height="14px" align="center" >
-      Have some questions? Find answers and ways to get in touch.
-    </mj-text>
-    <mj-text mj-class="text-color"  padding="10px" font-size="12px" font-weight="bold" line-height="14px" align="center" >
-      HELP &amp; SUPPORT
-    </mj-text>
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-image mj-class="aga0361-contentbox-03 aga0361-contentbox-03-desktop"/>
+    <mj-image mj-class="aga0361-contentbox-03 aga0361-contentbox-03-mobile"/>
   </mj-column>
 </mj-section>
+
 
 <mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
