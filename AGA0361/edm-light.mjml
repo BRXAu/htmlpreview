@@ -267,7 +267,8 @@
     <mj-text mj-class="text-color" font-size="17px" line-height="26px" align="center" >
       Most business owners wouldn’t think twice about reviewing their phone, internet and insurance costs.
       <br><br>
-      But energy is often put on the ‘To&#8209;Do’ list, or perhaps even in the “too&nbsp;hard&nbsp;basket”.  The good news is checking your energy rates is easier than you&nbsp;think.
+      But energy is often put on the ‘To&#8209;Do’ list, or perhaps even in the “too&nbsp;hard&nbsp;basket”.  <br><br>
+      The good news is checking your energy rates is easier than you&nbsp;think.
     </mj-text>
 </mj-column>
 </mj-section>
@@ -358,8 +359,8 @@
 <mj-section mj-class="bg-color" padding="0">
   <mj-column mj-class="columns">
 <!-- Body text -->
-<mj-text mj-class="text-color" font-size="17px" font-weight="bold" line-height="17px" align="center" >
-  Multiple sites? Enjoy lower rates!
+<mj-text mj-class="text-color" font-size="20px" font-weight="bold" line-height="20px" align="center" >
+  Multiple sites? Enjoy&nbsp;lower&nbsp;rates!
 </mj-text>
 </mj-column>
 </mj-section>
@@ -391,8 +392,8 @@
 <mj-section mj-class="bg-color" padding="0">
   <mj-column mj-class="columns">
 <!-- Body text -->
-<mj-text mj-class="text-color" font-size="17px" font-weight="bold" line-height="17px" align="center" >
-  Home business owners can get a boost too.
+<mj-text mj-class="text-color" font-size="20px" font-weight="bold" line-height="20px" align="center" >
+  Home business owners can&nbsp;get&nbsp;a&nbsp;boost&nbsp;too.
 </mj-text>
 </mj-column>
 </mj-section>
@@ -400,7 +401,7 @@
 </mj-section>
 <mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
-    <mj-spacer height="20px" padding="0"/>
+    <mj-spacer height="12px" padding="0"/>
   </mj-column>
 </mj-section>
 

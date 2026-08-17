@@ -2,19 +2,13 @@
   <mj-head>
      <mj-breakpoint width="600px" />
     <mj-attributes>
-      <mj-all
-        font-family="Arial, Helvetica, sans-serif"
-        color="#222222"
-      />
-      <mj-text
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="16px"
-        line-height="24px"
-      />
+      
 
       <!-- Start custom variables
       Create any variables below.  In code reference as ${variable}
       Run node watch.js to export files
+
+      font.family="Arial, Helvetica, sans-serif"
 
       urlpath="https://brxau.github.io/htmlpreview/TBA0464/edm01/"
 
@@ -45,6 +39,16 @@
 
       
       End custom variables -->
+
+      <mj-all
+        font-family="Arial, Helvetica, sans-serif"
+        color="#222222"
+      />
+      <mj-text
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="16px"
+        line-height="24px"
+      />
 
 
       <mj-image name="hero-image" alt="BHP Xplor. Go further with BHP Xplor." padding="0" />
@@ -153,7 +157,9 @@
     <mj-section padding="0">
       <mj-column>
         <mj-image mj-class="hero-image hero-desktop" />
-        <!--[if !mso]><!--><mj-image mj-class="hero-image hero-mobile"  /><!--<![endif]-->
+        <!--[if !mso]><!-->
+          <mj-image mj-class="hero-image hero-mobile"  />
+        <!--<![endif]-->
       </mj-column>
     </mj-section>
 
