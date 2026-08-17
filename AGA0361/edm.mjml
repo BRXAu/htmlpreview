@@ -2,13 +2,17 @@
   <mj-head>
      <mj-breakpoint width="600px" />
     <mj-attributes>
-      <mj-all font-family="Arial, Helvetica, sans-serif"/>
-      <mj-text font-family="Arial, Helvetica, sans-serif"/>
+      
 
 
       <!-- Start custom variables
       Create any variables below.  In code reference as ${variable}
       Run node watch.js to export files
+
+      font.family="Arial, Helvetica, sans-serif"
+      footer.link="https://www.fifthquadrant.com.au/content/uploads/Fifth_Quadrant_SME_Sentiment_Tracker_W87.pdf"
+      footer.font.size="11px"
+      footer.color="#000000"
 
       urlpath=""
 
@@ -65,6 +69,9 @@
       chat.alt=""
       
       End custom variables -->
+
+      <mj-all font-family="${font.family}"/>
+      <mj-text font-family="${font.family}"/>
 
 
       <mj-class name="hero-image" padding="0" alt="${hero.alt}" href="${hero.url}"/>
@@ -260,7 +267,7 @@
     <mj-text mj-class="text-color" font-size="17px" line-height="26px" align="center" >
       Most business owners wouldn’t think twice about reviewing their phone, internet and insurance costs.
       <br><br>
-      But energy is often put on the ‘To-Do’ list, or perhaps even in the “too hard basket”.  The good news is checking your energy rates is easier than you think.
+      But energy is often put on the ‘To&#8209;Do’ list, or perhaps even in the “too&nbsp;hard&nbsp;basket”.  The good news is checking your energy rates is easier than you&nbsp;think.
     </mj-text>
 </mj-column>
 </mj-section>
@@ -277,7 +284,7 @@
           <img src="aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
         </td>
         <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
-          It only takes a few minutes
+          It only takes a few&nbsp;minutes
         </td>
       </tr>
       <!-- Row 2 -->
@@ -286,7 +293,7 @@
           <img src="aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
         </td>
         <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
-          It’s completely free and there’s no obligation to switch
+          It’s completely free and there’s no obligation to&nbsp;switch
         </td>
       </tr>
       <!-- Row 3 -->
@@ -295,7 +302,7 @@
           <img src="aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
         </td>
         <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
-          It could uncover great business savings
+          It could uncover great business&nbsp;savings
         </td>
       </tr>
       </table>
@@ -311,7 +318,7 @@
   <mj-column mj-class="columns">
 <!-- Body text -->
 <mj-text mj-class="text-color" font-size="17px" line-height="26px" align="center" >
-  Call AGL’s business experts on <b>133 835</b> or click the button below.
+  Call AGL’s energy specialists on <b>133&nbsp;835</b> or click the button&nbsp;below.
 </mj-text>
 </mj-column>
 </mj-section>
@@ -369,7 +376,7 @@
   <mj-column mj-class="columns">
 <!-- Body text -->
 <mj-text mj-class="text-color" font-size="17px" line-height="24px" align="center" >
-  Businesses with multiple properties could access even lower rates across their sites. One quick conversation could help reduce energy costs across your whole business.
+  Businesses with multiple properties could access even lower rates across their sites. One quick conversation could help reduce energy costs across your whole&nbsp;business.
 </mj-text>
 </mj-column>
 </mj-section>
@@ -402,7 +409,7 @@
   <mj-column mj-class="columns">
 <!-- Body text -->
 <mj-text mj-class="text-color" font-size="17px" line-height="24px" align="center" >
-  If you run your business from your home, AGL has residential energy options that could suit your needs. 
+  If you run your business from your home, AGL has residential energy options that could suit your&nbsp;needs. 
 </mj-text>
 </mj-column>
 </mj-section>
@@ -455,10 +462,15 @@
   </mj-column>
 </mj-section>
 
+
+
+
 <mj-section padding="0">
   <mj-column padding="0px 25px">
     <mj-text mj-class="text-color"  padding="10px" font-size="11px" line-height="14px" align="left" >
-      *AGL small business energy plans are available in VIC, NSW, QLD and SA, in areas where AGL operates for small business customers. Basic Plan Information Documents are available at agl.com.au/bpid (NSW, QLD & SA). Fact Sheets (VIC) are available at agl.com.au/vefs. For clear advice on the right plan for you, contact AGL on 131 245.
+      *AGL small business energy plans are available in VIC, NSW, QLD and SA, in areas where AGL operates for small business customers. Basic Plan Information Documents are available at agl.com.au/bpid (NSW, QLD & SA). Fact Sheets (VIC) are available at agl.com.au/vefs. For clear advice on the right plan for you, contact AGL on&nbsp;131&nbsp;245.
+      <br><br>
+      <sup>1</sup>Source: Fifth Quadrant SME Sentiment Tracker, Wave 87. <a href="${footer.link}" target="_blank" style="font-family: ${footer.hyperlink.font}; font-size: ${footer.font.size}; color: ${footer.color}; text-decoration: none; font-weight: regular;">Read&nbsp;the&nbsp;report.</a>
     </mj-text>
   </mj-column>
 </mj-section>
