@@ -9,8 +9,10 @@
       Run node watch.js to export files
 
       font.family="Arial, Helvetica, sans-serif"
-
-      urlpath="https://brxau.github.io/htmlpreview/TBA0464/edm01/"
+      localPath=""
+      bucket="https://tba0564-edm.s3.ap-southeast-2.amazonaws.com/"
+      gitpreview="https://brxau.github.io/htmlpreview/TBA0464/edm01/"
+      urlpath="https://tba0564-edm.s3.ap-southeast-2.amazonaws.com/"
 
       hero.desktop.src="tba0464-01-hero-desktop.jpg"
       hero.mobile.src="tba0464-01-hero-mobile.jpg"

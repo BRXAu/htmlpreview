@@ -19,15 +19,15 @@
       hero.desktop.src="aga0361_hero-desktop.png"
       hero.mobile.src="aga0361_hero-mobile.png"
       hero.alt="AGL Business.  Could a better energy plan* boost your business?  Get a bill comparison with AGL. REQUEST A CALLBACK."
-      hero.url="#"
+      hero.url="https://www.agl.com.au/small-business/campaigns/business-lead-generation?cide=edm-C1005839"
 
       cta01.src="aga0361-cta-01.png"
       cta01.alt="COMPARE MY BILL"
-      cta01.url="#"
+      cta01.url="https://www.agl.com.au/small-business/campaigns/business-lead-generation?cide=edm-C1005839"
 
       cta02.src="aga0361-cta-02.png"
       cta02.alt="TALK TO AN AGL ENERGY SPECIALIST"
-      cta02.url="#"
+      cta02.url="https://www.agl.com.au/small-business/campaigns/business-lead-generation?cide=edm-C1005839"
 
 
 
@@ -44,16 +44,12 @@
       aga0361Contentbox03Desktop.src="aga0361-contentbox-03-desktop.png"
       aga0361Contentbox03Mobile.src="aga0361-contentbox-03-mobile.png"
       aga0361Contentbox03.alt="AGL is here to help. Have some questions? Find answers and ways to get in touch. HELP AND SUPPORT."
-      aga0361Contentbox03.url="#"
+      aga0361Contentbox03.url="https://agl.com.au/help-support/contact-us?srsltid=AfmBOoo4sr0JDzH1yKFquTRdVix9keWHR-5_6B1DoyNkFnvp…"
 
       aga0361Contentbox04Desktop.src="aga0361-contentbox-04-desktop.png"
       aga0361Contentbox04Mobile.src="aga0361-contentbox-04-mobile.png"
       aga0361Contentbox04.alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards."
       aga0361Contentbox04.url="#"
-
-
-      didYouKnow.src="aga0361_didyouknow.png"
-      didYouKnow.alt="Did you know..."
 
       award.src="aga0361-award.png"
       award.alt="Talk to an AGL Business expert"
@@ -82,11 +78,11 @@
       
       <mj-class name="aga0361-contentbox-01-desktop" css-class="aga0361-contentbox-01-desktop" src="${urlpath}${aga0361Contentbox01Desktop.src}" width="540px" />
       <mj-class name="aga0361-contentbox-01-mobile" css-class="aga0361-contentbox-01-mobile" src="${urlpath}${aga0361Contentbox01Mobile.src}" />
-      <mj-class name="aga0361-contentbox-01" alt="${aga0361Contentbox01.alt}" href="${aga0361Contentbox01.url}" />
+      <mj-class name="aga0361-contentbox-01" alt="${aga0361Contentbox01.alt}"  />
 
       <mj-class name="aga0361-contentbox-02-desktop" css-class="aga0361-contentbox-02-desktop" src="${urlpath}${aga0361Contentbox02Desktop.src}" width="540px" />
       <mj-class name="aga0361-contentbox-02-mobile" css-class="aga0361-contentbox-02-mobile" src="${urlpath}${aga0361Contentbox02Mobile.src}" />
-      <mj-class name="aga0361-contentbox-02" alt="${aga0361Contentbox02.alt}" href="${aga0361Contentbox02.url}" />
+      <mj-class name="aga0361-contentbox-02" alt="${aga0361Contentbox02.alt}" />
 
 
       <mj-class name="aga0361-contentbox-03-desktop" padding="0" css-class="aga0361-contentbox-03-desktop" src="${urlpath}${aga0361Contentbox03Desktop.src}" width="600px" />
@@ -95,7 +91,7 @@
 
       <mj-class name="aga0361-contentbox-04-desktop" css-class="aga0361-contentbox-04-desktop" src="${urlpath}${aga0361Contentbox04Desktop.src}" width="540px" />
       <mj-class name="aga0361-contentbox-04-mobile" css-class="aga0361-contentbox-04-mobile" src="${urlpath}${aga0361Contentbox04Mobile.src}" />
-      <mj-class name="aga0361-contentbox-04" alt="${aga0361Contentbox04.alt}" href="${aga0361Contentbox04.url}" />
+      <mj-class name="aga0361-contentbox-04" alt="${aga0361Contentbox04.alt}"  />
 
 
 
