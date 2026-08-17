@@ -25,6 +25,18 @@
       cta02.alt="TALK TO AN AGL ENERGY SPECIALIST"
       cta02.url="#"
 
+
+
+      aga0361Contentbox01Desktop.src="aga0361-contentbox-01-desktop.png"
+      aga0361Contentbox01Mobile.src="aga0361-contentbox-01-mobile.png"
+      aga0361Contentbox01.alt="Did you know... ? More than half of Australian small businesses expect rising costs to remain one of their biggest challenges. Nearly 1 in 5 Aussie businesses are renegotiating supplier contracts to reduce costs this year,1 so make sure your energy retailer has a performance review as well."
+      aga0361Contentbox01.url="#"
+
+      aga0361Contentbox02Desktop.src="aga0361-contentbox-02-desktop.png"
+      aga0361Contentbox02Mobile.src="aga0361-contentbox-02-mobile.png"
+      aga0361Contentbox02.alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards."
+      aga0361Contentbox02.url="#"
+
       didYouKnow.src="aga0361_didyouknow.png"
       didYouKnow.alt="Did you know..."
 
@@ -49,7 +61,18 @@
       <mj-class name="hero-image-mobile" css-class="mobile-image" src="aga0361_hero-mobile.png" />
       <mj-class name="cta-01" css-class="cta-image" src="aga0361-cta-01.png" alt="COMPARE MY BILL" width="196px" padding="0px 25px" align="center" href="#" />
       <mj-class name="cta-02" css-class="cta-image" src="aga0361-cta-02.png" alt="TALK TO AN AGL ENERGY SPECIALIST" width="312px" padding="0px 25px" align="center" href="#" />
+      
+      <mj-class name="aga0361-contentbox-01-desktop" css-class="aga0361-contentbox-01-desktop" src="aga0361-contentbox-01-desktop.png" width="540px" />
+      <mj-class name="aga0361-contentbox-01-mobile" css-class="aga0361-contentbox-01-mobile" src="aga0361-contentbox-01-mobile.png" />
+      <mj-class name="aga0361-contentbox-01" alt="Did you know... ? More than half of Australian small businesses expect rising costs to remain one of their biggest challenges. Nearly 1 in 5 Aussie businesses are renegotiating supplier contracts to reduce costs this year,1 so make sure your energy retailer has a performance review as well." href="#" />
+
+      <mj-class name="aga0361-contentbox-02-desktop" css-class="aga0361-contentbox-02-desktop" src="aga0361-contentbox-02-desktop.png" width="540px" />
+      <mj-class name="aga0361-contentbox-02-mobile" css-class="aga0361-contentbox-02-mobile" src="aga0361-contentbox-02-mobile.png" />
+      <mj-class name="aga0361-contentbox-02" alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards." href="#" />
+
       <mj-class name="did-you-know" src="aga0361_didyouknow.png" alt="Did you know..." width="260px" padding="0px 25px" align="center" href="#"/>
+
+
       <mj-class name="awards" src="aga0361-award.png" alt="Talk to an AGL Business expert" width="91px" padding="25px 0 0 25px" align="left" href="#"/>
       <mj-class name="icon-bill" src="aga0361-bill.png" alt="" width="50px" padding="" align="center"/>
       <mj-class name="icon-aussie" src="aga0361-aussiemade.png" alt="" width="56px" padding="" align="center"/>
@@ -105,6 +128,14 @@
         .desktop-image {
           display: none !important;
         }
+
+        .aga0361-contentbox-01-desktop {
+          display: none !important;
+        }
+
+        .aga0361-contentbox-02-desktop {
+          display: none !important;
+        }
       }
 
       @media only screen and (min-width: 600px) {
@@ -112,6 +143,14 @@
           display: block !important;
           width: 100% !important;
           height: auto !important;
+        }
+
+        .aga0361-contentbox-01-mobile {
+          display: none !important;
+        }
+
+        .aga0361-contentbox-02-mobile {
+          display: none !important;
         }
 
         .mobile-image {
@@ -143,7 +182,7 @@
 
 
 
-  <mj-body class="dark-mode" mj-class="bg-color">
+  <mj-body mj-class="dark-mode" mj-class="bg-color">
 
 <mj-section padding="0">
   <mj-column>
@@ -153,6 +192,9 @@
     <mj-image mj-class="hero-image hero-image-mobile"  />
   </mj-column>
 </mj-section>
+
+
+
 
 <mj-section padding="0">
   <mj-column padding="0">
@@ -168,14 +210,14 @@
   </mj-column>
 </mj-section>
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
     <mj-spacer height="20px" padding="0"/>
   </mj-column>
 </mj-section>
 
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column mj-class="columns">
     <mj-text mj-class="text-color" font-size="17px" line-height="26px" align="center" >
       Most business owners wouldn’t think twice about reviewing their phone, internet and insurance costs.
@@ -227,7 +269,7 @@
 
 
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column mj-class="columns">
 <!-- Body text -->
 <mj-text mj-class="text-color" font-size="17px" line-height="26px" align="center" >
@@ -237,37 +279,38 @@
 </mj-section>
 
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
     <mj-spacer height="20px" padding="0"/>
   </mj-column>
 </mj-section>
 
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column mj-class="columns">
     <mj-image mj-class="cta-01"/>
   </mj-column>
 </mj-section>
 
-<mj-section padding="25px 25px" >
-  <mj-column  mj-class="module01-bg-color" padding="25px" width="500px" border-radius="8px">
-    <mj-image mj-class="did-you-know"/>
-    <mj-text mj-class="module01-color" padding="25px 25px 0px 25px" font-size="17px" line-height="26px" align="center" >
-      More than half of Australian small businesses expect rising costs to remain one of their biggest challenges.
-      <br><br>
-      Nearly 1 in 5 Aussie businesses are renegotiating supplier contracts to reduce costs this year,<sup>1</sup> so make sure your energy retailer has a performance review as well.
-    </mj-text>
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-image mj-class="aga0361-contentbox-01 aga0361-contentbox-01-desktop"/>
+    <mj-image mj-class="aga0361-contentbox-01 aga0361-contentbox-01-mobile"/>
   </mj-column>
-
 </mj-section>
-<mj-section class="bg-color" padding="0">
+
+
+
+
+
+
+<mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
     <mj-spacer height="20px" padding="0"/>
   </mj-column>
 </mj-section>
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column mj-class="columns">
 <!-- Body text -->
 <mj-text mj-class="text-color" font-size="17px" font-weight="bold" line-height="17px" align="center" >
@@ -277,14 +320,14 @@
 </mj-section>
 
 </mj-section>
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
     <mj-spacer height="20px" padding="0"/>
   </mj-column>
 </mj-section>
 
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column mj-class="columns">
 <!-- Body text -->
 <mj-text mj-class="text-color" font-size="17px" line-height="24px" align="center" >
@@ -294,13 +337,13 @@
 </mj-section>
 
 </mj-section>
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
     <mj-spacer height="20px" padding="0"/>
   </mj-column>
 </mj-section>
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column mj-class="columns">
 <!-- Body text -->
 <mj-text mj-class="text-color" font-size="17px" font-weight="bold" line-height="17px" align="center" >
@@ -310,14 +353,14 @@
 </mj-section>
 
 </mj-section>
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
     <mj-spacer height="20px" padding="0"/>
   </mj-column>
 </mj-section>
 
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column mj-class="columns">
 <!-- Body text -->
 <mj-text mj-class="text-color" font-size="17px" line-height="24px" align="center" >
@@ -327,111 +370,35 @@
 </mj-section>
 
 </mj-section>
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
     <mj-spacer height="20px" padding="0"/>
   </mj-column>
 </mj-section>
 
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column mj-class="columns">
     <mj-image mj-class="cta-02"/>
   </mj-column>
 
 </mj-section>
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
     <mj-spacer height="20px" padding="0"/>
   </mj-column>
 </mj-section>
 
 
-<mj-wrapper padding="20px 25px" background-color="transparent">
-  <mj-section padding="0" background-color="#001CB0" border-radius="8px">
-    <mj-column padding="0px" width="125px" >
-      <mj-image mj-class="awards"/>
-    </mj-column>
-    <mj-column padding="25px" width="400px" >
-<!-- Body text -->
-<mj-text color="#FFFFFF" padding="0px 0px 10px 0px" font-size="24px" font-weight="bold" line-height="24px" align="left" >
-  Awarded for Legendary Service.
-</mj-text>
-<mj-text color="#FFFFFF" padding="0px 0px" font-size="17px" line-height="24px" align="left" >
-  If you run your business from your home, AGL has residential energy options that could suit your needs. 
-</mj-text>
-</mj-column>
-</mj-wrapper>
-
-
-</mj-section>
-<mj-section class="bg-color" padding="0">
+<mj-section padding="0">
   <mj-column padding="0">
-    <mj-spacer height="20px" padding="0"/>
+    <mj-image mj-class="aga0361-contentbox-02 aga0361-contentbox-02-desktop"/>
+    <mj-image mj-class="aga0361-contentbox-02 aga0361-contentbox-02-mobile"/>
   </mj-column>
 </mj-section>
 
 
-<mj-section class="bg-color" padding="0">
-  <mj-column mj-class="columns">
-<!-- Body text -->
-<mj-text mj-class="text-color" font-size="20px" line-height="20px" align="center" >
-  Why switch to AGL?
-</mj-text>
-</mj-column>
-</mj-section>
 
-
-</mj-section>
-<mj-section class="bg-color" padding="0">
-  <mj-column padding="0">
-    <mj-spacer height="20px" padding="0"/>
-  </mj-column>
-</mj-section>
-
-
-<mj-section class="bg-color" padding="0">
-  <mj-column padding="0 0 20px 0px" width="180px">
-<!-- Body text -->
-<mj-image mj-class="icon-bill"/>
-<mj-text mj-class="text-color"  padding="10px" font-size="14px" font-weight="bold" line-height="14px" align="center" >
-  Bill Smothing
-</mj-text>
-<mj-text mj-class="text-color"  padding="0px" font-size="11px" line-height="14px" align="center" >
-  Manage cash flow with predictable bills
-</mj-text>
-</mj-column>
-
-
-<mj-column padding="0 0 20px 0px" width="180px">
-<!-- Body text -->
-<mj-image mj-class="icon-aussie"/>
-<mj-text mj-class="text-color"  padding="10px" font-size="14px" font-weight="bold" line-height="14px" align="center" >
-  Australian Made
-</mj-text>
-<mj-text mj-class="text-color"  padding="0px" font-size="11px" line-height="14px" align="center" >
-  Australian Made electricity and gas
-</mj-text>
-</mj-column>
-
-<mj-column padding="0 0 20px 0px" width="180px">
-<!-- Body text -->
-<mj-image mj-class="icon-rewards"/>
-<mj-text mj-class="text-color"  padding="10px" font-size="14px" font-weight="bold" line-height="14px" align="center" >
-  Rewards
-</mj-text>
-<mj-text mj-class="text-color"  padding="0px" font-size="11px" line-height="14px" align="center" >
-  Special offers from brands like Samsung and MYOB with AGL Rewards
-</mj-text>
-</mj-column>
-
-</mj-section>
-
-<mj-section class="bg-color" padding="0">
-  <mj-column padding="0">
-    <mj-spacer height="20px" padding="0"/>
-  </mj-column>
-</mj-section>
 
 
 <mj-section mj-class="help" padding="0">
@@ -449,7 +416,7 @@
   </mj-column>
 </mj-section>
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
     <mj-spacer height="20px" padding="0"/>
   </mj-column>
@@ -463,7 +430,7 @@
   </mj-column>
 </mj-section>
 
-<mj-section class="bg-color" padding="0">
+<mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
     <mj-spacer height="20px" padding="0"/>
   </mj-column>
