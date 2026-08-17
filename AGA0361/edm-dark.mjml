@@ -71,7 +71,7 @@
       End custom variables -->
 
       <mj-all font-family="Arial, Helvetica, sans-serif"/>
-      <mj-text font-family="Arial, Helvetica, sans-serif"/>
+      <mj-text font-family="Arial, Helvetica, sans-serif" padding="0"/>
 
 
       <mj-class name="hero-image" padding="0" alt="AGL Business.  Could a better energy plan* boost your business?  Get a bill comparison with AGL. REQUEST A CALLBACK." href="#"/>
@@ -265,7 +265,7 @@
 <mj-section mj-class="bg-color" padding="0">
   <mj-column mj-class="columns">
     <mj-text mj-class="text-color" font-size="17px" line-height="26px" align="center" >
-      Most business owners wouldn’t think twice about reviewing their phone, internet and insurance costs.
+      Most business owners wouldn’t think twice about reviewing their phone, internet and insurance&nbsp;costs.
       <br><br>
       But energy is often put on the ‘To&#8209;Do’ list, or perhaps even in the “too&nbsp;hard&nbsp;basket”.  <br><br>
       The good news is checking your energy rates is easier than you&nbsp;think.
@@ -368,7 +368,7 @@
 </mj-section>
 <mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
-    <mj-spacer height="20px" padding="0"/>
+    <mj-spacer height="18px" padding="0"/>
   </mj-column>
 </mj-section>
 
@@ -385,7 +385,7 @@
 </mj-section>
 <mj-section mj-class="bg-color" padding="0">
   <mj-column padding="0">
-    <mj-spacer height="20px" padding="0"/>
+    <mj-spacer height="18px" padding="0"/>
   </mj-column>
 </mj-section>
 
