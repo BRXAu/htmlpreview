@@ -13,8 +13,11 @@
       footer.link="https://www.fifthquadrant.com.au/content/uploads/Fifth_Quadrant_SME_Sentiment_Tracker_W87.pdf"
       footer.font.size="11px"
       footer.color="#000000"
-
-      urlpath=""
+      
+      localpath=""
+      githubpath="https://brxau.github.io/htmlpreview/AGA0361/"
+      awspath="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/"
+      urlpath="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/"
 
       hero.desktop.src="aga0361_hero-desktop.png"
       hero.mobile.src="aga0361_hero-mobile.png"
@@ -50,6 +53,8 @@
       aga0361Contentbox04Mobile.src="aga0361-contentbox-04-mobile.png"
       aga0361Contentbox04.alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards."
       aga0361Contentbox04.url="#"
+
+      aga0361Tick.src="aga0361_tick.png"
 
       award.src="aga0361-award.png"
       award.alt="Talk to an AGL Business expert"
@@ -228,14 +233,14 @@
 
 
 
-  <mj-body mj-class="dark-mode" mj-class="bg-color">
+<mj-body mj-class="bg-color">
 
 <mj-section padding="0">
   <mj-column>
     <!-- Desktop image -->
     <mj-image mj-class="hero-image hero-image-desktop"  />
     <!-- Mobile image -->
-    <mj-image mj-class="hero-image hero-image-mobile"  />
+    <edm-not-outlook-open><mj-image mj-class="hero-image hero-image-mobile"  /><edm-not-outlook-close>
   </mj-column>
 </mj-section>
 
@@ -279,7 +284,7 @@
       <!-- Row 1 -->
       <tr>
         <td style="vertical-align: middle; width: 30px; padding-bottom: 15px;">
-          <img src="aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
+          <img src="${urlpath}${aga0361Tick.src}" width="28" style="display: block; border: 0;" alt="•" />
         </td>
         <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
           It only takes a few&nbsp;minutes
@@ -288,7 +293,7 @@
       <!-- Row 2 -->
       <tr>
         <td style="vertical-align: middle; width: 30px; padding-bottom: 15px;">
-          <img src="aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
+          <img src="${urlpath}${aga0361Tick.src}" width="28" style="display: block; border: 0;" alt="•" />
         </td>
         <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
           It’s completely free and there’s no obligation to&nbsp;switch
@@ -297,7 +302,7 @@
       <!-- Row 3 -->
       <tr>
         <td style="vertical-align: middle; width: 30px; padding-bottom: 15px;">
-          <img src="aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
+          <img src="${urlpath}${aga0361Tick.src}" width="28" style="display: block; border: 0;" alt="•" />
         </td>
         <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
           It could uncover great business&nbsp;savings
@@ -338,7 +343,7 @@
 <mj-section padding="0">
   <mj-column padding="0">
     <mj-image mj-class="aga0361-contentbox-01 aga0361-contentbox-01-desktop"/>
-    <mj-image mj-class="aga0361-contentbox-01 aga0361-contentbox-01-mobile"/>
+    <edm-not-outlook-open><mj-image mj-class="aga0361-contentbox-01 aga0361-contentbox-01-mobile"/><edm-not-outlook-close>
   </mj-column>
 </mj-section>
 
@@ -435,21 +440,21 @@
 <mj-section padding="0">
   <mj-column padding="0">
     <mj-image mj-class="aga0361-contentbox-04 aga0361-contentbox-04-desktop"/>
-    <mj-image mj-class="aga0361-contentbox-04 aga0361-contentbox-04-mobile"/>
+    <edm-not-outlook-open><mj-image mj-class="aga0361-contentbox-04 aga0361-contentbox-04-mobile"/><edm-not-outlook-close>
   </mj-column>
 </mj-section>
 
 <mj-section padding="0">
   <mj-column padding="0">
     <mj-image mj-class="aga0361-contentbox-02 aga0361-contentbox-02-desktop"/>
-    <mj-image mj-class="aga0361-contentbox-02 aga0361-contentbox-02-mobile"/>
+    <edm-not-outlook-open><mj-image mj-class="aga0361-contentbox-02 aga0361-contentbox-02-mobile"/><edm-not-outlook-close>
   </mj-column>
 </mj-section>
 
 <mj-section padding="0">
   <mj-column padding="0">
     <mj-image mj-class="aga0361-contentbox-03 aga0361-contentbox-03-desktop"/>
-    <mj-image mj-class="aga0361-contentbox-03 aga0361-contentbox-03-mobile"/>
+    <edm-not-outlook-open><mj-image mj-class="aga0361-contentbox-03 aga0361-contentbox-03-mobile"/><edm-not-outlook-close>
   </mj-column>
 </mj-section>
 
@@ -466,9 +471,9 @@
 <mj-section padding="0">
   <mj-column padding="0px 25px">
     <mj-text mj-class="text-color"  padding="10px" font-size="11px" line-height="14px" align="left" >
-      *AGL small business energy plans are available in VIC, NSW, QLD and SA, in areas where AGL operates for small business customers. Basic Plan Information Documents are available at agl.com.au/bpid (NSW, QLD & SA). Fact Sheets (VIC) are available at agl.com.au/vefs. For clear advice on the right plan for you, contact AGL on&nbsp;131&nbsp;245.
+      *AGL small business energy plans are available in VIC, NSW, QLD and SA, in areas where AGL operates for small business customers. Basic Plan Information Documents are available at <a href="https:/agl.com.au/bpid" target="_blank" style="font-family: ${font.family}; font-size: ${footer.font.size}; color: ${footer.color}; text-decoration: none; font-weight: regular;">agl.com.au/bpid</a> (NSW, QLD & SA). Fact Sheets (VIC) are available at <a href="https:/agl.com.au/vefs" target="_blank" style="font-family: ${font.family}; font-size: ${footer.font.size}; color: ${footer.color}; text-decoration: none; font-weight: regular;">agl.com.au/vefs.</a> For clear advice on the right plan for you, contact AGL&nbsp;on&nbsp;131&nbsp;245.
       <br><br>
-      <sup>1</sup>Source: Fifth Quadrant SME Sentiment Tracker, Wave 87. <a href="${footer.link}" target="_blank" style="font-family: ${footer.hyperlink.font}; font-size: ${footer.font.size}; color: ${footer.color}; text-decoration: none; font-weight: regular;">Read&nbsp;the&nbsp;report.</a>
+      <sup>1</sup>Source: Fifth Quadrant SME Sentiment Tracker, Wave 87. <a href="${footer.link}" target="_blank" style="font-family: ${font.family}; font-size: ${footer.font.size}; color: ${footer.color}; text-decoration: none; font-weight: regular;">Read&nbsp;the&nbsp;report.</a>
     </mj-text>
   </mj-column>
 </mj-section>
