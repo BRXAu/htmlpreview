@@ -1,0 +1,430 @@
+<mjml>
+  <mj-head>
+     <mj-breakpoint width="600px" />
+    <mj-attributes>
+      
+
+
+      <!-- Start custom variables
+      Create any variables below.  In code reference as ${variable}
+      Run node watch.js to export files
+
+      font.family="Arial, Helvetica, sans-serif"
+      footer.link="https://www.fifthquadrant.com.au/content/uploads/Fifth_Quadrant_SME_Sentiment_Tracker_W87.pdf"
+      footer.font.size="11px"
+      footer.color="#000000"
+      
+      localpath=""
+      githubpath="https://brxau.github.io/htmlpreview/AGA0361/"
+      awspath="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/"
+      urlpath="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/"
+
+      hero.desktop.src="aga0361_hero-desktop.png"
+      hero.mobile.src="aga0361_hero-mobile.png"
+      hero.alt="AGL Business.  Could a better energy plan* boost your business?  Get a bill comparison with AGL. REQUEST A CALLBACK."
+      hero.url="https://www.agl.com.au/small-business/campaigns/business-lead-generation?cide=edm-C1005839"
+
+      cta01.src="aga0361-cta-01.png"
+      cta01.alt="COMPARE MY BILL"
+      cta01.url="https://www.agl.com.au/small-business/campaigns/business-lead-generation?cide=edm-C1005839"
+
+      cta02.src="aga0361-cta-02.png"
+      cta02.alt="TALK TO AN AGL ENERGY SPECIALIST"
+      cta02.url="https://www.agl.com.au/small-business/campaigns/business-lead-generation?cide=edm-C1005839"
+
+
+
+      aga0361Contentbox01Desktop.src="aga0361-contentbox-01-desktop.png"
+      aga0361Contentbox01Mobile.src="aga0361-contentbox-01-mobile.png"
+      aga0361Contentbox01.alt="Did you know... ? More than half of Australian small businesses expect rising costs to remain one of their biggest challenges. Nearly 1 in 5 Aussie businesses are renegotiating supplier contracts to reduce costs this year,1 so make sure your energy retailer has a performance review as well."
+      aga0361Contentbox01.url="#"
+
+      aga0361Contentbox02Desktop.src="aga0361-contentbox-02-desktop.png"
+      aga0361Contentbox02Mobile.src="aga0361-contentbox-02-mobile.png"
+      aga0361Contentbox02.alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards."
+      aga0361Contentbox02.url="#"
+
+      aga0361Contentbox03Desktop.src="aga0361-contentbox-03-desktop.png"
+      aga0361Contentbox03Mobile.src="aga0361-contentbox-03-mobile.png"
+      aga0361Contentbox03.alt="AGL is here to help. Have some questions? Find answers and ways to get in touch. HELP AND SUPPORT."
+      aga0361Contentbox03.url="https://agl.com.au/help-support/contact-us?srsltid=AfmBOoo4sr0JDzH1yKFquTRdVix9keWHR-5_6B1DoyNkFnvp…"
+
+      aga0361Contentbox04Desktop.src="aga0361-contentbox-04-desktop.png"
+      aga0361Contentbox04Mobile.src="aga0361-contentbox-04-mobile.png"
+      aga0361Contentbox04.alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards."
+      aga0361Contentbox04.url="#"
+
+      aga0361Tick.src="aga0361_tick.png"
+
+      award.src="aga0361-award.png"
+      award.alt="Talk to an AGL Business expert"
+
+      icon01.src="aga0361-bill.png"
+      icon01.alt=""
+      icon02.src="aga0361-aussiemade.png"
+      icon02.alt=""
+      icon03.src="aga0361-rewards.png"
+      icon03.alt=""
+
+      chat.src="aga0361-rewards.png"
+      chat.alt=""
+      
+      End custom variables -->
+
+      <mj-all font-family="Arial, Helvetica, sans-serif"/>
+      <mj-text font-family="Arial, Helvetica, sans-serif"/>
+
+
+      <mj-class name="hero-image" padding="0" alt="AGL Business.  Could a better energy plan* boost your business?  Get a bill comparison with AGL. REQUEST A CALLBACK." href="https://www.agl.com.au/small-business/campaigns/business-lead-generation?cide=edm-C1005839"/>
+      <mj-class name="hero-image-desktop" css-class="desktop-image" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361_hero-desktop.png" width="600px" />
+      <mj-class name="hero-image-mobile" css-class="mobile-image" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361_hero-mobile.png" />
+      <mj-class name="cta-01" css-class="cta-image" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-cta-01.png" alt="COMPARE MY BILL" width="196px" padding="0px 25px" align="center" href="https://www.agl.com.au/small-business/campaigns/business-lead-generation?cide=edm-C1005839" />
+      <mj-class name="cta-02" css-class="cta-image" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-cta-02.png" alt="TALK TO AN AGL ENERGY SPECIALIST" width="327px" padding="0px 25px" align="center" href="https://www.agl.com.au/small-business/campaigns/business-lead-generation?cide=edm-C1005839" />
+      
+      <mj-class name="aga0361-contentbox-01-desktop" css-class="aga0361-contentbox-01-desktop" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-contentbox-01-desktop.png" width="540px" />
+      <mj-class name="aga0361-contentbox-01-mobile" css-class="aga0361-contentbox-01-mobile" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-contentbox-01-mobile.png" />
+      <mj-class name="aga0361-contentbox-01" alt="Did you know... ? More than half of Australian small businesses expect rising costs to remain one of their biggest challenges. Nearly 1 in 5 Aussie businesses are renegotiating supplier contracts to reduce costs this year,1 so make sure your energy retailer has a performance review as well."  />
+
+      <mj-class name="aga0361-contentbox-02-desktop" css-class="aga0361-contentbox-02-desktop" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-contentbox-02-desktop.png" width="540px" />
+      <mj-class name="aga0361-contentbox-02-mobile" css-class="aga0361-contentbox-02-mobile" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-contentbox-02-mobile.png" />
+      <mj-class name="aga0361-contentbox-02" alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards." />
+
+
+      <mj-class name="aga0361-contentbox-03-desktop" padding="0" css-class="aga0361-contentbox-03-desktop" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-contentbox-03-desktop.png" width="600px" />
+      <mj-class name="aga0361-contentbox-03-mobile" css-class="aga0361-contentbox-03-mobile" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-contentbox-03-mobile.png" />
+      <mj-class name="aga0361-contentbox-03" alt="AGL is here to help. Have some questions? Find answers and ways to get in touch. HELP AND SUPPORT." href="https://agl.com.au/help-support/contact-us?srsltid=AfmBOoo4sr0JDzH1yKFquTRdVix9keWHR-5_6B1DoyNkFnvp…" />
+
+      <mj-class name="aga0361-contentbox-04-desktop" css-class="aga0361-contentbox-04-desktop" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-contentbox-04-desktop.png" width="540px" />
+      <mj-class name="aga0361-contentbox-04-mobile" css-class="aga0361-contentbox-04-mobile" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-contentbox-04-mobile.png" />
+      <mj-class name="aga0361-contentbox-04" alt="Why switch to AGL? Bill Smoothing. Manage cash flow with predictable bills. Australian Made. Australian Made electricity and gas. Rewards. Special offers from brands like Samsung and MYOB with AGL Rewards."  />
+
+
+
+      <mj-class name="awards" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-award.png" alt="Talk to an AGL Business expert" width="91px" padding="25px 0 0 25px" align="left" href="#"/>
+      <mj-class name="icon-bill" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-bill.png" alt="" width="50px" padding="" align="center"/>
+      <mj-class name="icon-aussie" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-aussiemade.png" alt="" width="56px" padding="" align="center"/>
+      <mj-class name="icon-rewards" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-rewards.png" alt="" width="50px" padding="" align="center"/>
+      <mj-class name="chat" src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361-rewards.png" alt="" width="50px" padding="" align="center"/>
+
+      <!-- Start colour scheme default -->
+      <mj-class name="columns" padding="0" width="550px"/>
+
+      <mj-class name="bg-color" background-color="#ffffff" />
+      <mj-class name="text-color" color="#333333" padding="0px 25px"/>
+
+      <mj-class name="module01-bg-color" background-color="#E6FCFD"  />
+      <mj-class name="module01-color" color="#001CB0"  />
+
+      <mj-class name="help" background-color="#E6FCFD">
+
+      <mj-class name="pre-bg-color" background-color="#E0DDDB" />
+      <mj-class name="pre-text-color" color="#000000" />
+
+      <mj-class name="footer-bg-color" background-color="#F9F7F5" />
+      <mj-class name="footer-text-color" color="#707372" />
+      <!-- End colour scheme default -->
+
+
+      <!-- Start colour scheme dark --><!--
+
+      <mj-class name="columns" padding="0" width="550px"/>
+
+      <mj-class name="bg-color" background-color="#000" />
+      <mj-class name="text-color" color="#FFF" padding="0px 25px"/>
+
+      <mj-class name="module01-bg-color" background-color="#E6FCFD"  />
+      <mj-class name="module01-color" color="#001CB0"  />
+
+      <mj-class name="help" background-color="#E6FCFD">
+
+      <mj-class name="pre-bg-color" background-color="#E0DDDB" />
+      <mj-class name="pre-text-color" color="#000000" />
+
+      <mj-class name="footer-bg-color" background-color="#F9F7F5" />
+      <mj-class name="footer-text-color" color="#707372" />
+      --><!-- End colour scheme dark -->
+
+    </mj-attributes>
+
+    <mj-style>
+
+      /* start css dark-mode */ /*
+
+      body {
+          background: #000000!important;
+        }
+
+      .footer-raw-text {
+        color: #A0A5A4!important
+      }
+      .pre-link-color {
+        color: #FFFFFF!important
+      }
+
+      .bullet-point-text {
+        color: #6B8CFF!important;
+      }
+
+      <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
+      */ /* end css dark-mode */
+    </mj-style>
+
+    <mj-style inline="inline">
+
+    </mj-style>
+  </mj-head>
+
+
+
+
+<mj-body mj-class="bg-color">
+
+<mj-section padding="0">
+  <mj-column>
+    <!-- Desktop image -->
+    <mj-image mj-class="hero-image hero-image-desktop"  />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-spacer height="30px" padding="0"/>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column mj-class="columns bg-color">
+    <mj-text mj-class="text-color" font-size="20px" line-height="26px" align="center">
+      Hi {{First name}}
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column padding="0">
+    <mj-spacer height="20px" padding="0"/>
+  </mj-column>
+</mj-section>
+
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column mj-class="columns">
+    <mj-text mj-class="text-color" font-size="17px" line-height="26px" align="center" >
+      Most business owners wouldn’t think twice about reviewing their phone, internet and insurance costs.
+      <br><br>
+      But energy is often put on the ‘To&#8209;Do’ list, or perhaps even in the “too&nbsp;hard&nbsp;basket”.  <br><br>The good news is checking your energy rates is easier than you&nbsp;think.
+    </mj-text>
+</mj-column>
+</mj-section>
+
+
+
+<mj-section>
+  <mj-column mj-class="columns">
+    <mj-text font-size="16px" padding="0 25px">       
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <!-- Row 1 -->
+      <tr>
+        <td style="vertical-align: middle; width: 30px; padding-bottom: 15px;">
+          <img src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
+        </td>
+        <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
+          It only takes a few&nbsp;minutes
+        </td>
+      </tr>
+      <!-- Row 2 -->
+      <tr>
+        <td style="vertical-align: middle; width: 30px; padding-bottom: 15px;">
+          <img src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
+        </td>
+        <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
+          It’s completely free and there’s no obligation to&nbsp;switch
+        </td>
+      </tr>
+      <!-- Row 3 -->
+      <tr>
+        <td style="vertical-align: middle; width: 30px; padding-bottom: 15px;">
+          <img src="https://aga0361-edm-01.s3.ap-southeast-2.amazonaws.com/aga0361_tick.png" width="28" style="display: block; border: 0;" alt="•" />
+        </td>
+        <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
+          It could uncover great business&nbsp;savings
+        </td>
+      </tr>
+      </table>
+</mj-text>
+</mj-column>
+</mj-group>
+
+</mj-section>
+
+
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column mj-class="columns">
+<!-- Body text -->
+<mj-text mj-class="text-color" font-size="17px" line-height="26px" align="center" >
+  Call AGL’s energy specialists on <b>133&nbsp;835</b> or click the button&nbsp;below.
+</mj-text>
+</mj-column>
+</mj-section>
+
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column padding="0">
+    <mj-spacer height="20px" padding="0"/>
+  </mj-column>
+</mj-section>
+
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column mj-class="columns">
+    <mj-image mj-class="cta-01"/>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-image mj-class="aga0361-contentbox-01 aga0361-contentbox-01-desktop"/>
+    <!-- <mj-image mj-class="aga0361-contentbox-01 aga0361-contentbox-01-mobile"/> -->
+  </mj-column>
+</mj-section>
+
+
+
+
+
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column padding="0">
+    <mj-spacer height="20px" padding="0"/>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column mj-class="columns">
+<!-- Body text -->
+<mj-text mj-class="text-color" font-size="20px" font-weight="bold" line-height="20px" align="center" >
+  Multiple sites? Enjoy&nbsp;lower&nbsp;rates!
+</mj-text>
+</mj-column>
+</mj-section>
+
+</mj-section>
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column padding="0">
+    <mj-spacer height="20px" padding="0"/>
+  </mj-column>
+</mj-section>
+
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column mj-class="columns">
+<!-- Body text -->
+<mj-text mj-class="text-color" font-size="17px" line-height="24px" align="center" >
+  Businesses with multiple properties could access even lower rates across their sites. One quick conversation could help reduce energy costs across your whole&nbsp;business.
+</mj-text>
+</mj-column>
+</mj-section>
+
+</mj-section>
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column padding="0">
+    <mj-spacer height="20px" padding="0"/>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column mj-class="columns">
+<!-- Body text -->
+<mj-text mj-class="text-color" font-size="20px" font-weight="bold" line-height="20px" align="center" >
+  Home business owners can&nbsp;get&nbsp;a&nbsp;boost&nbsp;too.
+</mj-text>
+</mj-column>
+</mj-section>
+
+</mj-section>
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column padding="0">
+    <mj-spacer height="20px" padding="0"/>
+  </mj-column>
+</mj-section>
+
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column mj-class="columns">
+<!-- Body text -->
+<mj-text mj-class="text-color" font-size="17px" line-height="24px" align="center" >
+  If you run your business from your home, AGL has residential energy options that could suit your&nbsp;needs. 
+</mj-text>
+</mj-column>
+</mj-section>
+
+</mj-section>
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column padding="0">
+    <mj-spacer height="20px" padding="0"/>
+  </mj-column>
+</mj-section>
+
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column mj-class="columns">
+    <mj-image mj-class="cta-02"/>
+  </mj-column>
+
+</mj-section>
+<mj-section mj-class="bg-color" padding="0" >
+  <mj-column padding="0">
+    <mj-spacer height="5px" padding="0"/>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-image mj-class="aga0361-contentbox-04 aga0361-contentbox-04-desktop"/>
+    <!-- <mj-image mj-class="aga0361-contentbox-04 aga0361-contentbox-04-mobile"/> -->
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-image mj-class="aga0361-contentbox-02 aga0361-contentbox-02-desktop"/>
+    <!-- <mj-image mj-class="aga0361-contentbox-02 aga0361-contentbox-02-mobile"/> -->
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0">
+  <mj-column padding="0">
+    <mj-image mj-class="aga0361-contentbox-03 aga0361-contentbox-03-desktop"/>
+    <!-- <mj-image mj-class="aga0361-contentbox-03 aga0361-contentbox-03-mobile"/> -->
+  </mj-column>
+</mj-section>
+
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column padding="0">
+    <mj-spacer height="20px" padding="0"/>
+  </mj-column>
+</mj-section>
+
+
+
+
+<mj-section padding="0">
+  <mj-column padding="0px 25px">
+    <mj-text mj-class="text-color"  padding="10px" font-size="11px" line-height="14px" align="left" >
+      *AGL small business energy plans are available in VIC, NSW, QLD and SA, in areas where AGL operates for small business customers. Basic Plan Information Documents are available at <a href="https:/agl.com.au/bpid" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: none; font-weight: regular;">agl.com.au/bpid</a> (NSW, QLD & SA). Fact Sheets (VIC) are available at <a href="https:/agl.com.au/vefs" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: none; font-weight: regular;">agl.com.au/vefs.</a> For clear advice on the right plan for you, contact AGL&nbsp;on&nbsp;131&nbsp;245.
+      <br><br>
+      <sup>1</sup>Source: Fifth Quadrant SME Sentiment Tracker, Wave 87. <a href="https://www.fifthquadrant.com.au/content/uploads/Fifth_Quadrant_SME_Sentiment_Tracker_W87.pdf" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: none; font-weight: regular;">Read&nbsp;the&nbsp;report.</a>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section mj-class="bg-color" padding="0">
+  <mj-column padding="0">
+    <mj-spacer height="20px" padding="0"/>
+  </mj-column>
+</mj-section>
+
+</mj-body>
+</mjml>
