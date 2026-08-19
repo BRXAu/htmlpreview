@@ -12,11 +12,11 @@
       localPath=""
       bucket="https://tba0564-edm.s3.ap-southeast-2.amazonaws.com/"
       gitpreview="https://brxau.github.io/htmlpreview/TBA0464/edm02/"
-      urlpath="https://brxau.github.io/htmlpreview/TBA0464/edm02/"
+      urlpath=""
 
-      hero.desktop.src="tba0464-02-hero-desktop.jpg"
-      hero.mobile.src="tba0464-02-hero-mobile.jpg"
-      hero.alt="BHP Xplor. Go further with BHP Xplor."
+      hero.desktop.src="tba0464-04-hero-desktop.jpg"
+      hero.mobile.src="tba0464-04-hero-mobile.jpg"
+      hero.alt="BHP Xplor. Have questions about BHP Xplor?"
 
       icon.01.src="tba0464-01-icon-fb.png"
       icon.01.alt="Facebook"
@@ -36,14 +36,14 @@
 
       cta.arrow.src="tba0464-01-arrow.png"
 
-      cta.01.text="Orion Minerals"
+      cta.01.text="Register here"
       cta.01.url="#"
       
-      cta.02.text="FrontierX"
+      cta.02.text="Register here"
       cta.02.url="#"
 
-      cta.03.text="Apply now"
-      cta.03.url="https://www.bhp.com/xplor"
+      cta.03.text="Register here"
+      cta.03.url="#"
 
 
       
@@ -139,6 +139,10 @@
       .cta-link {
         color: #FFFFFF!important;
       }
+
+      .cta-text-url {
+        color: #FFFFFF!important;
+      }
       */ /* end css dark-mode */
     </mj-style>
 
@@ -184,6 +188,33 @@
       line-height:20px; 
       color:#333333; 
       padding:0px 0px 10px 0px;
+    }
+
+    .webinar-title {
+      font-family:Arial, sans-serif; 
+      font-size:16px; 
+      line-height:20px; 
+      color:#333333; 
+      padding:0px 0px 10px 0px;
+      font-weight: bold;
+    }
+
+    .webinar-date {
+      font-family:Arial, sans-serif; 
+      font-size:12px; 
+      line-height:16px; 
+      color:#666666; 
+      padding:0px 0px 10px 0px;
+      font-weight: bold;
+    }
+
+    .webinar-time {
+      font-family:Arial, sans-serif; 
+      font-size:12px; 
+      line-height:16px; 
+      color:#666666; 
+      padding:0px 0px 10px 0px;
+      font-weight: regular;
     }
 
     .table-content-bar { 
@@ -258,7 +289,7 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color" padding="0px 25px 0px 25px" font-size="24px" line-height="30px" align="left">
-          Applications are now open for <span class="desktop-br"><br/></span>the&nbsp;2027 BHP Xplor&nbsp;cohort. 
+          If you’re considering applying for<span class="desktop-br"><br/></span>the 2027 BHP Xplor cohort, our <span class="desktop-br"><br/></span>upcoming webinars and events are <span class="desktop-br"><br/></span>a chance to learn more. 
         </mj-text>
       </mj-column>
     </mj-section>
@@ -273,127 +304,69 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
-          BHP Xplor gives mineral exploration companies funding, expertise and commercial support to help take what they believe in&nbsp;further.
+          Hear how the program works, what selected companies receive and whether BHP Xplor s right for your opportunity.
           <br/><br/>
-          Selected participants receive US$500,000 in equity-free funding, technical access, commercial support and industry connections across the nine-month&nbsp;program.
+          View our list of webinars below:
         </mj-text>
       </mj-column>
     </mj-section>
 
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0">
-        <mj-spacer height="20px" padding="0"/>
+        <mj-spacer height="30px" padding="0"/>
       </mj-column>
     </mj-section>
 
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px" >
         <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
-
-<table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <!-- Left Accent Bar with Outlook MSO fix -->
-    <td class="table-content-bar" width="3" valign="top">&nbsp;</td>
-    <!-- Content Padding Cell -->
-    <td style="padding:10px 0 10px 30px;">
-      
-      <!-- Intro Text -->
-      <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-          <td class="table-content-text">
-            Hear what our previous participants think of Xplor:
-          </td>
-        </tr>
-      </table>
-
-      <!-- Item 1: Orion Minerals -->
-
-      <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 120px;">
-        <tr>
-          <td class="cta-text" valign="middle">
-            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="${cta.01.url}" target="_blank" style="">${cta.01.text}</a>
-          </td>
-          <td class="cta-arrow" width="15" align="right" valign="middle">
-            <a class="img-href" href="${cta.01.url}" target="_blank">
-              <img class="cta-arrow-img" src="${urlpath}${cta.arrow.src}" width="15" height="11" alt="">
-            </a>
-          </td>
-        </tr>
-      </table>
-
-      <!-- Spacer -->
-      <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="20" style="height:20px; font-size:0; line-height:20px;">&nbsp;</td>
-        </tr>
-      </table>
-
-      <!-- Item 2: FrontierX -->
-
-      <table class="safe-table table-cta-border" role="presentation" width="86" border="0" cellpadding="0" cellspacing="0" style="width: 86px;">
-        <tr>
-          <td class="cta-text" valign="middle">
-            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="${cta.02.url}" target="_blank" style="">${cta.02.text}</a>
-          </td>
-          <td class="cta-arrow" width="15" align="right" valign="middle">
-            <a class="img-href" href="${cta.02.url}" target="_blank">
-              <img class="cta-arrow-img" src="${urlpath}${cta.arrow.src}" width="15" height="11" alt="">
-            </a>
-          </td>
-        </tr>
-      </table>
-
-      <!-- Spacer -->
-      <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="10" style="height:10px; font-size:0; line-height:10px;">&nbsp;</td>
-        </tr>
-      </table>
-
-    </td>
-  </tr>
-</table>
-
-
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-        <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0">
-        <mj-spacer height="20px" padding="0"/>
-      </mj-column>
-    </mj-section>
-
-
-    <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0" width="480px">
-        <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
-          Applications close 5&nbsp;October&nbsp;2026.
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-
-
-    <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0">
-        <mj-spacer height="20px" padding="0"/>
-      </mj-column>
-    </mj-section>
-
-    <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0" width="480px">
-        <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
-          <table class="safe-table table-cta-border" role="presentation" width="101" border="0" cellpadding="0" cellspacing="0" style="width: 101px;">
+          <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
             <tr>
-              <td class="cta-text" valign="middle">
-                <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="${cta.03.url}" target="_blank" style="">${cta.03.text}</a>
-              </td>
-              <td class="cta-arrow" width="15" align="right" valign="middle">
-                <a class="img-href" href="${cta.03.url}" target="_blank">
-                  <img class="cta-arrow-img" src="${urlpath}${cta.arrow.src}" width="15" height="11" alt="">
-                </a>
+              <!-- Left Accent Bar with Outlook MSO fix -->
+              <td class="table-content-bar" width="3" valign="top">&nbsp;</td>
+              <!-- Content Padding Cell -->
+              <td style="padding:10px 0 10px 30px;">
+                <!-- Intro Text -->
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="webinar-title">
+                      Webinar One
+                    </td>
+                  </tr>
+                </table>
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="webinar-date">
+                      27 August 2026
+                    </td>
+                  </tr>
+                </table>
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="webinar-time">
+                      14:00–15:00 SAST / 07:00–08:00 CDT / 13:00–14:00 BST / 20:00–21:00 SGT / 22:00–23:00 AEST
+                    </td>
+                  </tr>
+                </table>
+                <!-- Item 1: Orion Minerals -->
+                <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 120px;">
+                  <tr>
+                    <td class="cta-text" valign="middle">
+                      <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="${cta.01.url}" target="_blank" style="">${cta.01.text}</a>
+                    </td>
+                    <td class="cta-arrow" width="15" align="right" valign="middle">
+                      <a class="img-href" href="${cta.01.url}" target="_blank">
+                        <img class="cta-arrow-img" src="${urlpath}${cta.arrow.src}" width="15" height="11" alt="">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+                <!-- Spacer -->
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="10" style="height:10px; font-size:0; line-height:10px;">&nbsp;</td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
@@ -401,6 +374,151 @@
       </mj-column>
     </mj-section>
 
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="30px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px" >
+        <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
+          <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <!-- Left Accent Bar with Outlook MSO fix -->
+              <td class="table-content-bar" width="3" valign="top">&nbsp;</td>
+              <!-- Content Padding Cell -->
+              <td style="padding:10px 0 10px 30px;">
+                <!-- Intro Text -->
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="webinar-title">
+                      Webinar Two
+                    </td>
+                  </tr>
+                </table>
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="webinar-date">
+                      7 September 2026
+                    </td>
+                  </tr>
+                </table>
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="webinar-time">
+                      11:00–12:00 BST / 05:00–06:00 CDT / 06:00–07:00 EDT / 12:00–13:00 SAST / 18:00–19:00 SGT / 20:00–21:00 AEST
+                    </td>
+                  </tr>
+                </table>
+                <!-- Item 1: Orion Minerals -->
+                <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 120px;">
+                  <tr>
+                    <td class="cta-text" valign="middle">
+                      <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="${cta.02.url}" target="_blank" style="">${cta.02.text}</a>
+                    </td>
+                    <td class="cta-arrow" width="15" align="right" valign="middle">
+                      <a class="img-href" href="${cta.02.url}" target="_blank">
+                        <img class="cta-arrow-img" src="${urlpath}${cta.arrow.src}" width="15" height="11" alt="">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+                <!-- Spacer -->
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="10" style="height:10px; font-size:0; line-height:10px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="30px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px" >
+        <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
+          <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <!-- Left Accent Bar with Outlook MSO fix -->
+              <td class="table-content-bar" width="3" valign="top">&nbsp;</td>
+              <!-- Content Padding Cell -->
+              <td style="padding:10px 0 10px 30px;">
+                <!-- Intro Text -->
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="webinar-title">
+                      Webinar Three
+                    </td>
+                  </tr>
+                </table>
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="webinar-date">
+                      9 September 2026 
+                    </td>
+                  </tr>
+                </table>
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="webinar-time">
+                      09:00–10:00 PDT / 12:00–13:00 EDT / 17:00–18:00 BST / 18:00–19:00 SAST
+                    </td>
+                  </tr>
+                </table>
+                <!-- Item 1: Orion Minerals -->
+                <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 120px;">
+                  <tr>
+                    <td class="cta-text" valign="middle">
+                      <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="${cta.03.url}" target="_blank" style="">${cta.03.text}</a>
+                    </td>
+                    <td class="cta-arrow" width="15" align="right" valign="middle">
+                      <a class="img-href" href="${cta.03.url}" target="_blank">
+                        <img class="cta-arrow-img" src="${urlpath}${cta.arrow.src}" width="15" height="11" alt="">
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+                <!-- Spacer -->
+                <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="10" style="height:10px; font-size:0; line-height:10px;">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="30px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
+          Bring your questions and find out how to go further with BHP&nbsp;Xplor.
+        </mj-text>
+      </mj-column>
+    </mj-section>
 
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0">

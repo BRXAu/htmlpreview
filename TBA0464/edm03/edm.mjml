@@ -12,11 +12,11 @@
       localPath=""
       bucket="https://tba0564-edm.s3.ap-southeast-2.amazonaws.com/"
       gitpreview="https://brxau.github.io/htmlpreview/TBA0464/edm02/"
-      urlpath="https://brxau.github.io/htmlpreview/TBA0464/edm02/"
+      urlpath=""
 
-      hero.desktop.src="tba0464-02-hero-desktop.jpg"
-      hero.mobile.src="tba0464-02-hero-mobile.jpg"
-      hero.alt="BHP Xplor. Go further with BHP Xplor."
+      hero.desktop.src="tba0464-03-hero-desktop.jpg"
+      hero.mobile.src="tba0464-03-hero-mobile.jpg"
+      hero.alt="BHP Xplor. We hope you apply again."
 
       icon.01.src="tba0464-01-icon-fb.png"
       icon.01.alt="Facebook"
@@ -36,10 +36,10 @@
 
       cta.arrow.src="tba0464-01-arrow.png"
 
-      cta.01.text="Orion Minerals"
+      cta.01.text="Learn more"
       cta.01.url="#"
       
-      cta.02.text="FrontierX"
+      cta.02.text="Apply now"
       cta.02.url="#"
 
       cta.03.text="Apply now"
@@ -137,6 +137,10 @@
       }
 
       .cta-link {
+        color: #FFFFFF!important;
+      }
+
+      .cta-text-url {
         color: #FFFFFF!important;
       }
       */ /* end css dark-mode */
@@ -258,7 +262,7 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color" padding="0px 25px 0px 25px" font-size="24px" line-height="30px" align="left">
-          Applications are now open for <span class="desktop-br"><br/></span>the&nbsp;2027 BHP Xplor&nbsp;cohort. 
+          You’ve applied for BHP Xplor before.<span class="desktop-br"><br/></span>So have many companies who went<span class="desktop-br"><br/></span>on to be selected.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -273,9 +277,11 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
-          BHP Xplor gives mineral exploration companies funding, expertise and commercial support to help take what they believe in&nbsp;further.
+          Conditions change. Projects move forward. Priorities shift. If the ambition is still there, this could be the year to go&nbsp;further.
           <br/><br/>
-          Selected participants receive US$500,000 in equity-free funding, technical access, commercial support and industry connections across the nine-month&nbsp;program.
+          Applications are now open for the 2027 BHP Xplor cohort. Selected participants receive US$500,000 in equity-free funding, technical access, commercial support and industry connections to help strengthen the business case behind their opportunity.
+          <br/><br/>
+          Applications close 5 October 2026.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -286,119 +292,38 @@
       </mj-column>
     </mj-section>
 
+    
+
+
+
+
     <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0" width="480px" >
-        <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
-
-<table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="text-color" padding="0px 0px 0px 25px" font-size="24px" line-height="30px" align="left">
+<table class="safe-table" role="presentation" width="221" border="0" cellpadding="0" cellspacing="0" style="width:221px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
   <tr>
-    <!-- Left Accent Bar with Outlook MSO fix -->
-    <td class="table-content-bar" width="3" valign="top">&nbsp;</td>
-    <!-- Content Padding Cell -->
-    <td style="padding:10px 0 10px 30px;">
-      
-      <!-- Intro Text -->
-      <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <td width="101" valign="middle" style="width:101px; padding:0; vertical-align:middle;">
+      <table class="safe-table table-cta-border" role="presentation" width="101" border="0" cellpadding="0" cellspacing="0" style="width:101px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
         <tr>
-          <td class="table-content-text">
-            Hear what our previous participants think of Xplor:
-          </td>
+          <td class="cta-text" width="86" valign="middle" style="width:86px; padding:10px 10px 10px 0; vertical-align:middle; font-family:Arial,sans-serif; font-size:13px; line-height:13px; color:#333333; border-bottom:1px solid #DD5900;"><a class="cta-text-url" href="${cta.01.url}" target="_blank" style="color:#333333; text-decoration:none; font-weight:bold;">${cta.01.text}</a></td>
+          <td class="cta-arrow" width="15" align="right" valign="middle" style="width:15px; padding:0; vertical-align:middle; text-align:right; border-bottom:1px solid #DD5900;"><a class="img-href" href="${cta.01.url}" target="_blank" style="text-decoration:none;"><img class="cta-arrow-img" src="${urlpath}${cta.arrow.src}" width="15" height="11" alt="" style="display:block; width:15px; height:11px; border:0; outline:none; text-decoration:none;"></a></td>
         </tr>
       </table>
-
-      <!-- Item 1: Orion Minerals -->
-
-      <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 120px;">
+    </td>
+    <td width="20" style="width:20px; padding:0; font-size:1px; line-height:1px;">&nbsp;</td>
+    <td width="100" valign="middle" style="width:100px; padding:0; vertical-align:middle;">
+      <table class="safe-table table-cta-border" role="presentation" width="100" border="0" cellpadding="0" cellspacing="0" style="width:100px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
         <tr>
-          <td class="cta-text" valign="middle">
-            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="${cta.01.url}" target="_blank" style="">${cta.01.text}</a>
-          </td>
-          <td class="cta-arrow" width="15" align="right" valign="middle">
-            <a class="img-href" href="${cta.01.url}" target="_blank">
-              <img class="cta-arrow-img" src="${urlpath}${cta.arrow.src}" width="15" height="11" alt="">
-            </a>
-          </td>
+          <td class="cta-text" width="75" valign="middle" style="width:75px; padding:10px 10px 10px 0; vertical-align:middle; font-family:Arial,sans-serif; font-size:13px; line-height:13px; color:#333333; border-bottom:1px solid #DD5900;"><a class="cta-text-url" href="${cta.02.url}" target="_blank" style="color:#333333; text-decoration:none; font-weight:bold;">${cta.02.text}</a></td>
+          <td class="cta-arrow" width="15" align="right" valign="middle" style="width:15px; padding:0; vertical-align:middle; text-align:right; border-bottom:1px solid #DD5900;"><a class="img-href" href="${cta.02.url}" target="_blank" style="text-decoration:none;"><img class="cta-arrow-img" src="${urlpath}${cta.arrow.src}" width="15" height="11" alt="" style="display:block; width:15px; height:11px; border:0; outline:none; text-decoration:none;"></a></td>
         </tr>
       </table>
-
-      <!-- Spacer -->
-      <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="20" style="height:20px; font-size:0; line-height:20px;">&nbsp;</td>
-        </tr>
-      </table>
-
-      <!-- Item 2: FrontierX -->
-
-      <table class="safe-table table-cta-border" role="presentation" width="86" border="0" cellpadding="0" cellspacing="0" style="width: 86px;">
-        <tr>
-          <td class="cta-text" valign="middle">
-            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="${cta.02.url}" target="_blank" style="">${cta.02.text}</a>
-          </td>
-          <td class="cta-arrow" width="15" align="right" valign="middle">
-            <a class="img-href" href="${cta.02.url}" target="_blank">
-              <img class="cta-arrow-img" src="${urlpath}${cta.arrow.src}" width="15" height="11" alt="">
-            </a>
-          </td>
-        </tr>
-      </table>
-
-      <!-- Spacer -->
-      <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="10" style="height:10px; font-size:0; line-height:10px;">&nbsp;</td>
-        </tr>
-      </table>
-
     </td>
   </tr>
 </table>
-
-
         </mj-text>
       </mj-column>
-    </mj-section>
-
-        <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0">
-        <mj-spacer height="20px" padding="0"/>
-      </mj-column>
-    </mj-section>
-
-
-    <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0" width="480px">
-        <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
-          Applications close 5&nbsp;October&nbsp;2026.
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-
-
-    <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0">
-        <mj-spacer height="20px" padding="0"/>
-      </mj-column>
-    </mj-section>
-
-    <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0" width="480px">
-        <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
-          <table class="safe-table table-cta-border" role="presentation" width="101" border="0" cellpadding="0" cellspacing="0" style="width: 101px;">
-            <tr>
-              <td class="cta-text" valign="middle">
-                <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="${cta.03.url}" target="_blank" style="">${cta.03.text}</a>
-              </td>
-              <td class="cta-arrow" width="15" align="right" valign="middle">
-                <a class="img-href" href="${cta.03.url}" target="_blank">
-                  <img class="cta-arrow-img" src="${urlpath}${cta.arrow.src}" width="15" height="11" alt="">
-                </a>
-              </td>
-            </tr>
-          </table>
-        </mj-text>
-      </mj-column>
+      <mj-group>
     </mj-section>
 
 
