@@ -11,24 +11,24 @@
       font.family="Arial, Helvetica, sans-serif"
       localPath=""
       bucket="https://tba0564-edm.s3.ap-southeast-2.amazonaws.com/"
-      gitpreview="https://brxau.github.io/htmlpreview/TBA0464/edm01/"
-      urlpath=""
+      gitpreview="https://brxau.github.io/htmlpreview/TBA0464/edm02/"
+      urlpath="https://brxau.github.io/htmlpreview/TBA0464/edm02/"
 
       hero.desktop.src="tba0464-02-hero-desktop.jpg"
       hero.mobile.src="tba0464-02-hero-mobile.jpg"
       hero.alt="BHP Xplor. Go further with BHP Xplor."
 
-      icon01.src="tba0464-01-icon-fb.png"
-      icon01.alt="Facebook"
-      icon01.url="https://www.facebook.com/BHP/"
+      icon.01.src="tba0464-01-icon-fb.png"
+      icon.01.alt="Facebook"
+      icon.01.url="https://www.facebook.com/BHP/"
 
-      icon02.src="tba0464-01-icon-insta.png"
-      icon02.alt="LinkedIn"
-      icon02.url="https://www.linkedin.com/company/bhp"
+      icon.02.src="tba0464-01-icon-insta.png"
+      icon.02.alt="LinkedIn"
+      icon.02.url="https://www.linkedin.com/company/bhp"
 
-      icon03.src="tba0464-01-icon-yt.png"
-      icon03.alt="YouTube"
-      icon03.url="https://www.youtube.com/BHP"
+      icon.03.src="tba0464-01-icon-yt.png"
+      icon.03.alt="YouTube"
+      icon.03.url="https://www.youtube.com/BHP"
 
       logo.src="tba0464-01-Logo.png"
       logo.alt="BHP"
@@ -36,14 +36,14 @@
 
       cta.arrow.src="tba0464-01-arrow.png"
 
-      cta01.text="Orion Minerals"
-      cta01.url="#"
+      cta.01.text="Orion Minerals"
+      cta.01.url="#"
       
-      cta02.text="FrontierX"
-      cta02.url="#"
+      cta.02.text="FrontierX"
+      cta.02.url="#"
 
-      cta03.text="Apply now"
-      cta03.url="https://www.bhp.com/xplor"
+      cta.03.text="Apply now"
+      cta.03.url="https://www.bhp.com/xplor"
 
 
       
@@ -61,9 +61,9 @@
 
 
       <mj-image name="hero-image" alt="BHP Xplor. Go further with BHP Xplor." padding="0" />
-      <mj-image name="hero-desktop" css-class="desktop-image" src="tba0464-02-hero-desktop.jpg"  width="600px" />
-      <mj-class name="hero-mobile" css-class="mobile-image" src="tba0464-02-hero-mobile.jpg" />
-      <mj-class name="logo-image" css-class="both" src="tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
+      <mj-image name="hero-desktop" css-class="desktop-image" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-02-hero-desktop.jpg"  width="600px" />
+      <mj-class name="hero-mobile" css-class="mobile-image" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-02-hero-mobile.jpg" />
+      <mj-class name="logo-image" css-class="both" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
 
       <!-- Start colour scheme default --><!--
       <mj-class name="bg-color" background-color="#ffffff" />
@@ -101,6 +101,16 @@
         .desktop-image {
           display: none !important;
         }
+
+        .desktop-br {
+          display: none !important;
+          max-height: 0px !important;
+          font-size: 0px !important;
+          line-height: 0px !important;
+        }
+
+
+
       }
 
       @media only screen and (min-width: 600px) {
@@ -112,6 +122,8 @@
         .mobile-image {
           display: none !important;
         }
+
+
       }
 
       
@@ -137,27 +149,33 @@
       text-decoration: none;
     }
 
-    .cta-01-text {
-      font-family:Arial, sans-serif; 
-      font-size:13px; 
-      line-height:18px; 
-      color:#333333; 
-      padding:10px 0; 
-      border-bottom:1px solid #DD5900;
+    .cta-text {
+      vertical-align: middle; 
+      font-family: Arial, sans-serif; 
+      font-size: 13px; 
+      line-height: 16px; 
+      color: #333333; 
+      padding: 10px 10px 10px 0;
     }
 
-    .cta-01-text-url  { 
-      color:#333333; 
-      text-decoration:none; 
-      font-weight:bold;
+    .cta-text-url  { 
+      color: #333333; 
+      text-decoration: none; 
+      font-weight: bold; 
+      display: inline-block;
     }
 
-    .cta-01-arrow {
-      width:15px; padding:0px; border-bottom:1px solid #DD5900;
+    .cta-arrow {
+      vertical-align: middle; width: 15px; padding: 0;
     }
 
-    .cta-01-arrow-img { 
-      display:block; width:15px; height:15px; border:0; outline:none; text-decoration:none;
+    .cta-arrow-img { 
+      display: block; 
+      width: 15px; 
+      height: 11px; 
+      border: 0; 
+      outline: none; 
+      text-decoration: none;
     }
 
     .table-content-text {
@@ -165,7 +183,7 @@
       font-size:16px; 
       line-height:20px; 
       color:#333333; 
-      padding:10px 0;
+      padding:0px 0px 10px 0px;
     }
 
     .table-content-bar { 
@@ -179,6 +197,21 @@
       border-collapse:collapse; 
       mso-table-lspace:0pt; 
       mso-table-rspace:0pt;
+
+      border-collapse: collapse; 
+      mso-table-lspace: 0pt; 
+      mso-table-rspace: 0pt; 
+    }
+
+    .table-cta-border {
+      border-bottom: 1px solid #DD5900;
+    }
+
+    .img-href {
+      text-decoration: none; 
+      display: block; 
+      font-size: 0px; 
+      line-height: 0px;
     }
 
     .both {
@@ -224,8 +257,8 @@
 
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
-        <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
-          Applications are now open for the 2027 BHP&nbsp;Xplor&nbsp;cohort. 
+        <mj-text mj-class="text-color" padding="0px 25px 0px 25px" font-size="24px" line-height="30px" align="left">
+          Applications are now open for <span class="desktop-br"><br/></span>the&nbsp;2027 BHP Xplor&nbsp;cohort. 
         </mj-text>
       </mj-column>
     </mj-section>
@@ -241,7 +274,7 @@
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
           BHP Xplor gives mineral exploration companies funding, expertise and commercial support to help take what they believe in&nbsp;further.
-          <br><br>
+          <br/><br/>
           Selected participants receive US$500,000 in equity-free funding, technical access, commercial support and industry connections across the nine-month&nbsp;program.
         </mj-text>
       </mj-column>
@@ -268,20 +301,21 @@
       <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
         <tr>
           <td class="table-content-text">
-            Hear what our previous participants think of Xplor:
+            Heare what our previous participants think of Xplor:
           </td>
         </tr>
       </table>
 
       <!-- Item 1: Orion Minerals -->
-      <table class="safe-table" role="presentation" width="120px" border="0" cellpadding="0" cellspacing="0">
+
+      <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 120px;">
         <tr>
-          <td class="cta-01-text">
-            <a class="cta-01-text-url" href="#" target="_blank">Orion Minerals</a>
+          <td class="cta-text" valign="middle">
+            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="#" target="_blank" style="">Orion Minerals</a>
           </td>
-          <td class="cta-01-arrow" width="15" align="right">
-            <a href="#" target="_blank" style="text-decoration:none;">
-              <img class="cta-01-arrow-img" src="tba0464-01-arrow.png" width="15" height="15" alt="">
+          <td class="cta-arrow" width="15" align="right" valign="middle">
+            <a class="img-href" href="#" target="_blank">
+              <img class="cta-arrow-img" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-arrow.png" width="15" height="11" alt="">
             </a>
           </td>
         </tr>
@@ -295,14 +329,15 @@
       </table>
 
       <!-- Item 2: FrontierX -->
-      <table class="safe-table" role="presentation" width="85px" border="0" cellpadding="0" cellspacing="0">
+
+      <table class="safe-table table-cta-border" role="presentation" width="86" border="0" cellpadding="0" cellspacing="0" style="width: 86px;">
         <tr>
-          <td class="cta-01-text">
-            <a class="cta-01-text-url" href="#" target="_blank">FrontierX</a>
+          <td class="cta-text" valign="middle">
+            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="#" target="_blank" style="">FrontierX</a>
           </td>
-          <td class="cta-01-arrow" width="15" align="right">
-            <a href="#" target="_blank" style="text-decoration:none;">
-              <img class="cta-01-arrow-img" src="tba0464-01-arrow.png" width="15" height="15" alt="">
+          <td class="cta-arrow" width="15" align="right" valign="middle">
+            <a class="img-href" href="#" target="_blank">
+              <img class="cta-arrow-img" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-arrow.png" width="15" height="11" alt="">
             </a>
           </td>
         </tr>
@@ -311,7 +346,7 @@
       <!-- Spacer -->
       <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
         <tr>
-          <td height="20" style="height:20px; font-size:0; line-height:20px;">&nbsp;</td>
+          <td height="10" style="height:10px; font-size:0; line-height:10px;">&nbsp;</td>
         </tr>
       </table>
 
@@ -350,13 +385,15 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
-          <table width="100" border="0" cellpadding="0" cellspacing="0" style="width: 100px; border-collapse: collapse;">
+          <table class="safe-table table-cta-border" role="presentation" width="101" border="0" cellpadding="0" cellspacing="0" style="width: 101px;">
             <tr>
-              <td width="85" style="width: 120px; font-family: Arial, sans-serif; font-size: 13px; color: #333333;">
-                <a class="cta-link" href="https://www.bhp.com/xplor" target="blank">Apply now</a>
+              <td class="cta-text" valign="middle">
+                <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.bhp.com/xplor" target="_blank" style="">Apply now</a>
               </td>
-              <td width="15" style="width: 15px; line-height: 1px;">
-                <a class="cta-link" href="https://www.bhp.com/xplor" target="blank"><img src="tba0464-01-arrow.png" width="15" height="15" alt="" style="display: block; width: 15px; height: auto;" /></a>
+              <td class="cta-arrow" width="15" align="right" valign="middle">
+                <a class="img-href" href="https://www.bhp.com/xplor" target="_blank">
+                  <img class="cta-arrow-img" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-arrow.png" width="15" height="11" alt="">
+                </a>
               </td>
             </tr>
           </table>
@@ -364,11 +401,6 @@
       </mj-column>
     </mj-section>
 
-    <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0" width="480px">
-        <mj-divider width="100px" border-width="1px" border-style="solid"  border-color="#DD5900" padding="0px 25px" align="left"/>
-      </mj-column>
-    </mj-section>
 
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0">
@@ -403,19 +435,19 @@
                 <!-- Facebook Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 10px;">
                   <a href="https://www.facebook.com/BHP/" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="tba0464-01-icon-fb.png" width="28" height="28" alt="Facebook" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-icon-fb.png" width="28" height="28" alt="Facebook" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
                 <!-- Instagram Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 0px;">
                   <a href="https://www.linkedin.com/company/bhp" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="tba0464-01-icon-insta.png" width="28" height="28" alt="LinkedIn" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-icon-insta.png" width="28" height="28" alt="LinkedIn" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
                 <!-- YouTube Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 25px 0 0px;">
                   <a href="https://www.youtube.com/BHP" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="tba0464-01-icon-yt.png" width="28" height="28" alt="YouTube" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-icon-yt.png" width="28" height="28" alt="YouTube" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
               </tr>
