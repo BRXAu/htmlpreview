@@ -165,6 +165,10 @@
         color: #6B8CFF!important;
       }
 
+      .footer-url {
+        color:#FFFFFF!important;
+      }
+
       <td class="bullet-point-text" style="vertical-align: middle; padding-left: 10px; padding-bottom: 17px; font-family: Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #001CB0;">
       */ /* end css dark-mode */
     </mj-style>
@@ -413,9 +417,9 @@
 <mj-section padding="0">
   <mj-column padding="0px 25px">
     <mj-text mj-class="text-color"  padding="10px" font-size="11px" line-height="14px" align="left" >
-      *AGL small business energy plans are available in VIC, NSW, QLD and SA, in areas where AGL operates for small business customers. Basic Plan Information Documents are available at <a href="https:/agl.com.au/bpid" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: none; font-weight: regular;">agl.com.au/bpid</a> (NSW, QLD & SA). Fact Sheets (VIC) are available at <a href="https:/agl.com.au/vefs" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: none; font-weight: regular;">agl.com.au/vefs.</a> For clear advice on the right plan for you, contact AGL&nbsp;on&nbsp;131&nbsp;245.
+      *AGL small business energy plans are available in VIC, NSW, QLD and SA, in areas where AGL operates for small business customers. Basic Plan Information Documents are available at <a class="footer-url" href="https:/agl.com.au/bpid" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: none; font-weight: regular;">agl.com.au/bpid</a> (NSW, QLD & SA). Fact Sheets (VIC) are available at <a class="footer-url" href="https:/agl.com.au/vefs" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: none; font-weight: regular;">agl.com.au/vefs.</a> For clear advice on the right plan for you, contact AGL&nbsp;on&nbsp;131&nbsp;245.
       <br><br>
-      <sup>1</sup>Source: Fifth Quadrant SME Sentiment Tracker, Wave 87. <a href="https://www.fifthquadrant.com.au/content/uploads/Fifth_Quadrant_SME_Sentiment_Tracker_W87.pdf" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: none; font-weight: regular;">Read&nbsp;the&nbsp;report.</a>
+      <sup>1</sup>Source: Fifth Quadrant SME Sentiment Tracker, Wave 87. <a class="footer-url" href="https://www.fifthquadrant.com.au/content/uploads/Fifth_Quadrant_SME_Sentiment_Tracker_W87.pdf" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: none; font-weight: regular;">Read&nbsp;the&nbsp;report.</a>
     </mj-text>
   </mj-column>
 </mj-section>
