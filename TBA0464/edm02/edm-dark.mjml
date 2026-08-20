@@ -37,10 +37,10 @@
       cta.arrow.src="tba0464-01-arrow.png"
 
       cta.01.text="Orion Minerals"
-      cta.01.url="#"
+      cta.01.url="https://www.youtube.com/watch?v=zL_48J64HMM"
       
       cta.02.text="FrontierX"
-      cta.02.url="#"
+      cta.02.url="https://www.youtube.com/watch?v=KRJOEUGoDMg"
 
       cta.03.text="Apply now"
       cta.03.url="https://www.bhp.com/xplor"
@@ -321,10 +321,10 @@
       <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 120px;">
         <tr>
           <td class="cta-text" valign="middle">
-            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="#" target="_blank" style="">Orion Minerals</a>
+            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.youtube.com/watch?v=zL_48J64HMM" target="_blank" style="">Orion Minerals</a>
           </td>
           <td class="cta-arrow" width="15" align="right" valign="middle">
-            <a class="img-href" href="#" target="_blank">
+            <a class="img-href" href="https://www.youtube.com/watch?v=zL_48J64HMM" target="_blank">
               <img class="cta-arrow-img" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-arrow.png" width="15" height="11" alt="">
             </a>
           </td>
@@ -343,10 +343,10 @@
       <table class="safe-table table-cta-border" role="presentation" width="86" border="0" cellpadding="0" cellspacing="0" style="width: 86px;">
         <tr>
           <td class="cta-text" valign="middle">
-            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="#" target="_blank" style="">FrontierX</a>
+            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.youtube.com/watch?v=KRJOEUGoDMg" target="_blank" style="">FrontierX</a>
           </td>
           <td class="cta-arrow" width="15" align="right" valign="middle">
-            <a class="img-href" href="#" target="_blank">
+            <a class="img-href" href="https://www.youtube.com/watch?v=KRJOEUGoDMg" target="_blank">
               <img class="cta-arrow-img" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-arrow.png" width="15" height="11" alt="">
             </a>
           </td>

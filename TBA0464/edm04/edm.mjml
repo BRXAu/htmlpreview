@@ -37,13 +37,13 @@
       cta.arrow.src="tba0464-01-arrow.png"
 
       cta.01.text="Register here"
-      cta.01.url="#"
+      cta.01.url="https://www.bhp.com/xplor"
       
       cta.02.text="Register here"
-      cta.02.url="#"
+      cta.02.url="https://www.bhp.com/xplor"
 
       cta.03.text="Register here"
-      cta.03.url="#"
+      cta.03.url="https://www.bhp.com/xplor"
 
 
       
@@ -319,7 +319,7 @@
         <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
           Hear how the program works, what selected companies receive and whether BHP Xplor is right for your opportunity.
           <br/><br/>
-          View our list of webinars below:
+          View our upcoming webinars below:
         </mj-text>
       </mj-column>
     </mj-section>

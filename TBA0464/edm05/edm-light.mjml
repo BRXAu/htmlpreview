@@ -37,7 +37,7 @@
       cta.arrow.src="tba0464-01-arrow.png"
 
       cta.01.text="Register now"
-      cta.01.url="#"
+      cta.01.url="https://www.bhp.com/xplor"
       
       cta.02.text="Register here"
       cta.02.url="#"
@@ -289,7 +289,7 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color" padding="0px 25px 0px 25px" font-size="22px" line-height="30px" align="left">
-          Join our closing soon webinar <span class="desktop-br"><br/></span>to learn more about the program, <span class="desktop-br"><br/></span>the application process and what <span class="desktop-br"><br/></span>selected companies receive. 
+          Applications for the 2027 BHP Xplor cohort <span class="desktop-br"><br/></span>close on 5 October 2026.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -304,7 +304,9 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
-          If you’re considering applying, this is your chance to ask questions before you go further with BHP&nbsp;Xplor. 
+          Join our closing soon webinar to learn more about the program, the application process and what selected companies&nbsp;receive.
+          <br/><br/>
+          If you’re considering applying, this is your chance to ask questions before you go further with BHP&nbsp;Xplor.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -321,10 +323,10 @@
           <table class="safe-table table-cta-border" role="presentation" width="111" border="0" cellpadding="0" cellspacing="0" style="width: 111px;">
             <tr>
               <td class="cta-text" valign="middle">
-                <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="#" target="_blank" style="">Register now</a>
+                <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.bhp.com/xplor" target="_blank" style="">Register now</a>
               </td>
               <td class="cta-arrow" width="15" align="right" valign="middle">
-                <a class="img-href" href="#" target="_blank">
+                <a class="img-href" href="https://www.bhp.com/xplor" target="_blank">
                   <img class="cta-arrow-img" src="tba0464-01-arrow.png" width="15" height="11" alt="">
                 </a>
               </td>
