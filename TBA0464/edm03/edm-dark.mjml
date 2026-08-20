@@ -262,7 +262,7 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color" padding="0px 25px 0px 25px" font-size="24px" line-height="30px" align="left">
-          You’ve applied for BHP Xplor before.<span class="desktop-br"><br/></span>So have many companies who went<span class="desktop-br"><br/></span>on to be selected.
+          You’ve applied for BHP Xplor before. <span class="desktop-br"><br/></span>So have many companies who went <span class="desktop-br"><br/></span>on to be selected.
         </mj-text>
       </mj-column>
     </mj-section>

@@ -143,6 +143,19 @@
       .cta-text-url {
         color: #FFFFFF!important;
       }
+
+      .webinar-title {
+        color: #FFFFFF!important;
+      }
+
+      .webinar-date {
+        color: #FFFFFF!important;
+      }
+
+      .webinar-time {
+        color: #FFFFFF!important;
+      }
+
       */ /* end css dark-mode */
     </mj-style>
 
@@ -289,7 +302,7 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color" padding="0px 25px 0px 25px" font-size="24px" line-height="30px" align="left">
-          If you’re considering applying for<span class="desktop-br"><br/></span>the 2027 BHP Xplor cohort, our <span class="desktop-br"><br/></span>upcoming webinars and events are <span class="desktop-br"><br/></span>a chance to learn more. 
+          If you’re considering applying for <span class="desktop-br"><br/></span>the 2027 BHP Xplor cohort, our <span class="desktop-br"><br/></span>upcoming webinars and events are <span class="desktop-br"><br/></span>a chance to learn more. 
         </mj-text>
       </mj-column>
     </mj-section>
@@ -304,7 +317,7 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
-          Hear how the program works, what selected companies receive and whether BHP Xplor s right for your opportunity.
+          Hear how the program works, what selected companies receive and whether BHP Xplor is right for your opportunity.
           <br/><br/>
           View our list of webinars below:
         </mj-text>

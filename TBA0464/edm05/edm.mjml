@@ -36,7 +36,7 @@
 
       cta.arrow.src="tba0464-01-arrow.png"
 
-      cta.01.text="Register here"
+      cta.01.text="Register now"
       cta.01.url="#"
       
       cta.02.text="Register here"
@@ -289,7 +289,7 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color" padding="0px 25px 0px 25px" font-size="22px" line-height="30px" align="left">
-          If you’re considering applying for<span class="desktop-br"><br/></span>the 2027 BHP Xplor cohort, our <span class="desktop-br"><br/></span>upcoming webinars and events are <span class="desktop-br"><br/></span>a chance to learn more. 
+          Join our closing soon webinar <span class="desktop-br"><br/></span>to learn more about the program, <span class="desktop-br"><br/></span>the application process and what <span class="desktop-br"><br/></span>selected companies receive. 
         </mj-text>
       </mj-column>
     </mj-section>
