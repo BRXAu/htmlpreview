@@ -28,7 +28,7 @@ window.MANIFEST = {
   "F1_Image1": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"border\":\"\",\"order\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\"}",
   "F1_Image2": "{\"url\":\"\",\"size\":\"\",\"position\":\"0 0 \",\"border\":\"\",\"order\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\"}",
   "F1_ProductIcon": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"padding\":\"\",\"layout\":\"\",\"delay\":\"\",\"animationIn\":\"\",\"animationOut\":\"\"}",
-  "F1_InframeImage": "{\"url\":\"assets/YOU0082_Keyline_Template_F1_InframeImage_6728e555.svg\",\"size\":\"\",\"position\":\"\",\"padding\":\"\",\"delay\":\"\",\"order\":\"\",\"animationIn\":\"fadeIn:0.4:power1.out\",\"animationOut\":\"\",\"frameOut\":\"\",\"border\":\"\"}",
+  "F1_InframeImage": "{\"url\":\"assets/YOU0082_Keyline_Template_F1_InframeImage_6728e555.svg\",\"size\":\"\",\"position\":\"\",\"padding\":\"\",\"delay\":\"\",\"order\":\"\",\"animationIn\":\"fadeIn:0.3:power1.out\",\"animationOut\":\"\",\"frameOut\":\"\",\"border\":\"\"}",
   "F1_Logo": "{\"url\":\"YouiInlineLogo\",\"alignment\":\"\",\"position\":\"14 398\",\"padding\":\"\",\"maxSize\":\"65\"}",
   "F1_Headline": "{\"text\":\"Lorem ipsum \\ndolor sit \\namet\",\"size\":\"20\",\"weight\":\"\",\"order\":\"\",\"column\":\"\",\"position\":\"\",\"padding\":\"4 0 0 0\",\"delay\":\"\"}",
   "F1_Subheadline": "{\"text\":\"\",\"size\":\"9\",\"weight\":\"\",\"order\":\"\",\"column\":\"\",\"position\":\"15 180\",\"padding\":\"\",\"delay\":\"\"}",
