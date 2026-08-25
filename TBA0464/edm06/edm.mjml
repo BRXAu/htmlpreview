@@ -418,7 +418,7 @@ ${tableContainerOpen module01 themes.module01.background}
       <mj-column mj-class="module-01-color"  width="150px" padding="0" >
         <mj-image mj-class="invest-icon-01" />
         <mj-text mj-class="module-01-color"  padding="10px 20px" font-size="10px" font-weight="regular" line-height="12px" align="center" >
-          Direct access to CEOs and technical leaders, ahead of wider market awareness
+          Direct access to CEOs and technical leaders, ahead of wider market awareness.
         </mj-text>
       </mj-column>
       <mj-column mj-class="module-01-color"  width="150px" padding="0" >
