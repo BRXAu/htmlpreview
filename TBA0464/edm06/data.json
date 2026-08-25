@@ -47,10 +47,23 @@
 			"width": "168"
 		}
 	},
-
 	"module01":{
 		"padding":"0 25",
-		"width":"450"
+		"width":"450",
+		"images": {
+			"icon01": {
+				"src": "tba0464-invest-icon-01.png",
+				"alt": "Direct Access"
+			},
+			"icon02": {
+				"src": "tba0464-invest-icon-02.png",
+				"alt": "Direct pre-vetted pipeline"
+			},
+			"icon03": {
+				"src": "tba0464-invest-icon-03.png",
+				"alt": "Intimate deal focused setting"
+			}
+		}
 	},
 	"theme": {
 		"light": {

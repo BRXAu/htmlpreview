@@ -28,9 +28,9 @@
       <mj-class name="logo-image" css-class="both" src="${paths.current}${logo.src}" alt="${logo.alt}" width="46px" padding="0px 25px" align="left" href="${logo.url}"/>
 
 
-      <mj-class name="invest-icon-01" css-class="both" src="${paths.current}tba0464-invest-icon-01.png" alt="${logo.alt}" width="60px" padding="0px" align="center"/>
-      <mj-class name="invest-icon-02" css-class="both" src="${paths.current}tba0464-invest-icon-02.png" alt="${logo.alt}" width="60px" padding="0px" align="center"/>
-      <mj-class name="invest-icon-03" css-class="both" src="${paths.current}tba0464-invest-icon-03.png" alt="${logo.alt}" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-01" css-class="both" src="${paths.current}${module01.images.icon01.src}" alt="${module01.images.icon01.alt}" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-02" css-class="both" src="${paths.current}${module01.images.icon02.src}" alt="${module01.images.icon02.alt}" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-03" css-class="both" src="${paths.current}${module01.images.icon03.src}" alt="${module01.images.icon03.alt}" width="60px" padding="0px" align="center"/>
 
       <!-- Start colour scheme default -->
       <mj-class name="bg-color" background-color="${theme.light.background}" />

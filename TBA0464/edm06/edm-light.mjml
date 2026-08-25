@@ -28,9 +28,9 @@
       <mj-class name="logo-image" css-class="both" src="./assets/tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
 
 
-      <mj-class name="invest-icon-01" css-class="both" src="./assets/tba0464-invest-icon-01.png" alt="BHP" width="60px" padding="0px" align="center"/>
-      <mj-class name="invest-icon-02" css-class="both" src="./assets/tba0464-invest-icon-02.png" alt="BHP" width="60px" padding="0px" align="center"/>
-      <mj-class name="invest-icon-03" css-class="both" src="./assets/tba0464-invest-icon-03.png" alt="BHP" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-01" css-class="both" src="./assets/tba0464-invest-icon-01.png" alt="Direct Access" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-02" css-class="both" src="./assets/tba0464-invest-icon-02.png" alt="Direct pre-vetted pipeline" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-03" css-class="both" src="./assets/tba0464-invest-icon-03.png" alt="Intimate deal focused setting" width="60px" padding="0px" align="center"/>
 
       <!-- Start colour scheme default -->
       <mj-class name="bg-color" background-color="#ffffff" />
