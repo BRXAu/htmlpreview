@@ -1,0 +1,100 @@
+{
+	"font": {
+		"family": "Arial, Helvetica, sans-serif"
+	},
+	"paths": {
+		"local": "./assets",
+		"bucket": "https://tba0564-edm.s3.ap-southeast-2.amazonaws.com/",
+		"git": "https://brxau.github.io/htmlpreview/TBA0464/edm06/",
+		"current": "./assets/"
+	},
+	"hero": {
+		"desktop": {
+			"src": "tba0464-06-hero-desktop.jpg"
+		},
+		"mobile": {
+			"src": "tba0464-06-hero-mobile.jpg"
+		},
+		"alt": "BHP Xplor. Go further with BHP Xplor."
+	},
+	"logo": {
+		"src": "tba0464-01-Logo.png",
+		"alt": "BHP",
+		"url": "https://www.bhp.com/"
+	},
+	"icons": {
+		"facebook": {
+			"src": "tba0464-01-icon-fb.png",
+			"alt": "Facebook",
+			"url": "https://www.facebook.com/BHP/"
+		},
+		"linkein": {
+			"src": "tba0464-01-icon-insta.png",
+			"alt": "LinkedIn",
+			"url": "https://www.linkedin.com/company/bhp"
+		},
+		"youtube": {
+			"src": "tba0464-01-icon-yt.png",
+			"alt": "YouTube",
+			"url": "https://www.youtube.com/BHP"
+		}
+	},
+	"cta": {
+		"src": "tba0464-01-arrow.png",
+		"cta01": {
+			"text": "Register your interest",
+			"url": "https://www.bhp.com/xplor",
+			"width": "168"
+		}
+	},
+
+	"module01":{
+		"padding":"0 25",
+		"width":"450"
+	},
+	"theme": {
+		"light": {
+			"text":"#6C757D",
+			"background":"#ffffff",
+			"preheader": {
+				"text":"#000000",
+				"background":"#E0DDDB"
+			},
+			"footer": {
+				"text":"#707372",
+				"background":"#F9F7F5"
+			},
+			"cta": {
+				"text":"#343A40",
+				"background":"#FFFFFF"
+			},
+			"module01": {
+				"text":"#666666",
+				"background":"#F9F7F5"
+			}
+		},
+		"dark": {
+			"text":"#E0E0E0",
+			"background":"#000000",
+			"preheader": {
+				"text":"#FFFFFF",
+				"background":"#1E1E1E"
+			},
+			"footer": {
+				"text":"#A0A5A4",
+				"background":"#1A1A1A"
+			},
+			"cta": {
+				"text":"#FFFFFF",
+				"background":"#000000"
+			},
+			"module01": {
+				"text":"#FFFFFF",
+				"background":"#1A1A1A"
+			}
+		},
+		"bar": {
+			"background":"#DD5900"
+		}
+	}
+}

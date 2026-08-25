@@ -23,13 +23,23 @@
 
 
       <mj-image name="hero-image" alt="BHP Xplor. Go further with BHP Xplor." padding="0" />
-      <mj-image name="hero-desktop" css-class="desktop-image" src="./assets/tba0464-02-hero-desktop.jpg"  width="600px" />
-      <mj-class name="hero-mobile" css-class="mobile-image" src="./assets/tba0464-02-hero-mobile.jpg" />
+      <mj-image name="hero-desktop" css-class="desktop-image" src="./assets/tba0464-06-hero-desktop.jpg"  width="600px" />
+      <mj-class name="hero-mobile" css-class="mobile-image" src="./assets/tba0464-06-hero-mobile.jpg" />
       <mj-class name="logo-image" css-class="both" src="./assets/tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
+
+
+      <mj-class name="invest-icon-01" css-class="both" src="./assets/tba0464-invest-icon-01.png" alt="BHP" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-02" css-class="both" src="./assets/tba0464-invest-icon-02.png" alt="BHP" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-03" css-class="both" src="./assets/tba0464-invest-icon-03.png" alt="BHP" width="60px" padding="0px" align="center"/>
 
       <!-- Start colour scheme default -->
       <mj-class name="bg-color" background-color="#ffffff" />
       <mj-class name="text-color" color="#6C757D" />
+
+      <mj-class name="module-01-color" background-color="#F9F7F5" color="#666666" />
+
+
+      
 
       <mj-class name="pre-bg-color" background-color="#E0DDDB" />
       <mj-class name="pre-text-color" color="#000000"/>
@@ -43,6 +53,8 @@
 
       <mj-class name="bg-color" background-color="#000000" />
       <mj-class name="text-color" color="#E0E0E0" />
+
+      <mj-class name="module-01-color" background-color="#1A1A1A" color="#FFFFFF" />
 
       <mj-class name="pre-bg-color" background-color="#1E1E1E" />
       <mj-class name="pre-text-color" color="#FFFFFF"/>
@@ -105,6 +117,20 @@
       .table-content-text {
         color:#E0E0E0!important;
       }
+
+      .table-content-date {
+        color:#E0E0E0!important; 
+      }
+
+      .table-content-time {
+        color:#E0E0E0!important; 
+      }
+
+      .table-content-address {
+        color:#E0E0E0!important; 
+      }
+
+
       */ /* end css dark-mode */
     </mj-style>
 
@@ -159,6 +185,33 @@
         background-color:#DD5900; 
         font-size:1px; 
         line-height:1px;
+      }
+
+      .table-content-date {
+        font-family:Arial, Helvetica, sans-serif; 
+        font-size:14px; 
+        font-weight: bold;
+        line-height:20px; 
+        color:#666666; 
+        padding:0px 0px 0px 0px;
+      }
+
+      .table-content-time {
+        font-family:Arial, Helvetica, sans-serif; 
+        font-size:12px; 
+        font-weight: bold;
+        line-height:14px; 
+        color:#666666; 
+        padding:0px 0px 0px 0px;
+      }
+
+      .table-content-address {
+        font-family:Arial, Helvetica, sans-serif; 
+        font-size:12px; 
+        font-weight: regular;
+        line-height:16px; 
+        color:#666666; 
+        padding:0px 0px 0px 0px;
       }
 
       .safe-table {
@@ -263,24 +316,7 @@
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color" padding="0px 25px 0px 25px" font-size="24px" line-height="30px" align="left">
-          Applications are now open for <span class="desktop-br"><br/></span>the&nbsp;2027 BHP Xplor&nbsp;cohort. 
-        </mj-text>
-      </mj-column>
-    </mj-section>
-
-
-    <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0">
-        <mj-spacer height="20px" padding="0"/>
-      </mj-column>
-    </mj-section>
-
-    <mj-section mj-class="bg-color" padding="0">
-      <mj-column padding="0" width="480px">
-        <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
-          BHP Xplor gives mineral exploration companies funding, expertise and commercial support to help take what they believe in&nbsp;further.
-          <br/><br/>
-          Selected participants receive US$500,000 in equity-free funding, technical access, commercial support and industry connections across the nine-month&nbsp;program.
+          BHP&nbsp;Xplor&nbsp;Showcase: An&nbsp;Investor&nbsp;Event
         </mj-text>
       </mj-column>
     </mj-section>
@@ -303,50 +339,24 @@
               <!-- Intro Text -->
               <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td class="table-content-text">
-                    Hear what our previous participants think of Xplor:
+                  <td class="table-content-date">
+                    17 September 2026
                   </td>
                 </tr>
               </table>
-              <!-- Item 1: Orion Minerals -->
-              
-    <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 120px;">
-        <tr>
-          <td class="cta-text" valign="middle">
-            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.youtube.com/watch?v=zL_48J64HMM" target="_blank" style="">Orion Minerals</a>
-          </td>
-          <td class="cta-arrow" width="15" align="right" valign="middle">
-            <a class="img-href" href="https://www.youtube.com/watch?v=zL_48J64HMM" target="_blank">
-              <img class="cta-arrow-img" src="./assets/tba0464-01-arrow.png" width="15" height="11" alt="">
-            </a>
-          </td>
-        </tr>
-      </table>
-  
-              <!-- Spacer -->
               <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td height="20" style="height:20px; font-size:0; line-height:20px;">&nbsp;</td>
+                  <td class="table-content-time">
+                    09:00-18:00
+                  </td>
                 </tr>
               </table>
-              
-    <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 86px;">
-        <tr>
-          <td class="cta-text" valign="middle">
-            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.youtube.com/watch?v=KRJOEUGoDMg" target="_blank" style="">FrontierX</a>
-          </td>
-          <td class="cta-arrow" width="15" align="right" valign="middle">
-            <a class="img-href" href="https://www.youtube.com/watch?v=KRJOEUGoDMg" target="_blank">
-              <img class="cta-arrow-img" src="./assets/tba0464-01-arrow.png" width="15" height="11" alt="">
-            </a>
-          </td>
-        </tr>
-      </table>
-  
-              <!-- Spacer -->
+
               <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td height="10" style="height:10px; font-size:0; line-height:10px;">&nbsp;</td>
+                  <td class="table-content-address">
+                    Well&&nbsp;by&nbsp;Durst, 151&nbsp;West&nbsp;42nd&nbsp;Street, New&nbsp;York
+                  </td>
                 </tr>
               </table>
             </td>
@@ -356,17 +366,129 @@
       </mj-column>
     </mj-section>
 
-        <mj-section mj-class="bg-color" padding="0">
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
+          BHP Xplor and 121 Mining Investment are hosting an invitation-only event connecting active mining investors with the 2026 BHP Xplor cohort, ten exploration and technology companies advancing projects with real growth potential.
+          <br/><br/>
+          This is a curated deal-sourcing opportunity. Every company has been selected to participate in BHP Xplor through a rigorous technical review process. The event gives investors early visibility to where they stand&nbsp;now.
+
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0">
         <mj-spacer height="20px" padding="0"/>
       </mj-column>
     </mj-section>
 
 
+
+<mj-raw>
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse; margin:0; padding:0;" >
+  <tr> 
+    <td align="center" style="padding:0 25px;" > 
+  <!--[if mso]> 
+  <table role="presentation" width="450" border="0" cellpadding="0" cellspacing="0" style="width:450px; border-collapse:collapse;" > 
+    <tr>
+      <td style="background-color:themes.module01.background; padding:0px;" > 
+  <![endif]-->
+  <!--[if !mso]><!--> 
+  <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style=" width:100%; max-width:450px; border-collapse:collapse; background-color:themes.module01.background; " >
+    <tr>
+      <td style="background-color:themes.module01.background; padding:0px;"> 
+  <!--<![endif]--> 
+</mj-raw>
+
+
+
+
+    <mj-section mj-class="module-01-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="module-01-color" padding="0">
+      <mj-column mj-class="module-01-color" padding="0" >
+        <mj-text mj-class="module-01-color"  padding="0" font-size="16px" font-weight="bold" line-height="20px" align="center" >
+          Why investors attend
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section mj-class="module-01-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+    
+    <mj-section mj-class="module-01-color" padding="0">
+      <mj-column mj-class="module-01-color"  width="150px" padding="0" >
+        <mj-image mj-class="invest-icon-01" />
+        <mj-text mj-class="module-01-color"  padding="10px 20px" font-size="10px" font-weight="regular" line-height="12px" align="center" >
+          Direct access to CEOs and technical leaders, ahead of wider market awareness
+        </mj-text>
+      </mj-column>
+      <mj-column mj-class="module-01-color"  width="150px" padding="0" >
+        <mj-image mj-class="invest-icon-02" />
+        <mj-text mj-class="module-01-color"  padding="10px 0px" font-size="10px" font-weight="regular" line-height="12px" align="center" >
+          A pre-vetted pipeline, filtered for geological merit and growth potential by BHP's technical team.
+        </mj-text>
+      </mj-column>
+      <mj-column mj-class="module-01-color"  width="150px" padding="0" >
+        <mj-image mj-class="invest-icon-03" />
+        <mj-text mj-class="module-01-color"  padding="10px 20px" font-size="10px" font-weight="regular" line-height="12px" align="center" >
+          An intimate, deal-focused setting where investors can speak directly with each company.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section mj-class="module-01-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+
+
+<mj-raw>
+  <!--[if mso]> 
+      </td>
+    </tr>
+  </table>
+  <![endif]--> 
+  <!--[if !mso]><!--> 
+      </td>
+    </tr>
+  </table> 
+<!--<![endif]-->
+    </td>
+  </tr>
+</table>
+
+</mj-raw>
+
+
+    
+    
+<mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
-          Applications close 5&nbsp;October&nbsp;2026.
+          Attendance is limited to active investors and subject to approval.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -382,10 +504,10 @@
 
         <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
           
-    <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 101px;">
+    <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 168px;">
         <tr>
           <td class="cta-text" valign="middle">
-            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.bhp.com/xplor" target="_blank" style="">Apply now</a>
+            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.bhp.com/xplor" target="_blank" style="">Register your interest</a>
           </td>
           <td class="cta-arrow" width="15" align="right" valign="middle">
             <a class="img-href" href="https://www.bhp.com/xplor" target="_blank">
@@ -395,6 +517,29 @@
         </tr>
       </table>
   
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" font-weight="bold" line-height="26px" align="left" >
+          Looking ahead
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
+          Applications for the next BHP Xplor cohort will open in 2027.
         </mj-text>
       </mj-column>
     </mj-section>

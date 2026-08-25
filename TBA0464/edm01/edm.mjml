@@ -5,46 +5,15 @@
       
 
       <!-- Start custom variables
-      Create any variables below.  In code reference as ${variable}
-      Run node watch.js to export files
+      Custom variables can go here but better suited to data.json file.
 
-      font.family="Arial, Helvetica, sans-serif"
-      localPath=""
-      bucket="https://tba0564-edm.s3.ap-southeast-2.amazonaws.com/"
-      gitpreview="https://brxau.github.io/htmlpreview/TBA0464/edm01/"
-      urlpath="https://tba0564-edm.s3.ap-southeast-2.amazonaws.com/"
-
-      hero.desktop.src="tba0464-01-hero-desktop.jpg"
-      hero.mobile.src="tba0464-01-hero-mobile.jpg"
-      hero.alt="BHP Xplor. Go further with BHP Xplor."
-
-      icon01.src="tba0464-01-icon-fb.png"
-      icon01.alt="Facebook"
-      icon01.url="https://www.facebook.com/BHP/"
-
-      icon02.src="tba0464-01-icon-insta.png"
-      icon02.alt="LinkedIn"
-      icon02.url="https://www.linkedin.com/company/bhp"
-
-      icon03.src="tba0464-01-icon-yt.png"
-      icon03.alt="YouTube"
-      icon03.url="https://www.youtube.com/BHP"
-
-      logo.src="tba0464-01-Logo.png"
-      logo.alt="BHP"
-      logo.url="https://www.bhp.com/"
-
-      cta.text="Learn more"
-      cta.url="https://www.bhp.com/xplor"
-      cta.src="tba0464-01-arrow.png"
-
-
-      
+      Syntax for vaiables here is
+      varname="variable value"
       End custom variables -->
 
       <mj-all
         font-family="${font.family}"
-        color="#222222"
+        color="#6C757D"
       />
       <mj-text
         font-family="${font.family}"
@@ -54,9 +23,9 @@
 
 
       <mj-image name="hero-image" alt="${hero.alt}" padding="0" />
-      <mj-image name="hero-desktop" css-class="desktop-image" src="${urlpath}${hero.desktop.src}"  width="600px" />
-      <mj-class name="hero-mobile" css-class="mobile-image" src="${urlpath}${hero.mobile.src}" />
-      <mj-class name="logo-image" css-class="both" src="${urlpath}${logo.src}" alt="${logo.alt}" width="46px" padding="0px 25px" align="left" href="${logo.url}"/>
+      <mj-image name="hero-desktop" css-class="desktop-image" src="${paths.local}${hero.desktop.src}"  width="600px" />
+      <mj-class name="hero-mobile" css-class="mobile-image" src="${paths.local}${hero.mobile.src}" />
+      <mj-class name="logo-image" css-class="both" src="${paths.local}${logo.src}" alt="${logo.alt}" width="46px" padding="0px 25px" align="left" href="${logo.url}"/>
 
       <!-- Start colour scheme default -->
       <mj-class name="bg-color" background-color="#ffffff" />
@@ -126,6 +95,7 @@
     <mj-style inline="inline">
     .cta-link {
       color: #343A40;
+      font-family: ${font.family};
       font-weight: bold;
       text-decoration: none;
     }
@@ -207,11 +177,11 @@
         <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
           <table width="100" border="0" cellpadding="0" cellspacing="0" style="width: 100px; border-collapse: collapse;">
             <tr>
-              <td width="85" style="width: 120px; font-family: Arial, sans-serif; font-size: 13px; color: #333333;">
+              <td width="85" style="width: 120px; font-family: ${font.family}; font-size: 13px; color: #333333;">
                 <a class="cta-link" href="${cta.url}" target="blank">${cta.text}</a>
               </td>
               <td width="15" style="width: 15px; line-height: 1px;">
-                <a class="cta-link" href="${cta.url}" target="blank"><img src="${urlpath}${cta.src}" width="15" height="15" alt="" style="display: block; width: 15px; height: auto;" /></a>
+                <a class="cta-link" href="${cta.url}" target="blank"><img src="${paths.local}${cta.src}" width="15" height="15" alt="" style="display: block; width: 15px; height: auto;" /></a>
               </td>
             </tr>
           </table>
@@ -249,8 +219,8 @@
             <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; table-layout: fixed; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
               <tr>
                 <!-- Text Column -->
-                <td valign="bottom" align="left" style="text-align: left; padding: 10px 0 0 25px; font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; color: #000000; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
-                  <span class="footer-raw-text" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; display: block;">
+                <td valign="bottom" align="left" style="text-align: left; padding: 10px 0 0 25px; font-family: ${font.family}; font-size: 10px; line-height: 14px; color: #000000; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+                  <span class="footer-raw-text" style="font-family: ${font.family}; font-size: 10px; line-height: 14px; display: block;">
                     <strong style="font-weight: bold;">Stay in touch</strong><br>
                     Connect with us and keep up to date with the latest&nbsp;from&nbsp;BHP
                   </span>
@@ -258,19 +228,19 @@
                 <!-- Facebook Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 10px;">
                   <a href="${icon01.url}" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="${urlpath}${icon01.src}" width="28" height="28" alt="${icon01.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="${paths.local}${icon01.src}" width="28" height="28" alt="${icon01.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
                 <!-- Instagram Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 0px;">
                   <a href="${icon02.url}" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="${urlpath}${icon02.src}" width="28" height="28" alt="${icon02.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="${paths.local}${icon02.src}" width="28" height="28" alt="${icon02.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
                 <!-- YouTube Column -->
                 <td width="28" valign="bottom" style="width: 22px; padding: 0 25px 0 0px;">
                   <a href="${icon03.url}" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="${urlpath}${icon03.src}" width="28" height="28" alt="${icon03.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
+                    <img src="${paths.local}${icon03.src}" width="28" height="28" alt="${icon03.alt}" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
                   </a>
                 </td>
               </tr>

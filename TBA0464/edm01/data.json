@@ -1,0 +1,45 @@
+{
+	"font": {
+		"family": "Arial, Helvetica, sans-serif"
+	},
+	"paths": {
+		"local": "",
+		"bucket": "https://tba0564-edm.s3.ap-southeast-2.amazonaws.com/",
+		"git": "https://brxau.github.io/htmlpreview/TBA0464/edm01/",
+		"current": ""
+	},
+	"hero": {
+		"desktop": {
+			"src": "tba0464-01-hero-desktop.jpg"
+		},
+		"mobile": {
+			"src": "tba0464-01-hero-mobile.jpg"
+		},
+		"alt": "BHP Xplor. Go further with BHP Xplor."
+	},
+	"icon01": {
+		"src": "tba0464-01-icon-fb.png",
+		"alt": "Facebook",
+		"url": "https://www.facebook.com/BHP/"
+	},
+	"icon02": {
+		"src": "tba0464-01-icon-insta.png",
+		"alt": "LinkedIn",
+		"url": "https://www.linkedin.com/company/bhp"
+	},
+	"icon03": {
+		"src": "tba0464-01-icon-yt.png",
+		"alt": "YouTube",
+		"url": "https://www.youtube.com/BHP"
+	},
+	"logo": {
+		"src": "tba0464-01-Logo.png",
+		"alt": "BHP",
+		"url": "https://www.bhp.com/"
+	},
+	"cta": {
+		"text": "Learn more",
+		"url": "https://www.bhp.com/xplor",
+		"src": "tba0464-01-arrow.png"
+	}
+}

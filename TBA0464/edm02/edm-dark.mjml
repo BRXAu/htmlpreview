@@ -6,52 +6,14 @@
 
       <!-- Start custom variables
       Create any variables below.  In code reference as ${variable}
-      Run node watch.js to export files
 
-      font.family="Arial, Helvetica, sans-serif"
-      localPath=""
-      bucket="https://tba0564-edm.s3.ap-southeast-2.amazonaws.com/"
-      gitpreview="https://brxau.github.io/htmlpreview/TBA0464/edm02/"
-      urlpath="https://brxau.github.io/htmlpreview/TBA0464/edm02/"
-
-      hero.desktop.src="tba0464-02-hero-desktop.jpg"
-      hero.mobile.src="tba0464-02-hero-mobile.jpg"
-      hero.alt="BHP Xplor. Go further with BHP Xplor."
-
-      icon.01.src="tba0464-01-icon-fb.png"
-      icon.01.alt="Facebook"
-      icon.01.url="https://www.facebook.com/BHP/"
-
-      icon.02.src="tba0464-01-icon-insta.png"
-      icon.02.alt="LinkedIn"
-      icon.02.url="https://www.linkedin.com/company/bhp"
-
-      icon.03.src="tba0464-01-icon-yt.png"
-      icon.03.alt="YouTube"
-      icon.03.url="https://www.youtube.com/BHP"
-
-      logo.src="tba0464-01-Logo.png"
-      logo.alt="BHP"
-      logo.url="https://www.bhp.com/"
-
-      cta.arrow.src="tba0464-01-arrow.png"
-
-      cta.01.text="Orion Minerals"
-      cta.01.url="https://www.youtube.com/watch?v=zL_48J64HMM"
-      
-      cta.02.text="FrontierX"
-      cta.02.url="https://www.youtube.com/watch?v=KRJOEUGoDMg"
-
-      cta.03.text="Apply now"
-      cta.03.url="https://www.bhp.com/xplor"
+      Though better to place vars in data.json.
 
 
-      
       End custom variables -->
 
       <mj-all
         font-family="Arial, Helvetica, sans-serif"
-        color="#222222"
       />
       <mj-text
         font-family="Arial, Helvetica, sans-serif"
@@ -61,16 +23,16 @@
 
 
       <mj-image name="hero-image" alt="BHP Xplor. Go further with BHP Xplor." padding="0" />
-      <mj-image name="hero-desktop" css-class="desktop-image" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-02-hero-desktop.jpg"  width="600px" />
-      <mj-class name="hero-mobile" css-class="mobile-image" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-02-hero-mobile.jpg" />
-      <mj-class name="logo-image" css-class="both" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
+      <mj-image name="hero-desktop" css-class="desktop-image" src="./assets/tba0464-02-hero-desktop.jpg"  width="600px" />
+      <mj-class name="hero-mobile" css-class="mobile-image" src="./assets/tba0464-02-hero-mobile.jpg" />
+      <mj-class name="logo-image" css-class="both" src="./assets/tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
 
       <!-- Start colour scheme default --><!--
       <mj-class name="bg-color" background-color="#ffffff" />
       <mj-class name="text-color" color="#6C757D" />
 
       <mj-class name="pre-bg-color" background-color="#E0DDDB" />
-      <mj-class name="pre-text-color" color="#000000" />
+      <mj-class name="pre-text-color" color="#000000"/>
 
       <mj-class name="footer-bg-color" background-color="#F9F7F5" />
       <mj-class name="footer-text-color" color="#707372" />
@@ -83,13 +45,16 @@
       <mj-class name="text-color" color="#E0E0E0" />
 
       <mj-class name="pre-bg-color" background-color="#1E1E1E" />
-      <mj-class name="pre-text-color" color="#FFFFFF" />
+      <mj-class name="pre-text-color" color="#FFFFFF"/>
 
       <mj-class name="footer-bg-color" background-color="#1A1A1A" />
       <mj-class name="footer-text-color" color="#A0A5A4" />
+
       <!-- End colour scheme dark -->
 
+
     </mj-attributes>
+
 
     <mj-style>
       @media only screen and (max-width: 599px) {
@@ -108,9 +73,6 @@
           font-size: 0px !important;
           line-height: 0px !important;
         }
-
-
-
       }
 
       @media only screen and (min-width: 600px) {
@@ -122,11 +84,7 @@
         .mobile-image {
           display: none !important;
         }
-
-
       }
-
-      
 
       /* start css dark-mode */
       .footer-raw-text {
@@ -145,107 +103,144 @@
       }
 
       .table-content-text {
-        color:#FFFFFF!important;
+        color:#E0E0E0!important;
       }
       /* end css dark-mode */
     </mj-style>
 
     <mj-style inline="inline">
-    .cta-link {
-      color: #343A40;
-      font-weight: bold;
-      text-decoration: none;
-    }
+      .cta-link {
+        color: #343A40;
+        font-weight: bold;
+        text-decoration: none;
+      }
 
-    .cta-text {
-      vertical-align: middle; 
-      font-family: Arial, sans-serif; 
-      font-size: 13px; 
-      line-height: 16px; 
-      color: #333333; 
-      padding: 10px 10px 10px 0;
-    }
+      .cta-text {
+        vertical-align: middle; 
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 13px; 
+        line-height: 16px; 
+        color: #343A40; 
+        padding: 10px 10px 10px 0;
+      }
 
-    .cta-text-url  { 
-      color: #333333; 
-      text-decoration: none; 
-      font-weight: bold; 
-      font-size: 13px; 
-      line-height: 16px;
-      display: inline-block;
-    }
+      .cta-text-url  { 
+        color: #343A40; 
+        text-decoration: none; 
+        font-weight: bold; 
+        font-size: 13px; 
+        line-height: 16px;
+        display: inline-block;
+      }
 
-    .cta-arrow {
-      vertical-align: middle; width: 15px; padding: 0;
-    }
+      .cta-arrow {
+        vertical-align: middle; width: 15px; padding: 0;
+      }
 
-    .cta-arrow-img { 
-      display: block; 
-      width: 15px; 
-      height: 11px; 
-      border: 0; 
-      outline: none; 
-      text-decoration: none;
-    }
+      .cta-arrow-img { 
+        display: block; 
+        width: 15px; 
+        height: 11px; 
+        border: 0; 
+        outline: none; 
+        text-decoration: none;
+      }
 
-    .table-content-text {
-      font-family:Arial, sans-serif; 
-      font-size:16px; 
-      line-height:20px; 
-      color:#6C757D; 
-      padding:0px 0px 10px 0px;
-    }
+      .table-content-text {
+        font-family:Arial, Helvetica, sans-serif; 
+        font-size:16px; 
+        line-height:20px; 
+        color:#6C757D; 
+        padding:0px 0px 10px 0px;
+      }
 
-    .table-content-bar { 
-      width:3px; 
-      background-color:#DD5900; 
-      font-size:1px; 
-      line-height:1px;
-    }
+      .table-content-bar { 
+        width:3px; 
+        background-color:#DD5900; 
+        font-size:1px; 
+        line-height:1px;
+      }
 
-    .safe-table {
-      border-collapse:collapse; 
-      mso-table-lspace:0pt; 
-      mso-table-rspace:0pt;
+      .safe-table {
+        border-collapse:collapse; 
+        mso-table-lspace:0pt; 
+        mso-table-rspace:0pt;
 
-      border-collapse: collapse; 
-      mso-table-lspace: 0pt; 
-      mso-table-rspace: 0pt; 
-    }
+        border-collapse: collapse; 
+        mso-table-lspace: 0pt; 
+        mso-table-rspace: 0pt; 
+      }
 
-    .table-cta-border {
-      border-bottom: 1px solid #DD5900;
-    }
+      .table-cta-border {
+        border-bottom: 1px solid #DD5900;
+      }
 
-    .img-href {
-      text-decoration: none; 
-      display: block; 
-      font-size: 0px; 
-      line-height: 0px;
-    }
+      .footer-text {
+        text-align: left; 
+        padding: 10px 0 0 25px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 10px; 
+        line-height: 14px; 
+        color: #707372; 
+        -webkit-text-size-adjust: 100%; 
+        -ms-text-size-adjust: 100%;
+      }
 
-    .both {
-          display: block !important;
-        }
+      .footer-raw-text {
+        font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; display: block;
+      }
+
+      .footer-icon-img {
+        display: block; 
+        width: 28px; 
+        height: 28px; 
+        border: 0; 
+        outline: none; 
+        text-decoration: none; 
+        -ms-interpolation-mode: bicubic;
+      }
+
+      .footer-icon-link {
+        text-decoration: none; 
+        display: block; 
+        width: 28px;
+      }
+
+      .img-href {
+        text-decoration: none; 
+        display: block; 
+        font-size: 0px; 
+        line-height: 0px;
+      }
+
+      .pre-link-color {
+        color: #000000; 
+        text-decoration: underline;
+      }
+
+      .both {
+        display: block !important;
+      }
 
 
-        .desktop-image {
+      .desktop-image {
         display: block;
         width: 100%;
         height: auto;
-        }
-        .mobile-image {
-          display: none;
-        }
+      }
+      .mobile-image {
+        display: none;
+      }
 
     </mj-style>
+
   </mj-head>
 
   <mj-body mj-class="bg-color">
     <mj-section mj-class="pre-bg-color" padding="0">
       <mj-column padding="0" width="480px">
         <mj-text mj-class="pre-text-color" padding="10px 25px" font-size="10px" line-height="10px" align="center">
-          Having trouble viewing this email? <a class="pre-link-color" href="#" style="color: #707372; text-decoration: underline;">View Online</a>
+          Having trouble viewing this email? <a class="pre-link-color" href="#">View Online</a>
         </mj-text>
       </mj-column>
     </mj-section>
@@ -295,76 +290,68 @@
         <mj-spacer height="20px" padding="0"/>
       </mj-column>
     </mj-section>
-
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px" >
         <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
-
-<table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <!-- Left Accent Bar with Outlook MSO fix -->
-    <td class="table-content-bar" width="3" valign="top">&nbsp;</td>
-    <!-- Content Padding Cell -->
-    <td style="padding:10px 0 10px 30px;">
-      
-      <!-- Intro Text -->
-      <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-          <td class="table-content-text">
-            Hear what our previous participants think of Xplor:
-          </td>
-        </tr>
-      </table>
-
-      <!-- Item 1: Orion Minerals -->
-
-      <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 120px;">
+        <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <!-- Left Accent Bar with Outlook MSO fix -->
+            <td class="table-content-bar" width="3" valign="top">&nbsp;</td>
+            <!-- Content Padding Cell -->
+            <td style="padding:10px 0 10px 30px;">
+              
+              <!-- Intro Text -->
+              <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="table-content-text">
+                    Hear what our previous participants think of Xplor:
+                  </td>
+                </tr>
+              </table>
+              <!-- Item 1: Orion Minerals -->
+              
+    <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 120px;">
         <tr>
           <td class="cta-text" valign="middle">
             <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.youtube.com/watch?v=zL_48J64HMM" target="_blank" style="">Orion Minerals</a>
           </td>
           <td class="cta-arrow" width="15" align="right" valign="middle">
             <a class="img-href" href="https://www.youtube.com/watch?v=zL_48J64HMM" target="_blank">
-              <img class="cta-arrow-img" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-arrow.png" width="15" height="11" alt="">
+              <img class="cta-arrow-img" src="./assets/tba0464-01-arrow.png" width="15" height="11" alt="">
             </a>
           </td>
         </tr>
       </table>
-
-      <!-- Spacer -->
-      <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="20" style="height:20px; font-size:0; line-height:20px;">&nbsp;</td>
-        </tr>
-      </table>
-
-      <!-- Item 2: FrontierX -->
-
-      <table class="safe-table table-cta-border" role="presentation" width="86" border="0" cellpadding="0" cellspacing="0" style="width: 86px;">
+  
+              <!-- Spacer -->
+              <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td height="20" style="height:20px; font-size:0; line-height:20px;">&nbsp;</td>
+                </tr>
+              </table>
+              
+    <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 86px;">
         <tr>
           <td class="cta-text" valign="middle">
             <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.youtube.com/watch?v=KRJOEUGoDMg" target="_blank" style="">FrontierX</a>
           </td>
           <td class="cta-arrow" width="15" align="right" valign="middle">
             <a class="img-href" href="https://www.youtube.com/watch?v=KRJOEUGoDMg" target="_blank">
-              <img class="cta-arrow-img" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-arrow.png" width="15" height="11" alt="">
+              <img class="cta-arrow-img" src="./assets/tba0464-01-arrow.png" width="15" height="11" alt="">
             </a>
           </td>
         </tr>
       </table>
-
-      <!-- Spacer -->
-      <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-          <td height="10" style="height:10px; font-size:0; line-height:10px;">&nbsp;</td>
-        </tr>
-      </table>
-
-    </td>
-  </tr>
-</table>
-
-
+  
+              <!-- Spacer -->
+              <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td height="10" style="height:10px; font-size:0; line-height:10px;">&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
         </mj-text>
       </mj-column>
     </mj-section>
@@ -384,8 +371,6 @@
       </mj-column>
     </mj-section>
 
-
-
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0">
         <mj-spacer height="20px" padding="0"/>
@@ -394,23 +379,25 @@
 
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
+
         <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
-          <table class="safe-table table-cta-border" role="presentation" width="101" border="0" cellpadding="0" cellspacing="0" style="width: 101px;">
-            <tr>
-              <td class="cta-text" valign="middle">
-                <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.bhp.com/xplor" target="_blank" style="">Apply now</a>
-              </td>
-              <td class="cta-arrow" width="15" align="right" valign="middle">
-                <a class="img-href" href="https://www.bhp.com/xplor" target="_blank">
-                  <img class="cta-arrow-img" src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-arrow.png" width="15" height="11" alt="">
-                </a>
-              </td>
-            </tr>
-          </table>
+          
+    <table class="safe-table table-cta-border" role="presentation" width="120" border="0" cellpadding="0" cellspacing="0" style="width: 101px;">
+        <tr>
+          <td class="cta-text" valign="middle">
+            <!--[if mso]><i style="letter-spacing: 10px; mso-font-width: -100%; display: none;">&nbsp;</i><![endif]--><a class="cta-text-url" href="https://www.bhp.com/xplor" target="_blank" style="">Apply now</a>
+          </td>
+          <td class="cta-arrow" width="15" align="right" valign="middle">
+            <a class="img-href" href="https://www.bhp.com/xplor" target="_blank">
+              <img class="cta-arrow-img" src="./assets/tba0464-01-arrow.png" width="15" height="11" alt="">
+            </a>
+          </td>
+        </tr>
+      </table>
+  
         </mj-text>
       </mj-column>
     </mj-section>
-
 
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0">
@@ -432,39 +419,42 @@
         </mj-text>
       </mj-column>
       <mj-column padding="0" width="454px" vertical-align="bottom">
-          <mj-raw>
-            <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse; table-layout: fixed; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-              <tr>
-                <!-- Text Column -->
-                <td valign="bottom" align="left" style="text-align: left; padding: 10px 0 0 25px; font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; color: #000000; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
-                  <span class="footer-raw-text" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: 14px; display: block;">
-                    <strong style="font-weight: bold;">Stay in touch</strong><br>
-                    Connect with us and keep up to date with the latest&nbsp;from&nbsp;BHP
-                  </span>
-                </td>
-                <!-- Facebook Column -->
-                <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 10px;">
-                  <a href="https://www.facebook.com/BHP/" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-icon-fb.png" width="28" height="28" alt="Facebook" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
-                  </a>
-                </td>
-                <!-- Instagram Column -->
-                <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 0px;">
-                  <a href="https://www.linkedin.com/company/bhp" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-icon-insta.png" width="28" height="28" alt="LinkedIn" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
-                  </a>
-                </td>
-                <!-- YouTube Column -->
-                <td width="28" valign="bottom" style="width: 22px; padding: 0 25px 0 0px;">
-                  <a href="https://www.youtube.com/BHP" target="_blank" style="text-decoration: none; display: block; width: 28px;">
-                    <img src="https://brxau.github.io/htmlpreview/TBA0464/edm02/tba0464-01-icon-yt.png" width="28" height="28" alt="YouTube" border="0" style="display: block; width: 28px; height: 28px; border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;" />
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </mj-raw>
+        
+  <mj-raw>
+    <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+      <tr>
+        <!-- Text Column -->
+        <td class="footer-text" valign="bottom" align="left" style="">
+          <span class="footer-raw-text" style="">
+            <strong style="font-weight: bold;">Stay in touch</strong><br>
+            Connect with us and keep up to date with the latest&nbsp;from&nbsp;BHP
+          </span>
+        </td>
+        <!-- Facebook Column -->
+        <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 10px;">
+          <a class="footer-icon-link" href="https://www.facebook.com/BHP/" target="_blank">
+            <img class="footer-icon-img" src="./assets/tba0464-01-icon-fb.png" width="28" height="28" alt="Facebook" border="0"/>
+          </a>
+        </td>
+        <!-- Instagram Column -->
+        <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 0px;">
+          <a class="footer-icon-link" href="https://www.linkedin.com/company/bhp" target="_blank">
+            <img class="footer-icon-img" src="./assets/tba0464-01-icon-insta.png" width="28" height="28" alt="LinkedIn" border="0"/>
+          </a>
+        </td>
+        <!-- YouTube Column -->
+        <td width="28" valign="bottom" style="width: 22px; padding: 0 25px 0 0px;">
+          <a class="footer-icon-link" href="https://www.youtube.com/BHP" target="_blank">
+            <img class="footer-icon-img" src="./assets/tba0464-01-icon-yt.png" width="28" height="28" alt="YouTube" border="0"/>
+          </a>
+        </td>
+      </tr>
+    </table>
+  </mj-raw>
+  
       </mj-column>
     </mj-section>
+
 
     <mj-section mj-class="footer-bg-color" padding="0">
       <mj-column padding="0">
