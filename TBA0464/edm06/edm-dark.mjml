@@ -440,7 +440,7 @@
       </mj-column>
       <mj-column mj-class="module-01-color"  width="150px" padding="0" >
         <mj-image mj-class="invest-icon-02" />
-        <mj-text mj-class="module-01-color"  padding="10px 0px" font-size="10px" font-weight="regular" line-height="12px" align="center" >
+        <mj-text mj-class="module-01-color"  padding="10px 20px" font-size="10px" font-weight="regular" line-height="12px" align="center" >
           A pre-vetted pipeline, filtered for geological merit and growth potential by BHP's technical team.
         </mj-text>
       </mj-column>
