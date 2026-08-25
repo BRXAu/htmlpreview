@@ -193,7 +193,7 @@
         font-weight: bold;
         line-height:20px; 
         color:#666666; 
-        padding:0px 0px 0px 0px;
+        padding:0px 0px 10px 0px;
       }
 
       .table-content-time {
@@ -202,7 +202,7 @@
         font-weight: bold;
         line-height:14px; 
         color:#666666; 
-        padding:0px 0px 0px 0px;
+        padding:0px 0px 10px 0px;
       }
 
       .table-content-address {
@@ -211,7 +211,7 @@
         font-weight: regular;
         line-height:16px; 
         color:#666666; 
-        padding:0px 0px 0px 0px;
+        padding:0px 0px 10px 0px;
       }
 
       .safe-table {
@@ -315,7 +315,7 @@
 
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="480px">
-        <mj-text mj-class="text-color" padding="0px 25px 0px 25px" font-size="24px" line-height="30px" align="left">
+        <mj-text mj-class="text-color" padding="0px 25px 0px 25px" font-size="23px" line-height="30px" align="left">
           BHP&nbsp;Xplor&nbsp;Showcase: An&nbsp;Investor&nbsp;Event
         </mj-text>
       </mj-column>
