@@ -1,7 +1,7 @@
 export default function tableContainerOpen(module01,background){
-console.log('jeu')
 return `
 <mj-raw>
+<!-- start max-width 450px -->
 <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse; margin:0; padding:0;" >
   <tr> 
     <td align="center" style="padding:${module01.padding}px;" > 

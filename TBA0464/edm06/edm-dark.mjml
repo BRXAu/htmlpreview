@@ -23,14 +23,14 @@
 
 
       <mj-image name="hero-image" alt="BHP Xplor. Go further with BHP Xplor." padding="0" />
-      <mj-image name="hero-desktop" css-class="desktop-image" src="./assets/tba0464-06-hero-desktop.jpg"  width="600px" />
-      <mj-class name="hero-mobile" css-class="mobile-image" src="./assets/tba0464-06-hero-mobile.jpg" />
-      <mj-class name="logo-image" css-class="both" src="./assets/tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
+      <mj-image name="hero-desktop" css-class="desktop-image" src="https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/tba0464-06-hero-desktop.jpg"  width="600px" />
+      <mj-class name="hero-mobile" css-class="mobile-image" src="https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/tba0464-06-hero-mobile.jpg" />
+      <mj-class name="logo-image" css-class="both" src="https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/tba0464-01-Logo.png" alt="BHP" width="46px" padding="0px 25px" align="left" href="https://www.bhp.com/"/>
 
 
-      <mj-class name="invest-icon-01" css-class="both" src="./assets/tba0464-invest-icon-01.png" alt="Direct Access" width="60px" padding="0px" align="center"/>
-      <mj-class name="invest-icon-02" css-class="both" src="./assets/tba0464-invest-icon-02.png" alt="Direct pre-vetted pipeline" width="60px" padding="0px" align="center"/>
-      <mj-class name="invest-icon-03" css-class="both" src="./assets/tba0464-invest-icon-03.png" alt="Intimate deal focused setting" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-01" css-class="both" src="https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/tba0464-invest-icon-01.png" alt="Direct Access" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-02" css-class="both" src="https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/tba0464-invest-icon-02.png" alt="Direct pre-vetted pipeline" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-03" css-class="both" src="https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/tba0464-invest-icon-03.png" alt="Intimate deal focused setting" width="60px" padding="0px" align="center"/>
 
       <!-- Start colour scheme default --><!--
       <mj-class name="bg-color" background-color="#ffffff" />
@@ -394,6 +394,7 @@
 
 
 <mj-raw>
+<!-- start max-width 450px -->
 <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse; margin:0; padding:0;" >
   <tr> 
     <td align="center" style="padding:0 25px;" > 
@@ -473,7 +474,7 @@
     </td>
   </tr>
 </table>
-
+<!-- end max-width 450px -->
 </mj-raw>
 
 
@@ -511,7 +512,7 @@
           </td>
           <td class="cta-arrow" width="15" align="right" valign="middle">
             <a class="img-href" href="https://www.bhp.com/xplor" target="_blank">
-              <img class="cta-arrow-img" src="./assets/tba0464-01-arrow.png" width="15" height="11" alt="">
+              <img class="cta-arrow-img" src="https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/tba0464-01-arrow.png" width="15" height="11" alt="">
             </a>
           </td>
         </tr>
@@ -578,19 +579,19 @@
         <!-- Facebook Column -->
         <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 10px;">
           <a class="footer-icon-link" href="https://www.facebook.com/BHP/" target="_blank">
-            <img class="footer-icon-img" src="./assets/tba0464-01-icon-fb.png" width="28" height="28" alt="Facebook" border="0"/>
+            <img class="footer-icon-img" src="https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/tba0464-01-icon-fb.png" width="28" height="28" alt="Facebook" border="0"/>
           </a>
         </td>
         <!-- Instagram Column -->
         <td width="28" valign="bottom" style="width: 22px; padding: 0 10px 0 0px;">
           <a class="footer-icon-link" href="https://www.linkedin.com/company/bhp" target="_blank">
-            <img class="footer-icon-img" src="./assets/tba0464-01-icon-insta.png" width="28" height="28" alt="LinkedIn" border="0"/>
+            <img class="footer-icon-img" src="https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/tba0464-01-icon-insta.png" width="28" height="28" alt="LinkedIn" border="0"/>
           </a>
         </td>
         <!-- YouTube Column -->
         <td width="28" valign="bottom" style="width: 22px; padding: 0 25px 0 0px;">
           <a class="footer-icon-link" href="https://www.youtube.com/BHP" target="_blank">
-            <img class="footer-icon-img" src="./assets/tba0464-01-icon-yt.png" width="28" height="28" alt="YouTube" border="0"/>
+            <img class="footer-icon-img" src="https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/tba0464-01-icon-yt.png" width="28" height="28" alt="YouTube" border="0"/>
           </a>
         </td>
       </tr>
