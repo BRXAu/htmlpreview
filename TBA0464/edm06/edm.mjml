@@ -395,26 +395,26 @@
 ${tableContainerOpen module01 themes.module01.background}
 
 
-    <mj-section mj-class="module-01-color" padding="0">
+    <mj-custom-section width="450px" mj-class="module-01-color" padding="0">
       <mj-column padding="0">
         <mj-spacer height="20px" padding="0"/>
       </mj-column>
-    </mj-section>
+    </mj-custom-section>
 
-    <mj-section mj-class="module-01-color" padding="0">
+    <mj-custom-section width="450px" mj-class="module-01-color" padding="0">
       <mj-column mj-class="module-01-color" padding="0" >
         <mj-text mj-class="module-01-color"  padding="0" font-size="16px" font-weight="bold" line-height="20px" align="center" >
           Why investors attend
         </mj-text>
       </mj-column>
-    </mj-section>
-    <mj-section mj-class="module-01-color" padding="0">
+    </mj-custom-section>
+    <mj-custom-section width="450px" mj-class="module-01-color" padding="0">
       <mj-column padding="0">
         <mj-spacer height="20px" padding="0"/>
       </mj-column>
-    </mj-section>
+    </mj-custom-section>
     
-    <mj-section mj-class="module-01-color" padding="0">
+    <mj-custom-section width="450px" mj-class="module-01-color" padding="0">
       <mj-column mj-class="module-01-color"  width="150px" padding="0" >
         <mj-image mj-class="invest-icon-01" />
         <mj-text mj-class="module-01-color"  padding="10px 20px" font-size="10px" font-weight="regular" line-height="12px" align="center" >
@@ -433,12 +433,13 @@ ${tableContainerOpen module01 themes.module01.background}
           An intimate, deal-focused setting where investors can speak directly with each company.
         </mj-text>
       </mj-column>
-    </mj-section>
-    <mj-section mj-class="module-01-color" padding="0">
+    </mj-custom-section>
+    <mj-custom-section width="450px" mj-class="module-01-color" padding="0">
       <mj-column padding="0">
         <mj-spacer height="20px" padding="0"/>
       </mj-column>
-    </mj-section>
+    </mj-custom-section>
+
 
 
 ${tableContainerClose module01}

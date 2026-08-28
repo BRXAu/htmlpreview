@@ -14,7 +14,6 @@ return `
     </td>
   </tr>
 </table>
-<!-- end max-width 450px -->
 </mj-raw>
 
 `
