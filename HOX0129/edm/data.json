@@ -6,7 +6,7 @@
 		"local": "./assets",
 		"bucket": "https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/",
 		"git": "https://brxau.github.io/htmlpreview/HOX0129/edm/assets/",
-		"current": "https://brxau.github.io/htmlpreview/HOX0129/edm/assets/"
+		"current": "./assets/"
 	},
 	"hero": {
 		"desktop": {

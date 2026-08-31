@@ -1,6 +1,6 @@
 <mjml>
   <mj-head>
-     <mj-breakpoint width="600px" />
+     <mj-breakpoint width="0px" />
     <mj-attributes>
       
       <!-- Start custom variables
@@ -194,7 +194,7 @@
 
   </mj-head>
 
-  <mj-body mj-class="bg-color">
+  <mj-body mj-class="bg-color" width="600px">
   
 
 <!--     <mj-custom-section width="380px" padding="0" align="center">
@@ -219,18 +219,20 @@
 
     <mj-section mj-class="module-01-color" width="50" padding="0">
       <mj-column padding="0">
-        <mj-image mj-class="logo-dual" />
+        <mj-table width="600px" cellpadding="0" cellspacing="0" padding="0">
+          <tr>
+            <td width="600" style="padding:0;font-size:0;line-height:0;">
+              <img src="${paths.current}${logoDual.src}" width="600" style="display:block;width:600px;height:auto;border:0;">
+            </td>
+          </tr>
+          <tr>
+            <td width="600" style="padding:0;font-size:0;line-height:0;">
+              <img src="${paths.current}${hero.desktop.src}" width="600" style="display:block;width:600px;height:auto;border:0;">
+            </td>
+          </tr>
+        </mj-table>
       </mj-column>
     </mj-section>
-
-
-    <mj-section mj-class="module-01-color" width="50" padding="0">
-      <mj-column padding="0">
-        <mj-image mj-class="hero-image hero-desktop" />
-      </mj-column>
-    </mj-section>
-
-    
 
     <mj-section padding="0">
       <mj-column padding="0">
@@ -238,7 +240,7 @@
       </mj-column>
     </mj-section>
 
-    
+
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0" width="600px">
         <mj-text mj-class="body-text text-color"  padding="0px 40px" font-size="19px" line-height="26px" align="left" >
@@ -266,8 +268,17 @@
     </mj-section>
 
     <mj-section mj-class="survey-color" padding="0">
-      <mj-column padding="0" align="center">
-        <mj-image mj-class="cta" align="center" />
+      <mj-column width="600" padding="0" align="center">
+
+        <mj-table width="195px" cellpadding="0" cellspacing="0" padding="0" align="center">
+          <tr>
+            <td width="195" style="width:195px;padding:0;font-size:0;line-height:0;">
+              <a href="${cta.url}" target="_blank" style="text-decoration:none;">
+                <img src="${paths.current}${cta.src}" width="195" alt="${cta.alt || ''}" border="0" style="display:block;width:195px;height:auto;border:0;">
+              </a>
+            </td>
+          </tr>
+        </mj-table>
       </mj-column>
     </mj-section>
 
@@ -309,6 +320,12 @@
         <mj-text mj-class="text-color"  padding="0px 40px" font-size="11px" line-height="14px" align="left" >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet lorem sit amet elit blandit porta. Vestibulum sagittis ante nec fermentum dignissim. Quisque suscipit id orci vitae mattis. Donec sed augue nulla. Aenean et sapien efficitur, hendrerit leo a, faucibus justo. Nulla cursus ultricies faucibus.
         </mj-text>
+      </mj-column>
+    </mj-section>
+
+     <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
       </mj-column>
     </mj-section>
 
