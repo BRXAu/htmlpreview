@@ -1,4 +1,10 @@
-<!doctype html>
+From: simon.buzolich@brx.com.au
+To: akacyman@gmail.com
+Subject: YouTest EML
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+  
+  <!doctype html>
 <html lang="und" dir="auto" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
   <head>
     <title></title>
@@ -32,69 +38,13 @@
     
      
 
-    <style type="text/css">
-/* start css dark-mode */ /*
-      .footer-raw-text {
-        color: #FFFFFF!important
-      }
-      .pre-link-color {
-        color: #FFFFFF!important
-      }
 
-      .cta-link {
-        color: ${theme.dark.cta.text}!important;
-      }
-
-      .cta-text-url {
-        color:${theme.dark.cta.text}!important;
-      }
-
-      .table-content-text {
-        color:#FFFFFF!important;
-      }
-
-      .table-content-date {
-        color:#FFFFFF!important; 
-      }
-
-      .table-content-time {
-        color:#FFFFFF!important; 
-      }
-
-      .table-content-address {
-        color:#FFFFFF!important; 
-      }
-
-
-      */ /* end css dark-mode */
-    </style>
-    
   </head>
   
       <body style="word-spacing:normal;background-color:#ffffff;">
         
         <div aria-roledescription="email" role="article" lang="und" dir="auto" style="word-spacing:normal;background-color:#ffffff;">
-        <!--     <mj-custom-section width="380px" padding="0" align="center">
-      <mj-group>
-      <mj-column width="250px" align="left" vertical-align="middle">
-        <mj-image mj-class="logo-image" />
-      </mj-column>
-      <mj-column width="42px" align="center" vertical-align="middle">
-        <mj-divider 
-      border-color="#000000" 
-      border-style="solid" 
-      border-width="50px" 
-      width="1px" 
-      padding="4px" />
-  </mj-column>
-      <mj-column width="88px" align="right" vertical-align="middle" >
-        <mj-image mj-class="placeholder-image" align="right" vertical-align="middle"/>
-      </mj-column>
-    </mj-group>
-    </mj-custom-section> -->
-      
-      <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    
+
       
       <div style="margin:0px auto;max-width:600px;">
         
@@ -441,7 +391,7 @@
               
         <a href="#" target="_blank" name="hero-desktop">
           
-      <img alt="Start survey" src="https://brxau.github.io/htmlpreview/HOX0129/edm/assets/HOX0129_cta.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:600px; max-width: 100%;font-size:13px;" width="195" height="auto">
+      <img alt="Start survey" src="https://brxau.github.io/htmlpreview/HOX0129/edm/assets/HOX0129_cta.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:195px; font-size:13px;" width="195" height="auto">
     
         </a>
       
@@ -729,4 +679,3 @@
       </body>
     
 </html>
-  
