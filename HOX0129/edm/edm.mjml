@@ -1,0 +1,317 @@
+<mjml>
+  <mj-head>
+     <mj-breakpoint width="600px" />
+    <mj-attributes>
+      
+      <!-- Start custom variables
+      Create any variables below.  In code reference as ${variable}
+      Though better to place vars in data.json.
+      End custom variables -->
+
+      <mj-all
+        font-family="${font.family}"
+      />
+      <mj-text
+        font-family="${font.family}"
+        font-size="16px"
+        line-height="24px"
+      />
+
+
+      <mj-image name="hero-image" alt="${hero.alt}" padding="0" />
+      <mj-image name="hero-desktop" css-class="desktop-image" src="${paths.current}${hero.desktop.src}"  width="600px" />
+      <mj-class name="logo-image" src="${paths.current}${logo.src}" alt="${logo.alt}" width="250px" padding="0px" align="left" href="${logo.url}"/>
+      <mj-class name="logo-dual" src="${paths.current}${logoDual.src}" alt="${logoDual.alt}" width="600px" padding="0px" align="left" href="${logoDual.url}"/>
+      <mj-class name="placeholder-image" src="${paths.current}${placeholder.src}" alt="${placeholder.alt}" width="88px" padding="0px " align="left"/>
+      <mj-class name="cta" src="${paths.current}${cta.src}" alt="${cta.alt}" width="195px" padding="0px" align="left" href="${cta.url}"/>
+
+      <!-- Start colour scheme default -->
+      <mj-class name="bg-color" background-color="${theme.light.background}" />
+      <mj-class name="text-color" color="${theme.light.text}" />
+      <mj-class name="survey-color" background-color="${theme.light.survey.background}" color="${theme.light.survey.text}" />
+      <mj-class name="pre-bg-color" background-color="${theme.light.preheader.background}" />
+      <mj-class name="pre-text-color" color="${theme.light.preheader.text}"/>
+      <mj-class name="footer-bg-color" background-color="${theme.light.footer.background}" />
+      <mj-class name="footer-text-color" color="${theme.light.footer.text}" />
+      <!-- End colour scheme default -->
+
+
+      <!-- Start colour scheme dark --><!--
+      <mj-class name="bg-color" background-color="${theme.dark.background}" />
+      <mj-class name="text-color" color="${theme.dark.text}" />
+      <mj-class name="survey-color" background-color="${theme.dark.survey.background}" color="${theme.dark.survey.text}" />
+      <mj-class name="pre-bg-color" background-color="${theme.dark.preheader.background}" />
+      <mj-class name="pre-text-color" color="${theme.dark.preheader.text}"/>
+      <mj-class name="footer-bg-color" background-color="${theme.dark.footer.background}" />
+      <mj-class name="footer-text-color" color="${theme.dark.footer.text}" />
+      --><!-- End colour scheme dark -->
+
+
+    </mj-attributes>
+
+
+    <mj-style>
+
+      /* start css dark-mode */ /*
+      .footer-raw-text {
+        color: ${theme.dark.footer.text}!important
+      }
+      .pre-link-color {
+        color: ${theme.dark.preheader.text}!important
+      }
+
+      .cta-link {
+        color: ${theme.dark.cta.text}!important;
+      }
+
+      .cta-text-url {
+        color:${theme.dark.cta.text}!important;
+      }
+
+      .table-content-text {
+        color:${theme.dark.text}!important;
+      }
+
+      .table-content-date {
+        color:${theme.dark.text}!important; 
+      }
+
+      .table-content-time {
+        color:${theme.dark.text}!important; 
+      }
+
+      .table-content-address {
+        color:${theme.dark.text}!important; 
+      }
+
+
+      */ /* end css dark-mode */
+    </mj-style>
+
+    <mj-style inline="inline">
+      
+      .table-content-text {
+        font-family:${font.family}; 
+        font-size:16px; 
+        line-height:20px; 
+        color:${theme.light.text}; 
+        padding:0px 0px 10px 0px;
+      }
+
+      .table-content-bar { 
+        width:3px; 
+        background-color:${theme.bar.background}; 
+        font-size:1px; 
+        line-height:1px;
+      }
+
+      .table-content-date {
+        font-family:${font.family}; 
+        font-size:14px; 
+        font-weight: bold;
+        line-height:20px; 
+        color:${theme.light.module01.text}; 
+        padding:0px 0px 10px 0px;
+      }
+
+      .table-content-time {
+        font-family:${font.family}; 
+        font-size:12px; 
+        font-weight: bold;
+        line-height:14px; 
+        color:${theme.light.module01.text}; 
+        padding:0px 0px 10px 0px;
+      }
+
+      .table-content-address {
+        font-family:${font.family}; 
+        font-size:12px; 
+        font-weight: regular;
+        line-height:16px; 
+        color:${theme.light.module01.text}; 
+        padding:0px 0px 10px 0px;
+      }
+
+      .safe-table {
+        border-collapse:collapse; 
+        mso-table-lspace:0pt; 
+        mso-table-rspace:0pt;
+
+        border-collapse: collapse; 
+        mso-table-lspace: 0pt; 
+        mso-table-rspace: 0pt; 
+      }
+
+      .table-cta-border {
+        border-bottom: 1px solid ${theme.bar.background};
+      }
+
+      .footer-text {
+        text-align: left; 
+        padding: 10px 0 0 25px; 
+        font-family: ${font.family}; 
+        font-size: 10px; 
+        line-height: 14px; 
+        color: ${theme.light.footer.text}; 
+        -webkit-text-size-adjust: 100%; 
+        -ms-text-size-adjust: 100%;
+      }
+
+      .footer-raw-text {
+        font-family: ${font.family}; font-size: 10px; line-height: 14px; display: block;
+      }
+
+      .footer-icon-img {
+        display: block; 
+        width: 28px; 
+        height: 28px; 
+        border: 0; 
+        outline: none; 
+        text-decoration: none; 
+        -ms-interpolation-mode: bicubic;
+      }
+
+      .footer-icon-link {
+        text-decoration: none; 
+        display: block; 
+        width: 28px;
+      }
+
+      .img-href {
+        text-decoration: none; 
+        display: block; 
+        font-size: 0px; 
+        line-height: 0px;
+      }
+
+      .pre-link-color {
+        color: ${theme.light.preheader.text}; 
+        text-decoration: underline;
+      }
+
+
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body mj-class="bg-color">
+  
+
+<!--     <mj-custom-section width="380px" padding="0" align="center">
+      <mj-group>
+      <mj-column width="250px" align="left" vertical-align="middle">
+        <mj-image mj-class="logo-image" />
+      </mj-column>
+      <mj-column width="42px" align="center" vertical-align="middle">
+        <mj-divider 
+      border-color="#000000" 
+      border-style="solid" 
+      border-width="50px" 
+      width="1px" 
+      padding="4px" />
+  </mj-column>
+      <mj-column width="88px" align="right" vertical-align="middle" >
+        <mj-image mj-class="placeholder-image" align="right" vertical-align="middle"/>
+      </mj-column>
+    </mj-group>
+    </mj-custom-section> -->
+
+
+    <mj-section mj-class="module-01-color" width="50" padding="0">
+      <mj-column padding="0">
+        <mj-image mj-class="logo-dual" />
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="module-01-color" width="50" padding="0">
+      <mj-column padding="0">
+        <mj-image mj-class="hero-image hero-desktop" />
+      </mj-column>
+    </mj-section>
+
+    
+
+    <mj-section padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="40px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="600px">
+        <mj-text mj-class="body-text text-color"  padding="0px 40px" font-size="19px" line-height="26px" align="left" >
+          Hi {First name},
+          We’re inviting people across the industry to take part in a short survey to help us better understand the value commercial partnerships bring to our industry.
+          <br/><br/>
+          Your feedback will contribute to a broader understanding of partnership effectiveness, supporting more informed decision-making for future industry initiatives.
+          <br/><br/>
+          The survey takes around 10 minutes to complete. As a thank you for your time, you’ll go into the draw to <b>win one of five $200 VISA eGift Cards.<sup>*</sup></b>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="40px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="survey-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="40px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="survey-color" padding="0">
+      <mj-column padding="0" align="center">
+        <mj-image mj-class="cta" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="survey-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="survey-color" padding="0">
+      <mj-column padding="0" width="600px" >
+        <mj-text mj-class="survey-color"  padding="0px 40px" font-size="16px" line-height="26px" align="center" >
+         The survey closes [XX/XX/XX].
+         <br/><br/>
+        Your responses are confidential and will be used for research purposes. Individual responses will not be identified.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="survey-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="40px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="600px">
+        <mj-text mj-class="text-color"  padding="0px 40px" font-size="17px" font-weight="bold" line-height="26px" align="left" >
+          Terms & Conditions
+        </mj-text>
+        <mj-text mj-class="text-color"  padding="0px 40px" font-size="11px" line-height="14px" align="left" >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet lorem sit amet elit blandit porta. Vestibulum sagittis ante nec fermentum dignissim. Quisque suscipit id orci vitae mattis. Donec sed augue nulla. Aenean et sapien efficitur, hendrerit leo a, faucibus justo. Nulla cursus ultricies faucibus.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+  </mj-body>
+</mjml>

@@ -1,0 +1,74 @@
+{
+	"font": {
+		"family": "Arial, Helvetica, sans-serif"
+	},
+	"paths": {
+		"local": "./assets",
+		"bucket": "https://bhp-tba0464.s3.ap-southeast-2.amazonaws.com/",
+		"git": "https://brxau.github.io/htmlpreview/TBA0464/edm06/assets/",
+		"current": "./assets/"
+	},
+	"hero": {
+		"desktop": {
+			"src": "HOX0129_hero.jpg"
+		},
+		"alt": "We need your help.  $200 VISA eGift card.  Take our 10-minute survey for your chance to win $200*."
+	},
+	"logo": {
+		"src": "HOX0129_logo.png",
+		"alt": "Forethought® Outcomes",
+		"url": "#"
+	},
+	"logoDual": {
+		"src": "HOX0129_logo_dual.jpg",
+		"alt": "Forethought® Outcomes",
+		"url": "#"
+	},
+	"placeholder": {
+		"src": "HOX0129_placeholder.png",
+		"alt": "",
+		"url": "#"
+	},
+	"cta": {
+		"src": "HOX0129_cta.png",
+		"alt": "Start survey",
+		"url": "#"
+	},
+	"theme": {
+		"light": {
+			"text":"#282238",
+			"background":"#ffffff",
+			"preheader": {
+				"text":"#282238",
+				"background":"#FFFFFF"
+			},
+			"survey": {
+				"text":"#282238",
+				"background":"#CDD6FF"
+			},
+			"footer": {
+				"text":"#282238",
+				"background":"#FFFFFF"
+			}
+		},
+		"dark": {
+			"text":"#FFFFFF",
+			"background":"#000000",
+			"preheader": {
+				"text":"#FFFFFF",
+				"background":"#000000"
+			},
+			"survey": {
+				"text":"#FFFFFF",
+				"background":"#1D243D"
+			},
+			"footer": {
+				"text":"#FFFFFF",
+				"background":"#000000"
+			}
+		},
+		"bar": {
+			"background":"#DD5900"
+		}
+	}
+}
