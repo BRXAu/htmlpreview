@@ -1,0 +1,501 @@
+<mjml>
+  <mj-head>
+     <mj-breakpoint width="600px" />
+    <mj-attributes>
+
+      <mj-all
+        font-family="${font.family}"
+      />
+      <mj-text
+        font-family="${font.family}"
+        font-size="16px"
+        line-height="24px"
+      />
+
+
+      <mj-image name="hero-image" alt="${hero.alt}" padding="0" />
+      <mj-image name="hero-desktop" css-class="desktop-image" src="${paths.current}${hero.desktop.src}"  width="600px" />
+      <mj-class name="hero-mobile" css-class="mobile-image" src="${paths.current}${hero.mobile.src}" />
+      <mj-class name="logo-image" css-class="both" src="${paths.current}${logo.src}" alt="${logo.alt}" width="46px" padding="0px 25px" align="left" href="${logo.url}"/>
+
+
+      <mj-class name="invest-icon-01" css-class="both" src="${paths.current}${module01.images.icon01.src}" alt="${module01.images.icon01.alt}" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-02" css-class="both" src="${paths.current}${module01.images.icon02.src}" alt="${module01.images.icon02.alt}" width="60px" padding="0px" align="center"/>
+      <mj-class name="invest-icon-03" css-class="both" src="${paths.current}${module01.images.icon03.src}" alt="${module01.images.icon03.alt}" width="60px" padding="0px" align="center"/>
+
+      <!-- Start colour scheme default -->
+      <mj-class name="bg-color" background-color="${theme.current.background}" />
+      <mj-class name="text-color" color="${theme.current.text}" />
+
+      <mj-class name="module-01-color" background-color="${theme.current.module01.background}" color="${theme.current.module01.text}" />
+
+      <mj-class name="pre-bg-color" background-color="${theme.current.preheader.background}" />
+      <mj-class name="pre-text-color" color="${theme.current.preheader.text}"/>
+
+      <mj-class name="footer-bg-color" background-color="${theme.current.footer.background}" />
+      <mj-class name="footer-text-color" color="${theme.current.footer.text}" />
+      <!-- End colour scheme default -->
+
+    </mj-attributes>
+
+
+    <mj-style>
+      @media only screen and (max-width: 599px) {
+        .mobile-image {
+          display: block !important;
+          width: 100% !important;
+          height: auto !important;
+        }
+        .desktop-image {
+          display: none !important;
+        }
+
+        .desktop-br {
+          display: none !important;
+          max-height: 0px !important;
+          font-size: 0px !important;
+          line-height: 0px !important;
+        }
+      }
+
+      @media only screen and (min-width: 600px) {
+        .desktop-image {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        }
+        .mobile-image {
+          display: none !important;
+        }
+      }
+
+    </mj-style>
+
+    <mj-style inline="inline">
+      .cta-link {
+        color: ${theme.current.cta.text};
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .cta-text {
+        vertical-align: middle; 
+        font-family: ${font.family}; 
+        font-size: 13px; 
+        line-height: 16px; 
+        color: ${theme.current.cta.text}; 
+        padding: 10px 10px 10px 0;
+      }
+
+      .cta-text-url  { 
+        color: ${theme.current.cta.text}; 
+        text-decoration: none; 
+        font-weight: bold; 
+        font-size: 13px; 
+        line-height: 16px;
+        display: inline-block;
+      }
+
+      .cta-arrow {
+        vertical-align: middle; width: 15px; padding: 0;
+      }
+
+      .cta-arrow-img { 
+        display: block; 
+        width: 15px; 
+        height: 11px; 
+        border: 0; 
+        outline: none; 
+        text-decoration: none;
+      }
+
+      .table-content-text {
+        font-family:${font.family}; 
+        font-size:16px; 
+        line-height:20px; 
+        color:${theme.current.text}; 
+        padding:0px 0px 10px 0px;
+      }
+
+      .table-content-bar { 
+        width:3px; 
+        background-color:${theme.bar.background}; 
+        font-size:1px; 
+        line-height:1px;
+      }
+
+      .table-content-date {
+        font-family:${font.family}; 
+        font-size:14px; 
+        font-weight: bold;
+        line-height:20px; 
+        color:${theme.current.module01.text}; 
+        padding:0px 0px 10px 0px;
+      }
+
+      .table-content-time {
+        font-family:${font.family}; 
+        font-size:12px; 
+        font-weight: bold;
+        line-height:14px; 
+        color:${theme.current.module01.text}; 
+        padding:0px 0px 10px 0px;
+      }
+
+      .table-content-address {
+        font-family:${font.family}; 
+        font-size:12px; 
+        font-weight: regular;
+        line-height:16px; 
+        color:${theme.current.module01.text}; 
+        padding:0px 0px 10px 0px;
+      }
+
+      .safe-table {
+        border-collapse:collapse; 
+        mso-table-lspace:0pt; 
+        mso-table-rspace:0pt;
+
+        border-collapse: collapse; 
+        mso-table-lspace: 0pt; 
+        mso-table-rspace: 0pt; 
+      }
+
+      .table-cta-border {
+        border-bottom: 1px solid ${theme.bar.background};
+      }
+
+      .footer-text {
+        text-align: left; 
+        padding: 10px 0 0 25px; 
+        font-family: ${font.family}; 
+        font-size: 10px; 
+        line-height: 14px; 
+        color: ${theme.current.footer.text}; 
+        -webkit-text-size-adjust: 100%; 
+        -ms-text-size-adjust: 100%;
+      }
+
+      .footer-raw-text {
+        font-family: ${font.family}; font-size: 10px; line-height: 14px; display: block;
+      }
+
+      .footer-icon-img {
+        display: block; 
+        width: 28px; 
+        height: 28px; 
+        border: 0; 
+        outline: none; 
+        text-decoration: none; 
+        -ms-interpolation-mode: bicubic;
+      }
+
+      .footer-icon-link {
+        text-decoration: none; 
+        display: block; 
+        width: 28px;
+      }
+
+      .img-href {
+        text-decoration: none; 
+        display: block; 
+        font-size: 0px; 
+        line-height: 0px;
+      }
+
+      .pre-link-color {
+        color: ${theme.current.preheader.text}; 
+        text-decoration: underline;
+      }
+
+      .both {
+        display: block !important;
+      }
+
+
+      .desktop-image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .mobile-image {
+        display: none;
+      }
+
+    </mj-style>
+
+  </mj-head>
+
+  <mj-body mj-class="bg-color">
+    <mj-section mj-class="pre-bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="pre-text-color" padding="10px 25px" font-size="10px" line-height="10px" align="center">
+          Having trouble viewing this email? <a class="pre-link-color" href="#">View Online</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image mj-class="hero-image hero-desktop" />
+        <edm-not-outlook-open>
+          <mj-image mj-class="hero-image hero-mobile"  />
+        <edm-not-outlook-close>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="30px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="text-color" padding="0px 25px 0px 25px" font-size="23px" line-height="30px" align="left">
+          BHP&nbsp;Xplor&nbsp;Showcase: An&nbsp;Investor&nbsp;Event
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section>
+      <mj-column>
+        
+        <!-- Call your custom component and declare variables inline -->
+        <my-two-column-row 
+          fixed-width="120" 
+          bg-color="#f4f4f4" 
+          font-size="16px" 
+          text-color="#111111"
+          padding="20px">
+          
+          <!-- Cell 1: Content for Fixed Column -->
+          <mj-text><strong>Fixed 120px:</strong> Logo or Avatar</mj-text>
+          
+          <!-- Cell 2: Content for Responsive Column -->
+          <mj-text>This text occupies the second column. It stretches to fill 100% of the remaining horizontal layout width on desktop but behaves safely on mobile Gmail app.</mj-text>
+          
+        </my-two-column-row>
+
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px" >
+        <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
+        
+        <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <!-- Left Accent Bar with Outlook MSO fix -->
+            <td class="table-content-bar" width="3" valign="top">&nbsp;</td>
+            <!-- Content Padding Cell -->
+            <td style="padding:10px 0 10px 30px;">
+              
+              <!-- Intro Text -->
+              <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="table-content-date">
+                    17 September 2026
+                  </td>
+                </tr>
+              </table>
+              <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="table-content-time">
+                    09:00-18:00
+                  </td>
+                </tr>
+              </table>
+
+              <table class="safe-table" role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="table-content-address">
+                    Well&&nbsp;by&nbsp;Durst, 151&nbsp;West&nbsp;42nd&nbsp;Street, New&nbsp;York
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
+          BHP Xplor and 121 Mining Investment are hosting an invitation-only event connecting active mining investors with the 2026 BHP Xplor cohort, ten exploration and technology companies advancing projects with real growth potential.
+          <br/><br/>
+          This is a curated deal-sourcing opportunity. Every company has been selected to participate in BHP Xplor through a rigorous technical review process. The event gives investors early visibility to where they stand&nbsp;now.
+
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+
+
+
+<mj-sidebar-section
+  width="450px"
+  sidebar-width="10px"
+  sidebar-background-color="#00000"
+>
+
+<mj-column>
+    <mj-text padding="20px">
+      Content goes here.
+    </mj-text>
+  </mj-column>
+
+</mj-sidebar-section>
+
+${tableContainerOpen module01 themes.module01.background}
+
+
+    <mj-custom-section width="450px" mj-class="module-01-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-custom-section>
+
+    <mj-custom-section width="450px" mj-class="module-01-color" padding="0">
+      <mj-column mj-class="module-01-color" padding="0" >
+        <mj-text mj-class="module-01-color"  padding="0" font-size="16px" font-weight="bold" line-height="20px" align="center" >
+          Why investors attend
+        </mj-text>
+      </mj-column>
+    </mj-custom-section>
+    <mj-custom-section width="450px" mj-class="module-01-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-custom-section>
+    
+    <mj-custom-section width="450px" mj-class="module-01-color" padding="0">
+      <mj-column mj-class="module-01-color"  width="150px" padding="0" >
+        <mj-image mj-class="invest-icon-01" />
+        <mj-text mj-class="module-01-color"  padding="10px 20px" font-size="10px" font-weight="regular" line-height="12px" align="center" >
+          Direct access to CEOs and technical leaders, ahead of wider market awareness.
+        </mj-text>
+      </mj-column>
+      <mj-column mj-class="module-01-color"  width="150px" padding="0" >
+        <mj-image mj-class="invest-icon-02" />
+        <mj-text mj-class="module-01-color"  padding="10px 20px" font-size="10px" font-weight="regular" line-height="12px" align="center" >
+          A pre-vetted pipeline, filtered for geological merit and growth potential by BHP's technical team.
+        </mj-text>
+      </mj-column>
+      <mj-column mj-class="module-01-color"  width="150px" padding="0" >
+        <mj-image mj-class="invest-icon-03" />
+        <mj-text mj-class="module-01-color"  padding="10px 20px" font-size="10px" font-weight="regular" line-height="12px" align="center" >
+          An intimate, deal-focused setting where investors can speak directly with each company.
+        </mj-text>
+      </mj-column>
+    </mj-custom-section>
+    <mj-custom-section width="450px" mj-class="module-01-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-custom-section>
+
+${tableContainerClose module01}
+        
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
+          Attendance is limited to active investors and subject to approval.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+
+        <mj-text mj-class="text-color" padding="0px 25px" font-size="24px" line-height="30px" align="left">
+          ${insertCTA cta.cta01 paths.current cta.src}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="20px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" font-weight="bold" line-height="26px" align="left" >
+          Looking ahead
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0" width="480px">
+        <mj-text mj-class="text-color"  padding="0px 25px" font-size="16px" line-height="26px" align="left" >
+          Applications for the next BHP Xplor cohort will open in 2027.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="30px" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="footer-bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="30px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="footer-bg-color" padding="0">
+      <mj-column width="96px" padding="0" vertical-align="bottom">
+        <mj-image mj-class="logo-image" />
+        <mj-text mj-class="text-color" padding="5px 0px 0px 25px" font-size="8px" line-height="8px" align="left">
+          &copy; BHP 2026
+        </mj-text>
+      </mj-column>
+      <mj-column padding="0" width="454px" vertical-align="bottom">
+        ${footer icons paths}
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section mj-class="footer-bg-color" padding="0">
+      <mj-column padding="0">
+        <mj-spacer height="30px" padding="0" />
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
