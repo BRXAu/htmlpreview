@@ -12,7 +12,6 @@
         line-height="24px"
       />
 
-
       <mj-image name="hero-image" alt="${hero.alt}" padding="0" />
       <mj-image name="hero-desktop" css-class="desktop-image" src="${paths.current}${hero.desktop.src}"  width="600px" />
       <mj-class name="hero-mobile" css-class="mobile-image" src="${paths.current}${hero.mobile.src}" />
@@ -279,7 +278,7 @@
 
       </mj-column>
     </mj-section>
-    
+
 
     <mj-section mj-class="bg-color" padding="0">
       <mj-column padding="0">
