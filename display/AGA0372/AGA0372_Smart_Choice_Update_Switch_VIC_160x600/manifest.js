@@ -14,7 +14,7 @@ window.MANIFEST = {
   "Themes": "default,default,default,default,default",
   "Overlay": "",
   "ExitLink": "",
-  "Terms": "*Online sign-up bill credits on selected AGL Electricity and Gas plans for new and moving customers only in VIC where AGL operates. Credits are GST inclusive, one-off, non-transferable, non-refundable and will appear on your first bill. Full T&Cs at agl.com.au",
+  "Terms": "*Online sign-up bill credits on selected AGL Electricity and Gas plans for new and moving customers only in VIC where AGL operates. Credits are GST inclusive, one-off, non&#8209;transferable, non&#8209;refundable and will appear on your first bill. Full T&Cs at agl.com.au",
   "Layouts": ",,,,",
   "F1_Transitions": "",
   "F1_Animations": "slideInByBlock:0.75,",

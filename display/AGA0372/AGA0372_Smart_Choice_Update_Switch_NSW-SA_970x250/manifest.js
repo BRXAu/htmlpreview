@@ -14,7 +14,7 @@ window.MANIFEST = {
   "Themes": "default,default,default,default,default",
   "Overlay": "",
   "ExitLink": "",
-  "Terms": "*You must stay with AGL at the same address for 90 days from the commencement of the electricity/gas plan to receive this credit. Sign up online for one-off bill credits on selected AGL Electricity and Gas plans for new and moving residential customers only in NSW and SA where AGL operates. Credits are GST inclusive, non-transferable,non-refundable. Full T&Cs at agl.com.au",
+  "Terms": "*You must stay with AGL at the same address for 90 days from the commencement of the electricity/gas plan to receive this credit. Sign up online for one-off bill credits on selected AGL Electricity and Gas plans for new and moving residential customers only in NSW and SA where AGL operates. Credits are GST inclusive, non&#8209transferable, non&#8209refundable. Full T&Cs at agl.com.au",
   "Layouts": ",,,,",
   "F1_Transitions": "",
   "F1_Animations": "slideInByLine:0.5,fadeOut:0.5",
