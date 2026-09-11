@@ -41,7 +41,7 @@ window.MANIFEST = {
   "F2_LayoutClass": ",",
   "F2_Video": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\"}",
   "F2_Image1": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"border\":\"\",\"order\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\"}",
-  "F2_Image2": "{\"url\":\"assets/YOU0087_NRL_RLWC_Accidental_F2_Image2_e022295e.svg\",\"size\":\"\",\"position\":\"0 0\",\"border\":\"\",\"order\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\"}",
+  "F2_Image2": "{\"url\":\"assets/YOU0087_NRL_RLWC_Accidental_F2_Image2_e022295e.svg\",\"size\":\"\",\"position\":\"0 0\",\"border\":\"\",\"order\":\"\",\"animationIn\":\"fadeIn:0.5:power1.out\",\"animationOut\":\"\",\"frameOut\":\"\"}",
   "F2_ProductIcon": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"padding\":\"\",\"layout\":\"\",\"delay\":\"\",\"animationIn\":\"\",\"animationOut\":\"\"}",
   "F2_InframeImage": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"padding\":\"\",\"delay\":\"\",\"order\":\"\",\"animationIn\":\"\",\"animationOut\":\"\",\"frameOut\":\"\",\"border\":\"\"}",
   "F2_Logo": "{\"url\":\"YouiInlineLogo\",\"alignment\":\"\",\"position\":\"\",\"padding\":\"\",\"maxSize\":\"65\"}",

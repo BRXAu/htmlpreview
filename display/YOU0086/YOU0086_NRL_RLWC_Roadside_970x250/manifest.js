@@ -29,7 +29,7 @@ window.MANIFEST = {
   "F1_Image2": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"border\":\"\",\"order\":\"\",\"animationIn\":\"fadeIn:0.5:power1.out\",\"animationOut\":\"\",\"frameOut\":\"\"}",
   "F1_ProductIcon": "{\"url\":\"\",\"size\":\"\",\"position\":\"\",\"padding\":\"\",\"layout\":\"\",\"delay\":\"\",\"animationIn\":\"\",\"animationOut\":\"\"}",
   "F1_InframeImage": "{\"url\":\"assets/YOU0087_NRL_RLWC_Roadside_F1_InframeImage_12a7356c.svg\",\"size\":\"\",\"position\":\"\",\"padding\":\"\",\"delay\":\"\",\"order\":\"\",\"animationIn\":\"fadeIn:0.3:power1.out\",\"animationOut\":\"fadeOut:0.5:power1.in\",\"frameOut\":\"\",\"border\":\"\"}",
-  "F1_Logo": "{\"url\":\"YouiInlineLogo\",\"alignment\":\"\",\"position\":\"843 143 \",\"padding\":\"\",\"maxSize\":\"105\"}",
+  "F1_Logo": "{\"url\":\"assets/YOU0087_NRL_RLWC_Roadside_F1_InframeImage_12a7356c.svg\",\"alignment\":\"\",\"position\":\"843 143 \",\"padding\":\"\",\"maxSize\":\"105\"}",
   "F1_Headline": "{\"text\":\"Help when your car\\ndrops the ball\",\"size\":\"50\",\"weight\":\"\",\"order\":\"\",\"column\":\"\",\"position\":\"\",\"padding\":\"4 0 0 16px\",\"delay\":\"\"}",
   "F1_Subheadline": "{\"text\":\"\",\"size\":\"9\",\"weight\":\"\",\"order\":\"\",\"column\":\"\",\"position\":\"15 180\",\"padding\":\"\",\"delay\":\"\"}",
   "F1_icontext": "{\"text\":\"\",\"size\":\"\",\"weight\":\"\",\"order\":\"\",\"column\":\"\",\"position\":\"\",\"padding\":\"\",\"delay\":\"\"}",
