@@ -31,20 +31,15 @@
   </style>
 </head>
 <body>
-
   <h1>Copy as Rich Text</h1>
   <p>Paste or type HTML below. Click to copy it as <strong>rich formatted content</strong>.</p>
-
   <textarea id="htmlInput" placeholder="Type your HTML... e.g. &lt;b&gt;Bold!&lt;/b&gt;"></textarea>
   <button onclick="copyAsRichText()">Copy Rich Text</button>
-
   <script>
     function copyAsRichText() {
       const html = document.getElementById('htmlInput').value;
-
       const blob = new Blob([html], { type: 'text/html' });
       const data = [new ClipboardItem({ 'text/html': blob })];
-
       navigator.clipboard.write(data).then(() => {
         alert('Copied as rich text!');
       }).catch(err => {
@@ -52,6 +47,5 @@
       });
     }
   </script>
-
 </body>
 </html>

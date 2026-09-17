@@ -3,7 +3,7 @@ What is it for?
 
 This repo is used for making temporary public html previews for sharing?
 
-It takes advantage of githubs public document html feature
+It takes advantage of GitHubs public document html feature
 
 What it is NOT for?
 ===================
@@ -21,7 +21,7 @@ This was done to cheaply and effortlessly create preview links in seconds via gi
 
 Previous solutions required tedious and slow uploading to doubleclick studio platform.  
 This was particularly slow when there are multiple rounds of feedback in a short period of time.
-So rather than constantly have to keep uploading files, which could take up to 10 minutes, it can be done very fast via command line which allows for rapid, multiple rounds of feedback.
+So rather than constantly uploading files, which could take up to 10 minutes, it can be done via command line which allows for rapid, multiple rounds of feedback.
 
 
 Folder structure
