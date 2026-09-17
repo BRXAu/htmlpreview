@@ -23,6 +23,13 @@ parent=$(basename "$base_dir")
 for dir in */; do
     rm $dir/main.js.LICENSE.txt
     dirname=$(basename "$dir")
-    zipname="_zip/${dirname}.zip"
-    zip -r "$zipname" "$dir"
+
+    if [ "$dirname" = "_zip" ]; then
+        echo "skip - ${dirname}"
+    else
+        echo "zipping - ${dirname}"
+        zipname="_zip/${dirname}.zip"
+        zip -r "$zipname" "$dir"
+    fi
+    
 done
