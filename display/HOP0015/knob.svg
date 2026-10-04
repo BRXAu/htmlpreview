@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="237" height="237" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:c2pa="http://c2pa.org/manifest" version="1.1" viewBox="0 0 237 237">
+  <!-- Generator: Adobe Illustrator 30.1.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 136)  -->
+  <defs>
+    <radialGradient id="radial-gradient" cx="-178.01" cy="538.19" fx="-178.01" fy="538.19" r=".65" gradientTransform="translate(42295 127705.39) scale(237 -237)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f5b20f"/>
+      <stop offset=".75" stop-color="#efab0b"/>
+      <stop offset="1" stop-color="#e5a206"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="56.76" y1="64.86" x2="110.25" y2="34.61" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f1b931"/>
+      <stop offset=".19" stop-color="#be801b"/>
+      <stop offset=".47" stop-color="#be801b"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient1" cx="-177.96" cy="538.3" fx="-177.96" fy="538.3" r=".6" gradientTransform="translate(69052.28 -115222.37) rotate(-130.84) scale(237 -237)" gradientUnits="userSpaceOnUse">
+      <stop offset=".12" stop-color="#fff" stop-opacity=".3"/>
+      <stop offset=".6" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient1" x1="56.02" y1="203.15" x2="196.02" y2="33.15" gradientTransform="translate(0 237.89) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#eba809"/>
+      <stop offset="1" stop-color="#f4b10e"/>
+    </linearGradient>
+  </defs>
+  <g id="disc">
+    <circle cx="118.5" cy="118.5" r="118.5" fill="url(#radial-gradient)"/>
+  </g>
+  <g id="shadows">
+    <path d="M77.45,39.07c-5.17-11.5-.03-25,11.46-30.17,10.35-4.65,22.55-.99,28.63,8.6,29.6,54.72,62.87,142.79,75.19,180.99.12,4.65-1.7,5.64-5.45,2.96-25.08-31.22-80.35-107.58-109.83-162.38Z" fill="#4a2a00" fill-opacity=".05"/>
+    <path d="M67.01,46.85c-5.93-11.12-1.73-24.94,9.39-30.88,10.01-5.34,22.43-2.51,29.14,6.64,33.24,52.59,72.41,138.2,87.28,175.48.43,4.63-1.31,5.74-5.24,3.33-27.14-29.45-87.46-101.88-120.58-154.56Z" fill="#4a2a00" fill-opacity=".05"/>
+    <path d="M62.68,51.13c-6.06-11.05-2.02-24.92,9.03-30.98,9.95-5.46,22.4-2.77,29.22,6.3,33.84,52.2,74,137.36,89.3,174.46.49,4.63-1.25,5.76-5.2,3.39-27.48-29.13-88.63-100.87-122.36-153.16Z" fill="#4a2a00" fill-opacity=".05"/>
+    <path d="M57.96,56.19c-6.6-10.74-3.24-24.79,7.5-31.39,9.67-5.94,22.24-3.87,29.49,4.85,36.37,50.47,80.67,133.55,97.79,169.85.71,4.6-.96,5.81-5.03,3.64-28.88-27.74-93.49-96.38-129.75-146.95Z" fill="#4a2a00" fill-opacity=".05"/>
+    <path d="M62.34,40.09c9.07-6.11,21.26-4.63,28.6,3.48,5.79,7.36,11.79,15.47,17.87,24.05-7.87-11.38-15.69-22.11-23.14-31.58-7.34-8.11-19.53-9.6-28.6-3.48-10.08,6.79-12.74,20.46-5.95,30.54,1.18,1.5,2.38,3.02,3.62,4.56-4.53-9.65-1.51-21.42,7.61-27.57Z" fill="url(#linear-gradient)"/>
+    <circle cx="121.04" cy="117.09" r="118.5" fill="url(#radial-gradient1)"/>
+  </g>
+  <g id="teardrop">
+    <path d="M55.3,68.24c-6.77-10.09-4.09-23.76,6-30.53,9.08-6.1,21.27-4.6,28.6,3.53,37,47.2,82.9,125.5,100.8,159.8.87,4.4-.7,5.63-4.7,3.7-28.9-25.6-93.8-89.2-130.7-136.5Z" fill="url(#linear-gradient1)"/>
+    <path d="M55.3,68.24c36.9,47.3,101.8,110.9,130.7,136.5" fill="none" stroke="#ffd04a" stroke-linecap="round" stroke-opacity=".85" stroke-width="1.6"/>
+    <path d="M89.9,41.24c-8.14-9.02-22.05-9.74-31.07-1.6-8.12,7.33-9.63,19.51-3.53,28.6" display="none" fill="none" stroke="#b57400" stroke-opacity=".5" stroke-width="1.4"/>
+  </g>
+  <path d="M119.5,235C54.05,235,1,181.95,1,116.5c0-18.71,4.34-36.41,12.07-52.15C4.72,80.58,0,98.99,0,118.5c0,65.45,53.05,118.5,118.5,118.5,46.73,0,87.14-27.05,106.43-66.35-19.67,38.21-59.49,64.35-105.43,64.35Z" fill="#edce8a" opacity=".6"/>
+  <path d="M117.5,2c65.45,0,118.5,53.05,118.5,118.5,0,18.71-4.34,36.41-12.07,52.15,8.35-16.23,13.07-34.64,13.07-54.15C237,53.05,183.95,0,118.5,0,71.77,0,31.36,27.05,12.07,66.35,31.74,28.14,71.56,2,117.5,2Z" fill="#c69022" opacity=".49"/>
+</svg>
