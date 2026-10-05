@@ -8,8 +8,6 @@
   animation: show 0s 0.05s forwards;
 }
 
-
-
 #dial,
 #text_low_cost,
 #text_values_based,
