@@ -15,7 +15,7 @@ window.MANIFEST = {
   "Overlay": "",
   "ExitLink": "",
   "Terms": "General advice only. Consider the relevant PDS and TMD available at hostplus.com.au before making a decision. Issued by Host-Plus Pty Limited.",
-  "CustomCSS": ".F1 .cta {opacity:0!important; }\n.cta-logo { align-items: flex-end!important;}\n.tapPacked { max-height: 43px!important;}\n\n",
+  "CustomCSS": ".F1 .cta {opacity:0!important; }\n.cta-logo { align-items: flex-end!important;}\n.tapPacked { max-height: 43px!important;}",
   "Layouts": ",,,,",
   "F1_Transitions": "fadeIn:.3",
   "F1_Animations": "slideLineByLine:0.5,",
