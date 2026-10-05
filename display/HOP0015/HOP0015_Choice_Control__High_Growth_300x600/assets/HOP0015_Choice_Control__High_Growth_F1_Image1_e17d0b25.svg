@@ -10,7 +10,7 @@
 
 #dial {
   transform-box: view-box!important;
-  transform-origin: 87px 87px;
+  transform-origin: 87px 87px!important;
 }
 
 #dial,
