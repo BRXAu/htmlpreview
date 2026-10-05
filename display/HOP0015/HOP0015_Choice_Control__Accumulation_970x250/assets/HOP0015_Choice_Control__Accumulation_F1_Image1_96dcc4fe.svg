@@ -8,10 +8,7 @@
   animation: show 0s 0.05s forwards;
 }
 
-#dial {
-  transform-box: view-box!important;
-  transform-origin: 87px 87px!important;
-}
+
 
 #dial,
 #text_low_cost,
