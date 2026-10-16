@@ -1,0 +1,37 @@
+/* 480x320 landscape. Values taken from Figma node 17112:9383. */
+
+.stage { width: 480px; height: 320px; border-width: 1.28px; }
+
+.nest {
+  --nest-angle: 160.655deg;
+  left: 93.72px;
+  top: 3.72px;
+  width: 377.6px;
+  height: 209.92px;
+  border-radius: 0 0 49.76px 0;
+}
+
+.logo { left: 340.652px; top: 11.52px; width: 125.268px; height: 51.2px; }
+
+.badge { width: 118.937px; height: 118.937px; top: 82.61px; }
+.badge-1 { left: 214.01px; }
+.badge-2 { left: 315.49px; }
+
+.copy { padding: 38.4px 12.8px 0; gap: 12.8px; }
+.headline { font-size: 37.12px; }
+.sub { font-size: 21.76px; letter-spacing: -0.01em; }
+
+.footer { padding: 0 12.8px; gap: 6.4px; }
+.cta-row { height: 31.143px; align-items: center; }
+.cta { padding: 10.24px 15.36px; font-size: 15.36px; }
+.cta-arrow { margin-left: 6.784px; width: 5.331px; height: 10.663px; }
+.cta-arrow img { left: -1.115px; top: -1.114px; width: 8.022px; height: 12.892px; }
+.plus { width: 162.486px; height: 15.705px; }
+.plus img { top: -0.422px; width: 162.738px; height: 16.546px; }
+.terms-wrap { width: 100%; padding-bottom: 12.8px; }
+.terms-box { height: 37.12px; }
+.terms { font-size: 12.8px; }
+
+.terms-panel { padding: 12.8px; gap: 15.36px; }
+.terms-close { width: 20.48px; height: 20.48px; }
+.terms-panel .terms { font-size: 15.36px; }

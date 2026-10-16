@@ -1,0 +1,159 @@
+/* HOP0098 FY27 Member Services App | Google Ads App campaign HTML5 banners
+   Shared styles. Size-specific layout lives in layout-<size>.css. */
+
+@font-face { font-family: "Effra Heavy"; src: url("fonts/Effra-Heavy.woff") format("woff"); font-display: block; }
+@font-face { font-family: "Effra Bold"; src: url("fonts/Effra-Bold.woff") format("woff"); font-display: block; }
+@font-face { font-family: "Effra Medium"; src: url("fonts/Effra-Medium.woff") format("woff"); font-display: block; }
+@font-face { font-family: "Effra Regular"; src: url("fonts/Effra-Regular.woff") format("woff"); font-display: block; }
+
+:root {
+  --hp-blue: #002855;
+  --hp-yellow: #ffd000;
+  --hp-white: #ffffff;
+  --hp-blue-40: #99a9bb;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--hp-blue);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* The stage is built at the Figma artboard size and scaled to fit the
+   full-screen slot by banner.js. */
+.stage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  background: var(--hp-blue);
+  border-style: solid;
+  border-color: #000;
+  cursor: pointer;
+  transform-origin: 50% 50%;
+  visibility: hidden;
+}
+
+.stage img { display: block; }
+
+/* Nest: the gradient panel behind the copy */
+.nest {
+  position: absolute;
+  overflow: hidden;
+  background-image: linear-gradient(var(--nest-angle), #002855 6.3673%, #012855 49.648%, #022348 68.247%, #001a36 92.104%);
+}
+
+.phone { position: absolute; max-width: none; transform-origin: 50% 50%; }
+.badge { position: absolute; max-width: none; }
+.logo { position: absolute; }
+
+/* Copy. Figma trims text boxes to cap height (top) and baseline (bottom).
+   The trim-* classes do the same with negative margins, worked out from
+   Effra's ascent, descent and cap height for each line-height. */
+.copy {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.copy .line { display: block; white-space: nowrap; }
+
+.headline {
+  font-family: "Effra Heavy", sans-serif;
+  color: var(--hp-yellow);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.sub {
+  font-family: "Effra Medium", sans-serif;
+  color: var(--hp-white);
+}
+
+.trim-heavy-090 { line-height: 0.9; margin-top: -0.1304em; margin-bottom: -0.1026em; }
+.trim-medium-100 { line-height: 1; margin-top: -0.1685em; margin-bottom: -0.1646em; }
+.trim-medium-110 { line-height: 1.1; margin-top: -0.2185em; margin-bottom: -0.2146em; }
+.trim-bold-110 { line-height: 1.1; margin-top: -0.2268em; margin-bottom: -0.2063em; }
+.trim-regular-100 { line-height: 1; margin-top: -0.1687em; margin-bottom: -0.1643em; }
+
+/* Footer: CTA, "That's a plus" and short terms. Stays on screen throughout. */
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-row { display: flex; justify-content: space-between; width: 100%; }
+
+.cta {
+  display: flex;
+  align-items: center;
+  background: var(--hp-yellow);
+  color: var(--hp-blue);
+  font-family: "Effra Bold", sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cta-label { display: block; }
+.cta-arrow { position: relative; flex-shrink: 0; }
+.cta-arrow img { position: absolute; max-width: none; }
+
+.plus { position: relative; flex-shrink: 0; }
+.plus img { position: absolute; left: 0; max-width: none; }
+
+.terms-box { width: 100%; }
+
+.terms {
+  font-family: "Effra Regular", sans-serif;
+  color: var(--hp-blue-40);
+  letter-spacing: -0.02em;
+}
+
+.terms-btn {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+
+/* Full terms panel (F3). Only opens from "Click for terms". */
+.terms-panel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: var(--hp-blue);
+  cursor: default;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+
+.terms-close {
+  position: relative;
+  flex-shrink: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.terms-close img { width: 100%; height: 100%; }
+
+.terms-panel .terms { width: 100%; letter-spacing: 0; }
+
+/* Frame 2 starts hidden; banner.js brings it in. */
+.f2 { position: absolute; inset: 0; visibility: hidden; opacity: 0; }

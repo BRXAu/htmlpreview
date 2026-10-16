@@ -1,0 +1,42 @@
+/* 320x480 portrait. Values taken from Figma nodes 17112:9069 (Super)
+   and 17112:9226 (Pension). */
+
+.stage { width: 320px; height: 480px; border-width: 1.067px; }
+
+.nest {
+  --nest-angle: 134.765deg;
+  left: -1.07px;
+  top: -140.07px;
+  width: 309.333px;
+  height: 493.867px;
+  border-radius: 0 0 74.667px 0;
+}
+
+.logo { left: 164.866px; top: 21.333px; width: 131.667px; height: 53.815px; }
+
+.badge { width: 126.78px; height: 126.78px; top: 218.95px; }
+.badge-1 { left: 5.32px; }
+.badge-2 { left: 113.49px; }
+
+.copy { padding: 107.73px 21.333px 0; gap: 16px; }
+.headline { font-size: 37.485px; }
+.sub { font-size: 19.992px; }
+
+/* Pension uses smaller copy */
+.is-pension .headline { font-size: 33px; }
+.is-pension .sub { font-size: 17px; }
+
+.footer { padding: 0 21.333px 21.333px; gap: 10.667px; }
+.cta-row { align-items: flex-end; }
+.cta { padding: 14.271px 10.703px; font-size: 10.7px; }
+.cta-arrow { margin-left: 4.728px; width: 3.715px; height: 7.43px; }
+.cta-arrow img { left: -0.777px; top: -0.776px; width: 5.59px; height: 8.983px; }
+.plus { width: 88.736px; height: 35.676px; }
+.plus img { top: -0.417px; width: 88.741px; height: 36.502px; }
+.terms-wrap { width: 100%; }
+.terms-box { height: 30.933px; }
+.terms { font-size: 10px; }
+
+.terms-panel { padding: 16px; gap: 12.8px; }
+.terms-close { width: 17.067px; height: 17.067px; }
+.terms-panel .terms { font-size: 12px; }
