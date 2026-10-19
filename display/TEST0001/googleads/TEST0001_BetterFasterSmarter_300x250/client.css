@@ -1,0 +1,29 @@
+/* BRX test campaign: fonts, colours, shared text styles.
+
+   Fonts: Söhne Kräftig (headline, CTA) and Söhne Buch (legal) per Figma.
+   The licensed files aren't here yet, so these fall back to Helvetica Neue.
+   When they arrive, add them to fonts/ and uncomment the @font-face rules,
+   then run font_trim.py and add trim classes. */
+
+/* @font-face { font-family: "Sohne Kraftig"; src: url("fonts/Sohne-Kraftig.woff2") format("woff2"); font-display: block; } */
+/* @font-face { font-family: "Sohne Buch"; src: url("fonts/Sohne-Buch.woff2") format("woff2"); font-display: block; } */
+
+:root {
+  --slot-bg: #ffffff;
+  --colour-bg: #621c98;
+  --colour-text: #ffffff;
+  --colour-text-highlight: #ffa6d9;
+  --colour-device-bg: #f8ce47;
+  --colour-device-text: #282828;
+  --font-display: "Sohne Kraftig", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "Sohne Buch", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.stage { background: var(--colour-bg); color: var(--colour-text); font-family: var(--font-body); }
+
+.headline { font-family: var(--font-display); font-weight: 500; line-height: 0.92; letter-spacing: -0.02em; }
+.headline .hl { color: var(--colour-text-highlight); }
+.cta { display: inline-flex; align-items: center; background: var(--colour-device-bg); color: var(--colour-device-text);
+       font-family: var(--font-display); font-weight: 500; line-height: 1; white-space: nowrap; }
+.legal { font-family: var(--font-body); font-weight: 400; line-height: 1.2; color: var(--colour-text); }
+.logo { display: block; }

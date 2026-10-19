@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Better, faster, smarter 728x90</title>
+<meta name="ad.size" content="width=728,height=90">
+<script type="text/javascript" src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"></script>
+<script>window.BANNER_CONFIG = {"platform": "google-ads", "exit": "exitapi", "clickVar": "clickTag", "fullscreen": false};</script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.11.5_min.js"></script>
+<link rel="stylesheet" href="banner.css">
+<link rel="stylesheet" href="client.css">
+<link rel="stylesheet" href="stack.css">
+<link rel="stylesheet" href="layout.css">
+</head>
+<body>
+<div class="stage" id="stage" data-loops="1" role="link" aria-label="Better, faster, smarter display banners. Shop now">
+
+    <div class="media" id="media">
+      <div class="scene">
+        <div class="zoom" id="zoom"><div class="stack" id="stack">
+          <!-- Back to front. Stand-ins: swap each .art for <img class="art" src="images/layerN.png" alt=""> -->
+          <div class="layer"><div class="glass"></div><div class="art art-bg"></div></div>
+          <div class="layer"><div class="glass"></div><div class="art art-copy">Lorem ipsum dolor sit amet<small>Lorem ipsum dolor sit amet</small></div></div>
+          <div class="layer"><div class="glass"></div><div class="art art-product"></div></div>
+          <div class="layer"><div class="glass"></div><div class="art art-price"><span>$XX.XX</span></div></div>
+          <div class="layer"><div class="glass"></div><div class="art art-confetti"></div></div>
+        </div></div>
+      </div>
+    </div>
+
+  <section class="frame" data-hold="0.5">
+    <div class="content">
+      <p class="headline"><span class="line">Better, faster, smarter</span><span class="line hl">display banners</span></p>
+      <div class="cta-legal">
+        <span class="cta" data-anim="slide-up" data-delay="0.5">Shop now</span>
+        <p class="legal" data-anim="fade" data-delay="0.8">T&amp;Cs apply</p>
+      </div>
+      <img class="logo" data-anim="fade" data-delay="0.8" src="images/logo.svg" width="70" height="22" alt="BRX">
+    </div>
+  </section>
+
+</div>
+<script>
+window.STACK = {
+  full:  { w: 728, h: 90 },
+  end:   { w: 170, h: 90, r: 30 },
+  start: { scale: 3.7, x: 0, y: 0 },
+  fan:   { scale: 0.4, x: 0, y: 4, ry: 50, rx: -6, gap: 60, dx: 120, dy: 4 },
+  final: { scale: 0.27, x: 0, y: 4 }
+};
+</script>
+<script src="stack.js"></script>
+<script src="banner.js"></script>
+</body>
+</html>

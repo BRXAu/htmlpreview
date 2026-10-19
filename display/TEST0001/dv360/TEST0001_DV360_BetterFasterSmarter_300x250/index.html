@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Better, faster, smarter 300x250</title>
+<meta name="ad.size" content="width=300,height=250">
+<script type="text/javascript">var clickTag = "https://www.brx.com.au";</script>
+<script>window.BANNER_CONFIG = {"platform": "dv360", "exit": "clicktag", "clickVar": "clickTag", "fullscreen": false};</script>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.11.5_min.js"></script>
+<link rel="stylesheet" href="banner.css">
+<link rel="stylesheet" href="client.css">
+<link rel="stylesheet" href="stack.css">
+<link rel="stylesheet" href="layout.css">
+</head>
+<body>
+<div class="stage" id="stage" data-loops="1" role="link" aria-label="Better, faster, smarter display banners. Shop now">
+
+    <div class="media" id="media">
+      <div class="scene">
+        <div class="zoom" id="zoom"><div class="stack" id="stack">
+          <!-- Back to front. Stand-ins: swap each .art for <img class="art" src="images/layerN.png" alt=""> -->
+          <div class="layer"><div class="glass"></div><div class="art art-bg"></div></div>
+          <div class="layer"><div class="glass"></div><div class="art art-copy">Lorem ipsum dolor sit amet<small>Lorem ipsum dolor sit amet</small></div></div>
+          <div class="layer"><div class="glass"></div><div class="art art-product"></div></div>
+          <div class="layer"><div class="glass"></div><div class="art art-price"><span>$XX.XX</span></div></div>
+          <div class="layer"><div class="glass"></div><div class="art art-confetti"></div></div>
+        </div></div>
+      </div>
+    </div>
+
+  <section class="frame" data-hold="0.5">
+    <div class="content">
+      <div class="copy">
+        <p class="headline"><span class="line">Better, faster, smarter</span><span class="line hl">display banners</span></p>
+        <span class="cta" data-anim="slide-up" data-delay="0.5">Shop now</span>
+      </div>
+      <div class="baseplate">
+        <p class="legal" data-anim="fade" data-delay="0.8">T&amp;Cs apply. See brx.com.au</p>
+        <img class="logo" data-anim="fade" data-delay="0.8" src="images/logo.svg" width="64" height="20" alt="BRX">
+      </div>
+    </div>
+  </section>
+
+</div>
+<script>
+window.STACK = {
+  full:  { w: 300, h: 250 },
+  end:   { w: 300, h: 92, r: 40 },
+  start: { scale: 1.5, x: 0, y: 0 },
+  fan:   { scale: 0.8, x: 0, y: 0, ry: 55, rx: -6, gap: 60, dx: 0, dy: 6 },
+  final: { scale: 0.72, x: 0, y: 8 }
+};
+</script>
+<script src="stack.js"></script>
+<script src="banner.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* The 3D layer stack (TEST0001). Every size uses the same 200x200 card,
+   scaled by stack.js. Layer 0 is the back of the banner, the last layer the
+   front. The stand-in artwork in .art gets replaced by the real layers. */
+
+.media {
+  position: absolute; left: 0; top: 0; z-index: 5; overflow: hidden;
+  background: linear-gradient(172deg, #dde1ec 0%, #c3cadf 55%, #a7b2d0 100%);
+  -webkit-mask-image: -webkit-radial-gradient(white, black); /* keeps the rounded clip on 3D children in Safari */
+}
+.scene { position: absolute; inset: 0; }
+/* .zoom scales the rendered 3D view as a whole (depth included); .stack turns it. */
+.zoom { position: absolute; left: 50%; top: 50%; width: 200px; height: 200px; margin: -100px 0 0 -100px;
+        perspective: 700px; perspective-origin: 50% 60%; }
+.stack { position: absolute; inset: 0; transform-style: preserve-3d; }
+.layer { position: absolute; inset: 0; transform-style: preserve-3d; }
+.layer .glass { position: absolute; inset: 0; background: rgba(255, 255, 255, 0.16);
+                border: 1px solid rgba(255, 255, 255, 0.7); box-shadow: 0 6px 18px rgba(40, 40, 90, 0.18);
+                opacity: 0; visibility: hidden; }
+.layer .art { position: absolute; inset: 0; }
+.layer img.art { width: 100%; height: 100%; }
+
+/* Stand-in artwork, roughly matching the red banner in the brandosx.com video */
+.art-bg { background: #e0384f; }
+.art-bg::after { content: ""; position: absolute; right: 8%; bottom: 0; width: 46%; height: 62%;
+                 border-radius: 40% 40% 0 0; background: #b52338; }
+.art-copy { padding: 10% 9%; font: 500 19px/0.95 "Helvetica Neue", Arial, sans-serif; color: #fff; letter-spacing: -0.02em; }
+.art-copy small { display: block; margin-top: 6px; font-size: 7px; font-weight: 400; letter-spacing: 0; opacity: 0.9; }
+.art-product::before { content: ""; position: absolute; left: 50%; top: 34%; width: 22%; height: 52%;
+                       border-radius: 8px; background: linear-gradient(160deg, #f4f4f6, #9a9ba3); }
+.art-product::after { content: ""; position: absolute; left: 74%; top: 60%; width: 16%; height: 16%;
+                      border-radius: 50%; background: #2d2d33; border: 3px solid #c48a5c; }
+.art-price { }
+.art-price span { position: absolute; left: 9%; top: 52%; padding: 4px 6px; background: #1d1d22; color: #fff;
+                  font: 500 15px/1 "Helvetica Neue", Arial, sans-serif; }
+.art-confetti {
+  background:
+    radial-gradient(circle, #f8ce47 0 2px, transparent 2.5px) 12px 18px / 46px 38px,
+    radial-gradient(circle, #ff6fb4 0 1.5px, transparent 2px) 30px 6px / 52px 44px,
+    radial-gradient(circle, #4fb3ff 0 2px, transparent 2.5px) 4px 30px / 40px 50px,
+    radial-gradient(circle, #6ad08a 0 1.5px, transparent 2px) 22px 24px / 58px 34px;
+  opacity: 0.85;
+}

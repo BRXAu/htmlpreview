@@ -1,0 +1,47 @@
+/* BRX display banner base styles. Shared by every size.
+   Put the client's @font-face rules, colours and trim classes in
+   client.css; put each size's layout in that banner's layout.css. */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--slot-bg, #fff);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* The stage is built at the design size and scaled by banner.js. */
+.stage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transform-origin: 50% 50%;
+  visibility: hidden;
+}
+
+.stage img { display: block; max-width: none; }
+
+/* Frames stack on top of each other; every frame after the first starts hidden. */
+.frame { position: absolute; inset: 0; }
+.frame ~ .frame { visibility: hidden; opacity: 0; }
+
+.line { display: block; white-space: nowrap; }
+
+/* Terms panel: only opens from a [data-terms-open] control. */
+[data-terms-panel] {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  cursor: default;
+  visibility: hidden;
+  opacity: 0;
+}
+
+[data-terms-open] { cursor: pointer; }
+[data-terms-close] { background: none; border: 0; cursor: pointer; }

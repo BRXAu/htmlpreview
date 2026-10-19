@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="64" height="20" viewBox="0 0 64 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo/BRX" clip-path="url(#clip0_0_9994)">
+<path id="X" d="M64 0H61.1712L54 7.1712L46.8288 0H44V2.8288L51.1712 10L44 17.1712V20H46.8288L54 12.8288L61.1712 20H64V17.1712L56.8288 10L64 2.8288V0Z" fill="white"/>
+<path id="B" d="M14 0H0V20H14C17.3136 20 20 17.3136 20 14C20 12.4632 19.4216 11.0616 18.4712 10C19.4216 8.9384 20 7.5368 20 6C20 2.6864 17.3136 0 14 0ZM14 16H4V12H14C15.1048 12 16 12.8952 16 14C16 15.1048 15.1048 16 14 16ZM14 8H4V4H14C15.1048 4 16 4.8952 16 6C16 7.1048 15.1048 8 14 8Z" fill="white"/>
+<path id="R" d="M42 6C42 2.6864 39.3136 0 36 0H22V20H26V12H31.1712L39.1712 20H42V17.1712L36.7771 11.9483C39.7233 11.5669 42 9.05013 42 6ZM36 8H26V4H36C37.1048 4 38 4.8952 38 6C38 7.1048 37.1048 8 36 8Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_0_9994">
+<rect width="64" height="20" fill="white"/>
+</clipPath>
+</defs>
+</svg>

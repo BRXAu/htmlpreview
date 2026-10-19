@@ -1,0 +1,9 @@
+/* 728x90. Numbers from Figma node 6001:1699. */
+.stage { width: 728px; height: 90px; }
+
+.content { position: absolute; left: 170px; top: 0; width: 558px; height: 90px; padding: 12px;
+           display: flex; align-items: center; gap: 16px; }
+.headline { flex: 1; font-size: 22px; }
+.cta-legal { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.cta { padding: 4px 10px; border-radius: 6px; font-size: 12px; }
+.legal { width: 80px; font-size: 10px; }
