@@ -211,7 +211,7 @@
   <section>
     <header>
       <h2>Google Ads validator</h2>
-      <p class="muted">The policy these banners are built for. Each zip was uploaded to h5validator.appspot.com/adwords with &#8220;Select for App Campaigns&#8221; ticked. All three returned the same result.</p>
+      <p class="muted">The policy these banners are built for. Each zip was uploaded to h5validator.appspot.com/adwords with &#8220;Select for App Campaigns&#8221; ticked. All four returned the same result.</p>
     </header>
     <div class="validator">
       <div class="panel">
@@ -220,10 +220,10 @@
       </div>
       <div class="panel">
         <p class="eyebrow">Click-through test</p>
-        <p><b style="font-weight:500">Confirmed on all three.</b> Clicking each ad in the validator returned &#8220;Your click was successful and should track correctly. This creative is using the ExitApi.&#8221;</p>
+        <p><b style="font-weight:500">Confirmed on all four.</b> Clicking each ad in the validator returned &#8220;Your click was successful and should track correctly. This creative is using the ExitApi.&#8221;</p>
         <p class="note">The one flag is a recommendation, not a failure: Google suggests lazy loading images. These are full-screen ads where every image shows in the first five seconds, so lazy loading gains little. It can be added if you want a clean sheet.</p>
         <p class="eyebrow">Validator results</p>
-        <ul class="links"><li><span>Super 480x320</span><a href="https://h5validator.appspot.com/adwords/asset?result=6096043635245056" target="_blank" rel="noopener">View result &#8599;</a></li><li><span>Super 320x480</span><a href="https://h5validator.appspot.com/adwords/asset?result=4913772148424704" target="_blank" rel="noopener">View result &#8599;</a></li><li><span>Pension 320x480</span><a href="https://h5validator.appspot.com/adwords/asset?result=6482920733278208" target="_blank" rel="noopener">View result &#8599;</a></li></ul>
+        <ul class="links"><li><span>Super 480x320</span><a href="https://h5validator.appspot.com/adwords/asset?result=6096043635245056" target="_blank" rel="noopener">View result &#8599;</a></li><li><span>Super 320x480</span><a href="https://h5validator.appspot.com/adwords/asset?result=4913772148424704" target="_blank" rel="noopener">View result &#8599;</a></li><li><span>Pension 320x480</span><a href="https://h5validator.appspot.com/adwords/asset?result=6482920733278208" target="_blank" rel="noopener">View result &#8599;</a></li><li><span>Pension 480x320</span><a href="https://h5validator.appspot.com/adwords/asset?result=6208160803717120" target="_blank" rel="noopener">View result &#8599;</a></li></ul>
         <p class="muted" style="font-size:13px">Anyone with these links can view the results and the creative.</p>
       </div>
     </div>
@@ -232,7 +232,7 @@
   <section>
     <header>
       <h2>Campaign Manager 360 (DCM) validator</h2>
-      <p class="muted">BRX's usual check, at h5validator.appspot.com/dcm. All three returned the same result. The two flags are expected: CM360 and Google Ads App campaigns handle clicks differently.</p>
+      <p class="muted">BRX's usual check, at h5validator.appspot.com/dcm. All four returned the same result. The two flags are expected: CM360 and Google Ads App campaigns handle clicks differently.</p>
     </header>
     <div class="validator">
       <div class="panel">
@@ -245,7 +245,7 @@
         <p><b style="font-weight:500">4th party call (warning).</b> The banners load Google's own <code>exitapi.js</code>, which Google Ads App campaigns require.</p>
         <p class="note">If any placement is trafficked through CM360, it needs a CM360 version of each banner: the same build with a <code>clickTag</code> exit and without <code>exitapi.js</code>. That's a small build change.</p>
         <p class="eyebrow">Validator results</p>
-        <ul class="links"><li><span>Super 480x320</span><a href="https://h5validator.appspot.com/dcm/asset?result=6336632201019392" target="_blank" rel="noopener">View result &#8599;</a></li><li><span>Super 320x480</span><a href="https://h5validator.appspot.com/dcm/asset?result=5910703515500544" target="_blank" rel="noopener">View result &#8599;</a></li><li><span>Pension 320x480</span><a href="https://h5validator.appspot.com/dcm/asset?result=6099137689419776" target="_blank" rel="noopener">View result &#8599;</a></li></ul>
+        <ul class="links"><li><span>Super 480x320</span><a href="https://h5validator.appspot.com/dcm/asset?result=6336632201019392" target="_blank" rel="noopener">View result &#8599;</a></li><li><span>Super 320x480</span><a href="https://h5validator.appspot.com/dcm/asset?result=5910703515500544" target="_blank" rel="noopener">View result &#8599;</a></li><li><span>Pension 320x480</span><a href="https://h5validator.appspot.com/dcm/asset?result=6099137689419776" target="_blank" rel="noopener">View result &#8599;</a></li><li><span>Pension 480x320</span><a href="https://h5validator.appspot.com/dcm/asset?result=6312202091495424" target="_blank" rel="noopener">View result &#8599;</a></li></ul>
         <p class="muted" style="font-size:13px">Anyone with these links can view the results and the creative.</p>
       </div>
     </div>
@@ -257,7 +257,7 @@
       <p class="muted">Nothing blocks trafficking in Google Ads. These are the open items and the limits of this test.</p>
     </header>
     <ul class="issues">
-      <li><span class="tag action">Action</span><div><b>Run the validator on Pension 480 &#215; 320</b>Pension 480 &#215; 320 was added after the validator run above, so it hasn't been through Google's HTML5 Validator yet. The browser tests in this report do cover it.</div></li>
+      
       <li><span class="tag action">Decision</span><div><b>Confirm the ad server</b>These banners are built for Google Ads App campaigns and pass that validator. If any placement runs through CM360, they need a CM360 version with a clickTag exit.</div></li>
       <li><span class="tag action">Action</span><div><b>Pension backup image shows the Super phone</b>The Pension &#8220;Static&#8221; frame in Figma uses the Super phone screen (&#8220;Welcome, Sam&#8221;). The animated Pension banner is correct. Fix in Figma, then re-export the backup JPG.</div></li>
       <li><span class="tag action">Action</span><div><b>Test on real phones before launch</b>These runs use browser engines with device profiles. A quick check on one iPhone and one Android phone, ideally inside a Google app placement, is still worth doing.</div></li>
