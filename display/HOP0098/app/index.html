@@ -60,9 +60,7 @@
     gap: 24px;
     padding-bottom: 72px;
   }
-  .banners .card:first-child { grid-column: 1 / -1; }
-  .banners .card:first-child .stage { min-height: 400px; }
-  .banners .card:first-child .actions { max-width: 560px; }
+  .banners .card.landscape .stage { min-height: 400px; }
 
   .card { background: var(--sky); padding: 32px 32px 28px; display: flex; flex-direction: column; }
   .card .eyebrow { display: flex; justify-content: space-between; }
@@ -163,13 +161,27 @@
   </section>
 
   <section class="banners">
-    <article class="card">
+    <article class="card landscape">
       <p class="eyebrow"><span>Super</span><span>Landscape</span></p>
       <div class="stage">
         <div class="ad"><iframe src="HOP0098_MemberServicesApp_Super_480x320/index.html" width="480" height="320" title="Super 480x320 banner"></iframe></div>
       </div>
       <h2>480 × 320</h2>
       <p class="meta">Super at your fingertips. Award-winning.</p>
+      <div class="actions">
+        <button class="btn" type="button" data-replay>Replay
+          <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M12 7a5 5 0 1 1-1.5-3.6M12 1.5V4H9.5" stroke="currentColor" stroke-width="1.4"></path></svg>
+        </button>
+      </div>
+    </article>
+
+    <article class="card landscape">
+      <p class="eyebrow"><span>Pension</span><span>Landscape</span></p>
+      <div class="stage">
+        <div class="ad"><iframe src="HOP0098_MemberServicesApp_Pension_480x320/index.html" width="480" height="320" title="Pension 480x320 banner"></iframe></div>
+      </div>
+      <h2>480 × 320</h2>
+      <p class="meta">Pension at your fingertips. Award-winning.</p>
       <div class="actions">
         <button class="btn" type="button" data-replay>Replay
           <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M12 7a5 5 0 1 1-1.5-3.6M12 1.5V4H9.5" stroke="currentColor" stroke-width="1.4"></path></svg>
